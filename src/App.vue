@@ -14,6 +14,9 @@ body {
   line-height: 1.4;
   font-size: 1.2rem;
 }
+* {
+  box-sizing: border-box;
+}
 
 :root {
   --color-header: hsl(255,27,29);

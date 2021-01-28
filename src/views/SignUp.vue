@@ -1,11 +1,13 @@
 <template>
-  <div class="profile">
+  <div class="signup">
     <h2>SignUp</h2>
     <form @submit.prevent="register">
-      <label>Email</label>
-      <input type="text" v-model="email" placeholder="Email">
-      <label>Password</label>
-      <input type="password" v-model="password" placeholder="Password">
+      <div>
+        <input type="text" v-model="email" placeholder="Email">
+      </div>
+      <div>
+        <input type="password" v-model="password" placeholder="Password">
+      </div>
       <button>SignUp</button>
     </form>
   </div>
@@ -28,20 +30,40 @@ export default {
       firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
         .then(user => {
           console.log(user);
-      })
+        })
         .catch(error => {
           var errorCode = error.code;
           var errorMessage = error.message;
-        console.log(errorCode + ' ' + errorMessage);
+          console.log(errorCode + ' ' + errorMessage);
         });
     }
   }
-}
+};
 </script>
 
-
 <style lang="scss" scoped>
-.profile {
+.signup {
   margin: 1rem;
+  input {
+    background: #F7F7F7;
+    border-radius: var(--border-radius);
+    border: none;
+    height: 3rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    width: 100%;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  button {
+    height: 3rem;
+    background: #008661;
+    border-radius: var(--border-radius);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+  }
 }
 </style>
