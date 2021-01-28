@@ -59,7 +59,7 @@ export default {
         content: "";
         width: 2rem;
         height: 2rem;
-        background: url(/images/icn-magnifying-glass.svg);
+        background: url(/img/icons/icn-magnifying-glass.svg);
         display: inline-block;
         background-size: contain;
         position: relative;
