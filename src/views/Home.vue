@@ -40,50 +40,51 @@ export default {
         this.trendingnovels.push(this.novels[this.selectednovels[i]]);
       })
       .catch(error => {
-        console.log(error)
-      })
+        console.log(error);
+      });
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-  .books-list {
-    margin: 1rem;
-    .input-wrapper {
-      display: flex;
-      background: #F7F7F7;
-      border-radius: var(--border-radius);
-      div {
-        width: 3rem;
-        &:before {
-          content: "";
-          width: 2rem;
-          height: 2rem;
-          background: url(/images/icn-magnifying-glass.svg);
-          display: inline-block;
-          background-size: contain;
-          position: relative;
-          top: 8px;
-          left: 10px;
-        }
+.books-list {
+  margin: 1rem;
+  .input-wrapper {
+    display: flex;
+    background: #F7F7F7;
+    border-radius: var(--border-radius);
+    div {
+      width: 3rem;
+      &:before {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        background: url(/images/icn-magnifying-glass.svg);
+        display: inline-block;
+        background-size: contain;
+        position: relative;
+        top: 8px;
+        left: 10px;
       }
-      input {
-        height: 3rem;
-        border: none;
-        background: none;
-        font-size: 1.2rem;
-        color: var(--color-text);
-        &:focus {
-          outline: none;
-        }
+    }
+    input {
+      height: 3rem;
+      border: none;
+      background: none;
+      font-size: 1.2rem;
+      color: var(--color-text);
+      width: 100%;
+      &:focus {
+        outline: none;
       }
     }
   }
-  .trending-books {
-    display: flex;
-    overflow-x: scroll;
-    scroll-padding: 0 50%;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1.5rem;
-  }
+}
+.trending-books {
+  display: flex;
+  overflow-x: scroll;
+  scroll-padding: 0 50%;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1.5rem;
+}
 </style>

@@ -8,12 +8,12 @@
 
 <style lang="scss">
   /* TODO add css reset */
-  body {
-    padding: 0;
-    margin: 0;
-    line-height: 1.4;
-    font-size: 1.2rem;
-  }
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+  font-size: 1.2rem;
+}
 
 :root {
   --color-header: hsl(255,27,29);
