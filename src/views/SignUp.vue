@@ -3,10 +3,10 @@
     <h2>Sign up</h2>
     <form @submit.prevent="signup">
       <div>
-        <input type="text" v-model="email" placeholder="Email">
+        <input type="text" v-model="email" placeholder="Email" />
       </div>
       <div>
-        <input type="password" v-model="password" placeholder="Password">
+        <input type="password" v-model="password" placeholder="Password" />
       </div>
       <span id="errorMessage" class="error" style="display:none;"></span>
       <button>Sign up</button>
@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import firebase from "firebase"
-require("firebase/auth")
+import firebase from "firebase";
+require("firebase/auth");
 
 export default {
   name: "Signup",
@@ -28,11 +28,13 @@ export default {
     return {
       email: "",
       password: ""
-    }
+    };
   },
   methods: {
     signup() {
-      firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(this.email, this.password)
         .then(user => {
           console.log(user);
         })
@@ -107,7 +109,7 @@ export default {
   .btn {
     display: block;
     border: 1px solid #cecece;
-    background: #F7F7F7;
+    background: #f7f7f7;
     height: 3rem;
     border-radius: var(--border-radius);
     font-size: 1.2rem;
@@ -116,5 +118,4 @@ export default {
     padding-top: 10px;
   }
 }
-
 </style>

@@ -2,11 +2,15 @@
   <div class="books-list">
     <div class="input-wrapper">
       <div></div>
-      <input type="text" placeholder="Search" v-model="search"/>
+      <input type="text" placeholder="Search" v-model="search" />
     </div>
     <h2>Trending books</h2>
     <div class="trending-books">
-      <TrendingBooks v-for="novel in trendingnovels" :key="novel.id" :novel="novel" />
+      <TrendingBooks
+        v-for="novel in trendingnovels"
+        :key="novel.id"
+        :novel="novel"
+      />
     </div>
     <h2>Agatha Christie books</h2>
     <BookList v-for="novel in novels" :key="novel.id" :novel="novel" />
@@ -14,12 +18,12 @@
 </template>
 
 <script>
-import BookList from '@/components/BookList.vue'
-import TrendingBooks from '@/components/TrendingBooks.vue'
-import EventService from '@/services/EventService.js'
+import BookList from "@/components/BookList.vue";
+import TrendingBooks from "@/components/TrendingBooks.vue";
+import EventService from "@/services/EventService.js";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     BookList,
     TrendingBooks
@@ -27,17 +31,17 @@ export default {
   data() {
     return {
       novels: [],
-      selectednovels: [5,21,26,9,49,14,28,38],
+      selectednovels: [5, 21, 26, 9, 49, 14, 28, 38],
       trendingnovels: [],
-      search: ''
-    }
+      search: ""
+    };
   },
   created() {
     EventService.getNovels()
       .then(response => {
-        this.novels = response.data
-        for(var i = 0; i < this.selectednovels.length; i++)
-        this.trendingnovels.push(this.novels[this.selectednovels[i]]);
+        this.novels = response.data;
+        for (var i = 0; i < this.selectednovels.length; i++)
+          this.trendingnovels.push(this.novels[this.selectednovels[i]]);
       })
       .catch(error => {
         console.log(error);
@@ -51,7 +55,7 @@ export default {
   margin: 1rem;
   .input-wrapper {
     display: flex;
-    background: #F7F7F7;
+    background: #f7f7f7;
     border-radius: var(--border-radius);
     div {
       width: 3rem;
@@ -63,7 +67,7 @@ export default {
         display: inline-block;
         background-size: contain;
         position: relative;
-        top: 13px;
+        top: 12px;
         left: 10px;
       }
     }

@@ -2,7 +2,7 @@
   <router-link to="/" class="btn--back">Back</router-link>
   <div v-if="novel">
     <div>
-      <img :src="novel.image" :alt="novel.title">
+      <img :src="novel.image" :alt="novel.title" />
     </div>
     <div class="novel-details">
       <h3>{{ novel.title }}</h3>
@@ -12,20 +12,20 @@
 </template>
 
 <script>
-import EventService from "@/services/EventService.js"
+import EventService from "@/services/EventService.js";
 
 export default {
   name: "BookDetail",
   props: ["id"],
   data() {
     return {
-      novel: null,
-    }
+      novel: null
+    };
   },
   created() {
     EventService.getNovels()
       .then(response => {
-        this.novel = response.data[this.id]
+        this.novel = response.data[this.id];
       })
       .catch(error => {
         console.log(error);
@@ -37,11 +37,11 @@ export default {
 <style lang="scss" scoped>
 img {
   display: block;
-  margin:  0 auto;
+  margin: 0 auto;
   max-width: 150px;
   width: 100%;
   border-radius: var(--border-radius);
-  box-shadow: 0 10px 15px -6px rgba(0,0,0,0.7);
+  box-shadow: 0 10px 15px -6px rgba(0, 0, 0, 0.7);
 }
 .novel-details {
   background: var(--color-background);

@@ -1,9 +1,8 @@
 <template>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
-
 /* TODO add css reset */
 body {
   padding: 0;
@@ -16,8 +15,8 @@ body {
 }
 
 :root {
-  --color-header: hsl(255,27,29);
-  --color-text: hsl(209,9,55);
+  --color-header: hsl(255, 27, 29);
+  --color-text: hsl(209, 9, 55);
   --color-background: #f1f6f8;
 
   --border-radius: 10px;
@@ -30,7 +29,8 @@ body {
   color: #2c3e50;
   max-width: 950px;
   margin: 1.5rem auto;
-  h1,h2 {
+  h1,
+  h2 {
     color: var(--color-header);
   }
   h2 {
@@ -39,7 +39,8 @@ body {
     text-transform: uppercase;
     color: #008661;
   }
-  h3, p {
+  h3,
+  p {
     color: var(--color-text);
   }
   a {
