@@ -1,8 +1,4 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Books</router-link> |
-    <router-link to="/signup">SignUp</router-link>
-  </div>
   <router-view/>
 </template>
 
@@ -22,7 +18,7 @@ body {
 :root {
   --color-header: hsl(255,27,29);
   --color-text: hsl(209,9,55);
-  --color-background: #F1F6F8;
+  --color-background: #f1f6f8;
 
   --border-radius: 10px;
 }
@@ -49,20 +45,6 @@ body {
   a {
     text-decoration: none;
     color: inherit;
-  }
-}
-
-#nav {
-  text-align: center;
-  padding: 2rem 1rem 1rem;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
   }
 }
 </style>

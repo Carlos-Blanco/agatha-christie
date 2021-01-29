@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import firebase from 'firebase'
-require('firebase/auth')
+import firebase from "firebase"
+require("firebase/auth")
 
 export default {
   name: "Login",
@@ -38,7 +38,7 @@ export default {
         })
         .catch(error => {
           var errorMessage = error.message;
-          var signupError = document.getElementById('errorMessage');
+          var signupError = document.getElementById("errorMessage");
           signupError.style.display = "block";
           signupError.textContent += errorMessage;
         });
@@ -51,7 +51,7 @@ export default {
 .login {
   margin: 1rem;
   input {
-    background: #F7F7F7;
+    background: #f7f7f7;
     border-radius: var(--border-radius);
     border: none;
     height: 3rem;
@@ -70,11 +70,12 @@ export default {
     font-size: 1.2rem;
     width: 100%;
     cursor: pointer;
+    font-weight: bold;
   }
   .error {
     background: #ff5e58;
     color: white;
-    height: 3rem;
+    min-height: 3rem;
     border-radius: var(--border-radius);
     padding: 0.7rem 1rem;
     margin-bottom: 1rem;
@@ -86,7 +87,7 @@ export default {
     line-height: 0.5;
     text-align: center;
     display: flex;
-    margin: 3rem 0;
+    margin: 2.5rem 0;
     color: #c7c7c7;
     span {
       display: inline-block;
