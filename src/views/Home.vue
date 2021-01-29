@@ -57,13 +57,13 @@ export default {
       width: 3rem;
       &:before {
         content: "";
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
         background: url(/img/icons/icn-magnifying-glass.svg);
         display: inline-block;
         background-size: contain;
         position: relative;
-        top: 8px;
+        top: 13px;
         left: 10px;
       }
     }

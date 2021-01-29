@@ -29,7 +29,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   max-width: 950px;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   h1,h2 {
     color: var(--color-header);
   }
@@ -45,6 +45,11 @@ body {
   a {
     text-decoration: none;
     color: inherit;
+  }
+  .btn--back {
+    margin: 0 1rem;
+    display: block;
+    font-weight: bold;
   }
 }
 </style>

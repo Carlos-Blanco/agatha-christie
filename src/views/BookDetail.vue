@@ -1,4 +1,5 @@
 <template>
+  <router-link to="/" class="btn--back">Back</router-link>
   <div v-if="novel">
     <div>
       <img :src="novel.image" :alt="novel.title">
