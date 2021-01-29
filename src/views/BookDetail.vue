@@ -62,7 +62,7 @@ img {
     height: 1.5rem;
     background: url(/img/icons/icn-back.svg) center no-repeat;
     position: relative;
-    top: 4px;
+    top: 5px;
     display: inline-block;
     background-size: contain;
     margin-right: 0.3rem;
