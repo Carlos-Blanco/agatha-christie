@@ -1,6 +1,6 @@
 <template>
-  <router-link to="/" class="btn--back">Back</router-link>
   <div v-if="novel">
+  <router-link to="/" class="btn--back">Back</router-link>
     <div>
       <img :src="novel.image" :alt="novel.title" />
     </div>
@@ -35,6 +35,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.btn--back {
+  margin: 0 1rem;
+}
 img {
   display: block;
   margin: 0 auto;
@@ -52,20 +55,6 @@ img {
   h3 {
     font-size: 2rem;
     font-weight: 900;
-  }
-}
-.btn--back {
-  color: var(--color-header);
-  &:before {
-    content: "";
-    width: 1.5rem;
-    height: 1.5rem;
-    background: url(/img/icons/icn-back.svg) center no-repeat;
-    position: relative;
-    top: 5px;
-    display: inline-block;
-    background-size: contain;
-    margin-right: 0.3rem;
   }
 }
 </style>

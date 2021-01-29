@@ -48,9 +48,20 @@ body {
     color: inherit;
   }
   .btn--back {
-    margin: 0 1rem;
     display: block;
     font-weight: bold;
+    color: var(--color-header);
+    &:before {
+      content: "";
+      width: 1.5rem;
+      height: 1.5rem;
+      background: url(/img/icons/icn-back.svg) center no-repeat;
+      position: relative;
+      top: 5px;
+      display: inline-block;
+      background-size: contain;
+      margin-right: 0.3rem;
+    }
   }
 }
 </style>

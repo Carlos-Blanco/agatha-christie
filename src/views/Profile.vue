@@ -1,5 +1,6 @@
 <template>
   <div class="profile">
+    <router-link to="/" class="btn--back">Back</router-link>
     <h2>Profile</h2>
     <span id="errorMessage" class="error" style="display:none;"></span>
     <button @click="logout">Log out</button>

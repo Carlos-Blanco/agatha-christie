@@ -1,5 +1,6 @@
 <template>
   <div class="login">
+    <router-link to="/" class="btn--back">Back</router-link>
     <h2>Log in</h2>
     <form @submit.prevent="login">
       <div>
