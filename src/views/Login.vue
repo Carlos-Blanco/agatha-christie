@@ -8,6 +8,7 @@
       <div>
         <input type="password" v-model="password" placeholder="Password">
       </div>
+      <span id="errorMessage" class="error" style="display:none;"></span>
       <button>Log in</button>
     </form>
     <div class="signup-wrapper">
@@ -36,9 +37,10 @@ export default {
           console.log(user);
         })
         .catch(error => {
-          var errorCode = error.code;
           var errorMessage = error.message;
-          console.log(errorCode + ' ' + errorMessage);
+          var signupError = document.getElementById('errorMessage');
+          signupError.style.display = "block";
+          signupError.textContent += errorMessage;
         });
     }
   }
@@ -68,6 +70,14 @@ export default {
     font-size: 1.2rem;
     width: 100%;
     cursor: pointer;
+  }
+  .error {
+    background: #ff5e58;
+    color: white;
+    height: 3rem;
+    border-radius: var(--border-radius);
+    padding: 0.7rem 1rem;
+    margin-bottom: 1rem;
   }
 }
 .signup-wrapper {
