@@ -54,4 +54,18 @@ img {
     font-weight: 900;
   }
 }
+.btn--back {
+  color: var(--color-header);
+  &:before {
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(/img/icons/icn-back.svg) center no-repeat;
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    background-size: contain;
+    margin-right: 0.3rem;
+  }
+}
 </style>
