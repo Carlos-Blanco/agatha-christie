@@ -7,7 +7,8 @@
 </template>
 
 <style lang="scss">
-  /* TODO add css reset */
+
+/* TODO add css reset */
 body {
   padding: 0;
   margin: 0;

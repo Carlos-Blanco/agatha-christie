@@ -1,14 +1,14 @@
 <template>
-  <div class="signup">
-    <h2>Sign up</h2>
-    <form @submit.prevent="signup">
+  <div class="login">
+    <h2>Log in</h2>
+    <form @submit.prevent="login">
       <div>
         <input type="text" v-model="email" placeholder="Email">
       </div>
       <div>
         <input type="password" v-model="password" placeholder="Password">
       </div>
-      <button>Sign up</button>
+      <button>Log in</button>
     </form>
   </div>
 </template>
@@ -18,7 +18,7 @@ import firebase from 'firebase'
 require('firebase/auth')
 
 export default {
-  name: "Signup",
+  name: "Login",
   data() {
     return {
       email: "",
@@ -26,8 +26,8 @@ export default {
     }
   },
   methods: {
-    signup() {
-      firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
+    login() {
+      firebase.auth().signInWithEmailAndPassword(this.email, this.password)
         .then(user => {
           console.log(user);
         })
