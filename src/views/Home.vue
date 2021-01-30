@@ -50,7 +50,7 @@ export default {
   computed: {
     filterByTerm() {
       return this.novels.filter(novel => {
-        return novel.title.toLowerCase().includes(this.searchTerm);
+        return novel.title.toLowerCase().match(this.searchTerm.toLowerCase());
       });
     }
   }
