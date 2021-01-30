@@ -8,8 +8,7 @@
 </template>
 
 <script>
-import firebase from "firebase";
-require("firebase/auth");
+import firebase from "firebase/app"
 
 export default {
   name: "Login",
