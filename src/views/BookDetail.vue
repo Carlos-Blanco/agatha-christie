@@ -51,7 +51,7 @@ img {
   border-radius: 50px 50px 0 0;
   padding: 1rem;
   margin-top: 2rem;
-  min-height: calc(100vh - 290px);
+  min-height: calc(100vh - 330px);
   h3 {
     font-size: 2rem;
     font-weight: 900;
