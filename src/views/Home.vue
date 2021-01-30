@@ -2,7 +2,7 @@
   <div class="books-list">
     <div class="input-wrapper">
       <div></div>
-      <input type="text" placeholder="Search" v-model="search" />
+      <input type="text" placeholder="Search" v-model="searchTerm" />
     </div>
     <h2>Trending books</h2>
     <div class="trending-books">
@@ -13,7 +13,7 @@
       />
     </div>
     <h2>Agatha Christie books</h2>
-    <BookList v-for="novel in novels" :key="novel.id" :novel="novel" />
+    <BookList v-for="novel in filterByTerm" :key="novel.id" :novel="novel" />
   </div>
 </template>
 
@@ -33,7 +33,7 @@ export default {
       novels: [],
       selectednovels: [5, 21, 26, 9, 49, 14, 28, 38],
       trendingnovels: [],
-      search: ""
+      searchTerm: ""
     };
   },
   created() {
@@ -46,6 +46,13 @@ export default {
       .catch(error => {
         console.log(error);
       });
+  },
+  computed: {
+    filterByTerm() {
+      return this.novels.filter(novel => {
+        return novel.title.toLowerCase().includes(this.searchTerm);
+      });
+    }
   }
 };
 </script>
