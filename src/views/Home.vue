@@ -4,7 +4,7 @@
       <div></div>
       <input type="text" placeholder="Search" v-model="searchTerm" />
     </div>
-    <div id="trendingBooks">
+    <div v-if="!searchTerm">
       <h2>Trending books</h2>
       <div class="trending-books">
         <TrendingBooks
@@ -51,10 +51,6 @@ export default {
   },
   computed: {
     filterByTerm() {
-      const tendingBooks = document.getElementById('trendingBooks')
-      if (this.searchTerm && this.searchTerm.value) {
-        tendingBooks.style.display = "none";
-      }
       return this.novels.filter(novel => {
         return novel.title.toLowerCase().match(this.searchTerm.toLowerCase());
       });
