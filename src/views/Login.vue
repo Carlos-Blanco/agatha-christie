@@ -38,6 +38,7 @@ export default {
         .signInWithEmailAndPassword(this.email, this.password)
         .then(user => {
           console.log(user);
+          this.$router.push({ name: 'Home'});
         })
         .catch(error => {
           var errorMessage = error.message;
