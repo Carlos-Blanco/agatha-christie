@@ -45,7 +45,6 @@ body {
   }
   a {
     text-decoration: none;
-    color: inherit;
   }
   .btn--back {
     display: block;

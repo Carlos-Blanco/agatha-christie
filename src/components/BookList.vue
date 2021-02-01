@@ -22,6 +22,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a {
+  color: inherit;
+}
 .novel {
   display: flex;
   margin-bottom: 1.5rem;

@@ -64,7 +64,7 @@ img {
     padding: 0.5rem 2rem;
     border-radius: var(--border-radius);
     float: right;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     &:hover {
       background: #ec9616;
     }
