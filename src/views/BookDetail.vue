@@ -5,6 +5,7 @@
       <img :src="novel.image" :alt="novel.title" />
     </div>
     <div class="novel-details">
+      <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
     </div>
@@ -55,6 +56,18 @@ img {
   h3 {
     font-size: 2rem;
     font-weight: 900;
+  }
+  a.btn--buy {
+    background: #f8a427;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: var(--border-radius);
+    float: right;
+    margin-right: 2rem;
+    &:hover {
+      background: #ec9616;
+    }
   }
 }
 </style>

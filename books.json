@@ -1,0 +1,539 @@
+ [
+        {
+            "id": 0,
+            "title": "The Mysterious Affair at Styles",
+            "published": 1920,
+            "description": "Agatha Christie’s first novel, The Mysterious Affair at Styles, was the result of a dare from her sister Madge who challenged her to write a story. The story begins when Hastings is sent back to England from the First World War due to injury and is invited to spend his sick leave at the beautiful Styles Court by his old friend John Cavendish. Here, Hastings meets John’s step-mother, Mrs Inglethorp, and her new husband, Alfred. Despite the tranquil surroundings Hastings begins to realise that all is not right. When Mrs Inglethorp is found poisoned, suspicion falls on the family, and another old friend, Hercule Poirot, is invited to investigate.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Mysterious-Affair-at-Styles.jpeg?alt=media&token=72934079-821c-4263-8ebb-5710aaca6ef2",
+            "link": "https://amzn.to/2Mo17vI"
+        },
+        {
+            "id": 1,
+            "title": "The Secret Adversary",
+            "published": 1922,
+            "description": "Tommy and Tuppence, two young people short of money and restless for excitement, embark on a daring business scheme – Young Adventurers Ltd. Their advertisement says they are ‘willing to do anything, go anywhere’. But their first assignment, for the sinister Mr Whittington, plunges them into more danger than they ever imagined.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Secret-Adversary.jpeg?alt=media&token=4e28baaa-f6ce-4d12-8b76-0afce67a6219",
+            "link": "https://amzn.to/36wKPY5"
+        },
+        {
+            "id": 2,
+            "title": "The Murder on the Links",
+            "published": 1923,
+            "description": "An urgent cry for help brings Poirot to France. But he arrives too late to save his client, whose brutally stabbed body now lies face downwards in a shallow grave on a golf course. But why is the dead man wearing his son’s overcoat? And who was the impassioned love-letter in the pocket for? Before Poirot can answer these questions, the case is turned upside down by the discovery of a second, identically murdered corpse.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Murder-on-the-Links.jpeg?alt=media&token=d40879aa-47d4-4abb-8ebe-d5812f9ccf75",
+            "link": "https://amzn.to/36wm2DK"
+        },
+        {
+            "id": 3,
+            "title": "The Man in the Brown Suit",
+            "published": 1924,
+            "description": "Pretty, young Anne Beddingfield has come to London looking for adventure. But adventure finds her when a strange-smelling man falls off an Underground platform and is electrocuted on the rails. The police verdict is accidental death. But who was the man in the brown suit who examined the body before running away? Armed with only one cryptic clue, Anne is determined to track him down and bring the mysterious killer to justice.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Man-in-the-Brown-Suit.jpeg?alt=media&token=6148c9ae-ce0a-48c0-b5b9-0b03705770f3",
+            "link": "https://amzn.to/2NL75ab"
+        },
+        {
+            "id": 4,
+            "title": "The Secret of Chimneys",
+            "published": 1925,
+            "description": "A young drifter finds more than he bargained for when he agrees to deliver a parcel to an English country house. Little did Anthony Cade suspect that a simple errand on behalf of a friend would make him the centrepiece of a murderous international conspiracy. Someone would stop at nothing to prevent the monarchy being restored in faraway Herzoslovakia. The combined forces of Scotland Yard and the French Surete can do no better than go in circles – until the final murder at Chimneys, the great country estate that yields up an amazing secret.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Secret-of-Chimneys.jpeg?alt=media&token=ba55b183-1aa0-4c00-9005-afbfa85508af",
+            "link": "https://amzn.to/3tfqd0r"
+        },
+        {
+            "id": 5,
+            "title": "The Murder of Roger Ackroyd",
+            "published": 1926,
+            "description": "Known forits startling reveal, this is the book that changed Agatha Christie’s career. Roger Ackroyd was a man who knew too much. He knew the woman he loved had poisoned her first husband. He knew someone was blackmailing her – and now he knew she had taken her own life with a drug overdose. Soon the evening post would let him know who the mystery blackmailer was. But Ackroyd was dead before he’d finished reading it – stabbed through the neck where he sat in the study.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Murder-of-Roger-Ackroyd.jpeg?alt=media&token=9d5a3973-ffb2-47bd-b85b-543a7ac37e20",
+            "link": "https://amzn.to/3anpRfA"
+        },
+        {
+            "id": 6,
+            "title": "The Big Four",
+            "published": 1927,
+            "description": "Framed in the doorway of Poirot’s bedroom stood an uninvited guest, coated from head to foot in dust. The man’s gaunt face stared for a moment, then he swayed and fell. Who was he? Was he suffering from shock or just exhaustion? Above all, what was the significance of the figure 4, scribbled over and over again on a sheet of paper? Poirot finds himself plunged into a world of international intrigue, risking his life to uncover the truth about ‘Number Four’.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Big-Four.jpeg?alt=media&token=f0a7edb9-61f9-4974-9055-7e002fe69c66",
+            "link": "https://amzn.to/3cxgpcm"
+        },
+        {
+            "id": 7,
+            "title": "The Mystery of the Blue Train",
+            "published": 1928,
+            "description": "Aboard the luxurious Blue Train running from London to the Riviera, pampered millionaire's daughter Ruth Kettering is murdered, her expensive jewels stolen. But Poirot is at hand to solve the case.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Mystery-of-the-Blue-Train.jpeg?alt=media&token=9a047c19-4f00-42a4-8f7e-faf5259c7f98",
+            "link": "https://amzn.to/3tdJBLc"
+        },
+        {
+            "id": 8,
+            "title": "The Seven Dials Mystery",
+            "published": 1929,
+            "description": "Gerry Wade had proved himself to be a champion sleeper; so the other house guests decided to play a practical joke on him. Eight alarm clocks were set to go off, one after the other, starting at 6.30 a.m. But when morning arrived, one clock was missing and the prank had backfired with tragic consequences. For Jimmy Thesiger in particular, the words ‘Seven Dials’ were to take on a new and chilling significance.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Seven-Dials-Mystery.jpeg?alt=media&token=2fb2851e-47d0-4049-aa1d-5d43eab91abf",
+            "link": "https://amzn.to/36xdPyY"
+        },
+        {
+            "id": 9,
+            "title": "The Murder at the Vicarage",
+            "published": 1930,
+            "description": "’Anyone who murdered Colonel Protheroe,’ declared the parson, brandishing a carving knife above a joint of roast beef, ‘would be doing the world at large a favour!’ It was a careless remark for a man of the cloth. And one which was to come back and haunt the clergyman just a few hours later – when the colonel was found shot dead in the clergyman’s study. But as Miss Marple soon discovers, the whole village seems to have had a motive to kill Colonel Protheroe.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Murder-at-the-Vicarage.jpeg?alt=media&token=7b82750d-82fc-4f35-a0a1-6cdb7beffaf4",
+            "link": "https://amzn.to/3th3wcc"
+        },
+        {
+            "id": 10,
+            "title": "Peril At End House",
+            "published": 1931,
+            "description": "Nick Buckley was an unusual name for a pretty young woman. But then she had led an unusual life. First, on a treacherous Cornish hillside, the brakes on her car failed. Then, on a coastal path, a falling boulder missed her by inches. Later, an oil painting fell and almost crushed her in bed. Upon discovering a bullet-hole in Nick’s sun hat, Hercule Poirot decides the girl needs his protection. At the same time, he begins to unravel the mystery of a murder that hasn’t been committed. Yet.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Peril-at-End-House.jpeg?alt=media&token=395ee06c-9364-482e-a581-89c5688330b2",
+            "link": "https://amzn.to/3as1RHY"
+        },
+        {
+            "id": 11,
+            "title": "The Sittaford Mystery",
+            "published": 1931,
+            "description": "In a remote house in the middle of Dartmoor, six shadowy figures huddle around a small table for a seance. Tension rises as the spirits spell out a chilling message: ‘Captain Trevelyan… dead… murder.’ Is this black magic or simply a macabre joke? The only way to be certain is to locate Captain Trevelyan. Unfortunately, his home is six miles away and, with snow drifts blocking the roads, someone will have to make the journey on foot.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Sittaford-Mystery.jpeg?alt=media&token=13318702-2218-421f-9bf1-7c37591197b2",
+            "link": "https://amzn.to/3pEU28t"
+        },
+        {
+            "id": 12,
+            "title": "Lord Edgware Dies",
+            "published": 1933,
+            "description": "Poirot had been present when Jane bragged of her plan to ‘get rid of’ her estranged husband. Now the monstrous man was dead. And yet the great Belgian detective couldn’t help feeling that he was being taken for a ride. After all, how could Jane have stabbed Lord Edgware to death in his library at exactly the same time she was seen dining with friends? And what could be her motive now that the aristocrat had finally granted her a divorce?",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Lord-Edgware-Dies.jpeg?alt=media&token=c5f28707-b0be-4c9d-b13b-aa20e6806591",
+            "link": "https://amzn.to/3tfpBYH"
+        },
+        {
+            "id": 13,
+            "title": "Why Didn't They Ask Evans?",
+            "published": 1933,
+            "description": "While playing an erratic round of golf, Bobby Jones slices his ball over the edge of a cliff. His ball is lost, but on the rocks below he finds the crumpled body of a dying man. With his final breath the man opens his eyes and says, ‘Why didn’t they ask Evans?’ Haunted by these words, Bobby and his vivacious companion, Frankie, set out to solve a mystery that will bring them into mortal danger.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Why-Didnt-They-Ask-Evans-v2.jpeg?alt=media&token=6c3ccca8-af33-4599-9a7e-ce97ed6b41e6",
+            "link": "https://amzn.to/3cwYKBd"
+        },
+        {
+            "id": 14,
+            "title": "Murder on the Orient Express",
+            "published": 1934,
+            "description": "Murder on the Orient Express is undoubtedly one of Agatha Christie's greatest mystery novels. Just after midnight, a snowdrift stops the Orient Express in its tracks. The luxurious train is surprisingly full for the time of the year, but by the morning it is one passenger fewer. An American tycoon lies dead in his compartment, stabbed a dozen times, his door locked from the inside. Isolated and with a killer in their midst, detective Hercule Poirot must identify the murderer – in case he or she decides to strike again.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Murder-on-the-Orient-Express.jpg?alt=media&token=158b4e64-e76c-42ac-8362-1628e79233dc",
+            "link": "https://amzn.to/2MnrL7X"
+        },
+        {
+            "id": 15,
+            "title": "Three Act Tragedy",
+            "published": 1934,
+            "description": "At an apparently respectable dinner party, a vicar is the first to die… Thirteen guests arrived at dinner at the actor’s house. It was to be a particularly unlucky evening for the mild-mannered Reverend Stephen Babbington, who choked on his cocktail, went into convulsions and died. But when his martini glass was sent for chemical analysis, there was no trace of poison – just as Poirot had predicted. Even more troubling for the great detective, there was absolutely no motive.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Three-Act-Tragedy.jpeg?alt=media&token=e2645668-5441-49e5-90bf-b8ec319f3662",
+            "link": "https://amzn.to/3r3UI7E"
+        },
+        {
+            "id": 16,
+            "title": "Death In The Clouds",
+            "published": 1935,
+            "description": "From seat No.9, Hercule Poirot was ideally placed to observe his fellow air passengers. Over to his right sat a pretty young woman, clearly infatuated with the man opposite; ahead, in seat No.13, sat a Countess with a poorly-concealed cocaine habit; across the gangway in seat No.8, a detective writer was being troubled by an aggressive wasp. What Poirot did not yet realize was that behind him, in seat No.2, sat the slumped, lifeless body of a woman.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Death-in-the-Clouds.jpeg?alt=media&token=cc8e2b7e-2942-4bc3-b903-ab7fcf96c2ef",
+            "link": "https://amzn.to/36uRi5O"
+        },
+        {
+            "id": 17,
+            "title": "Murder in Mesopotamia",
+            "published": 1935,
+            "description": "When Amy Leatheran travels to an ancient site in the Iraqi desert to nurse the wife of a celebrated archaeologist, events prove stranger than she has ever imagined. Her patient’s bizarre visions and nervous terror seem unfounded, but as the oppressive tension in the air thickens, events come to a terrible climax – in murder. With one spot of blood as his only clue, Hercule Poirot must embark on a journey across the desert to unravel a mystery which taxes even his remarkable powers.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Murder-in-Mesopotamia.jpeg?alt=media&token=0b833bf9-60f0-40af-90b7-2f74815b4c0c",
+            "link": "https://amzn.to/36wklWU"
+        },
+        {
+            "id": 18,
+            "title": "The ABC Murders",
+            "published": 1936,
+            "description": "The ABC Murders is a surprising novel tackling the modern figure of the serial killer and the psychology behind it. There’s a serial killer on the loose, working his way through the alphabet - and the whole country is in a state of panic. A is for Mrs Ascher in Andover, B is for Betty Barnard in Bexhill, C is for Sir Carmichael Clarke in Churston. With each murder, the killer is getting more confident – but leaving a trail of deliberate clues to taunt the proud Hercule Poirot might just prove to be the first, and fatal mistake.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-ABC-Murders.jpeg?alt=media&token=6cb793c1-f597-4d2e-a3a2-9d6a3d131345",
+            "link": "https://amzn.to/3th4DIP"
+        },
+        {
+            "id": 19,
+            "title": "Cards on the Table",
+            "published": 1936,
+            "description": "A flamboyant party host is murdered in full view of a roomful of bridge players… Mr Shaitana was famous as a flamboyant party host. Nevertheless, he was a man of whom everybody was a little afraid. So, when he boasted to Poirot that he considered murder an art form, the detective had some reservations about accepting a party invitation to view Shaitana’s private collection. Indeed, what began as an absorbing evening of bridge was to turn into a more dangerous game altogether…",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Cards-on-the-Table.jpeg?alt=media&token=8361be61-dcfd-4346-81d8-20160dc1f0f5",
+            "link": "https://amzn.to/36uR4vu"
+        },
+        {
+            "id": 20,
+            "title": "Dumb Witness",
+            "published": 1937,
+            "description": "An elderly spinster has been poisoned in her country home. Everyone blamed Emily’s accident on a rubber ball left on the stairs by her frisky terrier. But the more she thought about her fall, the more convinced she became that one of her relatives was trying to kill her. On April 17th she wrote her suspicions in a letter to Hercule Poirot. Mysteriously he didn’t receive the letter until June 28th… by which time Emily was already dead.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Dumb-Witness.jpeg?alt=media&token=853c8948-762a-4c56-bcdb-d3d9173e0165",
+            "link": "https://amzn.to/3pFZR5o"
+        },
+        {
+            "id": 21,
+            "title": "Death On The Nile",
+            "published": 1937,
+            "description": "Agatha Christie's most daring travel mystery. The tranquillity of a cruise along the Nile is shattered by the discovery that Linnet Ridgeway has been shot through the head. She was young, stylish and beautiful, a girl who had everything – until she lost her life. Hercule Poirot recalls an earlier outburst by a fellow passenger: ‘I’d like to put my dear little pistol against her head and just press the trigger.’ Yet in this exotic setting’ nothing is ever quite what it seems…",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Death-on-the-Nile.jpg?alt=media&token=123e1fa2-2fd7-4e95-b3d3-7788bc4c3114",
+            "link": "https://amzn.to/36v6WhE"
+        },
+        {
+            "id": 22,
+            "title": "Appointment With Death",
+            "published": 1937,
+            "description": "Among the towering red cliffs of Petra, like some monstrous swollen Buddha, sat the corpse of Mrs Boynton. A tiny puncture mark on her wrist was the only sign of the fatal injection that had killed her. With only 24 hours available to solve the mystery, Hercule Poirot recalled a chance remark he’d overheard back in Jerusalem: ‘You see, don’t you, that she’s got to be killed?’ Mrs Boynton was, indeed, the most detestable woman he’d ever met.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Appointment-With-Death.jpeg?alt=media&token=06cc6d55-6365-4ae3-b7ad-ea8d32b16fe1",
+            "link": "https://amzn.to/2NVUOQt"
+        },
+        {
+            "id": 23,
+            "title": "The Incredible Theft",
+            "published": 1937,
+            "description": "Lord Charles Mayfield is throwing a house party to conceal a meeting to discuss top-secret plans for a fighter plane, as well as catching out a spy in the process. But when the plans are snatched only Hercule Poirot can solve the mystery... From Murder in the Mews.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Murder-in-the-Mews.jpeg?alt=media&token=8a55f026-0182-4e7f-9f8c-d1b916a359c7",
+            "link": "https://amzn.to/3tjfCld"
+        },
+        {
+            "id": 24,
+            "title": "Hercule Poirot's Christmas",
+            "published": 1938,
+            "description": "It is Christmas Eve. The Lee family reunion is shattered by a deafening crash of furniture, followed by a high-pitched wailing scream. Upstairs, the tyrannical Simeon Lee lies dead in a pool of blood, his throat slashed. But when Hercule Poirot, who is staying in the village with a friend for Christmas, offers to assist, he finds an atmosphere not of mourning but of mutual suspicion. It seems everyone had their own reason to hate the old man.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Hercule-Poirots-Christmas.jpeg?alt=media&token=8d22939d-d722-4672-8018-c3bf3139d339",
+            "link": "https://amzn.to/3cIGpSb"
+        },
+        {
+            "id": 25,
+            "title": "Murder is Easy",
+            "published": 1938,
+            "description": "In a quiet English village, a killer is about to strike. Again and again. Officer Luke Fitzwilliam is on a train to London when he meets a strange woman. She claims there is a serial killer in the quiet village of Wychwood. He has already taken the lives of three people and is about claim his fourth victim. Fitzwilliam dismisses this as the ramblings of an old woman. But within hours she is found dead. Crushed by a passing car. And then the fourth victim is found. Each death looks like an accident. But in Wychwood nothing is as it appears....",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Murder-is-Easy.jpeg?alt=media&token=ebd415b5-05a0-4787-bcc0-0bb00aa78bfe",
+            "link": "https://amzn.to/36tlhv2"
+        },
+        {
+            "id": 26,
+            "title": "And Then There Were None",
+            "published": 1939,
+            "description": "1939. Europe teeters on the brink of war. Ten strangers are invited to Soldier Island, an isolated rock near the Devon coast. Cut off from the mainland, with their generous hosts Mr and Mrs U.N. Owen mysteriously absent, they are each accused of a terrible crime. When one of the party dies suddenly they realise they may be harbouring a murderer among their number. The tension escalates as the survivors realise the killer is not only among them but is preparing to strike again… and again...",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/And-Then-There-Were-None.jpeg?alt=media&token=b46e4849-c40b-4593-8769-949832fc6c7a",
+            "link": "https://amzn.to/3rchxGh"
+        },
+        {
+            "id": 27,
+            "title": "Sad Cypress",
+            "published": 1939,
+            "description": "An elderly stroke victim dies without having arranged a will. Beautiful young Elinor Carlisle stood serenely in the dock, accused of the murder of Mary Gerrard, her rival in love. The evidence was damning: only Elinor had the motive, the opportunity and the means to administer the fatal poison. Yet, inside the hostile courtroom, only one man still presumed Elinor was innocent until proven guilty: Hercule Poirot was all that stood between Elinor and the gallows.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Sad-Cypress.jpeg?alt=media&token=cd90c952-604f-4987-bee3-1b8a95c7c33b",
+            "link": "https://amzn.to/36xyD9I"
+        },
+        {
+            "id": 28,
+            "title": "Evil Under The Sun",
+            "published": 1940,
+            "description": "It was not unusual to find the beautiful bronzed body of the sun-loving Arlena Stuart stretched out on a beach, face down. Only, on this occasion, there was no sun… she had been strangled. Ever since Arlena’s arrival at the resort, Hercule Poirot had detected sexual tension in the seaside air. But could this apparent ‘crime of passion’ have been something more evil and premeditated altogether?",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Evil-Under-the-Sun.jpeg?alt=media&token=8a477826-f1ab-4b9e-9c1d-5a3a7b235f6f",
+            "link": "https://amzn.to/3tjPrKU"
+        },
+        {
+            "id": 29,
+            "title": "One, Two, Buckle My Shoe",
+            "published": 1940,
+            "description": "The dentist was found with a blackened hole below his right temple. A pistol lay on the floor near his outflung right hand. Later, one of his patients was found dead from a lethal dose of local anaesthetic. A clear case of murder and suicide. But why would a dentist commit a crime in the middle of a busy day of appointments? A shoe buckle holds the key to the mystery. Now – in the words of the rhyme – can Poirot pick up the sticks and lay them straight?",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/One-Two-Buckle-My-Shoe.jpeg?alt=media&token=1358f349-5a85-41e9-9960-812d7c0a422d",
+            "link": "https://amzn.to/3alNu8h"
+        },
+        {
+            "id": 30,
+            "title": "N or M?",
+            "published": 1941,
+            "description": "It is World War II, and while the RAF struggles to keep the Luftwaffe at bay, Britain faces an even more sinister threat from ‘the enemy within’ – Nazis posing as ordinary citizens. With pressure mounting, the Intelligence service appoints two unlikely spies, Tommy and Tuppence Beresford. Their mission: to seek out a man and a woman from among the colourful guests at Sans Souci, a seaside hotel. But this assignment is no stroll along the promenade. After all, N and M have just murdered Britain’s finest agent.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/N-or-M.jpeg?alt=media&token=27f548e9-b95d-4f71-b2ee-9b6719721381",
+            "link": "https://amzn.to/3oxfwmk"
+        },
+        {
+            "id": 31,
+            "title": "Five Little Pigs",
+            "published": 1942,
+            "description": "Beautiful Caroline Crale was convicted of poisoning her husband, yet there were five other suspects: Philip Blake (the stockbroker) who went to market; Meredith Blake (the amateur herbalist) who stayed at home; Elsa Greer (the three-time divorcee) who had roast beef; Cecilia Williams (the devoted governess) who had none; and Angela Warren (the disfigured sister) who cried ‘wee wee wee’ all the way home. It is sixteen years later, but Hercule Poirot just can’t get that nursery rhyme out of his mind.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Five-Little-Pigs.jpeg?alt=media&token=da10e246-9bae-4080-b3d7-12e8ea6d62f4",
+            "link": "https://amzn.to/3rcgXs5"
+        },
+        {
+            "id": 32,
+            "title": "The Body in the Library",
+            "published": 1942,
+            "description": "It’s seven in the morning. The Bantrys wake to find the body of a young woman in their library. She is wearing evening dress and heavy make-up, which is now smeared across her cheeks. But who is she? How did she get there? And what is the connection with another dead girl, whose charred remains are later discovered in an abandoned quarry? The respectable Bantrys invite Miss Marple to solve the mystery… before tongues start to wag.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Body-in-the-Library.jpeg?alt=media&token=503e4202-ae9c-42b2-9ce1-71e1e9e3228b",
+            "link": "https://amzn.to/36x0GpI"
+        },
+        {
+            "id": 33,
+            "title": "The Moving Finger",
+            "published": 1942,
+            "description": "A spate of poison pen letters wreaks havoc on an English village. Once a place of trust, now all inhabitants are full of accusations. Who could be writing the letters and why?",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Moving-Finger.jpeg?alt=media&token=4864c3db-08f8-4409-95f0-a95910918bd6",
+            "link": "https://amzn.to/3r92UDy"
+        },
+        {
+            "id": 34,
+            "title": "Towards Zero",
+            "published": 1944,
+            "description": "An elderly widow is murdered at a clifftop seaside house… What is the connection between a failed suicide attempt, a wrongful accusation of theft against a schoolgirl, and the romantic life of a famous tennis player? To the casual observer, apparently nothing. But when a houseparty gathers at Gull’s Point, the seaside home of an elderly widow, earlier events come to a dramatic head. It’s all part of a carefully paid plan – for murder.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Towards-Zero.jpeg?alt=media&token=022457e0-1f9a-4de6-9c7e-6ae33185110f",
+            "link": "https://amzn.to/3alNa9z"
+        },
+        {
+            "id": 35,
+            "title": "Death Comes As The End",
+            "published": 1944,
+            "description": "It is Egypt, 2000 BC, where death gives meaning to life. At the foot of a cliff lies the broken, twisted body of Nofret, concubine to a Ka-priest. Young, beautiful and venomous, most agree that she deserved to die like a snake. Yet Renisenb, the priest’s daughter, believes that the woman’s death was not fate, but murder. Increasingly, she becomes convinced that the source of evil lurks within her own father’s household. As the wife of an eminent archaeologist, Agatha Christie took part in several expeditions to the Middle East. Drawing upon this experience and exhaustive research, she wrote this serial killer mystery laid in Egypt 4000 years ago.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Death-Comes-as-the-End.jpeg?alt=media&token=136aebc2-e12d-4d79-aefc-bb5928b0674e",
+            "link": "https://amzn.to/3ti9zwX"
+        },
+        {
+            "id": 36,
+            "title": "Sparkling Cyanide",
+            "published": 1944,
+            "description": "A beautiful heiress is fatally poisoned in a West End restaurant. Six people sit down to dinner at a table laid for seven. In front of the empty place is a sprig of rosemary – in solemn memory of Rosemary Barton who died at the same table exactly one year previously. No one present on that fateful night would ever forget the woman’s face, contorted beyond recognition – or what they remembered about her astonishing life.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Sparkling-Cyanide.jpeg?alt=media&token=fd5448dd-b2a9-4198-9c76-203544b75fae",
+            "link": "https://amzn.to/3annauu"
+        },
+        {
+            "id": 37,
+            "title": "The Hollow",
+            "published": 1946,
+            "description": "Lucy Angkatell invited Hercule Poirot to lunch. To tease the great detective, her guests stage a mock murder beside the swimming pool. Unfortunately, the victim plays the scene for real. As his blood drips into the water, John Christow gasps one final word: ‘Henrietta’. In the confusion, a gun sinks to the bottom of the pool. Poirot’s enquiries reveal a complex web of romantic attachments. It seems everyone in the drama is a suspect – and each a victim of love.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Hollow.jpeg?alt=media&token=066ded4f-e908-471a-b25c-52c2fda9a860",
+            "link": "https://amzn.to/39CRYID"
+        },
+        {
+            "id": 38,
+            "title": "Crooked House",
+            "published": 1948,
+            "description": "A wealthy Greek businessman is found dead at his London home… The Leonides were one big happy family living in a sprawling, ramshackle mansion. That was until the head of the household, Aristide, was murdered with a fatal barbiturate injection. Suspicion naturally falls on the old man’s young widow, fifty years his junior. But the murderer has reckoned without the tenacity of Charles Hayward, fiance of the late millionaire’s granddaughter…",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Crooked-House.jpeg?alt=media&token=fa5b669a-14a9-427e-b0e1-1d010a4dfffd",
+            "link": "https://amzn.to/3cuqd6C"
+        },
+        {
+            "id": 39,
+            "title": "Taken at the Flood",
+            "published": 1948,
+            "description": "A few weeks after marrying an attractive young widow, Gordon Cloade is tragically killed by a bomb blast in the London blitz. Overnight, the former Mrs Underhay finds herself in sole possession of the Cloade family fortune. Shortly afterwards, Hercule Poirot receives a visit from the dead man’s sister-in-law who claims she has been warned by ‘spirits’ that Mrs Underhay’s first husband is still alive. Poirot has his suspicions when he is asked to find a missing person guided only by the spirit world. Yet what mystifies Poirot most is the woman’s true motive for approaching him.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Taken-at-the-Flood.jpeg?alt=media&token=feefa956-5816-4f23-8b4e-1d88e8d84a55",
+            "link": "https://amzn.to/3cuMxNy"
+        },
+        {
+            "id": 40,
+            "title": "A Murder is Announced",
+            "published": 1950,
+            "description": "Promoted on both sides of the Atlantic as Agatha Christie's 50th book and published in 1950 by William Collins, A Murder is Announced is a staple of crime fiction and is often considered the best of all the Miss Marple novels. The villagers of Chipping Cleghorn, including Jane Marple, are agog with curiosity over an advertisement in the local gazette which reads: ‘A murder is announced and will take place on Friday October 29th, at Little Paddocks at 6.30 p.m.’ A childish practical joke? Or a hoax intended to scare poor Letitia Blacklock? Unable to resist the mysterious invitation, a crowd begins to gather at Little Paddocks at the appointed time when, without warning, the lights go out…",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/A-Murder-is-Announced-PB.jpg?alt=media&token=233e66a5-b8eb-4f29-b643-74722bc76fa4",
+            "link": "https://amzn.to/3tk5yse"
+        },
+        {
+            "id": 41,
+            "title": "They Came to Baghdad",
+            "published": 1951,
+            "description": "Baghdad is the chosen location for a secret summit of superpowers, concerned but not convinced, about the development of an, as yet, unidentified and undescribed secret weapon. Only one man has the proof that can confirm the nature of this fantastic secret weapon – a British agent named Carmichael. Unfortunately the criminal organisation responsible for the weapon’s development will stop at nothing to prevent him entering Baghdad and presenting his proof to the assembled delegates. Can Carmichael enter the city against such odds? Into this explosive situations appears Victoria Jones, a girl with a yearning for adventure who gets more than she bargains for when a wounded Carmichael dies in her arms in her hotel room. Now, if only she could make sense of his last words ‘…Lucifer…Basrah…Lefarge…’",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/They-Came-to-Baghdad.jpeg?alt=media&token=ca775844-fc4f-483e-b13f-c10278bf6d6e",
+            "link": "https://amzn.to/3ti97if"
+        },
+        {
+            "id": 42,
+            "title": "They Do it with Mirrors",
+            "published": 1952,
+            "description": "Miss Marple senses danger when she visits a friend living in a Victorian mansion which doubles as a rehabilitiation centre for delinquents. Her fears are confirmed when a youth fires a revolver at the administrator, Lewis Serrocold. Neither is injured. But a mysterious visitor, Mr Gilbrandsen, is less fortunate – shot dead simultaneously in another part of the building. Pure coincidence? Miss Marple thinks not, and vows to discover the real reason for Mr Gilbrandsen’s visit.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/They-Do-It-With-Mirrors.jpeg?alt=media&token=b019e80f-4053-407c-a521-b958a44efed6",
+            "link": "https://amzn.to/3amqWnY"
+        },
+        {
+            "id": 43,
+            "title": "Mrs McGinty's Dead",
+            "published": 1952,
+            "description": "‘Mrs McGinty’s dead!’ ‘How did she die?’ ‘Down on one knee, just like I!’ The old children’s game now seemed rather tasteless. The real Mrs McGinty was killed by a crushing blow to the back of the head and her pitifully small savings were stolen. Suspicion falls immediately on her lodger, hard up and out of a job. Hercule Poirot has other ideas – unaware that his own life is now in great danger.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Mrs-McGintys-Dead.jpeg?alt=media&token=d67683d8-18e1-4c5e-aedb-fdae79e9d24a",
+            "link": "https://amzn.to/3oDGskm"
+        },
+        {
+            "id": 44,
+            "title": "After the Funeral",
+            "published": 1953,
+            "description": "The master of a Victorian mansion dies suddenly – and his sister is convinced it was murder…. When Cora is savagely murdered with a hatchet, the extraordinary remark she made the previous day at her brother Richard’s funeral suddenly takes on a chilling significance. At the reading of Richard’s will, Cora was clearly heard to say: ‘It’s been hushed up very nicely, hasn’t it…But he was murdered, wasn’t he?’ In desperation, the family solicitor turns to Hercule Poirot to unravel the mystery.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/After-the-Funeral.jpeg?alt=media&token=2f5804e9-0d08-45da-b26d-75750d6b542b",
+            "link": "https://amzn.to/3tr4cfg"
+        },
+        {
+            "id": 45,
+            "title": "A Pocket Full of Rye",
+            "published": 1953,
+            "description": "A series of murders disguised within a nursery rhyme, Miss Marple’s on the case with two of Agatha Christie’s favourite themes, this time following the rhyme 'Sing a Song of Sixpence'. A handful of grain is found in the pocket of a murdered businessman… Rex Fortescue, king of a financial empire, was sipping tea in his ‘counting house’ when he suffered an agonising and sudden death. On later inspection, the pockets of the deceased were found to contain traces of cereals. Yet, it was the incident in the parlour which confirmed Jane Marple’s suspicion that here she was looking at a case of crime by rhyme…",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/A-Pocket-Full-of-Rye.jpeg?alt=media&token=fda04b00-7dbd-4699-82b5-6c6d1c081448",
+            "link": "https://amzn.to/36zddcd"
+        },
+        {
+            "id": 46,
+            "title": "Destination Unknown",
+            "published": 1954,
+            "description": "A young woman with nothing to live for is persuaded to embark on a suicide mission to find a missing scientist. When a number of leading scientists disappear without trace, concern grows within the international intelligence community. Are they being kidnapped? Blackmailed? Brainwashed? One woman appears to have the key to the mystery. Unfortunately, Olive Betteron now lies in a hospital bed, dying from injuries sustained in a Moroccan plane crash. Meanwhile, in a Casablanca hotel room, Hilary Craven prepares to take her own life. But her suicide attempt is about to be interrupted by a man who will offer her an altogether more thrilling way to die.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Destination-Unknown.jpeg?alt=media&token=1c562124-3ce0-430e-9845-fb46736de7ad",
+            "link": "https://amzn.to/3tg3Mbf"
+        },
+        {
+            "id": 47,
+            "title": "Hickory Dickory Dock",
+            "published": 1955,
+            "description": "An outbreak of kleptomania at a student hostel was not normally the sort of crime that aroused Hercule Poirot’s interest. But when he saw the list of stolen and vandalized items – including a stethoscope, some old flannel trousers, a box of chocolates, a slashed rucksack and a diamond ring found in a bowl of soup – he congratulated the warden, Mrs Hubbard, on a ‘unique and beautiful problem’. The list made absolutely no sense at all. But, reasoned Poirot, if this was merely a petty thief at work, why was everyone at the hostel so frightened?",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Hickory-Dickory-Dock.jpeg?alt=media&token=73d2f06a-e6cd-4f9b-8a6d-f5e236f2ead7",
+            "link": "https://amzn.to/3rcVJKM"
+        },
+        {
+            "id": 48,
+            "title": "Dead Man's Folly",
+            "published": 1956,
+            "description": "A charity murder game at a Devon house turns into the real thing. Sir George and Lady Stubbs, the hosts of a village fête, hit upon the novel idea of staging a mock murder mystery. In good faith, Ariadne Oliver, the well known crime writer, agrees to organise their murder hunt. Despite weeks of meticulous planning, at the last minute Ariadne calls her friend Hercule Poirot for his expert assistance. Instinctively, she senses that something sinister is about to happen…Beware – nobody is quite what they seem!",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Dead-Mans-Folly.jpeg?alt=media&token=bf54f4a8-f62c-43cc-b1bd-ea2e8138132f",
+            "link": "https://amzn.to/3tjKUYU"
+        },
+        {
+            "id": 49,
+            "title": "4.50 From Paddington",
+            "published": 1957,
+            "description": "For an instant the two trains ran together, side by side. In that frozen moment, Elspeth witnessed a murder. Helplessly, she stared out of her carriage window as a man remorselessly tightened his grip around a woman’s throat. The body crumpled. Then the other train drew away. But who, apart from Miss Marple, would take her story seriously? After all, there were no suspects, no other witnesses… and no corpse.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/4-50-from-Paddington.jpg?alt=media&token=4605f590-3eee-4e12-9c1e-ab9c625bc0cf",
+            "link": "https://amzn.to/3aseUJy"
+        },
+        {
+            "id": 50,
+            "title": "Ordeal By Innocence",
+            "published": 1958,
+            "description": "The Argyle family is far from pleased to discover one of its number has been posthumously pardoned for murder – if Jacko Argyle didn’t kill his mother, who did? Dr. Arthur Calgary takes a ferry across the Rubicon River to Sunny Point, the home of the Argyle family. Two years before, the matriarch of the family was murdered and a son, Jack, was convicted and sentenced to spend the rest of his life in prison. Throughout the trial Jack had maintained his innocence, claiming he was hitchhiking on the night of the murder and he had been picked up by a middle-aged man in a dark car. Unable to locate this mystery man the police viewed Jack’s as a lie. Calgary was the stranger in question, but he arrives too late for Jack – who succumbs to pneumonia after serving just six months of his sentence. Feeling a sense of duty to the Argyles, Calgary is surprised when his revelation has a disturbing effect on the family – it means one of the family is a murderer.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Ordeal-by-Innocence.jpg?alt=media&token=ebee9241-f404-4a0d-8b71-23334e3cf2ce",
+            "link": "https://amzn.to/36wXaf0"
+        },
+        {
+            "id": 51,
+            "title": "Cat Among the Pigeons",
+            "published": 1959,
+            "description": "Unpleasant things are going on in an exclusive school for girls – things like murder… Late one night, two teachers investigate a mysterious flashing light in the sports pavilion, while the rest of the school sleeps. There, among the lacrosse sticks, they stumble upon the body of the unpopular games mistress – shot through the heart from point blank range. The school is thrown into chaos when the ‘cat’ strikes again. Unfortunately, schoolgirl Julia Upjohn knows too much. In particular, she knows that without Hercule Poirot’s help, she will be the next victim…",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Cat-Among-the-Pigeons.jpeg?alt=media&token=0f26bc89-88d9-45ab-a681-ad55ce4f7d4f",
+            "link": "https://amzn.to/3aiBPqM"
+        },
+        {
+            "id": 52,
+            "title": "The Pale Horse",
+            "published": 1961,
+            "description": "To understand the strange goings on at The Pale Horse Inn, Mark Easterbrook knew he had to begin at the beginning. But where exactly was the beginning? Was it the savage blow to the back of Father Gorman’s head? Or was it when the priest’s assailant searched him so roughly he tore the clergyman’s cassock? Or could it have been the priest’s visit, just minutes before, to a woman on her death bed? Or was there a deeper significance to the violent squabble which Mark Easterbrook had himself witnessed earlier? Wherever the beginning lies, Mark and his sidekick, Ginger Corrigan, may soon have cause to wish they’d never found it.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Pale-Horse.jpg?alt=media&token=6ff8cf0f-1adc-4f31-83e5-ab72805a2337",
+            "link": "https://amzn.to/3akPLAI"
+        },
+        {
+            "id": 53,
+            "title": "The Mirror Crack'd from Side to Side",
+            "published": 1962,
+            "description": "One minute, silly Heather Badcock had been gabbling on at her movie idol, the glamorous Marina Gregg. The next, Heather suffered a massive seizure. But for whom was the deadly poison really intended? Marina’s frozen expression suggested she had witnessed something horrific. But, while others searched for material evidence, Jane Marple conducted a very different investigation – into human nature.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Mirror-Crackd-From-Side-to-Side.jpeg?alt=media&token=48c6b105-035d-41b3-bdd2-109a97b216c0",
+            "link": "https://amzn.to/3cz1ZIu"
+        },
+        {
+            "id": 54,
+            "title": "The Clocks",
+            "published": 1963,
+            "description": "As instructed, stenographer Sheila Webb let herself into the house at 19 Wilbraham Crescent. It was then that she made a grisly discovery: the body of a dead man sprawled across the living room floor. What intrigued Poirot about the case was the time factor. Although in a state of shock, Sheila clearly remembered having heard a cuckoo clock strike three o’clock. Yet, the four other clocks in the living room all showed the time as 4.13. Even more strangely, only one of these clocks belonged to the owner of the house.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Clocks.jpeg?alt=media&token=bad0e611-2b2a-4789-be3a-1322e396630a",
+            "link": "https://amzn.to/2NXfp71"
+        },
+        {
+            "id": 55,
+            "title": "A Caribbean Mystery",
+            "published": 1964,
+            "description": "An exotic holiday for Miss Marple is ruined when a retired major is killed… As Miss Marple sat basking in the Caribbean sunshine she felt mildly discontented with life. True, the warmth eased her rheumatism, but here in paradise nothing ever happened. Eventually, her interest was aroused by an old soldier’s yarn about a strange coincidence. Infuriatingly, just as he was about to show her an astonishing photograph, the Major’s attention wandered. He never did finish the story.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/A-Caribbean-Mystery.jpeg?alt=media&token=4ad8026d-60aa-4ddf-8a34-45a3c537d874",
+            "link": "https://amzn.to/2MgA3yA"
+        },
+        {
+            "id": 56,
+            "title": "At Bertram's Hotel",
+            "published": 1965,
+            "description": "An old-fashioned London Hotel is not quite as reputable as it makes out… When Miss Marple comes up from the country for a holiday in London, she finds what she’s looking for at Bertram’s Hotel: traditional decor, impeccable service and an unmistakable atmosphere of danger behind the highly polished veneer. Yet, not even Miss Marple can foresee the violent chain of events set in motion when an eccentric guest makes his way to the airport on the wrong day…",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/At-Betrams-Hotel.jpeg?alt=media&token=864b8c97-0e41-46c6-ac1c-aae46406deb8",
+            "link": "https://amzn.to/3crTsHr"
+        },
+        {
+            "id": 57,
+            "title": "Third Girl",
+            "published": 1966,
+            "description": "Three young women share a London flat. The first is a coolly efficient personal secretary; the second is an artist; and the third interrupts Hercule Poirot’s breakfast of brioche and hot chocolate insisting that she is a murderer – and then promptly disappears. Slowly, Poirot learns of the rumours surrounding the mysterious third girl, her family – and her disappearance. Yet hard evidence is needed before the great detective can pronounce her guilty, innocent or insane…",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Third-Girl.jpeg?alt=media&token=fa632a3a-22b6-432f-8530-3d4b13a724bb",
+            "link": "https://amzn.to/36v2FuC"
+        },
+        {
+            "id": 58,
+            "title": "Endless Night",
+            "published": 1967,
+            "description": "Gipsy’s Acre was a truly beautiful upland site with views out to sea – and in Michael Rogers it stirred a child-like fantasy. There, amongst the dark fir trees, he planned to build a house, find a girl and live happily ever after. Yet, as he left the village, a shadow of menace hung over the land. For this was the place where accidents happened. Perhaps Michael should have heeded the locals’ warnings: ‘There’s no luck for them as meddles with Gipsy’s Acre.’ Michael Rogers is a man who is about to learn the true meaning of the old saying ‘In my end is my beginning.’",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Endless-Night.jpeg?alt=media&token=50e330da-806a-4d35-b7f9-468da34fd843",
+            "link": "https://amzn.to/3ti6YTJ"
+        },
+        {
+            "id": 59,
+            "title": "By The Pricking Of My Thumbs",
+            "published": 1968,
+            "description": "An old woman in a nursing home speaks of a child buried behind the fireplace… When Tommy and Tuppence visited an elderly aunt in her gothic nursing home, they thought nothing of her mistrust of the doctors; after all, Ada was a very difficult old lady. But when Mrs Lockett mentioned a poisoned mushroom stew and Mrs Lancaster talked about ‘something behind the fireplace’, Tommy and Tuppence found themselves caught up in an unexpected adventure involving possible black magic…",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/By-the-Pricking-of-My-Thumbs.jpg?alt=media&token=441dce7a-29f9-40c2-ad49-f769c6462bb4",
+            "link": "https://amzn.to/2MgAjO4"
+        },
+        {
+            "id": 60,
+            "title": "Hallowe'en Party",
+            "published": 1969,
+            "description": "At a Hallowe’en party, Joyce – a hostile thirteen-year-old – boasts that she once witnessed a murder. When no-one believes her, she storms off home. But within hours her body is found, still in the house, drowned in an apple-bobbing tub. That night, Hercule Poirot is called in to find the ‘evil presence’. But first he must establish whether he is looking for a murderer or a double-murderer.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Halloween-Party.jpeg?alt=media&token=5c56b148-75fa-49a4-873c-e9d50988f2f7",
+            "link": "https://amzn.to/36xVmST"
+        },
+        {
+            "id": 61,
+            "title": "Passenger to Frankfurt",
+            "published": 1970,
+            "description": "Sir Stafford Nye’s journey home from Malaya to London takes an unexpected twist in the passenger lounge at Frankfurt – a young woman confides in him that someone is trying to kill her. Yet their paths are to cross again and again – and each time the mystery woman is introduced as a different person. Equally at home in any guise in any society she draws Sir Stafford into a game of political intrigue more dangerous than he could possibly imagine. In an arena where no-one can be sure of anyone, Nye must do battle with a well-armed, well-financed, well-trained – and invisible – enemy.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Passenger-to-Frankfurt.jpeg?alt=media&token=00c9a860-b0af-40d0-8452-0df5ac30bcd9",
+            "link": "https://amzn.to/3rcIklL"
+        },
+        {
+            "id": 62,
+            "title": "Nemesis",
+            "published": 1971,
+            "description": "In utter disbelief Miss Marple read the letter addressed to her from the recently deceased Mr Rafiel – an acquaintance she had met briefly on her travels. Recognising in Miss Marple a natural flair for justice, Mr Rafiel had left instructions for her to investigate a crime after his death. The only problem was, he had failed to tell her who was involved or where and when the crime had been committed. It was most intriguing.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Nemesis.jpeg?alt=media&token=ad59dc14-118d-49e4-8f6a-4c01b739c5f3",
+            "link": "https://amzn.to/3apk9JX"
+        },
+        {
+            "id": 63,
+            "title": "Elephants Can Remember",
+            "published": 1972,
+            "description": "Hercule Poirot stood on the cliff-top. For here, many years earlier, there had been a tragic accident – the broken body of a woman was discovered on the rocks at the foot of the cliff. This was followed by the grisly discovery of two more bodies – a husband and wife – shot dead. But who had killed whom? Was it a suicide pact? A crime of passion? Or cold-blooded murder? Poirot delves back into a crime committed 15 years earlier and discovers that, when there is a distinct lack of physical evidence, it’s just as well that ‘old sins leave long shadows.'",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Elephants-Can-Remember.jpeg?alt=media&token=4fdb53a7-983e-4682-80a0-cd7f791ccea8",
+            "link": "https://amzn.to/2MhUGKK"
+        },
+        {
+            "id": 64,
+            "title": "Postern of Fate",
+            "published": 1973,
+            "description": "Tommy and Tuppence Beresford have just become the proud owners of an old house in an English village. Along with the property, they have inherited some worthless bric-a-brac, including a collection of antique books. While rustling through a copy of The Black Arrow, Tuppence comes upon a series of apparently random underlinings. However, when she writes down the letters, they spell out a very disturbing message: M a r y – J o r d a n – d i d – n o t – d i e – n a t u r a l l y… And sixty years after their first murder, Mary Jordan's enemies are still ready to kill.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Postern-of-Fate.jpeg?alt=media&token=26adb330-3dca-4afc-8eb7-abbf5f21566b",
+            "link": "https://amzn.to/3renpyW"
+        },
+        {
+            "id": 65,
+            "title": "Curtain: Poirot's Last Case",
+            "published": 1975,
+            "description": "Poirot and Hastings come full circle at Styles. Now wheelchair bound, there is still one case for Poirot to solve. Who is the serial killer X?",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Curtain-Poirots-Last-Case.jpeg?alt=media&token=25a74f73-e9c5-42f1-b414-fd2912b24cd2",
+            "link": "https://amzn.to/3pGrZ8x"
+        },
+        {
+            "id": 66,
+            "title": "Sleeping Murder",
+            "published": 1976,
+            "description": "The owner of a seaside villa is plagued by strange feelings about its past… Soon after Gwenda moved into her new home, odd things started to happen. Despite her best efforts to modernise the house, she only succeeded in dredging up its past. Worse, she felt an irrational sense of terror every time she climbed the stairs… In fear, Gwenda turned to Miss Marple to exorcise her ghosts. Between them, they were to solve a ‘perfect’ crime committed many years before.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Sleeping-Murder.jpeg?alt=media&token=ed73a5c9-c3ba-4586-b5d9-0449125c9e86",
+            "link": "https://amzn.to/39ABDUI"
+        }
+    ]
+
