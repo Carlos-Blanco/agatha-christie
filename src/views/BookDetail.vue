@@ -6,8 +6,10 @@
     </div>
     <div class="novel-details">
       <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
+      <button @click="addBook">Read</button>
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
+      <p>{{ $store.state.readBooks }}</p>
     </div>
   </div>
 </template>
@@ -20,7 +22,8 @@ export default {
   props: ["id"],
   data() {
     return {
-      novel: null
+      novel: null,
+      bookId: this.id
     };
   },
   created() {
@@ -31,6 +34,11 @@ export default {
       .catch(error => {
         console.log(error);
       });
+  },
+  methods: {
+    addBook() {
+      this.$store.commit("ADD_BOOK_TO_COLLECTION", this.bookId);
+    }
   }
 };
 </script>
