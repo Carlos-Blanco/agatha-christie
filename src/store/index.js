@@ -6,7 +6,7 @@ export default createStore({
   },
   mutations: {
     ADD_BOOK_TO_COLLECTION(state, value){
-      state.readBooks.push(value);
+      if (state.readBooks.includes(value) === false) state.readBooks.push(value);
     }
   },
   actions: {},
