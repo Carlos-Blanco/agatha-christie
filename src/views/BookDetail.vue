@@ -9,7 +9,8 @@
       <button @click="addBook" :class="{ active: activeBook }">Read</button>
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
-    </div>
+      <p>{{ $store.state.userProfile.readBooks }}</p>
+    </div> 
   </div>
 </template>
 
@@ -40,7 +41,7 @@ export default {
   },
   computed: {
     activeBook: function () {
-      return this.$store.state.readBooks.includes(this.id);
+      return this.$store.state.userProfile.readBooks.includes(this.id);
     }
   }
 };

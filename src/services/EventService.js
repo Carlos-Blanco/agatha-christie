@@ -12,5 +12,8 @@ const apiClient = axios.create({
 export default {
   getNovels() {
     return apiClient.get("");
+  },
+  postNovels(novel) {
+    return apiClient.post('/novels', novel)
   }
 };
