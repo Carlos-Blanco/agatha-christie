@@ -22,7 +22,7 @@
 <script>
 import BookList from "@/components/BookList.vue";
 import TrendingBooks from "@/components/TrendingBooks.vue";
-import EventService from "@/services/EventService.js";
+import BookService from "@/services/BookService.js";
 
 export default {
   name: "App",
@@ -39,7 +39,7 @@ export default {
     };
   },
   created() {
-    EventService.getNovels()
+    BookService.getNovels()
       .then(response => {
         this.novels = response.data;
         for (var i = 0; i < this.selectednovels.length; i++)

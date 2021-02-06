@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import EventService from "@/services/EventService.js";
+import BookService from "@/services/BookService.js";
 
 export default {
   name: "BookDetail",
@@ -25,7 +25,7 @@ export default {
     };
   },
   created() {
-    EventService.getNovels()
+    BookService.getNovels()
       .then(response => {
         this.novel = response.data[this.id];
       })
