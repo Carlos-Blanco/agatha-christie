@@ -18,7 +18,6 @@ export default createStore({
       }
     }
   },
-  actions: {
-  },
+  actions: {},
   modules: {}
 });

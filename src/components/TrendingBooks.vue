@@ -1,6 +1,6 @@
 <template>
   <router-link
-    :to="{ name: 'BookDetail', params: { id: novel.id } }"
+    :to="{ name: 'BookDetail', params: { slug: novel.slug, id: novel.id } }"
     class="novel"
   >
     <img :src="novel.image" :alt="novel.title" loading="lazy" />
