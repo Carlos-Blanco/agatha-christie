@@ -3,6 +3,7 @@ import BookService from "@/services/BookService.js";
 
 export default createStore({
   state: {
+    user: [],
     userProfile: {
       readBooks: []
     },
@@ -17,6 +18,9 @@ export default createStore({
     },
     SET_NOVELS(state, novels) {
       state.novels = novels;
+    },
+    SET_USER(state, user){
+      state.user = user;
     }
   },
   actions: {
