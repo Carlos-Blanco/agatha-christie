@@ -11,7 +11,6 @@
       </div>
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
-      <p>{{ $store.state.userProfile.readBooks }}</p>
       <div class="novel-details__button-wrapper">
         <button @click="addBook" :class="{ active: activeBook }">
           {{ activeBook ? "Unread" : "Mark as Read" }}
@@ -69,7 +68,7 @@ img {
 .novel-details {
   background: var(--color-background);
   border-radius: 30px 30px 0 0;
-  padding: 1rem 1rem 4rem;
+  padding: 1rem 1rem 3rem;
   margin-top: 2rem;
   min-height: calc(100vh - 330px);
   h3 {

@@ -25,6 +25,5 @@ export default createStore({
         commit("ADD_BOOK", value);
       }
     }
-  },
-  modules: {}
+  }
 });
