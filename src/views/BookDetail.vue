@@ -107,9 +107,24 @@ img {
     outline: none;
     font-size: 1rem;
     width: 100%;
+    &:before {
+      content: "";
+      background: url(/img/icons/icn-read-book-grey.svg) center no-repeat;
+      background-size: contain;
+      height: 0.8rem;
+      width: 0.8rem;
+      margin-right: 1ch;
+      position: relative;
+      top: 1px;
+      display: inline-block;
+    }
     &.active {
       color: white;
       background: cadetblue;
+      &:before {
+        background: url(/img/icons/icn-read-book-white.svg) center no-repeat;
+        background-size: contain;
+      }
     }
   }
 }
