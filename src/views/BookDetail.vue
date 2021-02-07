@@ -13,7 +13,9 @@
       <p>{{ novel.description }}</p>
       <p>{{ $store.state.userProfile.readBooks }}</p>
       <div class="novel-details__button-wrapper">
-        <button @click="addBook" :class="{ active: activeBook }" >Mark as Read</button>
+        <button @click="addBook" :class="{ active: activeBook }">
+          {{ activeBook ? "Unread" : "Mark as Read" }}
+        </button>
       </div>
     </div> 
   </div>
