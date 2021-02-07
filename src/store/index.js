@@ -1,10 +1,12 @@
 import { createStore } from "vuex";
+import BookService from "@/services/BookService.js";
 
 export default createStore({
   state: {
     userProfile: {
       readBooks: []
-    }
+    },
+    novels: []
   },
   mutations: {
     ADD_BOOK(state, value){
@@ -12,6 +14,9 @@ export default createStore({
     },
     REMOVE_BOOK(state, index){
       state.userProfile.readBooks.splice(index, 1);
+    },
+    SET_NOVELS(state, novels) {
+      state.novels = novels;
     }
   },
   actions: {
@@ -24,6 +29,15 @@ export default createStore({
       } else {
         commit("ADD_BOOK", value);
       }
+    },
+    fetchNovels({ commit }) {
+      BookService.getNovels()
+        .then(response => {
+          commit("SET_NOVELS", response.data);
+        })
+        .catch(error => {
+          console.log(error);
+        });
     }
   }
 });

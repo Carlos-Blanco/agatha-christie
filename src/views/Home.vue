@@ -22,7 +22,7 @@
 <script>
 import BookList from "@/components/BookList.vue";
 import TrendingBooks from "@/components/TrendingBooks.vue";
-import BookService from "@/services/BookService.js";
+import { mapState } from "vuex";
 
 export default {
   name: "App",
@@ -32,24 +32,19 @@ export default {
   },
   data() {
     return {
-      novels: [],
+      novels: this.$store.state.novels,
       selectednovels: [5, 21, 26, 9, 49, 14, 28, 38],
       trendingnovels: [],
       searchTerm: ""
     };
   },
   created() {
-    BookService.getNovels()
-      .then(response => {
-        this.novels = response.data;
-        for (var i = 0; i < this.selectednovels.length; i++)
-          this.trendingnovels.push(this.novels[this.selectednovels[i]]);
-      })
-      .catch(error => {
-        console.log(error);
-      });
+    this.$store.dispatch("fetchNovels");
+    for (var i = 0; i < this.selectednovels.length; i++)
+      this.trendingnovels.push(this.novels[this.selectednovels[i]]);
   },
   computed: {
+    ...mapState(["novels"]),
     filterByTerm() {
       return this.novels.filter(novel => {
         return novel.title.toLowerCase().match(this.searchTerm.toLowerCase());
