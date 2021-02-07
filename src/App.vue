@@ -62,5 +62,8 @@ body {
       margin-right: 0.3rem;
     }
   }
+  .flex-wrapper {
+    display: flex;
+  }
 }
 </style>

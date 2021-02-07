@@ -7,11 +7,11 @@ export default createStore({
     }
   },
   mutations: {
-    REMOVE_BOOK(state, index){
-      state.userProfile.readBooks.splice(index, 1);
-    },
     ADD_BOOK(state, value){
       state.userProfile.readBooks.push(value);
+    },
+    REMOVE_BOOK(state, index){
+      state.userProfile.readBooks.splice(index, 1);
     }
   },
   actions: {

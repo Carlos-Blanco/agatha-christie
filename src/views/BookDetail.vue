@@ -5,11 +5,16 @@
       <img :src="novel.image" :alt="novel.title" />
     </div>
     <div class="novel-details">
-      <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
-      <button @click="addBook" :class="{ active: activeBook }" >Read</button>
+      <div class="flex-wrapper">
+        <div></div>
+        <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
+      </div>
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
       <p>{{ $store.state.userProfile.readBooks }}</p>
+      <div class="novel-details__button-wrapper">
+        <button @click="addBook" :class="{ active: activeBook }" >Mark as Read</button>
+      </div>
     </div> 
   </div>
 </template>
@@ -61,8 +66,8 @@ img {
 }
 .novel-details {
   background: var(--color-background);
-  border-radius: 50px 50px 0 0;
-  padding: 1rem;
+  border-radius: 30px 30px 0 0;
+  padding: 1rem 1rem 4rem;
   margin-top: 2rem;
   min-height: calc(100vh - 330px);
   h3 {
@@ -73,16 +78,42 @@ img {
     background: #f8a427;
     font-weight: bold;
     color: white;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 0;
     border-radius: var(--border-radius);
-    float: right;
-    margin-right: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
     &:hover {
       background: #ec9616;
     }
   }
 }
-.active {
-  background: cadetblue;
+.novel-details__button-wrapper {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,0.018644957983193322) 100%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 1rem 0.5rem;
+  button {
+    background: #cecece;
+    color: #5f5f5f;
+    font-weight: bold;
+    padding: 0.7rem 2rem;
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    &.active {
+      color: white;
+      background: cadetblue;
+    }
+  }
+}
+.flex-wrapper {
+  div, a {
+    flex: 1;
+  }
 }
 </style>
