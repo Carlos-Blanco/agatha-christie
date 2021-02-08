@@ -8,7 +8,7 @@
       <h2>Trending books</h2>
       <div class="trending-books">
         <TrendingBooks
-          v-for="novel in trendingnovels"
+          v-for="novel in trendingNovels"
           :key="novel.id"
           :novel="novel"
         />
@@ -32,24 +32,20 @@ export default {
   },
   data() {
     return {
-      novels: this.$store.state.novels,
-      selectednovels: [5, 21, 26, 9, 49, 14, 28, 38],
-      trendingnovels: [],
       searchTerm: ""
     };
   },
   created() {
     this.$store.dispatch("fetchNovels");
-    for (var i = 0; i < this.selectednovels.length; i++)
-      this.trendingnovels.push(this.novels[this.selectednovels[i]]);
+    this.$store.dispatch("fetchTrendingNovels");
   },
   computed: {
-    ...mapState(["novels"]),
     filterByTerm() {
       return this.novels.filter(novel => {
         return novel.title.toLowerCase().match(this.searchTerm.toLowerCase());
       });
-    }
+    },
+    ...mapState(["novels", "trendingNovels"])
   }
 };
 </script>
