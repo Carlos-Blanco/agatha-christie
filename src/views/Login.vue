@@ -4,10 +4,10 @@
     <h2>Log in</h2>
     <form @submit.prevent="login">
       <div>
-        <input type="text" v-model="email" placeholder="Email" />
+        <input type="text" v-model="userinfo.email" placeholder="Email" />
       </div>
       <div>
-        <input type="password" v-model="password" placeholder="Password" />
+        <input type="password" v-model="userinfo.password" placeholder="Password" />
       </div>
       <span id="errorMessage" class="error" style="display:none;"></span>
       <button>Log in</button>
@@ -20,33 +20,25 @@
 </template>
 
 <script>
-import firebase from "firebase/app";
-require("firebase/auth");
+import { mapState } from "vuex";
 
 export default {
   name: "Login",
   data() {
     return {
-      email: "",
-      password: ""
+      userinfo: {
+        email: "",
+        password: ""
+      }
     };
   },
   methods: {
     login() {
-      firebase
-        .auth()
-        .signInWithEmailAndPassword(this.email, this.password)
-        .then(user => {
-          console.log(user);
-          this.$router.push({ name: 'Home'});
-        })
-        .catch(error => {
-          var errorMessage = error.message;
-          var signupError = document.getElementById("errorMessage");
-          signupError.style.display = "block";
-          signupError.textContent += errorMessage;
-        });
+      this.$store.dispatch("login", this.userinfo);
     }
+  },
+  computed: {
+    ...mapState(["user"])
   }
 };
 </script>
