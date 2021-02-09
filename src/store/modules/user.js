@@ -1,10 +1,17 @@
+import firebase from "firebase/app";
+require("firebase/auth");
+
 export const state = {
   user: {
+    userinfo: [],
     readBooks: []
   }
 };
 
 export const mutations = {
+  ADD_USER(state, value){
+    state.user.userinfo.push(value);
+  },
   ADD_BOOK(state, value){
     state.user.readBooks.push(value);
   },
@@ -23,5 +30,20 @@ export const actions = {
     } else {
       commit("ADD_BOOK", value);
     }
+  },
+  signup({ commit }, value) {
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(value.email, value.password)
+      .then(user => {
+        console.log(user.user.uid);
+        commit("ADD_USER", value);
+      })
+      .catch(error => {
+        var errorMessage = error.message;
+        var signupError = document.getElementById("errorMessage");
+        signupError.style.display = "block";
+        signupError.textContent += errorMessage;
+      });
   }
 };
