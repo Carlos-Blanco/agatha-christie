@@ -11,7 +11,7 @@
       </div>
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
-      <p>{{ $store.state.userProfile.readBooks }}</p>
+      <p>{{ $store.state.user.user.readBooks }}</p>
       <div class="novel-details__button-wrapper">
         <button @click="addBook" :class="{ active: activeBook }">
           {{ activeBook ? "Unread" : "Mark as Read" }}
@@ -48,7 +48,7 @@ export default {
   },
   computed: {
     activeBook: function () {
-      return this.$store.state.userProfile.readBooks.includes(this.id);
+      return this.$store.state.user.user.readBooks.includes(this.id);
     }
   }
 };

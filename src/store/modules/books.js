@@ -1,11 +1,4 @@
-import { createStore } from "vuex";
-import BookService from "@/services/BookService.js";
-import * as user from "@/store/modules/user.js";
-
 export default createStore({
-  modules: {
-    user
-  },
   state: {
     novels: [],
     trendingNovels: []
