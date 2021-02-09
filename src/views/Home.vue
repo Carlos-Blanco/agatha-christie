@@ -8,7 +8,7 @@
       <h2>Trending books</h2>
       <div class="trending-books">
         <TrendingBooks
-          v-for="novel in trendingNovels"
+          v-for="novel in books.trendingNovels"
           :key="novel.id"
           :novel="novel"
         />
@@ -41,11 +41,11 @@ export default {
   },
   computed: {
     filterByTerm() {
-      return this.novels.filter(novel => {
+      return this.books.novels.filter(novel => {
         return novel.title.toLowerCase().match(this.searchTerm.toLowerCase());
       });
     },
-    ...mapState(["novels", "trendingNovels"])
+    ...mapState(["books"])
   }
 };
 </script>
