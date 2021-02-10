@@ -38,6 +38,7 @@ export default {
   created() {
     this.$store.dispatch("fetchNovels");
     this.$store.dispatch("fetchTrendingNovels");
+    this.$store.dispatch("checkAuth");
   },
   computed: {
     filterByTerm() {

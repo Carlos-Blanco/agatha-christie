@@ -65,5 +65,14 @@ export const actions = {
         signupError.style.display = "block";
         signupError.textContent += errorMessage;
       });
+  },
+  checkAuth({ commit }) {
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        commit("ADD_USER", user.uid);
+      } else {
+        // No user is signed in.
+      }
+    });
   }
 };
