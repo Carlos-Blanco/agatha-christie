@@ -1,5 +1,6 @@
-import firebase from "firebase/app";
+import firebase from "firebase";
 require("firebase/auth");
+require("firebase/firestore");
 
 export const state = {
   user: {
@@ -36,7 +37,10 @@ export const actions = {
       .auth()
       .createUserWithEmailAndPassword(value.email, value.password)
       .then(user => {
+        const db = firebase.firestore()
+        const userEmail = { email: value.email };
         console.log(user.user.uid);
+        db.collection("users").doc(user.user.uid).set(userEmail);
         commit("ADD_USER", value);
       })
       .catch(error => {
