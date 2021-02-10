@@ -23,16 +23,15 @@ export const mutations = {
 
 export const actions = {
   updateBook({ state, commit }, value){
+    const db = firebase.firestore();
     if (state.user.readBooks.includes(value)){
       const index = state.user.readBooks.indexOf(value);
       if (index > -1) {
         commit("REMOVE_BOOK", index);
-        const db = firebase.firestore();
         db.collection("users").doc(state.user.userinfo).update({books: firebase.firestore.FieldValue.arrayRemove(value)})
       }
     } else {
       commit("ADD_BOOK", value);
-      const db = firebase.firestore();
       db.collection("users").doc(state.user.userinfo).update({books: firebase.firestore.FieldValue.arrayUnion(value)})
     }
   },
