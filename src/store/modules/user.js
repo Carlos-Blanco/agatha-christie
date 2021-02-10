@@ -39,7 +39,6 @@ export const actions = {
       .then(user => {
         const db = firebase.firestore()
         const userEmail = { email: value.email };
-        console.log(user.user.uid);
         db.collection("users").doc(user.user.uid).set(userEmail);
         commit("ADD_USER", value);
       })
