@@ -1,4 +1,5 @@
 import firebase from "firebase";
+import router from "@/router/index";
 require("firebase/auth");
 require("firebase/firestore");
 
@@ -26,17 +27,25 @@ export const mutations = {
 
 export const actions = {
   updateBook({ state, commit }, value){
-    const db = firebase.firestore();
-    if (state.user.readBooks.includes(value)){
-      const index = state.user.readBooks.indexOf(value);
-      if (index > -1) {
-        commit("REMOVE_BOOK", index);
-        db.collection("users").doc(state.user.userinfo).update({books: firebase.firestore.FieldValue.arrayRemove(value)})
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        const db = firebase.firestore();
+        if (state.user.readBooks.includes(value)){
+          const index = state.user.readBooks.indexOf(value);
+          if (index > -1) {
+            commit("REMOVE_BOOK", index);
+            db.collection("users").doc(state.user.userinfo).update({books: firebase.firestore.FieldValue.arrayRemove(value)})
+          }
+        } else {
+          commit("ADD_BOOK", value);
+          db.collection("users").doc(state.user.userinfo).update({books: firebase.firestore.FieldValue.arrayUnion(value)})
+        }
+      } else {
+        // No user is signed in.
+        router.push({ name: "Signup"})
       }
-    } else {
-      commit("ADD_BOOK", value);
-      db.collection("users").doc(state.user.userinfo).update({books: firebase.firestore.FieldValue.arrayUnion(value)})
-    }
+    });
+    
   },
   signup({ commit }, value) {
     firebase
@@ -47,6 +56,7 @@ export const actions = {
         const userEmail = { email: value.email };
         db.collection("users").doc(user.user.uid).set(userEmail);
         commit("ADD_USER", user.user.uid);
+        router.push({ name: "Home" });
       })
       .catch(error => {
         var errorMessage = error.message;
@@ -61,6 +71,7 @@ export const actions = {
       .signInWithEmailAndPassword(value.email, value.password)
       .then(user => {
         commit("ADD_USER", user.user.uid);
+        router.push({ name: "Home" });
       })
       .catch(error => {
         var errorMessage = error.message;
