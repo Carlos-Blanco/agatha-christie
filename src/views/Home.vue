@@ -1,5 +1,8 @@
 <template>
   <div class="books-list">
+    <div>
+      <router-link :to="{ name: 'Profile'}">Profile</router-link>
+    </div>
     <div class="input-wrapper">
       <div></div>
       <input type="text" placeholder="Search" v-model="searchTerm" />

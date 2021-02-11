@@ -1,6 +1,6 @@
 <template>
   <div v-if="novel">
-  <router-link to="/" class="btn--back">Back</router-link>
+  <router-link :to="{ name: 'Home'}" class="btn--back">Back</router-link>
     <div>
       <img :src="novel.image" :alt="novel.title" />
     </div>
