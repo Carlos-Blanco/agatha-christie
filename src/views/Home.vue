@@ -1,8 +1,11 @@
 <template>
   <div class="books-list">
-    <div>
-      <router-link :to="{ name: 'Profile'}">Profile</router-link>
-    </div>
+    <header>
+      <div></div>
+      <router-link :to="{ name: 'Profile' }">
+        <img src="/img/icons/user-profile.svg" />
+      </router-link>
+    </header>
     <div class="input-wrapper">
       <div></div>
       <input type="text" placeholder="Search" v-model="searchTerm" />
@@ -55,6 +58,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+header {
+  display: flex;
+  justify-content: space-between;
+}
 .books-list {
   margin: 1rem;
   .input-wrapper {

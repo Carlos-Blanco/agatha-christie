@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <router-link :to="{ name: 'Home'}" class="btn--back">Back</router-link>
+    <router-link :to="{ name: 'Home' }" class="btn--back">Back</router-link>
     <h2>Log in</h2>
     <form @submit.prevent="login">
       <div>
@@ -14,7 +14,7 @@
     </form>
     <div class="signup-wrapper">
       <p><span></span>or<span></span></p>
-      <router-link :to="{ name: 'Signup'}" class="btn">Sign up</router-link>
+      <router-link :to="{ name: 'Signup' }" class="btn">Sign up</router-link>
     </div>
   </div>
 </template>

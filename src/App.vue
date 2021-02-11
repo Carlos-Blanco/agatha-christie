@@ -28,7 +28,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   max-width: 950px;
-  margin: 1.5rem auto 0;
   h1,
   h2 {
     color: var(--color-header);
