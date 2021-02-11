@@ -104,6 +104,7 @@ export default {
     display: block;
     border: 1px solid #cecece;
     background: #f7f7f7;
+    color: var(--color-text);
     height: 3rem;
     border-radius: var(--border-radius);
     font-size: 1.2rem;
