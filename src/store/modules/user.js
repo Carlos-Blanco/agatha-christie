@@ -13,6 +13,9 @@ export const mutations = {
   ADD_USER(state, value) {
     state.user.userinfo = value;
   },
+  UPDATE_BOOKS(state, value) {
+    state.user.readBooks = value;
+  },
   ADD_BOOK(state, value) {
     state.user.readBooks.push(value);
   },
@@ -69,6 +72,21 @@ export const actions = {
   checkAuth({ commit }) {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
+        const db = firebase.firestore()
+        var userRef = db.collection("users").doc(user.uid);
+        userRef.get().then(function(doc) {
+            if (doc.exists) {
+              var books = doc.data();
+              var readBooks = books.books;
+              commit("UPDATE_BOOKS", readBooks);
+            } else {
+              // doc.data() will be undefined in this case
+              console.log("No such document!");
+            }
+          })
+          .catch(function(error) {
+            console.log("Error getting document:", error);
+          });
         commit("ADD_USER", user.uid);
       } else {
         // No user is signed in.

@@ -11,8 +11,6 @@
       </div>
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
-      <p>{{ $store.state.user.user.readBooks }}</p>
-      <p>{{ $store.state.user.user.userinfo }}</p>
       <div class="novel-details__button-wrapper">
         <button @click="addBook" :class="{ active: activeBook }">
           {{ activeBook ? "Unread" : "Mark as Read" }}
