@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import store from "../store"
 import BookDetail from "../views/BookDetail.vue";
 import Home from "../views/Home.vue";
 import Signup from "../views/Signup.vue";
@@ -30,13 +31,30 @@ const routes = [
   {
     path: "/profile",
     name: "Profile",
-    component: Profile
+    component: Profile,
+    meta: {
+      requiresAuth: true
+    }
   }
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+});
+
+router.beforeEach(async (to, from, next) => {
+  const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
+  // Requires auth & no user
+  if (requiresAuth && !(await store.dispatch("getCurrentUser"))) {
+    next({ name: "Signup" });
+    // No requires auth and user (auth)
+  } else if (!requiresAuth && (await store.dispatch("getCurrentUser"))) {
+    next();
+  } else {
+    // Anything else
+    next();
+  }
 });
 
 export default router;

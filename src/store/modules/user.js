@@ -45,7 +45,6 @@ export const actions = {
         router.push({ name: "Signup"})
       }
     });
-    
   },
   signup({ commit }, value) {
     firebase
@@ -102,6 +101,14 @@ export const actions = {
       } else {
         // No user is signed in.
       }
+    });
+  },
+  getCurrentUser() {
+    return new Promise((resolve, reject) => {
+      const unsubscribe = firebase.auth().onAuthStateChanged(user => {
+        unsubscribe();
+        resolve(user);
+      }, reject);
     });
   }
 };

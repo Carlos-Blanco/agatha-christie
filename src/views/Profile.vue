@@ -15,7 +15,6 @@ export default {
   methods: {
     logout() {
       firebase.auth().signOut().then(() => {
-      // Sign-out successful.
       console.log("Log Out")
       }).catch((error) => {
         var errorMessage = error.message;
