@@ -99,6 +99,7 @@ img {
   button {
     background: #cecece;
     color: #5f5f5f;
+    cursor: pointer;
     font-weight: bold;
     padding: 0.7rem 2rem;
     border-radius: var(--border-radius);
