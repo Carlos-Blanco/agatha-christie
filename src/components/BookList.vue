@@ -8,6 +8,7 @@
       <span>
         <h3>{{ novel.title }}</h3>
         <p>Published: {{ novel.published }}</p>
+        <span v-if="novel.rate"> {{ novel.rate }}</span>
       </span>
     </span>
   </router-link>
