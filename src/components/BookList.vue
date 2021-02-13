@@ -3,6 +3,7 @@
     <span class="novel">
       <span>
         <img :src="novel.image" :alt="novel.title" loading="lazy" />
+        <span v-if="wasRead" class="was-read"></span>
       </span>
       <span>
         <h3>{{ novel.title }}</h3>
@@ -17,6 +18,17 @@ export default {
   name: "BookList",
   props: {
     novel: Object
+  },
+  computed: {
+    wasRead() {
+      const wasRead = this.$store.state.user.user.readBooks;
+      for (var i = 0; i < wasRead.length; i++) {
+        if (wasRead[i] == this.novel.id) {
+          return true;
+        }
+      }
+      return false;
+    }
   }
 };
 </script>
@@ -38,6 +50,7 @@ a {
     &:first-of-type {
       min-width: 100px;
       margin-right: 1rem;
+      position: relative;
     }
   }
   h3 {
@@ -48,6 +61,16 @@ a {
   p {
     margin: 0;
     font-size: 1.1rem;
+  }
+  .was-read {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    background: url(/img/icons/icn-was-read.svg) center no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
   }
 }
 </style>
