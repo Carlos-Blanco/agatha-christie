@@ -79,6 +79,16 @@ export const actions = {
         signupError.textContent += errorMessage;
       });
   },
+  logout() {
+    firebase.auth().signOut().then(() => {
+        router.push({ name: "Home" });
+      }).catch((error) => {
+        var errorMessage = error.message;
+        var logoutError = document.getElementById("errorMessage");
+        logoutError.style.display = "block";
+        logoutError.textContent += errorMessage;
+      });
+  },
   checkAuth({ commit }) {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {

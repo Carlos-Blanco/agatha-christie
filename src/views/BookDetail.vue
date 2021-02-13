@@ -10,6 +10,10 @@
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
       <h3>{{ novel.title }}</h3>
+      <input type="number" v-model.number="rate"/>
+      <button @click="rateBook">
+        Rate book
+      </button>
       <p>{{ novel.description }}</p>
       <div class="novel-details__button-wrapper">
         <button @click="addBook" :class="{ active: activeBook }">
@@ -22,13 +26,15 @@
 
 <script>
 import BookService from "@/services/BookService.js";
+import firebase from "firebase";
 
 export default {
   name: "BookDetail",
   props: ["id"],
   data() {
     return {
-      novel: null
+      novel: null,
+      rate: null
     };
   },
   created() {
@@ -43,6 +49,11 @@ export default {
   methods: {
     addBook() {
       this.$store.dispatch("updateBook", this.id);
+    },
+    rateBook() {
+      firebase.database().ref('/db2/' + this.id).update({
+          rate: this.rate
+      });
     }
   },
   computed: {

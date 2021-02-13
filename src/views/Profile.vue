@@ -8,21 +8,17 @@
 </template>
 
 <script>
-import firebase from "firebase/app";
+import { mapState } from "vuex";
 
 export default {
-  name: "Login",
+  name: "Profile",
   methods: {
     logout() {
-      firebase.auth().signOut().then(() => {
-      console.log("Log Out")
-      }).catch((error) => {
-        var errorMessage = error.message;
-        var logoutError = document.getElementById("errorMessage");
-        logoutError.style.display = "block";
-        logoutError.textContent += errorMessage;
-      });
+      this.$store.dispatch("logout");
     }
+  },
+  computed: {
+    ...mapState(["user"])
   }
 };
 </script>
