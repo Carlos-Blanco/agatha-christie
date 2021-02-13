@@ -55,7 +55,7 @@ export default {
 
 <style lang="scss" scoped>
 .btn--back {
-  margin: 0 1rem;
+  margin: 1rem;
 }
 img {
   display: block;
