@@ -52,7 +52,7 @@ export default {
     },
     rateBook() {
       const db = firebase.firestore();
-      db.collection("rating").doc(this.id).update({rate: firebase.firestore.FieldValue.arrayUnion(this.rate)})
+      db.collection("rating").doc(this.id).collection("user-rating").doc(this.$store.state.user.user.userinfo).set({rate: (this.rate)})
     }
   },
   computed: {
