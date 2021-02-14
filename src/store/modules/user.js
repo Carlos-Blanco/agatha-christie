@@ -52,8 +52,7 @@ export const actions = {
       .createUserWithEmailAndPassword(value.email, value.password)
       .then(user => {
         const db = firebase.firestore()
-        const userEmail = { email: value.email };
-        db.collection("users").doc(user.user.uid).set(userEmail);
+        db.collection("users").doc(user.user.uid).set({books: ([])});
         commit("ADD_USER", user.user.uid);
         router.push({ name: "Home" });
       })
