@@ -51,9 +51,8 @@ export default {
       this.$store.dispatch("updateBook", this.id);
     },
     rateBook() {
-      firebase.database().ref('/db2/' + this.id).update({
-          rate: this.rate
-      });
+      const db = firebase.firestore();
+      db.collection("rating").doc(this.id).update({rate: firebase.firestore.FieldValue.arrayUnion(this.rate)})
     }
   },
   computed: {
