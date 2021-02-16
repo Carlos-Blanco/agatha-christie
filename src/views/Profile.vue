@@ -5,8 +5,11 @@
     <ve-progress 
     :progress="progress"
     color="#008661"
-    :size="200">
-
+    :size="150"
+    :thickness="12"
+    empty-thickness="10%"
+    :legend-formatter="({currentValue}) => new Intl.NumberFormat('en-EN').format(currentValue)">
+    
     </ve-progress> 
     <span id="errorMessage" class="error" style="display:none;"></span>
     <button @click="logout">Log out</button>
