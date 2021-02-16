@@ -2,7 +2,12 @@
   <div class="profile">
     <router-link :to="{ name: 'Home'}" class="btn--back">Back</router-link>
     <h2>Profile</h2>
-    <ve-progress :progress="50"/>
+    <ve-progress 
+    :progress="progress"
+    color="#008661"
+    :size="200">
+
+    </ve-progress> 
     <span id="errorMessage" class="error" style="display:none;"></span>
     <button @click="logout">Log out</button>
   </div>
@@ -13,6 +18,11 @@ import { mapState } from "vuex";
 
 export default {
   name: "Profile",
+  data(){
+    return {
+      progress: (this.$store.state.user.user.readBooks.length * 100) / this.$store.state.books.novels.length
+    };
+  },
   methods: {
     logout() {
       this.$store.dispatch("logout");
