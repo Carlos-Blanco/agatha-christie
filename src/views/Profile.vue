@@ -2,6 +2,7 @@
   <div class="profile">
     <router-link :to="{ name: 'Home'}" class="btn--back">Back</router-link>
     <h2>Profile</h2>
+    <ve-progress :progress="50"/>
     <span id="errorMessage" class="error" style="display:none;"></span>
     <button @click="logout">Log out</button>
   </div>

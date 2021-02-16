@@ -4,6 +4,7 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 import firebase from "firebase";
+import veProgress from "vue-ellipse-progress";
 
 const firebaseConfig = {
   apiKey: "AIzaSyD56wv3ZvTzPbzL9sSObjPqCoo7lHWsQ2g",
@@ -20,6 +21,7 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 createApp(App)
+  .use(veProgress)
   .use(store)
   .use(router)
   .mount("#app");
