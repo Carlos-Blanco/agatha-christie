@@ -10,10 +10,12 @@
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
       <h3>{{ novel.title }}</h3>
-      <input type="number" v-model.number="rate"/>
-      <button @click="rateBook">
-        Rate book
-      </button>
+      <div style="display:none;">
+        <input type="number" v-model.number="rate"/>
+        <button @click="rateBook">
+          Rate book
+        </button>
+      </div>
       <p>{{ novel.description }}</p>
       <div class="novel-details__button-wrapper">
         <button @click="addBook" :class="{ active: activeBook }">
