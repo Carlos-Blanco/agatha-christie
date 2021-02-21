@@ -9,8 +9,9 @@
         <div></div>
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
+      {{ bookRating }}
       <h3>{{ novel.title }}</h3>
-      <div style="display:none;">
+      <div>
         <input type="number" v-model.number="rate"/>
         <button @click="rateBook">
           Rate book
@@ -60,6 +61,11 @@ export default {
   computed: {
     activeBook: function () {
       return this.$store.state.user.user.readBooks.includes(this.id);
+    },
+    bookRating: function () {
+      const db = firebase.firestore();
+      var bookRating = db.collection("rating").doc(this.id).collection("user-rating").doc(this.$store.state.user.uid).get(this.rate);
+      return bookRating;
     }
   }
 };

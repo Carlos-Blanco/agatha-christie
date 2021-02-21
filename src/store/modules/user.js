@@ -30,6 +30,7 @@ export const actions = {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         const db = firebase.firestore();
+
         if (state.user.readBooks.includes(value)){
           const index = state.user.readBooks.indexOf(value);
           if (index > -1) {
