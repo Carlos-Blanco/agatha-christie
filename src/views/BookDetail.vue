@@ -9,7 +9,6 @@
         <div></div>
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
-      {{ bookRating }}
       <h3>{{ novel.title }}</h3>
       <div>
         <input type="number" v-model.number="rate"/>

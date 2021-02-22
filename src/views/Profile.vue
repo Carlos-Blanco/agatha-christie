@@ -10,11 +10,11 @@
       <div>
         <ve-progress 
         :progress="progress"
-        color="#008661"
+        color="#2c3e50"
         :size="75"
         :thickness="8"
         empty-thickness="10%"
-        :legend-formatter="({currentValue}) => new Intl.NumberFormat('en-EN').format(currentValue)">
+        legendClass="legend-custom-style">
         
         </ve-progress> 
       </div>
@@ -35,7 +35,7 @@ export default {
     return {
       readBooks: this.$store.state.user.user.readBooks.length,
       totalBooks: this.$store.state.books.novels.length,
-      progress: (this.$store.state.user.user.readBooks.length * 100) / this.$store.state.books.novels.length
+      progress: Math.floor((this.$store.state.user.user.readBooks.length * 100) / this.$store.state.books.novels.length)
     };
   },
   methods: {
@@ -73,13 +73,13 @@ export default {
   }
   .progress-wrapper {
     border-radius: var(--border-radius);
-    background: linear-gradient(90deg, rgba(66,185,131,1) 0%, rgba(85,236,147,1) 100%);
+    background: linear-gradient(90deg, rgba(66,185,131,1) 0%, rgba(0,134,97,1) 100%);
     display: flex;
     padding: 0.5rem 1rem;
     justify-content: space-between;
     color: white;
     h3 {
-      margin: 0.5rem 0;
+      margin: 0.2rem 0;
     }
     p {
       margin: 0;

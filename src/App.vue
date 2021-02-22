@@ -65,5 +65,11 @@ body {
   .flex-wrapper {
     display: flex;
   }
+  .legend-custom-style {
+    &:after {
+      content:"%";
+      font-size: 0.8rem;
+    }
+  }
 }
 </style>
