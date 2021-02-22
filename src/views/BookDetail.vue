@@ -10,7 +10,7 @@
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
       <h3>{{ novel.title }}</h3>
-      <div>
+      <div style="display:none;">
         <input type="number" v-model.number="rate"/>
         <button @click="rateBook">
           Rate book
