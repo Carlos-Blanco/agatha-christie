@@ -53,7 +53,7 @@ export default {
 .profile {
   margin: 1rem;
   button {
-    height: 3rem;
+    height: 2rem;
     background: #008661;
     border-radius: var(--border-radius);
     border: none;
