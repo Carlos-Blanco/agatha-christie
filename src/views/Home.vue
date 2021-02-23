@@ -66,6 +66,7 @@ header {
   h1 {
     font-size: 1.4rem;
     margin: 0.1rem;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 }
 .books-list {
