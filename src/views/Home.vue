@@ -1,7 +1,9 @@
 <template>
   <div class="books-list">
     <header>
-      <div></div>
+      <div>
+        <h1>Agatha Christie Books</h1>
+      </div>
       <router-link :to="{ name: 'Profile' }">
         <img src="/img/icons/user-profile.svg" />
       </router-link>
@@ -61,6 +63,10 @@ export default {
 header {
   display: flex;
   justify-content: space-between;
+  h1 {
+    font-size: 1.4rem;
+    margin: 0.1rem;
+  }
 }
 .books-list {
   margin: 1rem;
