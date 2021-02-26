@@ -1,6 +1,8 @@
 {
   "rules": {
-    ".read": true,
-    ".write": false
+    "db2": {
+      ".read": true,
+      ".write": false
+    }
   }
 }
