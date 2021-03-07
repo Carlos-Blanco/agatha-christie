@@ -4,7 +4,7 @@
     <h2>Profile</h2>
     <div class="progress-wrapper">
       <div>
-        <h3>Books Read</h3>
+        <h3>Read Books</h3>
         <p>{{ readBooks }} / {{ totalBooks }}</p>
       </div>
       <div>
