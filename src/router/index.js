@@ -5,6 +5,7 @@ import Home from "../views/Home.vue";
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Profile from "../views/Profile.vue";
+import NotFound from "../views/NotFound.vue";
 
 const routes = [
   {
@@ -35,6 +36,15 @@ const routes = [
     meta: {
       requiresAuth: true
     }
+  },
+  {
+    path: "/404",
+    name: "404",
+    component: NotFound
+  },
+  {
+    path: "*",
+    redirect: { name: "404" }
   }
 ];
 
