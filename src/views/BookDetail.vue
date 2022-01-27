@@ -55,7 +55,7 @@ export default {
       const db = firebase.firestore();
       db.collection("rating")
         .doc(this.id)
-        .collection("user-rating")
+        .collection("users")
         .doc(this.$store.state.user.user.userinfo)
         .set({ rate: this.rate });
     },
