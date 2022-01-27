@@ -1,6 +1,6 @@
 <template>
   <div v-if="novel">
-  <router-link :to="{ name: 'Home' }" class="btn--back">Back</router-link>
+    <router-link :to="{ name: 'Home' }" class="btn--back">Back</router-link>
     <div>
       <img :src="novel.image" :alt="novel.title" />
     </div>
@@ -10,11 +10,9 @@
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
       <h3>{{ novel.title }}</h3>
-      <div style="display:none;">
-        <input type="number" v-model.number="rate"/>
-        <button @click="rateBook">
-          Rate book
-        </button>
+      <div>
+        <input type="range" max="10" v-model.number="rate" />
+        <button @click="rateBook">Rate book</button>
       </div>
       <p>{{ novel.description }}</p>
       <div class="novel-details__button-wrapper">
@@ -22,7 +20,7 @@
           {{ activeBook ? "Unread" : "Mark as Read" }}
         </button>
       </div>
-    </div> 
+    </div>
   </div>
 </template>
 
@@ -36,15 +34,15 @@ export default {
   data() {
     return {
       novel: null,
-      rate: null
+      rate: null,
     };
   },
   created() {
     BookService.getNovels()
-      .then(response => {
+      .then((response) => {
         this.novel = response.data[this.id];
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
       });
   },
@@ -54,8 +52,12 @@ export default {
     },
     rateBook() {
       const db = firebase.firestore();
-      db.collection("rating").doc(this.id).collection("user-rating").doc(this.$store.state.user.user.userinfo).set({rate: (this.rate)})
-    }
+      db.collection("rating")
+        .doc(this.id)
+        .collection("users")
+        .doc(this.$store.state.user.user.userinfo)
+        .set({ rate: this.rate });
+    },
   },
   computed: {
     activeBook: function () {
@@ -63,10 +65,15 @@ export default {
     },
     bookRating: function () {
       const db = firebase.firestore();
-      var bookRating = db.collection("rating").doc(this.id).collection("user-rating").doc(this.$store.state.user.uid).get(this.rate);
+      var bookRating = db
+        .collection("rating")
+        .doc(this.id)
+        .collection("user-rating")
+        .doc(this.$store.state.user.uid)
+        .get(this.rate);
       return bookRating;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -106,8 +113,13 @@ img {
   }
 }
 .novel-details__button-wrapper {
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,0.018644957983193322) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(255, 255, 255, 0.018644957983193322) 100%
+  );
   position: fixed;
   bottom: 0;
   left: 0;
@@ -146,7 +158,8 @@ img {
   }
 }
 .flex-wrapper {
-  div, a {
+  div,
+  a {
     flex: 1;
   }
 }
