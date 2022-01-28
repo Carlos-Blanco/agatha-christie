@@ -5,12 +5,20 @@
       <img :src="novel.image" :alt="novel.title" />
     </div>
     <div class="novel-details">
+      <star-rating
+        v-model:rating="rating"
+        v-bind:increment="0.5"
+        v-bind:max-rating="10"
+        active-color="#f8a427"
+        :show-rating=false
+        :star-size=30
+        @click="rateBook"
+      ></star-rating>
       <div class="flex-wrapper">
         <div></div>
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
       <h3>{{ novel.title }}</h3>
-      <star-rating v-model:rating="rating" @click="rateBook"></star-rating>
       <p>{{ novel.description }}</p>
       <div class="novel-details__button-wrapper">
         <button @click="addBook" :class="{ active: activeBook }">
@@ -32,7 +40,7 @@ export default {
   data() {
     return {
       novel: null,
-      rating: 0,
+      rating: null,
     };
   },
   created() {
@@ -163,5 +171,17 @@ img {
   a {
     flex: 1;
   }
+}
+.vue-star-rating-rating-text {
+  color: white;
+  background: cadetblue;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 3px;
 }
 </style>
