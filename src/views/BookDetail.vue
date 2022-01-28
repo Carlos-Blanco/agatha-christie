@@ -10,11 +10,7 @@
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
       <h3>{{ novel.title }}</h3>
-      <div>
-        <input type="range" max="10" v-model.number="rate" />
-        <span>{{ rate }}</span>
-        <button @click="rateBook">Rate book</button>
-      </div>
+      <star-rating v-model:rating="rating" @click="rateBook"></star-rating>
       <p>{{ novel.description }}</p>
       <div class="novel-details__button-wrapper">
         <button @click="addBook" :class="{ active: activeBook }">
@@ -28,6 +24,7 @@
 <script>
 import BookService from "@/services/BookService.js";
 import firebase from "firebase";
+import StarRating from "vue-star-rating";
 
 export default {
   name: "BookDetail",
@@ -35,7 +32,7 @@ export default {
   data() {
     return {
       novel: null,
-      rate: null,
+      rating: 0,
     };
   },
   created() {
@@ -57,7 +54,7 @@ export default {
         .doc(this.id)
         .collection("users")
         .doc(this.$store.state.user.user.userinfo)
-        .set({ rate: this.rate });
+        .set({ rate: this.rating });
     },
   },
   computed: {
@@ -69,11 +66,14 @@ export default {
       var bookRating = db
         .collection("rating")
         .doc(this.id)
-        .collection("user-rating")
-        .doc(this.$store.state.user.uid)
-        .get(this.rate);
+        .collection("users")
+        .doc(this.$store.state.user.user.userinfo)
+        .get({ rate: this.rating });
       return bookRating;
     },
+  },
+  components: {
+    StarRating,
   },
 };
 </script>
