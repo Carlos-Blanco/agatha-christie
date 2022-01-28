@@ -9,9 +9,9 @@
         v-model:rating="rating"
         v-bind:increment="0.5"
         v-bind:max-rating="10"
+        v-bind:show-rating="false"
+        v-bind:star-size="30"
         active-color="#f8a427"
-        :show-rating=false
-        :star-size=30
         @click="rateBook"
       ></star-rating>
       <div class="flex-wrapper">
