@@ -18,9 +18,6 @@
         <div></div>
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
-
-      {{ profileData }}
-
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
       <div class="novel-details__button-wrapper">
