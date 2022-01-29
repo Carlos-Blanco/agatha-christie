@@ -19,6 +19,7 @@
         </div>
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
+      <p>{{ rating }}</p>
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
       <div class="novel-details__button-wrapper">
@@ -53,12 +54,25 @@ export default {
         console.log(error);
       });
 
-    const db = firebase.firestore();
-    db.collection("rating").doc(this.id).collection("users").get().then(querySnapshot => {    
-      querySnapshot.forEach(doc => {        
-        this.rating = doc.data().rate
+/*       db.collection("rating").doc(this.id).collection("users").get().then(querySnapshot => {    
+      querySnapshot.forEach(doc => {  
+        this.rating = doc.data().bookrate
       });
-    });  
+    });   */
+
+    const db = firebase.firestore();
+    var docRef = db.collection("rating").doc(this.id).collection("users").doc(this.$store.state.user.user.userinfo);
+    docRef.get().then((doc) => {
+        if (doc.exists) {
+            var bookrate = doc.data()
+            this.rating = bookrate.bookrate;
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("Book not rated");
+        }
+    }).catch((error) => {
+        console.log("Error getting document:", error);
+    });
 
   },
   methods: {
@@ -71,7 +85,7 @@ export default {
         .doc(this.id)
         .collection("users")
         .doc(this.$store.state.user.user.userinfo)
-        .set({ rate: this.rating });
+        .set({ bookrate: this.rating });
     },
   },
   computed: {
@@ -108,7 +122,7 @@ img {
     font-weight: 900;
   }
   a.btn--buy {
-    background: #f8a427;
+    background: #ff5e58;
     font-weight: bold;
     color: white;
     padding: 0.5rem 0;
