@@ -18,6 +18,9 @@
         <div></div>
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
+
+      {{ profileData }}
+
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
       <div class="novel-details__button-wrapper">
@@ -51,6 +54,14 @@ export default {
       .catch((error) => {
         console.log(error);
       });
+
+    const db = firebase.firestore();
+    db.collection("rating").doc(this.id).collection("users").get().then(querySnapshot => {    
+      querySnapshot.forEach(doc => {        
+        this.rating = doc.data().rate
+      });
+    });  
+
   },
   methods: {
     addBook() {
@@ -68,17 +79,7 @@ export default {
   computed: {
     activeBook: function () {
       return this.$store.state.user.user.readBooks.includes(this.id);
-    },
-    bookRating: function () {
-      const db = firebase.firestore();
-      var bookRating = db
-        .collection("rating")
-        .doc(this.id)
-        .collection("users")
-        .doc(this.$store.state.user.user.userinfo)
-        .get({ rate: this.rating });
-      return bookRating;
-    },
+    }
   },
   components: {
     StarRating,
