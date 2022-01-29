@@ -5,17 +5,18 @@
       <img :src="novel.image" :alt="novel.title" />
     </div>
     <div class="novel-details">
-      <star-rating
-        v-model:rating="rating"
-        v-bind:increment="0.5"
-        v-bind:max-rating="10"
-        v-bind:show-rating="false"
-        v-bind:star-size="30"
-        active-color="#f8a427"
-        @click="rateBook"
-      ></star-rating>
       <div class="flex-wrapper">
-        <div></div>
+        <div>
+          <star-rating
+            v-model:rating="rating"
+            v-bind:increment="0.5"
+            v-bind:max-rating="5"
+            v-bind:show-rating="false"
+            v-bind:star-size="25"
+            active-color="#f8a427"
+            @click="rateBook"
+          ></star-rating>
+        </div>
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
       <h3>{{ novel.title }}</h3>
@@ -168,6 +169,9 @@ img {
   div,
   a {
     flex: 1;
+  }
+  div {
+    padding-top: 0.2rem;
   }
 }
 .vue-star-rating-rating-text {
