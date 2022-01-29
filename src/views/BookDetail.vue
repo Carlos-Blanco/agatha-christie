@@ -19,7 +19,6 @@
         </div>
         <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
-      <p>{{ rating }}</p>
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
       <div class="novel-details__button-wrapper">
@@ -66,12 +65,7 @@ export default {
         if (doc.exists) {
             var bookrate = doc.data()
             this.rating = bookrate.bookrate;
-        } else {
-            // doc.data() will be undefined in this case
-            console.log("Book not rated");
         }
-    }).catch((error) => {
-        console.log("Error getting document:", error);
     });
 
   },
