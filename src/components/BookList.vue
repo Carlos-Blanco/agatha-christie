@@ -67,7 +67,7 @@ a {
     position: absolute;
     top: 0;
     right: 0.5rem;
-    background: url(/img/icons/icn-was-read.svg) center no-repeat;
+    background: url(../assets/icons/icn-was-read.svg) center no-repeat;
     background-size: contain;
     width: 2rem;
     height: 2rem;

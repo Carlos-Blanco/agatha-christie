@@ -5,7 +5,7 @@
         <h1>Agatha Christie Books</h1>
       </div>
       <router-link :to="{ name: 'Profile' }">
-        <img src="/img/icons/user-profile.svg" />
+        <img src="../assets/icons/user-profile.svg" />
       </router-link>
     </header>
     <div class="input-wrapper">
@@ -81,7 +81,7 @@ header {
         content: "";
         width: 1.5rem;
         height: 1.5rem;
-        background: url(/img/icons/icn-magnifying-glass.svg);
+        background: url(../assets/icons/icn-magnifying-glass.svg);
         display: inline-block;
         background-size: contain;
         position: relative;

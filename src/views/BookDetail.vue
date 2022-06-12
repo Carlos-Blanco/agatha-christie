@@ -53,8 +53,8 @@ export default {
         console.log(error);
       });
 
-/*       db.collection("rating").doc(this.id).collection("users").get().then(querySnapshot => {    
-      querySnapshot.forEach(doc => {  
+/*       db.collection("rating").doc(this.id).collection("users").get().then(querySnapshot => {
+      querySnapshot.forEach(doc => {
         this.rating = doc.data().bookrate
       });
     });   */
@@ -154,7 +154,7 @@ img {
     width: 100%;
     &:before {
       content: "";
-      background: url(/img/icons/icn-read-book-grey.svg) center no-repeat;
+      background: url(../assets/icons/icn-read-book-grey.svg) center no-repeat;
       background-size: contain;
       height: 0.8rem;
       width: 0.8rem;
@@ -167,7 +167,7 @@ img {
       color: white;
       background: cadetblue;
       &:before {
-        background: url(/img/icons/icn-read-book-white.svg) center no-repeat;
+        background: url(../assets/icons/icn-read-book-white.svg) center no-repeat;
         background-size: contain;
       }
     }

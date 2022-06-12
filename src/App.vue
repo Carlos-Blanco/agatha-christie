@@ -54,7 +54,7 @@ body {
       content: "";
       width: 1.5rem;
       height: 1.5rem;
-      background: url(/img/icons/icn-back.svg) center no-repeat;
+      background: url(assets/icons/icn-back.svg) center no-repeat;
       position: relative;
       top: 5px;
       display: inline-block;
