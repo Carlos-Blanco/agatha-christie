@@ -1,7 +1,7 @@
 <template>
   <div class="signup">
     <router-link :to="{ name: 'Home' }" class="btn--back">Back</router-link>
-    <h2>Sign up</h2>
+    <h2>Registrarse</h2>
     <form @submit.prevent="signup">
       <div>
         <input type="text" v-model="userinfo.email" placeholder="Email" />
@@ -10,11 +10,11 @@
         <input type="password" v-model="userinfo.password" placeholder="Password" />
       </div>
       <span id="errorMessage" class="error" style="display:none;"></span>
-      <button>Sign up</button>
+      <button>Registrarse</button>
     </form>
     <div class="login-wrapper">
       <p><span></span>or<span></span></p>
-      <router-link :to="{ name: 'Login' }" class="btn">Log in</router-link>
+      <router-link :to="{ name: 'Login' }" class="btn">Iniciar sesión</router-link>
     </div>
   </div>
 </template>
