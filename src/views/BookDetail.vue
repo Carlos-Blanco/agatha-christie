@@ -17,7 +17,6 @@
             @click="rateBook"
           ></star-rating>
         </div>
-        <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
       </div>
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
@@ -114,18 +113,6 @@ img {
   h3 {
     font-size: 2rem;
     font-weight: 900;
-  }
-  a.btn--buy {
-    background: #ff5e58;
-    font-weight: bold;
-    color: white;
-    padding: 0.5rem 0;
-    border-radius: var(--border-radius);
-    font-size: 1rem;
-    text-align: center;
-    &:hover {
-      background: #ec9616;
-    }
   }
 }
 .novel-details__button-wrapper {
