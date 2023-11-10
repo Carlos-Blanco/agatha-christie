@@ -2,7 +2,7 @@
   <div class="books-list">
     <header>
       <div>
-        <h1>Agatha Christie Books</h1>
+        <h1>Agatha Christie</h1>
       </div>
       <router-link :to="{ name: 'Profile' }">
         <img src="../assets/icons/user-profile.svg" />
@@ -13,7 +13,7 @@
       <input type="text" placeholder="Search" v-model="searchTerm" />
     </div>
     <div v-if="!searchTerm">
-      <h2>Trending books</h2>
+      <h2>Los mejores libros</h2>
       <div class="trending-books">
         <TrendingBooks
           v-for="novel in books.trendingNovels"
@@ -22,7 +22,7 @@
         />
       </div>
     </div>
-    <h2>Agatha Christie books</h2>
+    <h2>Novelas de Agatha Christie</h2>
     <BookList v-for="novel in filterByTerm" :key="novel.id" :novel="novel" />
   </div>
 </template>
