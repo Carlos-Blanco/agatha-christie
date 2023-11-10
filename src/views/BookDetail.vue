@@ -1,6 +1,6 @@
 <template>
   <div v-if="novel">
-    <router-link :to="{ name: 'Home' }" class="btn--back">Back</router-link>
+    <router-link :to="{ name: 'Home' }" class="btn--back">Atrás</router-link>
     <div>
       <img :src="novel.image" :alt="novel.title" />
     </div>
@@ -51,12 +51,6 @@ export default {
       .catch((error) => {
         console.log(error);
       });
-
-/*       db.collection("rating").doc(this.id).collection("users").get().then(querySnapshot => {
-      querySnapshot.forEach(doc => {
-        this.rating = doc.data().bookrate
-      });
-    });   */
 
     const db = firebase.firestore();
     var docRef = db.collection("rating").doc(this.id).collection("users").doc(this.$store.state.user.user.userinfo);
