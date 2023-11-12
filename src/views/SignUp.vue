@@ -1,19 +1,19 @@
 <template>
   <div class="signup">
-    <router-link :to="{ name: 'Home' }" class="btn--back">Back</router-link>
+    <router-link :to="{ name: 'Home' }" class="btn--back">Atrás</router-link>
     <h2>Registrarse</h2>
     <form @submit.prevent="signup">
       <div>
         <input type="text" v-model="userinfo.email" placeholder="Email" />
       </div>
       <div>
-        <input type="password" v-model="userinfo.password" placeholder="Password" />
+        <input type="password" v-model="userinfo.password" placeholder="Contraseña" />
       </div>
       <span id="errorMessage" class="error" style="display:none;"></span>
       <button>Registrarse</button>
     </form>
     <div class="login-wrapper">
-      <p><span></span>or<span></span></p>
+      <p><span></span>o<span></span></p>
       <router-link :to="{ name: 'Login' }" class="btn">Iniciar sesión</router-link>
     </div>
   </div>
