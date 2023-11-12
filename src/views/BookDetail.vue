@@ -17,12 +17,13 @@
             @click="rateBook"
           ></star-rating>
         </div>
+        <a :href="novel.link" target="_blank" class="btn--buy">Comprar libro</a>
       </div>
       <h3>{{ novel.title }}</h3>
       <p>{{ novel.description }}</p>
       <div class="novel-details__button-wrapper">
         <button @click="addBook" :class="{ active: activeBook }">
-          {{ activeBook ? "Unread" : "Mark as Read" }}
+          {{ activeBook ? "Leido" : "Marcar como leido" }}
         </button>
       </div>
     </div>
@@ -51,6 +52,12 @@ export default {
       .catch((error) => {
         console.log(error);
       });
+
+/*       db.collection("rating").doc(this.id).collection("users").get().then(querySnapshot => {
+      querySnapshot.forEach(doc => {
+        this.rating = doc.data().bookrate
+      });
+    });   */
 
     const db = firebase.firestore();
     var docRef = db.collection("rating").doc(this.id).collection("users").doc(this.$store.state.user.user.userinfo);
@@ -107,6 +114,18 @@ img {
   h3 {
     font-size: 2rem;
     font-weight: 900;
+  }
+  a.btn--buy {
+    background: #ff5e58;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem 0;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    text-align: center;
+    &:hover {
+      background: #ec9616;
+    }
   }
 }
 .novel-details__button-wrapper {

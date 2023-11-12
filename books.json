@@ -127,10 +127,10 @@
     },
     {
         "id": 14,
-        "title": "Murder on the Orient Express",
+        "title": "Asesinato en el Orient Express",
         "published": 1934,
-        "description": "Murder on the Orient Express is undoubtedly one of Agatha Christie's greatest mystery novels. Just after midnight, a snowdrift stops the Orient Express in its tracks. The luxurious train is surprisingly full for the time of the year, but by the morning it is one passenger fewer. An American tycoon lies dead in his compartment, stabbed a dozen times, his door locked from the inside. Isolated and with a killer in their midst, detective Hercule Poirot must identify the murderer – in case he or she decides to strike again.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Murder-on-the-Orient-Express.jpg?alt=media&token=158b4e64-e76c-42ac-8362-1628e79233dc",
+        "description": "Asesinato en el Orient Express es sin duda una de las mayores novelas de misterio de Agatha Christie. Justo después de la medianoche, un ventisquero detiene al Orient Express en seco. El lujoso tren está sorprendentemente lleno para la época del año, pero por la mañana tiene un pasajero menos. Un magnate estadounidense yace muerto en su compartimiento, apuñalado una docena de veces, su puerta cerrada por dentro. Aislado y con un asesino entre ellos, el detective Hércules Poirot debe identificar al asesino, en caso de que decida atacar de nuevo.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/asesinato-en-el-orient-express.jpeg?alt=media&token=61bb5095-ec74-4dad-a28b-582158ea1c7a",
         "link": "https://amzn.to/2MnrL7X",
         "slug": "murder-on-the-orient-express"
     },
@@ -190,10 +190,10 @@
     },
     {
         "id": 21,
-        "title": "Death On The Nile",
+        "title": "Muerte en el Nilo",
         "published": 1937,
-        "description": "Agatha Christie's most daring travel mystery. The tranquillity of a cruise along the Nile is shattered by the discovery that Linnet Ridgeway has been shot through the head. She was young, stylish and beautiful, a girl who had everything – until she lost her life. Hercule Poirot recalls an earlier outburst by a fellow passenger: ‘I’d like to put my dear little pistol against her head and just press the trigger.’ Yet in this exotic setting’ nothing is ever quite what it seems…",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/Death-on-the-Nile.jpg?alt=media&token=123e1fa2-2fd7-4e95-b3d3-7788bc4c3114",
+        "description": "La tranquilidad de un crucero por el Nilo se ve destrozada por el descubrimiento de que Linnet Ridgeway recibió un disparo en la cabeza. Era joven, elegante y hermosa, una chica que lo tenía todo, hasta que perdió la vida. Hércules Poirot recuerda un estallido anterior de un compañero de viaje: "Me gustaría poner mi querida pistola en su cabeza y simplemente presionar el gatillo". Sin embargo, en este exótico escenario "nada es lo que parece"...",
+        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/muerte-en-el-nilo.jpeg?alt=media&token=ad17d667-aa7a-469a-b72b-f82bd95ec528",
         "link": "https://amzn.to/36v6WhE",
         "slug": "death-on-the-nile"
     },
@@ -235,10 +235,10 @@
     },
     {
         "id": 26,
-        "title": "And Then There Were None",
+        "title": "Diez Negritos",
         "published": 1939,
-        "description": "1939. Europe teeters on the brink of war. Ten strangers are invited to Soldier Island, an isolated rock near the Devon coast. Cut off from the mainland, with their generous hosts Mr and Mrs U.N. Owen mysteriously absent, they are each accused of a terrible crime. When one of the party dies suddenly they realise they may be harbouring a murderer among their number. The tension escalates as the survivors realise the killer is not only among them but is preparing to strike again… and again...",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/And-Then-There-Were-None.jpeg?alt=media&token=b46e4849-c40b-4593-8769-949832fc6c7a",
+        "description": "1939. Europa se tambalea al borde de la guerra. Se invita a diez extraños a la isla del Negro, una roca aislada cerca de la costa de Devon. Aislados del continente, con sus generosos anfitriones, el señor y la señora U.N. Owen misteriosamente ausentes, se les acusa de un crimen terrible. Cuando uno de los miembros del grupo muere de repente, se dan cuenta de que pueden estar albergando a un asesino entre ellos. La tensión aumenta cuando los supervivientes se dan cuenta de que el asesino no solo está entre ellos, sino que se prepara para atacar de nuevo... y de nuevo...",
+        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/diez-negritos.jpeg?alt=media&token=da9f185b-b14a-4aae-aae0-e74ec01b091b",
         "link": "https://amzn.to/3rchxGh",
         "slug": "and-then-there-were-none"
     },

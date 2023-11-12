@@ -10,7 +10,7 @@
     </header>
     <div class="input-wrapper">
       <div></div>
-      <input type="text" placeholder="Search" v-model="searchTerm" />
+      <input type="text" placeholder="Buscar" v-model="searchTerm" />
     </div>
     <div v-if="!searchTerm">
       <h2>Los mejores libros</h2>
