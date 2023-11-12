@@ -46,10 +46,10 @@
     },
     {
         "id": 5,
-        "title": "The Murder of Roger Ackroyd",
+        "title": "El Asesinato de Roger Ackroyd",
         "published": 1926,
-        "description": "Known forits startling reveal, this is the book that changed Agatha Christie’s career. Roger Ackroyd was a man who knew too much. He knew the woman he loved had poisoned her first husband. He knew someone was blackmailing her – and now he knew she had taken her own life with a drug overdose. Soon the evening post would let him know who the mystery blackmailer was. But Ackroyd was dead before he’d finished reading it – stabbed through the neck where he sat in the study.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/The-Murder-of-Roger-Ackroyd.jpeg?alt=media&token=9d5a3973-ffb2-47bd-b85b-543a7ac37e20",
+        "description": "Mrs. Ferrars murió la noche del 16 al 17 de septiembre, un jueves. Me llamaron a las ocho de la mañana del viernes 17. Mi presencia no sirvió de nada. Hacía horas que había muerto. Regresé a mi casa unos minutos después de las nueve. Entré y me entretuve adrede en el vestíbulo, colgando mi sombrero y el abrigo ligero que me había puesto como precaución por el fresco de las primeras horas de aquel día otoñal. En honor a la verdad, diré que estaba muy inquieto y preocupado. No voy a pretender que preví entonces los acontecimientos de las semanas siguientes, pero mi instinto me avisaba de que se acercaban tiempos llenos de sobresaltos y sinsabores.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-asesinato-de-roger-ackroyd.jpeg?alt=media&token=218e2344-d4e0-452f-9ee7-aea2d0e68a14",
         "link": "https://amzn.to/3anpRfA",
         "slug": "the-murder-of-roger-ackroyd"
     },
@@ -192,7 +192,7 @@
         "id": 21,
         "title": "Muerte en el Nilo",
         "published": 1937,
-        "description": "La tranquilidad de un crucero por el Nilo se ve destrozada por el descubrimiento de que Linnet Ridgeway recibió un disparo en la cabeza. Era joven, elegante y hermosa, una chica que lo tenía todo, hasta que perdió la vida. Hércules Poirot recuerda un estallido anterior de un compañero de viaje: "Me gustaría poner mi querida pistola en su cabeza y simplemente presionar el gatillo". Sin embargo, en este exótico escenario "nada es lo que parece"...",
+        "description": "La tranquilidad de un crucero por el Nilo se ve destrozada por el descubrimiento de que Linnet Ridgeway recibió un disparo en la cabeza. Era joven, elegante y hermosa, una chica que lo tenía todo, hasta que perdió la vida. Hércules Poirot recuerda un estallido anterior de un compañero de viaje: 'Me gustaría poner mi querida pistola en su cabeza y simplemente presionar el gatillo'. Sin embargo, en este exótico escenario 'nada es lo que parece'...",
         "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/muerte-en-el-nilo.jpeg?alt=media&token=ad17d667-aa7a-469a-b72b-f82bd95ec528",
         "link": "https://amzn.to/36v6WhE",
         "slug": "death-on-the-nile"
