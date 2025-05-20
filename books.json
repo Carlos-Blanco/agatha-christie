@@ -1,760 +1,749 @@
- [
-    {
-        "id": 0,
-        "title": "El Misterioso Caso de Styles",
-        "published": 1920,
-        "description": "El revuelo que despertó el que en su momento fue conocido como «El caso de Styles» se ha calmado. Sin embargo, en vista de la resonancia mundial que tuvo, mi amigo Poirot y la propia familia me han pedido que escriba toda la historia. Confiamos en que así se acallen definitivamente los rumores sensacionalistas que aún perduran. Por lo tanto, expondré brevemente las circunstancias que me llevaron a verme implicado en este asunto. Me habían enviado a Inglaterra tras caer herido en el frente y, después de pasar unos meses recuperándome en una deprimente clínica, me concedieron un mes de permiso. No tenía parientes cercanos ni amigos, ni siquiera había decidido lo que haría, cuando me encontré con John Cavendish. Le había visto muy poco en los últimos años. En realidad, jamás le conocí a fondo. Me llevaba unos quince años, aunque no representaba los cuarenta y cinco que tenía. Sin embargo, durante la infancia, a menudo me alojé en Styles, la residencia de su madre, en Essex.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterioso-caso-de-styles.jpg?alt=media&token=3af41d6e-c506-4800-a200-3627f64d4de1",
-        "link": "https://amzn.to/2Mo17vI",
-        "slug": "the-mysterious-affair-at-styles"
-    },
-    {
-        "id": 1,
-        "title": "El Misterioso Señor Brown",
-        "published": 1922,
-        "description": "Eran las dos de la tarde del 7 de mayo de 1915. El Lusitania había sido alcanzado por dos torpedos y se iba hundiendo rápidamente, mientras los botes eran lanzados al agua a la máxima velocidad posible. Las mujeres y los niños se encontraban alineados aguardando su turno. Algunas mujeres se asían desesperadas a sus esposos y padres, y otras estrechaban contra sí a sus hijos. Una joven contemplaba la escena, sola y algo apartada del resto. Era casi una niña: no tendría más de dieciocho años, y al parecer no estaba asustada. Sus ojos, de mirada firme y grave, miraban al frente.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterioso-senor-brown.jpg?alt=media&token=0c906b6d-2728-4007-b7b0-37dbb485969b",
-        "link": "https://amzn.to/36wKPY5",
-        "slug": "the-secret-adversary"
-    },
-    {
-        "id": 2,
-        "title": "Asesinato en el Campo de Golf",
-        "published": 1923,
-        "description": "Creo que existe una anécdota muy popular referente a un joven escritor, quien, decidido a que el comienzo de su relato tuviera la originalidad y la garra necesarias para atrapar y mantener la atención del más duro de los editores, acuñó la siguiente frase: «¡Puñetas!, dijo la duquesa». Por extraño que parezca, mi relato comienza más o menos en la misma línea. Sólo que la dama que pronunció dicha palabreja no era una duquesa. Era un día a principios de junio. Había atendido algunos asuntos en París y regresaba a Londres, donde aún compartía habitaciones con mi viejo amigo Hércules Poirot, exdetective de la policía belga, en el primer tren de la mañana.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/asesinato-en-el-campo-de-golf.jpg?alt=media&token=cbfcd53d-5359-4ebd-b227-a733b789abda",
-        "link": "https://amzn.to/36wm2DK",
-        "slug": "the-murder-on-the-links"
-    },
-    {
-        "id": 3,
-        "title": "El Hombre del Traje Color Castaño",
-        "published": 1924,
-        "description": "Nadina, la bailarina que había conquistado París, se meció al compás de los aplausos e hizo reverencias una y otra vez. Las negras y contraídas pupilas de sus ojos se contrajeron aún más. La línea recta escarlata que era su boca se curvó hacia arriba. El público entusiasmado golpeó el suelo para expresar su aprobación al caer el telón que ocultaba los rojos, azules y púrpuras del exótico decorado. La bailarina abandonó el escenario en un remolino de ropajes azules y anaranjados. Un caballero barbudo la recibió, con entusiasmo, entre sus brazos. Era el empresario. —¡Magnífico, petite, magnífico! —exclamó—. ¡Esta noche se ha superado! La besó galantemente en ambas mejillas, con naturalidad. Madame Nadina aceptó el tributo con una serenidad fruto de la costumbre y pasó a su camerino, donde había ramilletes de flores apilados de cualquier manera y en todas partes, maravillosos vestidos de estilo futurista colgaban de las perchas y el aire estaba cargado del aroma de las flores y de perfumes y esencias. Jeanne, la doncella, ayudó a su señora, hablando sin cesar y colmándola de alabanzas.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-hombre-del-traje-color-castano.jpg?alt=media&token=569626fc-0497-4ee3-bd7a-beb75915630c",
-        "link": "https://amzn.to/2NL75ab",
-        "slug": "the-man-in-the-brown-suit"
-    },
-    {
-        "id": 4,
-        "title": "Poirot Investiga",
-        "published": 1924,
-        "description": "Me encontraba ante una de las ventanas de la residencia de Hércules Poirot, contemplando la calle. —Es sumamente curioso —dije de pronto, conteniendo el aliento. —¿El qué, mon ami? —preguntó Poirot, plácidamente desde las profundidades de su cómoda butaca. —¡Dedúzcalo usted de los hechos siguientes! Aquí viene una joven elegantemente vestida…: sombrero de última moda y magníficas pieles. Se acerca lentamente mirando todas las casas al pasar. Sin que ella se dé cuenta, la van siguiendo tres hombres y una mujer de mediana edad. En este momento acaba de unirse a ellos un chico de ésos que hacen recados, que la señala con el dedo al mismo tiempo que gesticula. ¿Qué drama están tramando? ¿Acaso ella es una delincuente y sus seguidores unos detectives dispuestos a detenerla?",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/poirot-investiga.jpg?alt=media&token=3920132d-0e25-4a03-986d-9cf926127cef",
-        "link": "https://amzn.to/3tfqd0r",
-        "slug": "the-secret-of-chimneys"
-    },
-    {
-        "id": 5,
-        "title": "El Secreto de Chimneys",
-        "published": 1925,
-        "description": "–¡Caballero Joe! —¡Que me cuelguen si no es Jimmy McGrath! Las siete mujeres alicaídas y los tres varones aburridos, clientes de Viajes Castle, sintieron un súbito despertar de su interés. Mister Cade, su admirado mister Cade, alto, esbelto, moreno, risueño, cuyas elegantes maneras tanto habían contribuido a resolver disputas y a mantenerlos en un aceptable estado de buen humor, había encontrado a un amigo harto peculiar, a decir verdad. De estatura semejante a la de su guía, más robusto y mucho menos apuesto, parecía arrancado de las páginas de una novela de aventuras. Sería, probablemente, el dueño de una taberna; pero despertaba su atención. A fin de cuentas, se viaja con la esperanza de ver cosas que los libros mencionan.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-secreto-de-chimneys.jpg?alt=media&token=35838fdf-f9f1-4678-a81c-2170306ffc11",
-        "link": "https://amzn.to/3tfqd0r",
-        "slug": "the-secret-of-chimneys"
-    },
-    {
-        "id": 6,
-        "title": "El Asesinato de Roger Ackroyd",
-        "published": 1926,
-        "description": "Mrs. Ferrars murió la noche del 16 al 17 de septiembre, un jueves. Me llamaron a las ocho de la mañana del viernes 17. Mi presencia no sirvió de nada. Hacía horas que había muerto. Regresé a mi casa unos minutos después de las nueve. Entré y me entretuve adrede en el vestíbulo, colgando mi sombrero y el abrigo ligero que me había puesto como precaución por el fresco de las primeras horas de aquel día otoñal. En honor a la verdad, diré que estaba muy inquieto y preocupado. No voy a pretender que preví entonces los acontecimientos de las semanas siguientes, pero mi instinto me avisaba de que se acercaban tiempos llenos de sobresaltos y sinsabores.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-asesinato-de-roger-ackroyd.jpg?alt=media&token=369b69f2-249c-4a78-a07d-b4659937d7e8",
-        "link": "https://amzn.to/3anpRfA",
-        "slug": "the-murder-of-roger-ackroyd"
-    },
-    {
-        "id": 7,
-        "title": "Los Cuatro Grandes",
-        "published": 1927,
-        "description": "Conozco gente que lo pasa bien en cualquier travesía del canal de la Mancha, personas que se sientan tranquilamente en una silla de cubierta en la que permanecen hasta que el barco está amarrado, entonces recogen sus bártulos sin apresurarse y luego desembarcan. Reconozco que yo nunca he sido capaz de hacerlo. Desde el momento en que subo a bordo, me parece que el tiempo es demasiado escaso como para dedicarme a algo en particular. Traslado mis maletas de un sitio a otro y, si voy al comedor a tomar algo, engullo lo que sea con una inquieta sensación de que el barco puede atracar inesperadamente mientras como. Puede que todo ello sea tan sólo un legado de lo que experimenté en los cortos permisos de los que disfruté durante la guerra, cuando asegurarse un sitio cerca de la pasarela parecía un asunto de vida o muerte, y encontrarse entre los primeros que desembarcaban representaba ganar unos minutos preciosos en los tres o cinco días que duraba la licencia.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/los-cuatro-grandes.jpg?alt=media&token=0e317834-7897-4abd-a5c2-face300bb465",
-        "link": "https://amzn.to/3cxgpcm",
-        "slug": "the-big-four"
-    },
-    {
-        "id": 8,
-        "title": "El Misterio del Tren Azul",
-        "published": 1928,
-        "description": "Era alrededor de medianoche cuando un hombre atravesaba la plaza de la Concordia. A pesar del magnífico abrigo que cubría su raquítico cuerpo, había en él algo ruin y miserable. Era un hombrecillo con cara de rata, uno de esos tipos que parece imposible que puedan ocupar algún puesto importante en las altas esferas de la sociedad. Sin embargo, quien creyese tal cosa estaría totalmente equivocado, ya que aquel individuo de cuerpo raquítico y miserable aspecto representaba un importante papel en los destinos del mundo. En el imperio gobernado por las ratas, él era el rey. En aquellos momentos, en una embajada aguardaban su regreso. Pero antes tenía otras cosas que hacer, aunque no oficialmente. A la luz de la luna, su rostro aparecía blanco y afilado, y en él se destacaba su nariz ligeramente curvada. Su padre, un judío polaco, oficial de sastre, se habría mostrado muy satisfecho con el trabajo que aquella noche llevaba allí a su hijo.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-del-tren-azul.jpg?alt=media&token=653c24ff-0c01-4ec6-8cb9-8705c3fc1530",
-        "link": "https://amzn.to/3tdJBLc",
-        "slug": "the-mystery-of-the-blue-train"
-    },
-    {
-        "id": 9,
-        "title": "Matrimonio de Sabuesos",
-        "published": 1929,
-        "description": "Mistress Beresford cambió de postura en el diván y miró melancólica a través de la ventana de su apartamento. El panorama no era en realidad extenso. Se limitaba a un bloque de pisitos como el suyo, situado al otro lado de la calzada. Mistress Beresford lanzó un suspiro. Después bostezó. —Me gustaría que sucediese algo imprevisto —dijo. Su marido la miró con aire de reproche. —Cuidado, Tuppence, este inmoderado afán que de pronto te ha entrado por el sensacionalismo vulgar acabará por alarmarme. Tuppence volvió a suspirar y cerró los ojos en actitud meditativa.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/matrimonio-de-sabuesos.jpg?alt=media&token=4b0c4f9b-7cf5-4239-9576-ea76895d5ede",
-        "link": "https://amzn.to/3th3wcc",
-        "slug": "the-murder-at-the-vicarage"
-    },
-    {
-        "id": 10,
-        "title": "El Misterio de las Siete Esferas",
-        "published": 1929,
-        "description": "Aquel agradable joven llamado Jimmy Thesiger bajó de dos en dos los peldaños de la gran escalera de Chimneys. Tan precipitado era su descenso que fue a chocar con Tredwell, el majestuoso mayordomo, cuando éste cruzaba el vestíbulo llevando café recién hecho. Sólo debido a su maravillosa presencia de ánimo y a su agilidad de acróbata, no ocurrió una catástrofe. —Perdone —se excusó Jimmy—. Oiga, Tredwell, ¿soy el último en bajar? —No, señor. Mr. Wade está aún en sus habitaciones. —¡Magnífico! —respondió Jimmy entrando en el comedor.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-de-las-siete-esferas.jpg?alt=media&token=b2cf9ebd-e2a6-4d2f-9173-8cc2300f4d78",
-        "link": "https://amzn.to/36xdPyY",
-        "slug": "the-seven-dials-mystery"
-    },
-    {
-        "id": 11,
-        "title": "Muerte en la Vicaría",
-        "published": 1930,
-        "description": "Es difícil saber exactamente dónde empieza esta historia, pero he elegido cierto miércoles, a la hora de la comida, en la vicaría. La conversación, aunque no relacionada fundamentalmente con el asunto que nos ocupa, presentó uno o dos sugestivos incidentes que influyeron más tarde en los acontecimientos. Acababa de trinchar unos pedazos de carne de buey, bastante dura por cierto, cuando al volver a sentarme observé, con un espíritu que mal cuadraba a mi hábito, que quien asesinara al coronel Protheroe prestaría un buen servicio a la humanidad.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/muerte-en-la-vicaria.jpg?alt=media&token=71308273-b007-43d0-848c-7d35dd53c6e8",
-        "link": "https://amzn.to/3as1RHY",
-        "slug": "peril-at-end-house"
-    },
-    {
-        "id": 12,
-        "title": "El Enigmático Mister Quin",
-        "published": 1930,
-        "description": "Era la víspera de Año Nuevo. Los adultos que asistían a la fiesta de los Royston estaban reunidos en el gran salón. Mr. Satterthwaite se alegró de que la chiquillería se hubiera acostado. Le desagradaban las manadas de niños. Los consideraba insulsos y toscos. Les faltaba sutileza y, en el transcurso de los años, cada vez sentía mayor atracción por esa cualidad.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-enigmatico-mr-quin.jpg?alt=media&token=e87c6a4c-6ce8-4519-a0c3-01630b1a5848",
-        "link": "https://amzn.to/3pEU28t",
-        "slug": "the-sittaford-mystery"
-    },
-    {
-        "id": 13,
-        "title": "El Misterio de Sittaford",
-        "published": 1931,
-        "description": "El comandante Burnaby se calzó las botas de goma, se abrochó bien el cuello del abrigo, tomó de un estante cercano a la puerta una linterna protegida contra el viento y abrió con cautela la puerta principal de su pequeño chalé y atisbó el exterior. La escena que presenciaron sus ojos era típica de la campiña inglesa, tal como la representan las tarjetas de felicitación de Navidad y los melodramas pasados de moda. Por todas partes se veía nieve acumulada en espesos montones, no un mero blanco manto de una o dos pulgadas de espesor. Durante los cuatro últimos días, había nevado copiosamente en toda Inglaterra y, en aquella región de los alrededores de Dartmoor, se había alcanzado espesores de varios pies. Los vecinos de toda la comarca se quejaban de la infinidad de cañerías que se reventaban por causa de aquel frío y el que tenía un amigo fontanero (aunque sólo fuese un aprendiz) se consideraba el más afortunado del mundo.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-de-sittaford.jpg?alt=media&token=889dd31d-ae26-4b7b-a7ec-011de8a7674a",
-        "link": "https://amzn.to/3cwYKBd",
-        "slug": "why-didnt-they-ask-evans"
-    },
-    {
-        "id": 14,
-        "title": "Peligro Inminente",
-        "published": 1932,
-        "description": "–En mi opinión no hay puerto de mar al sur de Inglaterra más atractivo que Saint Loo, y comprendo el entusiasmo de sus huéspedes estivales, que lo llaman la reina de las playas. Recuerda la Riviera por muchos conceptos. La costa de Cornualles rivaliza en belleza con la Costa Azul. Así que hube expuesto ese pensamiento al amigo Hércules Poirot, me respondió: —No es muy original su afirmación, mi querido amigo, pues la leímos anoche en el coche-restaurante, en la carta del menú. —¿Y por eso no le parece tal vez justificada? Hércules sonreía para sí mismo, absorto en sus propias reflexiones. Tuve que repetir la pregunta. —Dispénseme, Hastings; estaba pensando en otra cosa, y precisamente en ese lugar del que usted hablaba.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/peligro-inminente.jpg?alt=media&token=b3e11304-6438-4bfa-a0f9-59ade5fea719",
-        "link": "https://amzn.to/3tfpBYH",
-        "slug": "lord-edgware-dies"
-    },
-    {
-        "id": 15,
-        "title": "Miss Marple y los 13 Problemas",
-        "published": 1932,
-        "description": "Estas historias fueron la primera introducción de Miss Marple al mundo de los lectores de relatos policíacos. Miss Marple tiene una ligera semejanza con mi propia abuelita, es también una anciana blanca y sonrosada, quien, a pesar de haber llevado una vida muy retirada, siempre ha demostrado tener gran conocimiento de la depravación humana. Uno se sentía terriblemente ingenuo y crédulo ante sus observaciones: «Pero ¿tú crees eso que te dicen? No debieras hacerlo. ¡Yo nunca creo nada!». Yo disfruto escribiendo las historias de Miss Marple; siento un profundo afecto por mi dulce anciana. Esperaba que fuese un éxito... y lo fue. Después de las seis primeras historias publicadas, me fueron solicitadas otras seis. Miss Marple había venido para quedarse.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/miss-marple-y-los-13-problemas.jpg?alt=media&token=de22dcab-6c65-4eda-9c99-403f4a14809a",
-        "link": "https://amzn.to/2MnrL7X",
-        "slug": "murder-on-the-orient-express"
-    },
-    {
-        "id": 16,
-        "title": "La Muerte de Lord Edward",
-        "published": 1933,
-        "description": "El público es sumamente olvidadizo. El asesinato de George Alfred Saint Vincent Marsh, cuarto barón de Edgware, que tan intensamente apasionó a la opinión pública, ha pasado ya al olvido y otros hechos posteriores han acaparado su interés. Debo confesar que por expreso deseo de mi amigo Hércules Poirot no figuró su nombre en el suceso, ya que si intervino en él no fue por su propia voluntad. Los laureles, por tanto, se los llevaron los demás, como él quería, pues, desde su punto de vista, aquello constituyó uno de sus fracasos, ya que si consiguió ponerse, por fin, sobre la verdadera pista del criminal fue debido a sorprender en la calle cierta conversación que sostenían dos desconocidos.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-muerte-de-lord-edgward.jpg?alt=media&token=eb9c97bb-daaa-4cff-84f7-0ad112b61dae",
-        "link": "https://amzn.to/3r3UI7E",
-        "slug": "three-act-tragedy"
-    },
-    {
-        "id": 17,
-        "title": "¿Por qué no Preguntan a Evans?",
-        "published": 1934,
-        "description": "Bobby Jones empuñó el palo de golf, tocó ligeramente la bola, inclinó despacio el palo hacia atrás y luego dio un golpe fuerte con la rapidez de un rayo. ¿Acaso la bola emprendió un camino recto, elevándose para caer luego al suelo en el lugar debido? De ningún modo. Avanzó tropezando contra los accidentes del terreno y al fin se encajó profundamente en un búnker. Allí no había espectadores que pudiesen proferir una exclamación de desaliento. El testigo solitario de aquel golpe no manifestó ninguna sorpresa y eso se explica fácilmente, porque no era el maestro estadounidense del juego que había inventado aquel golpe, sino simplemente el cuarto hijo del vicario de Marchbolt, un pequeño pueblo situado en la costa de Gales.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/por-que-no-le-preguntan-a-evans.jpg?alt=media&token=51a732a1-c6f9-4e01-8ca4-f98a27c38371",
-        "link": "https://amzn.to/36uRi5O",
-        "slug": "death-in-the-clouds"
-    },
-    {
-        "id": 18,
-        "title": "Testigo de Cargo y Otras Historias",
-        "published": 1933,
-        "description": "El señor Mayherne se ajustó las gafas mientras se aclaraba la garganta con una tosecilla seca muy característica en él. Luego volvió a mirar al hombre que tenía delante, un hombre acusado de asesinato.  El señor Mayherne era un hombre menudo, de ademanes precisos, pulcro, por no decir afectado, en su modo de vestir, y con unos ojos grises de mirada astuta y penetrante. No tenía un pelo de tonto. Muy al contrario, como abogado, el señor Mayherne goza- ba de una gran reputación. Su voz, cuando se dirigió a su cliente, fue áspera pero no antipática. ",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/testigo-de-cargo.jpg?alt=media&token=fe3c028d-32ab-4018-bb92-03fecac76f7e",
-        "link": "https://amzn.to/36wklWU",
-        "slug": "murder-in-mesopotamia"
-    },
-    {
-        "id": 19,
-        "title": "El Misterio de Listerdale y Otras Historias",
-        "published": 1933,
-        "description": "El señor Mayherne se ajustó las gafas mientras se aclaraba la garganta con una tosecilla seca muy característica en él. Luego volvió a mirar al hombre que tenía delante, un hombre acusado de asesinato.  El señor Mayherne era un hombre menudo, de ademanes precisos, pulcro, por no decir afectado, en su modo de vestir, y con unos ojos grises de mirada astuta y penetrante. No tenía un pelo de tonto. Muy al contrario, como abogado, el señor Mayherne goza- ba de una gran reputación. Su voz, cuando se dirigió a su cliente, fue áspera pero no antipática. ",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-de-listerdale.jpg?alt=media&token=0191bebd-7f49-41c6-9059-072e9a9eb2b2",
-        "link": "https://amzn.to/36wklWU",
-        "slug": "murder-in-mesopotamia"
-    },
-    {
-        "id": 20,
-        "title": "Asesinato en el Orient Express",
-        "published": 1934,
-        "description": "Asesinato en el Orient Express es sin duda una de las mayores novelas de misterio de Agatha Christie. Justo después de la medianoche, un ventisquero detiene al Orient Express en seco. El lujoso tren está sorprendentemente lleno para la época del año, pero por la mañana tiene un pasajero menos. Un magnate estadounidense yace muerto en su compartimiento, apuñalado una docena de veces, su puerta cerrada por dentro. Aislado y con un asesino entre ellos, el detective Hércules Poirot debe identificar al asesino, en caso de que decida atacar de nuevo.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/asesinato-en-el-orient-express.jpg?alt=media&token=e69b5ae4-091c-4e13-93a9-66b1e63351ed",
-        "link": "https://amzn.to/3th4DIP",
-        "slug": "the-abc-murders"
-    },
-    {
-        "id": 21,
-        "title": "Parker Pine Investiga",
-        "published": 1934,
-        "description": "Cuatro gruñidos, una voz que preguntaba con tono de indignación por qué nadie podía dejar en paz su sombrero, un portazo y mister Packington salió para coger el tren de las ocho y cuarenta y cinco con destino a la ciudad. Mrs. Packington se sentó a la mesa del desayuno. Su rostro estaba encendido y sus labios apretados, y la única razón de que no llorase era que, en el último momento, la ira había ocupado el lugar del dolor. —No lo soportaré —dijo Mrs. Packington—. ¡No lo soportaré! —Y permaneció por algunos momentos con gesto pensativo, para murmurar después—: ¡Mala pécora! ¡Gata hipócrita! ¡Cómo puede ser George tan loco!",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/parker-pyne-investiga.jpg?alt=media&token=816796d8-1455-40de-b843-c71ab8124727",
-        "link": "https://amzn.to/36uR4vu",
-        "slug": "cards-on-the-table"
-    },
-    {
-        "id": 22,
-        "title": "Tragedía en Tres Actos",
-        "published": 1935,
-        "description": "Mr. Satterthwaite se sentó en la terraza de Nido de Cuervos y contempló cómo su anfitrión, sir Charles Cartwright, subía por el sendero que conducía al mar. Nido de Cuervos era una villa de estilo moderno, sin ninguno de esos adornos arquitectónicos que suelen encantar a la mayoría de la gente. Era una casa de sólida y sencilla construcción, pintada simplemente de blanco, que a primera vista daba la impresión de ser mucho más pequeña de lo que en realidad era. Debía su nombre al puerto de Loomouth. Uno de los lados de la terraza, protegido por una sólida balaustrada, al borde mismo del acantilado cortado a pico, daba sobre el mar. Por la carretera, Nido de Cuervos estaba a un kilómetro y medio de la población. Esa carretera corría serpenteante y, siguiendo el camino de los pescadores, podía llegarse a la ciudad en siete minutos. Por aquel sendero subía en aquellos momentos sir Charles Cartwright.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/tragedia-en-tres-actos.jpg?alt=media&token=b94c39fc-6894-4418-9555-a72b57b993fa",
-        "link": "https://amzn.to/3pFZR5o",
-        "slug": "dumb-witness"
-    },
-    {
-        "id": 23,
-        "title": "Muerte en las Nubes",
-        "published": 1935,
-        "description": "El sol de septiembre caía de lleno en el aeródromo de Le Bourget mientras los pasajeros cruzaban el campo y subían al correo aéreo Prometheus, que había de salir enseguida para la ciudad de Croydon. Jane Grey fue de las primeras en entrar y ocupó el asiento número 16. Algunos pasajeros entraron por la puerta central y, pasando por delante de la angosta repostería y de los dos lavabos, fueron a ocupar la parte delantera del aparato. Casi todos estaban ya sentados, y en el interior había un ruido de conversaciones que dominaba una voz chillona y penetrante de mujer. Jane torció ligeramente los labios. Aquella voz le era conocida.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/muerte-en-las-nubes.jpg?alt=media&token=018f3655-22a8-4f68-91e3-a610624a1a2d",
-        "link": "https://amzn.to/3pFZR5o",
-        "slug": "dumb-witness"
-    },
-    {
-        "id": 24,
-        "title": "El Misterio de la Guía de Ferrocarriles",
-        "published": 1936,
-        "description": "En esta narración, me he apartado de mi costumbre habitual de narrar sólo aquellos acontecimientos y escenas en las que personalmente estuve presente. Por consiguiente, algunos capítulos están escritos en tercera persona. Quiero asegurar a mis lectores que puedo dar fe de los sucesos relatados en esos capítulos. Si me he tomado la licencia poética de describir los pensamientos y sentimientos de algunas personas, se debe a que creo que he conseguido reflejarlos con una razonable precisión. Me permito añadir que en esto tengo el respaldo de mi buen amigo Hércules Poirot.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-de-la-guia-de-ferrocarriles.jpg?alt=media&token=c2254c15-58c8-4a4e-88f6-f39ca67f7024",
-        "link": "https://amzn.to/3pFZR5o",
-        "slug": "dumb-witness"
-    },
-    {
-        "id": 25,
-        "title": "Asesinato en Mesopotamia",
-        "published": 1936,
-        "description": "Los hechos cuya crónica se incluye en esta narración ocurrieron hace unos cuatro años. Determinadas circunstancias han hecho necesario, en mi opinión, que se hiciera público un relato íntegro de los mismos. Han corrido por ahí rumores absurdos y ridículos diciendo que se habían suprimido pruebas importantes para el caso y otras sandeces de este orden. Tales falsas interpretaciones han aparecido, principalmente, en la prensa americana. Por razones obvias no era aconsejable que dicho relato saliera de la pluma de uno de los que componían aquella expedición arqueológica, ya que era natural suponer que tuviera ciertos prejuicios sobre la cuestión. En consecuencia, sugerí a la señorita Amy Leatheran que se encargara de aquel trabajo, pues era la persona, a mi juicio, más indicada para ello. Su categoría profesional era inmejorable; no se sentía ligada por ningún contacto previo con la expedición a Irak que organizó la Universidad de Pittstown y, además, era una testigo observadora e inteligente.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/asesinato-en-mesopotamia.jpg?alt=media&token=ae10d624-e0a5-46af-9728-f553a785e432",
-        "link": "https://amzn.to/3pFZR5o",
-        "slug": "dumb-witness"
-    },
-    {
-        "id": 26,
-        "title": "Cartas Sobre la Mesa",
-        "published": 1936,
-        "description": "Existe la idea, bastante generalizada, de que una novela policíaca tiene cierto parecido a una carrera de caballos, pues como ésta, toman la salida un determinado número de participantes, igual que hacen los caballos y sus jinetes. Pueden ustedes apostar por el que prefieran. Pero, de común acuerdo, el favorito suele ser precisamente el opuesto al que lo sería en dichas carreras. En otras palabras: es un personaje completamente extraño a la cuestión. Localicen a quien parezca haber tenido oportunidades de cometer el crimen y, en el noventa por ciento de los casos, habrán acertado. Como no quiero que mis fieles lectores desechen este libro con disgusto, prefiero advertirles de antemano que la novela que van a leer no es de la clase a que antes me refiero. Solamente hay en ella cuatro «participantes», cada uno de los cuales, con arreglo a determinadas circunstancias, pudo haber cometido el asesinato. Esto elimina, por fuerza, el factor sorpresa. Sin embargo, puede existir, según creo, pues cada una de ellas ha delinquido ya y es capaz de realizar nuevos crímenes. Se trata de cuatro caracteres completamente diferentes. El motivo que los impulsa al asesinato es inherente a la forma de ser de cada uno de ellos y, en consecuencia, también lo es el método empleado. Por lo tanto, las deducciones que se hagan deben ser totalmente psicológicas; pero tal cosa no deja de ser interesante, pues una vez que todo está dicho y hecho, es la mente del criminal lo que reviste mayor importancia.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/cartas-sobre-la-mesa.jpg?alt=media&token=219b0f01-4add-4143-97a7-bd06df41ad2d",
-        "link": "https://amzn.to/3pFZR5o",
-        "slug": "dumb-witness"
-    },
-    {
-        "id": 27,
-        "title": "El Testigo Mudo",
-        "published": 1937,
-        "description": "La señorita Arundell murió el día 1 de mayo. Aunque la enfermedad fue breve, su muerte no causó mucha sorpresa en la pequeña población de Market Basing, donde había vivido desde que tenía dieciséis años. Por una parte, Emily Arundell, la única superviviente de cinco hermanos, había rebasado ya los setenta y, por otra, durante muchos años había estado aquejada de mala salud. Además, unos dieciocho meses antes, había estado a punto de morir a causa de un ataque muy similar al que acabó con su vida.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-testigo-mudo.jpg?alt=media&token=f089d00b-ea6c-4d6b-8f42-c6245c33387b",
-        "link": "https://amzn.to/3pFZR5o",
-        "slug": "dumb-witness"
-    },
-    {
-        "id": 28,
-        "title": "Muerte en el Nilo",
-        "published": 1937,
-        "description": "La tranquilidad de un crucero por el Nilo se ve destrozada por el descubrimiento de que Linnet Ridgeway recibió un disparo en la cabeza. Era joven, elegante y hermosa, una chica que lo tenía todo, hasta que perdió la vida. Hércules Poirot recuerda un estallido anterior de un compañero de viaje: 'Me gustaría poner mi querida pistola en su cabeza y simplemente presionar el gatillo'. Sin embargo, en este exótico escenario 'nada es lo que parece'...",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/muerte-en-el-nilo.jpg?alt=media&token=07ff9aee-b11c-418b-a5ec-cf74a73d4ba2",
-        "link": "https://amzn.to/36v6WhE",
-        "slug": "death-on-the-nile"
-    },
-
-
-
-
-
-
-    {
-        "id": 30,
-        "title": "Asesinato en Bardsley Mews y Otras Historias",
-        "published": 1937,
-        "description": "–Una limosnita, señor... Un chiquillo con la cara tiznada sonreía al inspector jefe Japp. —¡Ni soñarlo! —exclamó el policía—. Y además, escucha bien, muchacho... Le endilgó un breve sermón. El asustado golfillo emprendió la retirada mientras le decía a sus jóvenes amigos: —¡Caray, el tío es un «poli» camuflado! La pandilla puso pies en polvorosa, cantando: Recuerda, recuerda, el cinco de noviembre. La pólvora de la traición. Y no hay ninguna razón para que esa vil traición deba ser nunca olvidada.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/asesinato-en-bardsley-mews.jpg?alt=media&token=1d8b8d37-9dea-4e28-a334-8b5686e429d4",
-        "link": "https://amzn.to/3tjfCld",
-        "slug": "the-incredible-theft"
-    },
-    {
-        "id": 29,
-        "title": "Cita con la Muerte",
-        "published": 1938,
-        "description": "–¿No comprendes que es necesario matarla? La pregunta flotó en la quietud de la noche, dio la impresión de que permanecía un momento inerte en el aire y finalmente se alejó hacia el mar Muerto. Hércules Poirot se quedó inmóvil, con las manos en el alféizar y el ceño fruncido. Al cabo, cerró la ventana, impidiendo el paso del molesto aire nocturno. Había sido educado en la convicción de que el aire exterior estaba muy bien fuera de las habitaciones y de que el aire nocturno era terriblemente nocivo para la salud. Mientras corría las cortinas y se dirigía a la cama, sonrió burlonamente. «¿No comprendes que es necesario matarla?» Era curioso que un detective como él hubiera oído esas palabras en su primera noche en Jerusalén.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/cita-con-la-muerte.jpg?alt=media&token=06bea266-67a2-47b6-b996-c0f36a6cc950",
-        "link": "https://amzn.to/2NVUOQt",
-        "slug": "appointment-with-death"
-    },
-    {
-        "id": 31,
-        "title": "Navidades Tragicas",
-        "published": 1938,
-        "description": "Stephen se levantó el cuello del abrigo mientras avanzaba apresuradamente por el andén. Una tenue niebla llenaba la estación. Enormes locomotoras resoplaban lanzando al aire nubes de vapor. Todo estaba sucio y lleno de humo. Stephen pensó con repugnancia: «¡Qué país más asqueroso! ¡Qué ciudad más sucia! » Se había desvanecido su primera impresión de las tiendas de Londres, de sus restaurantes, sus bien vestidas y atractivas mujeres. Ahora lo veía como una reluciente aguamarina engarzada en un anillo de plomo. Si estuviese en Sudáfrica... Le invadió una súbita e intensa añoranza. Sol, cielos azules, jardines de flores azules, blancas y amarillas creciendo profusamente por todos lados. En cambio, aquí, barro, suciedad y masas inacabables de gente en continuo movimiento y lucha, atareadas hormigas moviéndose afanosas alrededor de su hormiguero.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/navidades-tragicas.jpg?alt=media&token=44c9f18a-b2e5-4353-b0fb-4f875ce9a6ce",
-        "link": "https://amzn.to/3cIGpSb",
-        "slug": "hercule-poirots-christmas"
-    },
-    {
-        "id": 32,
-        "title": "Matar es Fácil",
-        "published": 1939,
-        "description": "¡Inglaterra! ¡Otra vez Inglaterra después de tantos años! ¿Cómo se la iba a encontrar? Luke Fitzwilliam se hizo esa pregunta al descender por la pasarela del barco. La pregunta continuó en su mente durante toda la espera en el recinto de la aduana pero pasó a un primer plano cuando por fin se sentó en el tren. Inglaterra de permiso era otra cosa. Mucho dinero para despilfarrar (¡al menos al principio!), viejos amigos a los que llamar, reuniones con otros camaradas que, como él, estaban en casa, un ambiente despreocupado del tipo: «¡Bueno, no durará mucho! ¡Más vale que me divierta! Pronto habrá que regresar ». Pero ahora ya no se trataba solo de volver. Se habían acabado las noches de calor sofocante, la deslumbrante luz del sol y la belleza de la exuberante vegetación tropical, las veladas solitarias dedicadas a leer y releer los ejemplares atrasados del Times.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/matar-es-facil.jpg?alt=media&token=8f6f0b78-53e0-48ea-ac1e-6e0a2cc4a63f",
-        "link": "https://amzn.to/36tlhv2",
-        "slug": "murder-is-easy"
-    },
-    {
-        "id": 33,
-        "title": "Diez Negritos",
-        "published": 1939,
-        "description": "1939. Europa se tambalea al borde de la guerra. Se invita a diez extraños a la isla del Negro, una roca aislada cerca de la costa de Devon. Aislados del continente, con sus generosos anfitriones, el señor y la señora U.N. Owen misteriosamente ausentes, se les acusa de un crimen terrible. Cuando uno de los miembros del grupo muere de repente, se dan cuenta de que pueden estar albergando a un asesino entre ellos. La tensión aumenta cuando los supervivientes se dan cuenta de que el asesino no solo está entre ellos, sino que se prepara para atacar de nuevo... y de nuevo...",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/diez-negritos.jpg?alt=media&token=cb931726-3c2d-4f00-a6d4-0f6928314ba5",
-        "link": "https://amzn.to/3rchxGh",
-        "slug": "and-then-there-were-none"
-    },
-    {
-        "id": 35,
-        "title": "Un Triste Ciprés",
-        "published": 1940,
-        "description": "Elinor Katherine Carlisle: está usted acusada de haber asesinado a Mary Gerrard el veintisiete de julio pasado. ¿Se confiesa usted culpable o inocente? Elinor Carlisle estaba de pie, con la cabeza erguida. Tenía una cabecita graciosa; el rostro algo anguloso, pero bien definido y agradable. Sus ojos eran de un azul profundo, y el cabello, negrísimo. Las cejas las llevaba depiladas y formaban una línea estrecha, casi imperceptible. Hubo un silencio expectante. Sir Edwin Bulmer, el abogado defensor, tuvo una sensación de desánimo. Pensó: «¡Dios mío! Va a declararse culpable… Ha perdido la serenidad…». Los labios de Elinor Carlisle se entreabrieron. Dijo: —¡Inocente! El abogado defensor se desplomó en su asiento. Sacó un pañuelo y se enjugó el sudor que le corría por la frente. Sir Samuel Attenbury se levantó y se dispuso a pronunciar su discurso. Representaba al ministerio fiscal.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/un-triste-cipres.jpg?alt=media&token=54886c53-a4ad-42d5-891e-8d9af6bfe3b2",
-        "link": "https://amzn.to/3tjPrKU",
-        "slug": "evil-under-the-sun"
-    },
-    {
-        "id": 34,
-        "title": "La Muerte Visita al Dentista",
-        "published": 1940,
-        "description": "Mr. Morley no estaba de muy buen humor aquella mañana. Se quejó de la calidad del jamón y del café, diciendo que tenía aspecto de barro líquido y que las frutas eran peores en cada desayuno. Mr. Morley era un hombrecillo menudo, de mandíbula enérgica y barbilla retadora. Su hermana, que administraba la casa, era una mujer alta, bastante parecida a un granadero. Mirando pensativa a su hermano, le preguntó si había vuelto a encontrar el baño frío. Mr. Morley, de mala gana, dijo que no. —El gobierno parece que pasa de un estado de incompetencia a otro de positiva imbecilidad —comentó leyendo el periódico. Miss Morley dijo con su voz profunda y grave: —¡Es vergonzoso!",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-muerte-visita-al-dentista.jpg?alt=media&token=391b7c29-7b76-4108-a5fd-a328e0b6f2d3",
-        "link": "https://amzn.to/36xyD9I",
-        "slug": "sad-cypress"
-    },
-    {
-        "id": 36,
-        "title": "Muerte Bajo el Sol",
-        "published": 1941,
-        "description": "Cuando el capitán Roger Angmering, en el año 1872, edificó una casa en aquella isla frente a la bahía de Leathercombe, esto se consideró el colmo de la excentricidad por su parte. A un hombre de buena familia, como lo era él, le correspondía a ser posible una mansión decorosa, levantada en medio de amplios prados, con algún riachuelo que susurrara. Pero el capitán Roger Angmering tuvo sólo un gran amor: el mar. Por eso edificó su casa (una vivienda de paredes macizas y grandes ventanas) sobre aquel pequeño promontorio barrido por los vientos y frecuentado por las gaviotas. El capitán no se casó; el mar fue su primera y última esposa, y a su muerte la casa y la isla pasaron a un primo lejano. El primo y sus descendientes se preocuparon muy poco del legado, y con el tiempo la propiedad y los terrenos mermaron, como también la fortuna de sus herederos.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/muerte-bajo-el-sol.jpg?alt=media&token=9b4918f4-49c7-4db2-9816-0cc71c1ef494",
-        "link": "https://amzn.to/3alNu8h",
-        "slug": "one-two-buckle-my-shoe"
-    },
-    {
-        "id": 37,
-        "title": "El Misterio de Sans Souci",
-        "published": 1941,
-        "description": "Tommy Beresford se quitó el abrigo en el vestíbulo de su piso. Colgó la prenda cuida- dosamente, empleando en ello más tiempo del necesario y después, con gran esmero, colocó el sombrero en la siguiente percha. Irguió los hombros, trató de fijar en su rostro una sonrisa y entró en la salita de estar donde su mujer hacía calceta en aquel momento; un pasamontañas de lana color caqui.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-de-sans-souci.jpg?alt=media&token=2fe3fca5-4c3b-4c75-9c03-2c2dd18138ac",
-        "link": "https://amzn.to/3oxfwmk",
-        "slug": "n-or-m"
-    },
-    {
-        "id": 38,
-        "title": "Cinco Cerditos",
-        "published": 1942,
-        "description": "Hércules Poirot miró con interés y aprobación a la joven que entraba en ese momento en la estancia. No había habido nada en su carta que la distinguiera de las demás. Se había limitado a solicitar una entrevista, sin ofrecer la menor idea siquiera de lo que se ocultaba tras su petición. Era breve y estaba desprovista de toda palabrería inútil, y únicamente la firmeza de su escritura indicaba que Carla Lemarchant era una mujer joven. Y ahora estaba allí, en persona. Una mujer alta, esbelta, de veintitantos años. Una de esas jóvenes a las que uno se ve obligado a mirar más de una vez. Vestía ropa de calidad: chaqueta y falda de corte impecable y lujosas pieles. Cabeza bien equilibrada sobre los hombros, frente cuadrada, nariz delicada, barbilla que expresaba determinación. Una muchacha pletórica de vida. Era su vitalidad, más que su belleza, lo que destacaba en ella.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/cinco-cerditos.jpg?alt=media&token=7dc2faf9-51e2-4784-9deb-cb0364ef4f15",
-        "link": "https://amzn.to/3rcgXs5",
-        "slug": "five-little-pigs"
-    },
-    {
-        "id": 39,
-        "title": "Un Cadaver en la Biblioteca",
-        "published": 1942,
-        "description": "Hay clichés que, indefectiblemente, asociamos a cierto tipo de novelas: el barón calvo y perverso con los dramas, el cadáver en la biblioteca con las novelas de detectives... Durante años, me he planteado escribir lo que podríamos llamar una variación sobre alguno de estos tópicos. Sin embargo, me impuse ciertas condiciones: la biblioteca debía ser corriente; el cadáver, en cambio, debía aparecer como un elemento muy inverosímil y sensacional. Ésos fueron los términos en que me propuse crear mi historia, pero durante años permaneció aletargada, únicamente representada por las líneas que garabateaba en mi cuaderno de notas. Entonces, mientras me alojaba en un hotel de moda a orillas del mar, un día me fijé en una de las familias que estaban sentadas a una de las mesas del comedor: un anciano impedido en una silla de ruedas, rodeado por su familia, todos ellos pertenecientes a una generación más joven. Afortunadamente para mí, partieron al día siguiente, de modo que mi imaginación pudo trabajar sin condicionante alguno. Cuando la gente me pregunta: «¿Escribe sobre gente real en sus libros?», siempre respondo que me resulta imposible escribir sobre las personas que conozco, ni siquiera sobre personas con quienes sólo haya hablado ocasional- mente o de quienes haya oído hablar. Para mí, eso las elimina por completo. En cambio, puedo basarme en la imagen de una persona real y dotarla de rasgos y cualidades inventados. De este modo, un anciano incapacitado se convirtió en el eje de mi historia. El coronel Bantry y su esposa, viejos amigos de miss Marple, tenían la biblioteca adecuada. Y, como si de una receta de cocina se tratara, añádanse los siguientes ingredientes: un entrenador de tenis, una joven bailarina, una Chica Guía, una animadora... y sírvase à la miss Marple.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/un-cadaver-en-la-biblioteca.jpg?alt=media&token=6565917a-e957-485e-9b61-65b4698ae115",
-        "link": "https://amzn.to/36x0GpI",
-        "slug": "the-body-in-the-library"
-    },
-    {
-        "id": 40,
-        "title": "El Caso de los Anónimos",
-        "published": 1942,
-        "description": "Siempre resulta agradable plantear un tema clásico y ver lo que puede hacerse con él. En esta ocasión, el tema de la pluma que destila veneno sigue las líneas generales de otros casos bien conocidos y comprobados de escritores de anónimos. ¿Hasta qué punto se parecen? ¿El motivo esencial es el mismo? ¿Qué posibilidades ofrece semejante argumento a una persona aficionada al crimen? El caso de los anónimos es mi contribución a la materia. Mientras escribía el libro creé un personaje a quien he llegado a apreciar mucho y que se hizo singularmente real para mí. Si Megan entrase en mi cuarto mañana, la reconocería enseguida y estaría encantada de verla. Le estoy agradecida por haber cobrado vida en el texto. También quisiera encontrarme con la mujer del pastor, pero temo que jamás lo lograré. Escribiendo este libro disfruté con fruición.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-caso-de-los-anonimos.jpg?alt=media&token=eee89dd8-d224-4c3c-94d9-56ebdfffc4f6",
-        "link": "https://amzn.to/3r92UDy",
-        "slug": "the-moving-finger"
-    },
-    {
-        "id": 41,
-        "title": "Hacia Cero",
-        "published": 1944,
-        "description": "Casi todas las personas que se hallaban reunidas alrededor de la chimenea eran abogados o tenían interés por la Ley. Estaban: Martindale, Rufus Lord, K. C1., el joven Daniels, que se había hecho famoso con el caso Castairs, varios abogados más, el magistrado del Supremo Cleaver, Lewis, de la firma Lewis & Trench, y el anciano señor Treves. El señor Treves andaba cerca de los ochenta, unos ochenta llenos de madurez y de experiencia. Era el miembro más famoso de una famosa firma de abogados. Había resuelto fuera de los tribunales innumerables casos delicados, se decía que sabía más secretos de familia que ningún otro hombre de Inglaterra y estaba especializado en criminología.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/hacia-cero.jpg?alt=media&token=787069da-afd1-4853-9e90-86d669605210",
-        "link": "https://amzn.to/3alNa9z",
-        "slug": "towards-zero"
-    },
-    {
-        "id": 42,
-        "title": "La Venganza de Nofret",
-        "published": 1944,
-        "description": "Renisenb contemplaba el Nilo. Oía en la distancia las voces de sus hermanos Yahmose y Sobek, que discutían sobre si determinados diques necesitaban ser reparados o no. Sobek, como siempre, se expresaba en voz alta. Tenía la costumbre de afirmar sus juicios en un tono de confiada seguridad. En cambio, Yahmose hablaba con una voz baja y quejosa, que delataba ansiedad y duda. Yahmose estaba siempre inquieto por una cosa u otra. Era el primogénito y, mientras duraba la ausencia de su padre en las tierras del norte, la administración de los cultivos quedaba más o menos en sus manos. Era lento, cauto y dado a encontrar dificultades donde no existían. Tenía el cuerpo recio, se movía con lentitud y le faltaban la confianza y la jovialidad de Sobek.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-venganza-de-nofret.jpg?alt=media&token=e25bdf82-e70f-4f91-9ed0-4bebf428725a",
-        "link": "https://amzn.to/3ti9zwX",
-        "slug": "death-comes-as-the-end"
-    },
-    {
-        "id": 43,
-        "title": "Cianuro Espumoso",
-        "published": 1945,
-        "description": "Iris Marle estaba pensando en su hermana Rosemary. Durante cerca de un año había intentado deliberadamente desterrar de sus pensamientos el recuerdo de Rosemary. No había querido acordarse. Era demasiado doloroso, ¡demasiado horrible! El semblante azul cianuro, los dedos convulsos, crispados... El contraste entre ésta y la bella y alegre Rosemary del día anterior... Bueno, alegre tal vez no. Había tenido un trancazo... Estaba deprimida, postrada. Todo eso había salido a relucir durante la investigación. La propia Iris había insistido al respecto. Eso explicaría que Rosemary se hubiese suicidado, ¿verdad? Una vez terminada la investigación, Iris había intentado apartar el asunto de su mente con toda deliberación. ¿De qué servía acordarse? ¡A olvidarlo todo! A olvidar el horrible suceso. Pero ahora se daba cuenta de que tenía que acordarse. Tenía que pensar retrospectivamente, recordar con mucho cuidado hasta el incidente que más ligero y exento de importancia pareciera...",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/cianuro-espumoso.jpg?alt=media&token=607f19d0-dbfc-4139-a37c-0748b603e6dd",
-        "link": "https://amzn.to/3annauu",
-        "slug": "sparkling-cyanide"
-    },
-    {
-        "id": 44,
-        "title": "Sangre en la Piscina",
-        "published": 1946,
-        "description": "Cierto viernes, a las seis y trece de la mañana, Lucy Angkatell abrió los párpados, contempló el nuevo día con unos ojos azules de sorprendente tamaño, se despabiló al instante como de costumbre y se dispuso a enfrentarse con los problemas que su mente, increíblemente activa, había evocado ya. Sentía la urgente necesidad de conversar con alguien, y su elección recayó en Midge Hardcastle, una prima suya, muy joven, que había llegado a The Hollow la noche anterior. Saltó, pues, de la cama, se echó una bata sobre los hombros, que los años no habían hecho desmerecer, y avanzó por el pasillo en dirección a la habitación de Midge. Mujer de desconcertante rapidez de pensamiento, lady Angkatell, como era su invariable costumbre, dio principio a la conversación mentalmente, recurriendo a su fértil imaginación para suministrar las respuestas de Midge.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/sangre-en-la-piscina.jpg?alt=media&token=661d3e63-85d1-4a1f-a21a-bf143f284b55",
-        "link": "https://amzn.to/39CRYID",
-        "slug": "the-hollow"
-    },
-    {
-        "id": 45,
-        "title": "Los Trabajos de Hércules",
-        "published": 1947,
-        "description": "El nombre de pila de Poirot me indujo irresistiblemente a escribir esta serie de historias cortas. Inicié el trabajo con gran entusiasmo, mas al poco tiempo perdí el ánimo ante el gran cúmulo de dificultades que no había previsto. Escribí sin titubear algunos de los episodios, tales como El león de Nemea y La hidra de Lerna. El toro de Creta, asimismo, salió de mi pluma con toda naturalidad; pero algunos de los «trabajos» eran un desafío a mi ingenio. El jabalí de Erimanto me tuvo en suspenso durante mucho tiempo, y lo mismo pasó con El cinturón de Hipólita. y en cuanto a La captura de Cerbero he de reconocer que me hizo perder todas las esperanzas. No podía imaginar ninguna acción apropiada a dicho título. Así es que durante seis meses no volví a ocuparme del asunto. Pero de pronto, subiendo un día las escaleras del metro, se me ocurrió la idea. Pensé en ella con tanta excitación que subí y bajé las escaleras siete u ocho veces y por poco me atropella un autobús cuando, al fin, me dirigía a casa. El fregadero es el lugar más seguro y apropiado para planear mentalmente una historia. El trabajo meramente mecánico ayuda al fluir de las ideas y resulta delicioso encontrarse hechas las tareas domésticas sin acordarse de que una las hizo. Recomiendo de forma particular la rutina de los trabajos caseros a todas aquellas personas que pretendan crear una obra literaria. Ello no incluye el cocinar, pues en sí ya es una creación, mucho más divertida que escribir, mas, por desgracia, no tan bien pagada.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/los-trabajos-de-hercules.jpg?alt=media&token=7d806465-a37b-4064-bb35-69d6aeca3f24",
-        "link": "https://amzn.to/3cuqd6C",
-        "slug": "crooked-house"
-    },
-    {
-        "id": 46,
-        "title": "Pleamares de la Vida",
-        "published": 1948,
-        "description": "No hay club sin su correspondiente pelmazo, y el Coronation no podía ser una excepción a la regla. El hecho de que un ataque aéreo se hallase en curso no hacía variar en lo más mínimo esta circunstancia. El comandante Porter, antiguo oficial del ejército de la India, hizo crujir entre sus dedos las hojas de un periódico y carraspeó para aclarar su garganta. Todos los allí presentes hicieron ademán de esquivar sus miradas, sin conseguirlo. —Veo que se anuncia en The Times —dijo— la muerte de Gordon Cloade. Discretamente, por supuesto. «El 5 de octubre, como resultado de una acción del enemigo.» No se menciona el lugar en que ocurrió. A decir verdad, fue a cuatro pasos de donde yo vivo. Uno de esos caserones que se alzan en la cúspide de Camden Hill. Les aseguro que me conmovió un tanto. Soy, como ustedes saben, uno de los encargados de la Defensa Pasiva. Cloade acababa de regresar de los Estados Unidos.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/pleamares-de-la-vida.jpg?alt=media&token=d8625be7-33aa-4a01-adb5-3c57a6c6014e",
-        "link": "https://amzn.to/3cuMxNy",
-        "slug": "taken-at-the-flood"
-    },
-    {
-        "id": 47,
-        "title": "La Casa Torcida",
-        "published": 1949,
-        "description": "Éste es uno de mis libros favoritos. Lo maduré durante años, dándole vueltas, planteándolo y diciéndome: «Un día, cuando tenga tiempo y quiera pasármelo realmente bien, ¡lo empezaré!». Debo decir que, de mi producción, por cada cinco libros que son sólo trabajo, uno constituye un verdadero placer. La casa torcida fue uno de ellos. A menudo me gustaría saber si la gente que lee un libro percibe si escribirlo ha sido un trabajo duro o un placer. Son muchos los que me dicen: «¡Cuánto debe de disfrutar usted escribiendo esto y aquello!». Y se están refiriendo a un libro que se resiste con obstinación a salir como yo quisiera, cuyos personajes son difíciles, el argumento innecesariamente complicado y los diálogos afectados, o al menos eso es lo que pienso. Pero quizá el autor no sea el mejor juez de su propio trabajo. De todos modos, casi a todo el mundo le ha gustado La casa torcida, así que eso justifica mi creencia de que es una de mis mejores novelas.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-casa-torcida.jpg?alt=media&token=297887d2-2779-40c9-be08-410a1bedd9af",
-        "link": "https://amzn.to/3tk5yse",
-        "slug": "a-murder-is-announced"
-    },
-    {
-        "id": 48,
-        "title": "Se Anuncia un Asesinato",
-        "published": 1950,
-        "description": "Todas las mañanas, menos la del domingo, entre las siete y media y ocho y media, Johnnie Butt hacía la ronda del pueblo de Chipping Cleghorn en bicicleta, silbando ruidosamente por entre los dientes.’",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/se-anuncia-un-asesinato.jpg?alt=media&token=777694a0-5f37-4491-af54-cf753b23906a",
-        "link": "https://amzn.to/3ti97if",
-        "slug": "they-came-to-baghdad"
-    },
-    {
-        "id": 49,
-        "title": "Intriga en Bagdad",
-        "published": 1951,
-        "description": "El capitán Crosbie salía del banco con el aire complacido de quien acaba de hacer efectivo un cheque, y descubre que tiene en su cuenta más de lo supuesto. El capitán Crosbie sentíase a menudo satisfecho de sí mismo. Era así, y físicamente de corta estatura, más bien grueso, de rostro enrojecido y bigote recortado y marcial. Al andar se contoneaba un tanto. Sus trajes eran tal vez un poco llamativos, pero gozaba de buena reputación. Era querido entre sus amigos. Un hombre alegre, sencillo, pero amable, y soltero. No tenía nada de extraordinario. Hay montones de Crosbie en Oriente.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/intriga-en-bagdad.jpg?alt=media&token=aacffa88-1bf9-4bb5-ba03-655bc2d3acf8",
-        "link": "https://amzn.to/3amqWnY",
-        "slug": "they-do-it-with-mirrors"
-    },
-    {
-        "id": 50,
-        "title": "El Truco de los Espejos",
-        "published": 1952,
-        "description": "‘Tras alejarse unos pasos del espejo, Mistress Van Rydock exhaló un suspiro. —Bueno, tendrá que ser este —murmuró—. ¿Te parece bien, Jane? Miss Marple admiraba complaciente la creación de Lanvanelli. —Es un vestido muy bonito —dijo. —Sí, está bien —repuso Mistress Van Rydock, volviendo a suspirar—. Quítamelo, Stephanie. La anciana doncella de cabellos grises y boca menuda deslizó cuidadosamente el vestido sobre los brazos y la cabeza de Mistress Van Rydock. Esta se miró al espejo. Iba exquisitamente encorsetada, y sus piernas, todavía bien conservadas, lucían finas medias de nailon. Su rostro, bajo la capa de cosméticos y debido a los constantes masajes, parecía casi infantil visto desde una prudente distancia. Sus cabellos grises con reflejos azules estaban cuidadosamente peinados.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-truco-de-los-espejos.jpg?alt=media&token=06bb16eb-2ded-491c-a0e6-bfe0138e37f2",
-        "link": "https://amzn.to/3oDGskm",
-        "slug": "mrs-mcgintys-dead"
-    },
-    {
-        "id": 51,
-        "title": "La Señora McGinty ha Muerto",
-        "published": 1952,
-        "description": "Hércules Poirot salió del restaurante La Vieille Grand’Mère, en el Soho. Se alzó el cuello del abrigo por prudencia más que por necesidad, puesto que la noche no era fría. «Pero, a mi edad —solía decir Poirot—, uno no corre riesgos.» Estaba abstraído, pensativo, soñoliento y satisfecho. Los escargots de La Vieille Grand’Mère le habían resultado deliciosos. ¡Un verdadero hallazgo aquel restaurante! Se pasó la lengua por los labios como un perro bien alimentado. Sacó un pañuelo del bolsillo y se lo frotó por los exuberantes bigotes.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-senora-mcginty-ha-muerto.jpg?alt=media&token=d4ba116e-8d6a-4db9-b900-1334141c7184",
-        "link": "https://amzn.to/3tr4cfg",
-        "slug": "after-the-funeral"
-    },
-    {
-        "id": 52,
-        "title": "Después del Funeral",
-        "published": 1953,
-        "description": "El viejo Lanscombe, con su andar vacilante, fue de una habitación a otra subiendo las persianas. De vez en cuando sus ojillos de reumático miraban a través de los cristales. No tardarían en volver del funeral. Se apresuró en su quehacer; ¡había tantas ventanas! Enderby Hall era un vasto edificio victoriano construido según el estilo gótico. Algunas paredes todavía seguían tapizadas de seda descolorida. En todas las habitaciones, las cortinas eran de rico brocado o terciopelo. En la sala verde, el viejo mayordomo contempló el retrato, colocado sobre la chimenea, de Cornelius Abernethie, quien hizo construir Enderby Hall. Cornelius Abernethie tenía una barba castaña que denotaba agresividad, y su mano reposaba sobre un globo terráqueo, no sabemos si por capricho suyo o como un símbolo escogido por el artista.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/despues-del-funeral.jpg?alt=media&token=0fd4b20e-5188-4e3a-9d04-710cba107b54",
-        "link": "https://amzn.to/36zddcd",
-        "slug": "a-pocket-full-of-rye"
-    },
-    {
-        "id": 53,
-        "title": "Un Puñado de Centeno",
-        "published": 1953,
-        "description": "A Miss Somers le tocaba hacer el té. Somers era la más nueva y la menos eficiente de las mecanógrafas. Ya no era joven y su rostro, que revelaba una ligera preocupación, recordaba al de una oveja. Aún no hervía el agua cuando Miss Somers la vertió en la tetera, pero la pobre nunca estaba completamente segura de si hervía o no. Esta era una de las muchas preocupaciones que la afligían. Sirvió el té y lo repartió en tazas, que acompañó con un par de dulces y blandas galletas en cada una. Miss Griffith, la eficiente jefa de las mecanógrafas, una auténtica sargento de cabellos grises que llevaba dieciséis años en Consolidated Investments Trust, exclamó con voz de trueno: —¡Otra vez no ha hervido el agua, Somers!",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/un-punado-de-centeno.jpg?alt=media&token=f81d530f-0c3b-4267-b119-ac6b0c38055c",
-        "link": "https://amzn.to/3tg3Mbf",
-        "slug": "destination-unknown"
-    },
-    {
-        "id": 54,
-        "title": "Destino Desconocido",
-        "published": 1954,
-        "description": "El hombre sentado tras el escritorio desplazó el pesado pisapapeles de cristal diez centímetros a su derecha. Su rostro mostraba una expresión más impasible que pensativa. Tenía la tez pálida de los que pasan la mayor parte del día bajo la luz artificial. No había ninguna duda de que se trataba de un hombre de espacios cerrados, de escritorios y ficheros. En cierto sentido resultaba apropiado que, para acceder a su oficina, hubiera que recorrer un laberinto de pasillos subterráneos. Era difícil precisar su edad. No parecía viejo ni joven. La piel de su rostro se veía lisa y sin arrugas, y en sus ojos se reflejaba un profundo cansancio. El otro ocupante de la oficina era mayor, moreno y con un bigote marcial. Mostraba un temperamento nervioso y enérgico, siempre alerta. Incluso ahora, incapaz de permanecer sentado, se paseaba arriba y abajo, haciendo de cuando en cuando algún brusco comentario.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/destino-desconocido.jpg?alt=media&token=9c95d846-a3cb-4d57-830e-1c4058cae02d",
-        "link": "https://amzn.to/3rcVJKM",
-        "slug": "hickory-dickory-dock"
-    },
-    {
-        "id": 55,
-        "title": "Asesinato en la Calle Hickory",
-        "published": 1955,
-        "description": "Hércules Poirot frunció el ceño. —Señorita Lemon —dijo. —¿Diga, señor Poirot? —En esta carta hay tres equivocaciones. En el tono de su voz había un acento de incredulidad, ya que la señorita Lemon, aquella mujer falta de atractivos, pero eficiente, jamás cometía errores. No estaba nunca enferma, cansada, contrariada ni incorrecta. Es decir, en el aspecto práctico no era una mujer... sino una máquina: la perfecta secretaria. Ella lo sabía todo y lo resolvía todo. Gobernaba la vida de Hércules Poirot de modo que también funcionara como una máquina. Orden y método fueron el santo y seña de Hércules Poirot durante muchos años. Con George, el perfecto mayordomo, y la señorita Lemon, la perfecta secretaria, el orden y el método rigieron siempre su vida. Y ahora que los bollos para el té tenían forma cuadrada en vez de redonda, no podía quejarse de nada.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/asesinato-en-la-calle-hickory.jpg?alt=media&token=6e8dbf93-4e3b-44f3-bb2f-281aff849282",
-        "link": "https://amzn.to/3tjKUYU",
-        "slug": "dead-mans-folly"
-    },
-    {
-        "id": 56,
-        "title": "El Templete de Nasse-House",
-        "published": 1956,
-        "description": "La señorita Lemon, eficiente secretaria de Poirot, atendió la llamada telefónica. Dejando a un lado su cuaderno de taqui- grafía, levantó el auricular y dijo con voz desanimada: «Trafalgar, 8137». Hércules Poirot se recostó en su butaca vertical y cerró los ojos. Con expresión meditativa, se puso a golpear suavemente con los dedos el borde de la mesa. En su cabeza siguió dando forma a los pulidos párrafos de la carta que estaba dictando.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-templete-de-nasse-house.jpg?alt=media&token=a26d7cf1-f97b-47f7-9b87-bd1072014f55",
-        "link": "https://amzn.to/3aseUJy",
-        "slug": "450-from-paddington"
-    },
-    {
-        "id": 57,
-        "title": "El Tren de las 4:50",
-        "published": 1957,
-        "description": "Mrs. McGillicuddy corría desalentada por el andén tras el mozo que le llevaba la maleta. Era baja y gruesa, y el mozo alto y de paso largo. McGillicuddy iba cargada con gran cantidad de paquetes, consecuencia de un día de compras en la proximidad de la Navidad. La carrera resultaba por lo tanto desigual, y el mozo dobló la esquina al final del andén cuando a Mrs. McGillicuddy le faltaba aún un trecho para alcanzarle en línea recta. El andén número 1 no estaba en aquel momento excesivamente concurrido, pues acababa de salir un tren, pero en las otras plataformas de la estación se agitaba una muchedumbre en todas direcciones, subiendo y bajando entre aquel piso y el inferior, entrando y saliendo del despacho de los equipajes, de las salas de té, de las oficinas de información y el indicador de horarios, y pasando por las puertas de entrada y de salida que comunicaban la estación de Paddington con el mundo exterior.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-tren-de-las-4-50.jpg?alt=media&token=22c678f8-8e60-484d-9b71-fcc7d6082baf",
-        "link": "https://amzn.to/36wXaf0",
-        "slug": "ordeal-by-innocence"
-    },
-    {
-        "id": 58,
-        "title": "Inocencia Trágica",
-        "published": 1958,
-        "description": "Anochecía cuando llegó al transbordador. Podría haber estado allí mucho antes. La verdad era que lo había retrasado todo lo posible. Primero, el almuerzo con unos amigos en Redquay, la charla frívola, el intercambio de chismorreos sobre amistades comunes. Todo aquello significaba que, en su fuero interno, estaba esquivando lo que tenía que hacer. Sus amigos lo invitaron a tomar el té y él aceptó. Pero llegó un momento en que comprendió que no podía postergarlo más. El coche de alquiler lo estaba esperando. Se despidió de sus amigos y el chófer condujo a lo largo de más de once kilómetros por la frecuentadísima carretera de la costa, y luego, tierra adentro, por el boscoso camino que acababa en el pequeño embarcadero de piedra sobre el río. Allí había una gran campana, y el chófer la hizo sonar con energía para llamar al transbordador, que estaba en la otra orilla.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/inocencia-tragica.jpg?alt=media&token=4303cdb1-2a9f-4a52-a074-c2c1dcb749a6",
-        "link": "https://amzn.to/3aiBPqM",
-        "slug": "cat-among-the-pigeons"
-    },
-    {
-        "id": 59,
-        "title": "Un Gato en el Palomar",
-        "published": 1959,
-        "description": "Era el día de apertura del último trimestre de curso en el colegio de Meadowbank. Los rayos del sol poniente caían sobre la amplia explanada de grava situada delante del edificio. La puerta de la fachada principal estaba hospitalariamente abierta en toda su amplitud, y bajo su dintel, encajando admirablemente con el estilo georgiano del soportal de la casa, permanecía erguida la señorita Vansittart, cuidadosamente peinada, vistiendo un traje de chaqueta de corte impecable.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/un-gato-en-el-palomar.jpg?alt=media&token=69cb2d3a-6801-4419-b08e-223fc1e6d7e1",
-        "link": "https://amzn.to/3akPLAI",
-        "slug": "the-pale-horse"
-    },
-
-
-
-
-    {
-        "id": 60,
-        "title": "El Pudding de Navidad y Otras Historias",
-        "published": 1960,
-        "description": "Lamento enormemente… —empezó Hércules Poirot. Le interrumpieron. No con brusquedad sino suave y hábilmente, con ánimo de persuadirle. —Por favor, monsieur Poirot, no se niegue usted sin considerarlo antes. El asunto tendría consecuencias graves para la nación. Su colaboración será muy apreciada en las altas esferas. —Es usted muy amable. —Hércules Poirot agitó una mano en el aire—. Pero, de verdad, me es imposible comprometerme a hacer lo que me pide. En esta época del año… El señor Jesmond volvió a interrumpirle con su suave tono de voz. —Navidad... —dijo—. Unas Navidades a la antigua usanza en el campo inglés. Poirot se estremeció. La idea del campo inglés en aquella época del año no le atraía.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-pudding-de-navidad.jpg?alt=media&token=9b30260f-61b8-4897-a54b-00d652178354",
-        "link": "https://amzn.to/3cz1ZIu",
-        "slug": "the-mirror-crackd-from-side-to-side"
-    },
-    {
-        "id": 61,
-        "title": "El Misterio de Pale Horse",
-        "published": 1961,
-        "description": "A mi juicio hay dos maneras de acercarse a este extraño asunto de Pale Horse. A pesar del dicho del Rey Blanco es difícil hacerlo con simplicidad. No cabe decir: «Comience usted por el principio, siga hacia el final y, después, deténgase ». Porque ¿dónde está el principio? Para un historiador, esa es siempre la dificultad. ¿En qué momento de la historia se inicia una determinada parte de ella? En este caso, podría comenzar en el instante en que el padre Gorman se prepara a abandonar su iglesia para atender a una mujer moribunda. O podría empezar antes de todo eso, cierta noche en Chelsea. Tal vez, puesto que la mayor parte de la narración corre a mi cargo, sea allí donde deba empezar.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-de-pale-horse.jpg?alt=media&token=66f37648-a68f-44b8-bcef-8a75fd2fbc4f",
-        "link": "https://amzn.to/2NXfp71",
-        "slug": "the-clocks"
-    },
-    {
-        "id": 62,
-        "title": "El Espejo se Rajo de Lado a Lado",
-        "published": 1962,
-        "description": "Miss Jane Marple estaba sentada junto a la ventana que se abría al jardín, en otros tiempos un motivo de orgullo para su dueña. Ya no era así. Ahora miraba por la ventana y torcía el gesto. Desde hacía algún tiempo le habían prohibido la jardinería activa. Nada de agacharse, cavar o plantar; a lo sumo, podar un poco y sin pasarse. El viejo Laycock venía tres veces por semana y, sin duda, ponía su mejor empeño. Pero eso, que a la vista de los resultados no era mucho, sólo era «lo mejor» según su opinión, y no en la de su patrona. Miss Marple sabía exactamente qué quería que se hiciera y cuándo debía hacerse y, por consiguiente, le daba las debidas instrucciones. Entonces el viejo Laycock desplegaba su particular ingenio, que consistía en un asentimiento entusiasta y en seguir a lo suyo.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-espejo-se-rajo-de-lado-a-lado.jpg?alt=media&token=258f7d8a-17ac-4f22-b5c8-4ae0b4f3f9c2",
-        "link": "https://amzn.to/2MgA3yA",
-        "slug": "a-caribbean-mystery"
-    },
-    {
-        "id": 63,
-        "title": "Los Relojes",
-        "published": 1963,
-        "description": "La tarde del día 9 de septiembre fue como tantas otras. Ninguna de las personas afectadas por los acontecimientos de aquel día pudo alegar haber abrigado algún presentimiento anunciador de una inminente desgracia. (Con la excepción de la señora Packer, domiciliada en Wilbraham Crescent, número 47, quien, especializada en toda clase de presagios, describió con mucha posterioridad a los acontecimientos las inquietudes y preocupaciones que la habían asaltado. Ahora bien, la señora Packer, quedaba tan apartada del 19, y se hallaba tan escasamente ligada al suceso ocurrido en esta última casa, que no tenía por qué haberse sentido asaltada por presentimiento de ningún tipo.)",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/los-relojes.jpg?alt=media&token=949909cb-ff6b-4da6-bbcd-5227e5f449bc",
-        "link": "https://amzn.to/3crTsHr",
-        "slug": "at-bertrams-hotel"
-    },
-    {
-        "id": 64,
-        "title": "Misterio en el Caribe",
-        "published": 1964,
-        "description": "Fíjese usted en todo cuanto se habla de Kenia —dijo el comandante Palgrave—. Gente que no conoce aquello en absoluto, haciendo toda clase de peregrinas afirmaciones. Mi caso es distinto. Pasé catorce años de mi vida allí. Los mejores de mi existencia, a decir verdad... Miss Marple inclinó la cabeza. Era éste un discreto gesto de cortesía. Mientras el comandante Palgrave seguía con la enumeración de sus recuerdos, nada interesantes, Miss Marple, tranquilamente, tornó a enfrascarse en sus pensamientos. Se trataba de algo rutinario, con lo cual estaba ya familiarizada. El paisaje de fondo variaba. En el pasado, el país favorito había sido la India. Los que hablaban eran, unas veces, comandantes y otras, coroneles o tenientes generales... Utilizaban una serie de palabras: Simia, porteadores, tigres, Chota Hazri, Tiffin, Khitmagars, etc.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/misterio-en-el-caribe.jpg?alt=media&token=bbf1e28d-37dc-4b23-967e-a214e501e5b2",
-        "link": "https://amzn.to/36v2FuC",
-        "slug": "third-girl"
-    },
-    {
-        "id": 65,
-        "title": "En el Hotel Bertram",
-        "published": 1965,
-        "description": "En el corazón del West End, hay un gran número de rincones discretos, desconocidos para casi todos excepto para los taxistas, quienes los atraviesan como auténticos expertos y, por lo tanto, llegan triunfantes a Park Lane, Berkeley Square o South Audley Street. Si se coge una discreta calle que sale de Park, se dobla a la izquierda y después un par de veces más, se encontrará en una tranquila travesía con el hotel Bertram a mano derecha. El hotel Bertram lleva allí mucho tiempo. Durante la guerra, varias casas a su derecha resultaron demolidas, y lo mismo ocurrió con otras un poco más lejos a su izquierda, pero el Bertram permaneció incólume. Naturalmente, no pudo evitar, como dicen los agentes inmobiliarios, acabar pintado, remozado y maquillado, aunque una suma de dinero bastante razonable bastó para devolverle su condición original. En 1955 tenía el mismo aspecto que había tenido en 1939: digno, nada ostentoso y discretamente caro.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/en-el-hotel-bertram.jpg?alt=media&token=7e6085f3-4925-4511-916c-56b52ea4704b",
-        "link": "https://amzn.to/3ti6YTJ",
-        "slug": "endless-night"
-    },
-    {
-        "id": 66,
-        "title": "Tercera Muchacha",
-        "published": 1966,
-        "description": "Hércules Poirot se había sentado a desayunar. Junto a su mano derecha había un taza de chocolate humeante. Siempre había sido aficionado a los dulces. Para acompañar el chocolate tenía un brioche, el complemento ideal. Asintió complacido. Lo había adquirido en la cuarta pastelería que probó. Se trataba de una pâtísseríe danesa, pero infinitamente superior a la supuestamente francesa que había en el barrio. Ésta, sencillamente, era un fraude.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/tercera-muchacha.jpg?alt=media&token=f5ca3b9f-eea0-40c8-afc1-5f4a9322d4c5",
-        "link": "https://amzn.to/2MgAjO4",
-        "slug": "by-the-pricking-of-my-thumbs"
-    },
-    {
-        "id": 67,
-        "title": "Noche Eterna",
-        "published": 1967,
-        "description": "En el fin está el principio… Ésa es una cita que he oído muchas veces. No suena mal, pero en realidad, ¿qué significa? ¿Hay siempre un instante determinado que se pueda señalar y decir: «Todo comenzó aquel día, a tal hora y en tal lugar, con aquel incidente?». ¿Comenzó mi historia cuando vi aquel cartel colgado en la pared del George & Dragon, el que anunciaba la subasta de la valiosa finca The Towers y daba detalles de los acres, las millas y las yardas, acompañados por un boceto de cómo había sido la mansión en su mejor época, hará de esto unos ochenta o cien años? No estaba haciendo nada especial: sencillamente paseaba por la calle principal de Kingston Bishop, un lugar sin la menor importancia, pasando el rato. Vi el cartel. ¿Por qué? ¿Fue una sucia jugarreta del destino o la mano extendida de la buena fortuna? Se puede entender de cualquiera de las dos maneras.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/noche-eterna.jpg?alt=media&token=acffd94b-d359-4159-b5df-479586ee854c",
-        "link": "https://amzn.to/36xVmST",
-        "slug": "halloween-party"
-    },
-    {
-        "id": 68,
-        "title": "El Cuadro",
-        "published": 1968,
-        "description": "Mr. y Mrs. Beresford estaban desayunando. Eran una pareja normal y corriente. Centenares de parejas mayores como ellos desayunaban por todo lo ancho y largo de Inglaterra a esa misma hora. También era un día normal y corriente, de los que hay cinco iguales durante la semana. Los nubarrones anunciaban lluvia, pero tampoco era una cosa segura.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-cuadro.jpg?alt=media&token=5ee88433-9aed-4e67-bfbc-73fd73c47df5",
-        "link": "https://amzn.to/3rcIklL",
-        "slug": "passenger-to-frankfurt"
-    },
-    {
-        "id": 69,
-        "title": "Las Manzanas",
-        "published": 1969,
-        "description": "Mrs. Ariadne Oliver había ido a colaborar con Judith Butler, la amiga en cuya casa estaba alojada, en los preparativos de la fiesta infantil que tendría lugar aquella misma tarde. En aquel momento se apreciaba una actividad frenética. Mujeres la mar de activas entraban y salían cargando sillas, mesas, jarrones y una considerable cantidad de calabazas amarillas que repartían estratégicamente en los lugares previamente seleccionados. Sería una fiesta de Halloween para un grupo de jóvenes de edades comprendidas entre los diez y los diecisiete años. Mrs. Oliver se apartó del grupo principal, se apoyó contra una pared afortunadamente desocupada y sostuvo en alto una gran calabaza amarilla para observarla con ojo crítico.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/las-manzanas.jpg?alt=media&token=35353eed-228e-492b-a698-23ae5ae7bf31",
-        "link": "https://amzn.to/3apk9JX",
-        "slug": "nemesis"
-    },
-    {
-        "id": 70,
-        "title": "Pasajero para Frankfurt",
-        "published": 1970,
-        "description": "Habla la autora: La primera pregunta que se le plantea a un autor, ya sea personalmente o por carta, es: «¿De dónde saca usted sus ideas?» La tentación es responder: «Siempre voy a Harrods», o bien: «Por lo general, las consigo en el economato del Ejército y la Marina», o de una manera más desabrida: «Pruebe en Marks & Spencer», es una tentación prácticamente irresistible. La opinión universal y más establecida es que existe un manantial mágico de ideas que los autores han descubierto cómo ordeñar.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/pasajero-para-frankfurt.jpg?alt=media&token=f9926e64-7f78-4d36-bec2-3724e121bb16",
-        "link": "https://amzn.to/2MhUGKK",
-        "slug": "elephants-can-remembe"
-    },
-    {
-        "id": 71,
-        "title": "Némesis",
-        "published": 1971,
-        "description": "Miss Jane Marple tenía la costumbre de leer por las tardes su segundo periódico. Cada mañana recibía en su casa dos periódicos. El primero lo leía mientras tomaba el primer té de la mañana, siempre, claro está, que se lo entregaran a tiempo. El chico que repartía los periódicos era bastante errático en la administración de su tiempo. También bastante frecuentemente se daba el caso de que se tratara de un repartidor nuevo o de algún otro chico que reemplazara temporalmente al primero. Todos parecían tener opiniones diferentes respecto a las rutas geográficas a seguir en el reparto. Quizá lo hacían para aliviar la monotonía, pero para aquellos clientes acostumbrados a leer el periódico a primera hora, para poder enterarse de las noticias más interesantes del día, antes de salir de sus casas para ir en busca del autobús, el tren o cualquier otro sistema de transporte moderno que los llevara a su trabajo, era un fastidio no tener el periódico a tiempo, pues las señoras maduras y ancianas que residían beatíficamente en St. Mary Mead eran todas partidarias de leer el periódico mientras desayunaban en la cama.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/nemesis.jpg?alt=media&token=abb56c0d-0d95-4128-a4f6-f33b0b114ff7",
-        "link": "https://amzn.to/3renpyW",
-        "slug": "postern-of-fate"
-    },
-    {
-        "id": 72,
-        "title": "Los Elefantes Pueden Recordar",
-        "published": 1972,
-        "description": "Mrs. Oliver se miró en el espejo y, de reojo, miró el reloj que estaba sobre la repisa de la chimenea, consciente de que iba atrasado unos veinte minutos. Luego, volvió una vez más al estudio de su peinado. El problema era (y no tenía empacho en reconocerlo) que sus peinados estaban sometidos a un continuo proceso de cambio. Lo había probado casi todo: desde un sobrio pompadour hasta un estilo informal en el que se cepillaba los rizos hacia atrás para dejar al descubierto una frente de intelectual; al menos, confiaba en tener una frente de intelectual. Había probado con unos rizos muy apretados y también con un desorden artístico. No obstante, debía admitir que hoy el estilo del peinado no tendría mucha importancia porque haría algo que sólo hacía en contadas ocasiones: llevaría sombrero.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/los-elefantes-pueden-recordar.jpg?alt=media&token=f0a46394-0d65-4e43-9051-e707e665af41",
-        "link": "https://amzn.to/3pGrZ8x",
-        "slug": "curtain-poirots-last-case"
-    },
-    {
-        "id": 73,
-        "title": "La Puerta del Destino",
-        "published": 1973,
-        "description": "Cuatro grandes puertas tiene la ciudad de Damasco: La Puerta del Destino, la Puerta del Desierto, la Caverna del Desastre y el Fuerte del Temor. No pases por ella, ¡oh, Caravana!, o pasa sin cantar. ¿Has oído ese silencio cuando los pájaros están muertos, aunque se oye algo que parece el piar de un pájaro? De Puertas de Damasco de James Elroy Flecker ",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-puerta-del-destino.jpg?alt=media&token=b4caeceb-8624-4a0b-a47f-b2b5edc90383",
-        "link": "https://amzn.to/39ABDUI",
-        "slug": "sleeping-murder"
-    },
-    {
-        "id": 74,
-        "title": "Primeros Casos de Poirot",
-        "published": 1974,
-        "description": "El azar quiso que mi amigo Hércules Poirot, antiguo miembro de la policía belga, se viera vinculado con el caso Styles. El éxito en este caso le dio fama y le decidió a dedicarse a la investigación de casos criminales. Me instalé con él en Londres después de que me licenciaran del ejército como consecuencia de una herida en la batalla del Somme. Como conozco de primera mano la mayoría de sus casos, me han sugerido que escoja algunos de los más interesantes y los ponga por escrito. Acepté y creo que no hay ninguno mejor para comenzar que uno muy extraño que, en su momento, provocó un gran interés entre el público. Me refiero al caso del baile de la Victoria.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/primeros-casos-de-poirot.jpg?alt=media&token=a7ccd5c4-7b2e-44bf-96ac-bbe0a78f6cd5",
-        "link": "https://amzn.to/39ABDUI",
-        "slug": "sleeping-murder"
-    },
-    {
-        "id": 75,
-        "title": "Telón",
-        "published": 1975,
-        "description": "¿Ouién no ha sufrido alguna vez un repentino sobresalto al revivir una vieja experiencia o al sentir una antigua emoción? «He hecho esto antes…» ¿Por qué esas palabras siempre nos conmueven tan profundamente? Esa era la pregunta que me formulé mientras viajaba en el tren con la mirada puesta en el llano paisaje de Essex. ¿Cuántos años habían pasado desde que hice este mismo trayecto? ¡Había sentido entonces (menuda estupidez) que lo mejor de mi vida había terminado! Herido en una guerra, que para mí siempre sería un trauma, una contienda barrida ahora por una segunda mucho más desesperada. En 1916, el joven Arthur Hastings creía que ya era viejo y caduco. No me había dado cuenta de que, para mí, la vida solo estaba empezando.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/telon.jpg?alt=media&token=24eb7437-4321-48e3-8c18-4bbbb7004428",
-        "link": "https://amzn.to/39ABDUI",
-        "slug": "sleeping-murder"
-    },
-    {
-        "id": 76,
-        "title": "Un Crimen Dormido",
-        "published": 1976,
-        "description": "Gwenda Reed permanecía de pie, al borde del muelle, temblando de frío. Los muelles, los cobertizos de la aduana y todo lo que alcanzaba a ver de Inglaterra se balanceaban suavemente. Fue en este momento cuando tomó la decisión, una decisión que tendría consecuencias extraordinarias: no iría a Londres en tren como había pla-neado. Después de todo, ¿por qué tenía que hacerlo? Nadie la estaría esperando, Acababa de bajar de un barco al que las olas habían zarandeado a placer (había soportado tres días de mar gruesa mientras cruzaban la bahía hasta Plymouth) y lo último que deseaba ahora era subirse a un tren que seguramente se balancearía tanto como el barco. Iría a un hotel, a un edificio sólido y firme, con los cimientos bien hondos en la tierra, y se metería en una cómoda y sólida cama que no se balanceara ni crujiera. Dormiría a placer y, a la mañana siguiente…",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/un-crimen-dormido.jpg?alt=media&token=9be05f15-e6c9-4198-a57f-e06858ed746a",
-        "link": "https://amzn.to/39ABDUI",
-        "slug": "sleeping-murder"
-    },
-    {
-        "id": 77,
-        "title": "Los Últimos Casos de Miss Marple",
-        "published": 1979,
-        "description": "La mujer del párroco dobló la esquina de la casa parroquial con un montón de crisantemos entre los brazos. Pegada a los recios zapatos de piel, había mucha tierra fértil del jardín y también llevaba tierra en la nariz, aunque ella no se había dado cuenta. Le costó cierto esfuerzo abrir la reja desvencijada y cubierta de óxido. Un soplo de viento le movió el abollado sombrero de fieltro, que le quedó aún más ladeado que antes. —¡Caramba! —dijo Bunch. Bautizada Diana, por sus optimistas progenitores, Mrs. Harmon se había convertido en Bunch cuando era una niña con trenzas y desde entonces había conservado tanto el apodo como las trenzas. Abrazada a los crisantemos, cruzó la verja hacia el cementerio y la puerta de la iglesia.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/los-ultimos-casos-de-miss-marple.jpg?alt=media&token=207730fd-444a-46b3-9457-321a6018d777",
-        "link": "https://amzn.to/39ABDUI",
-        "slug": "sleeping-murder"
-    },
-    {
-        "id": 78,
-        "title": "Problema en Pollensa y Otras Historias",
-        "published": 1991,
-        "description": "El barco de la línea de Barcelona a Palma de Mallorca dejó a Parker Pyne en esta última capital a primera hora de la mañana. Inmediatamente, Parker Pyne sufrió una desilusión. Los hoteles estaban llenos. Lo único que pudieron ofre- cerle fue un cuchitril sin ventilación y con vistas a un patio interior en un hotel del centro de la ciudad, y el señor Parker Pyne no estaba dispuesto a conformar- se con eso. El dueño del hotel se mostró indiferente ante su desilusión.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/problema-en-pollensa.jpg?alt=media&token=3d060506-cd09-4f3f-a41d-6950f7b9b861",
-        "link": "https://amzn.to/39ABDUI",
-        "slug": "sleeping-murder"
-    },
-    {
-        "id": 79,
-        "title": "Café Solo",
-        "published": 1997,
-        "description": "Es casi seguro que el desagrado que le produjo Alibi, una adaptación ajena hecha en 1928 de su novela El asesinato de Roger Ackroyd, fue lo que decidió a mi abuela Agatha Christie a escribir una obra de teatro ella misma, algo que no había hecho nunca. Café solo, en la que aparece su detective favorito, Hércules Poirot, se terminó el verano de 1929. Pero cuando Agatha se la enseñó a su agente, este le recomendó que no se molestara en enviársela a ningún teatro, pues no tenía calidad suficiente para representarla. Por suerte, un amigo que tenía contactos en los teatros la convenció de que ignorase ese consejo y la obra se estrenó en 1930 en el Embassy Theatre, en Swiss Cottage, en Londres.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/cafe-solo.jpg?alt=media&token=14b686b5-09cd-4935-a92d-6b534408b47a",
-        "link": "https://amzn.to/39ABDUI",
-        "slug": "sleeping-murder"
-    },
-    {
-        "id": 80,
-        "title": "Un Dios Solitario y Otros Relatos",
-        "published": 1997,
-        "description": "Agatha Christie, la verdadera «reina del crimen», sigue siendo in- discutiblemente la mayor y más conocida escritora de novelas po- licíacas clásicas. Su novela más famosa, y con toda probabilidad uno de los relatos policíacos más conocidos, es El asesinato de Roger Ackroyd (1926), con la que indignó a los críticos y, gracias a ello, se estableció en la primera fila de los escritores del género. El caso lo resolvió Hércules Poirot, antiguo miembro de la policía belga, que apareció en 33 novelas, entre ellas Asesinato en el Orient Express (1930), El misterio de la guía de ferrocarriles (1936), Cinco cerditos (1942), Después del funeral (1953), Las manzanas (1969) y Telón: el último caso de Poirot (1975). El detective favorito de Christie era Miss Jane Marple, una anciana solterona que apareció en 12 novelas, entre ellas Asesinato en la vicaría (1930), Un cadáver en la biblioteca (1942), Un puñado de centeno (1953), Misterio en el Caribe (1964) y su secuela Némesis (1971) y, por fin, Un crimen dormido (1976) que, como Telón, se había escrito durante el bombardeo de Londres casi treinta años antes. Y entre las 21 novelas en las que no aparece ninguno de los detectives de Christie están Diez negritos (1939), en la que no hay ningún investigador, La casa torcida (1949), Inocencia trágica (1959) y Noche eterna (1967).",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/un-dios-solitario.jpg?alt=media&token=26bdd667-3df9-495d-81fe-d5a28b6edebb",
-        "link": "https://amzn.to/39ABDUI",
-        "slug": "sleeping-murder"
-    },
-    {
-        "id": 81,
-        "title": "Una Visita Inesperada",
-        "published": 1999,
-        "description": "Poco antes de medianoche de un gélido día de noviembre, los jirones de niebla oscurecían parte de una carretera oscura, estrecha y rodeada de árboles en Gales del Sur, no lejos del canal de Bristol, de donde llegaba automáticamente cada cierto tiempo el melancólico sonido de una bocina de niebla. De vez en cuando se oía el lejano ladrido de un perro y la triste llamada de un ave nocturna. Las pocas casas que había a lo largo de la carretera, que era poco más que un camino, estaban separadas por casi un kilómetro de distancia. En uno de sus tramos más oscuros, la carretera giraba y pasaba al lado de una bonita casa de tres pisos que había detrás de un espacioso jardín, y justo ahí había un coche atascado, con las ruedas delanteras metidas en una zanja al lado de la carretera. Después de dos o tres intentos de sacarlo de la zanja acelerando, el conductor debió de decidir que no valía la pena insistir y apagó el motor.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/una-visita-inesperada.jpg?alt=media&token=d4bf7734-011b-4015-a1ee-e8dad7014401",
-        "link": "https://amzn.to/39ABDUI",
-        "slug": "sleeping-murder"
-    },
-    {
-        "id": 82,
-        "title": "La Telaraña",
-        "published": 2000,
-        "description": "Copplestone Court, la elegante casa dieciochesca de Henry y Clarissa Hailsham-Brown, ubicada en la agradable y ondulada campiña de Kent, era bonita incluso al final de una tarde lluviosa de marzo. En el salón de la planta baja, amueblado con buen gusto y con unas puertas acristaladas que daban al jardín, dos hombres estaban de pie al lado de una consola en la que había tres copas de oporto, cada una marcada con una etiqueta: uno, dos y tres. En la mesa había también un lápiz y una hoja de papel.",
-        "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-telarana.jpg?alt=media&token=7b4e683a-b974-45f5-9cf5-deb89f0f3fc9",
-        "link": "https://amzn.to/39ABDUI",
-        "slug": "sleeping-murder"
-    }
+[
+  {
+    "id": 0,
+    "title": "El Misterioso Caso de Styles",
+    "published": 1920,
+    "description": "El revuelo que despertó el que en su momento fue conocido como «El caso de Styles» se ha calmado. Sin embargo, en vista de la resonancia mundial que tuvo, mi amigo Poirot y la propia familia me han pedido que escriba toda la historia. Confiamos en que así se acallen definitivamente los rumores sensacionalistas que aún perduran. Por lo tanto, expondré brevemente las circunstancias que me llevaron a verme implicado en este asunto. Me habían enviado a Inglaterra tras caer herido en el frente y, después de pasar unos meses recuperándome en una deprimente clínica, me concedieron un mes de permiso. No tenía parientes cercanos ni amigos, ni siquiera había decidido lo que haría, cuando me encontré con John Cavendish. Le había visto muy poco en los últimos años. En realidad, jamás le conocí a fondo. Me llevaba unos quince años, aunque no representaba los cuarenta y cinco que tenía. Sin embargo, durante la infancia, a menudo me alojé en Styles, la residencia de su madre, en Essex.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterioso-caso-de-styles.jpg?alt=media&token=3af41d6e-c506-4800-a200-3627f64d4de1",
+    "link": "https://amzn.to/2Mo17vI",
+    "slug": "el-misterioso-caso-de-styles"
+  },
+  {
+    "id": 1,
+    "title": "El Misterioso Señor Brown",
+    "published": 1922,
+    "description": "Eran las dos de la tarde del 7 de mayo de 1915. El Lusitania había sido alcanzado por dos torpedos y se iba hundiendo rápidamente, mientras los botes eran lanzados al agua a la máxima velocidad posible. Las mujeres y los niños se encontraban alineados aguardando su turno. Algunas mujeres se asían desesperadas a sus esposos y padres, y otras estrechaban contra sí a sus hijos. Una joven contemplaba la escena, sola y algo apartada del resto. Era casi una niña: no tendría más de dieciocho años, y al parecer no estaba asustada. Sus ojos, de mirada firme y grave, miraban al frente.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterioso-senor-brown.jpg?alt=media&token=0c906b6d-2728-4007-b7b0-37dbb485969b",
+    "link": "https://amzn.to/36wKPY5",
+    "slug": "el-misterioso-señor-brown"
+  },
+  {
+    "id": 2,
+    "title": "Asesinato en el Campo de Golf",
+    "published": 1923,
+    "description": "Creo que existe una anécdota muy popular referente a un joven escritor, quien, decidido a que el comienzo de su relato tuviera la originalidad y la garra necesarias para atrapar y mantener la atención del más duro de los editores, acuñó la siguiente frase: «¡Puñetas!, dijo la duquesa». Por extraño que parezca, mi relato comienza más o menos en la misma línea. Sólo que la dama que pronunció dicha palabreja no era una duquesa. Era un día a principios de junio. Había atendido algunos asuntos en París y regresaba a Londres, donde aún compartía habitaciones con mi viejo amigo Hércules Poirot, exdetective de la policía belga, en el primer tren de la mañana.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/asesinato-en-el-campo-de-golf.jpg?alt=media&token=cbfcd53d-5359-4ebd-b227-a733b789abda",
+    "link": "https://amzn.to/36wm2DK",
+    "slug": "asesinato-en-el-campo-de-golf"
+  },
+  {
+    "id": 3,
+    "title": "El Hombre del Traje Color Castaño",
+    "published": 1924,
+    "description": "Nadina, la bailarina que había conquistado París, se meció al compás de los aplausos e hizo reverencias una y otra vez. Las negras y contraídas pupilas de sus ojos se contrajeron aún más. La línea recta escarlata que era su boca se curvó hacia arriba. El público entusiasmado golpeó el suelo para expresar su aprobación al caer el telón que ocultaba los rojos, azules y púrpuras del exótico decorado. La bailarina abandonó el escenario en un remolino de ropajes azules y anaranjados. Un caballero barbudo la recibió, con entusiasmo, entre sus brazos. Era el empresario. —¡Magnífico, petite, magnífico! —exclamó—. ¡Esta noche se ha superado! La besó galantemente en ambas mejillas, con naturalidad. Madame Nadina aceptó el tributo con una serenidad fruto de la costumbre y pasó a su camerino, donde había ramilletes de flores apilados de cualquier manera y en todas partes, maravillosos vestidos de estilo futurista colgaban de las perchas y el aire estaba cargado del aroma de las flores y de perfumes y esencias. Jeanne, la doncella, ayudó a su señora, hablando sin cesar y colmándola de alabanzas.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-hombre-del-traje-color-castano.jpg?alt=media&token=569626fc-0497-4ee3-bd7a-beb75915630c",
+    "link": "https://amzn.to/2NL75ab",
+    "slug": "el-hombre-del-traje-color-castaño"
+  },
+  {
+    "id": 4,
+    "title": "Poirot Investiga",
+    "published": 1924,
+    "description": "Me encontraba ante una de las ventanas de la residencia de Hércules Poirot, contemplando la calle. —Es sumamente curioso —dije de pronto, conteniendo el aliento. —¿El qué, mon ami? —preguntó Poirot, plácidamente desde las profundidades de su cómoda butaca. —¡Dedúzcalo usted de los hechos siguientes! Aquí viene una joven elegantemente vestida…: sombrero de última moda y magníficas pieles. Se acerca lentamente mirando todas las casas al pasar. Sin que ella se dé cuenta, la van siguiendo tres hombres y una mujer de mediana edad. En este momento acaba de unirse a ellos un chico de ésos que hacen recados, que la señala con el dedo al mismo tiempo que gesticula. ¿Qué drama están tramando? ¿Acaso ella es una delincuente y sus seguidores unos detectives dispuestos a detenerla?",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/poirot-investiga.jpg?alt=media&token=3920132d-0e25-4a03-986d-9cf926127cef",
+    "link": "https://amzn.to/3tfqd0r",
+    "slug": "poirot-investiga"
+  },
+  {
+    "id": 5,
+    "title": "El Secreto de Chimneys",
+    "published": 1925,
+    "description": "–¡Caballero Joe! —¡Que me cuelguen si no es Jimmy McGrath! Las siete mujeres alicaídas y los tres varones aburridos, clientes de Viajes Castle, sintieron un súbito despertar de su interés. Mister Cade, su admirado mister Cade, alto, esbelto, moreno, risueño, cuyas elegantes maneras tanto habían contribuido a resolver disputas y a mantenerlos en un aceptable estado de buen humor, había encontrado a un amigo harto peculiar, a decir verdad. De estatura semejante a la de su guía, más robusto y mucho menos apuesto, parecía arrancado de las páginas de una novela de aventuras. Sería, probablemente, el dueño de una taberna; pero despertaba su atención. A fin de cuentas, se viaja con la esperanza de ver cosas que los libros mencionan.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-secreto-de-chimneys.jpg?alt=media&token=35838fdf-f9f1-4678-a81c-2170306ffc11",
+    "link": "https://amzn.to/3tfqd0r",
+    "slug": "el-secreto-de-chimneys"
+  },
+  {
+    "id": 6,
+    "title": "El Asesinato de Roger Ackroyd",
+    "published": 1926,
+    "description": "Mrs. Ferrars murió la noche del 16 al 17 de septiembre, un jueves. Me llamaron a las ocho de la mañana del viernes 17. Mi presencia no sirvió de nada. Hacía horas que había muerto. Regresé a mi casa unos minutos después de las nueve. Entré y me entretuve adrede en el vestíbulo, colgando mi sombrero y el abrigo ligero que me había puesto como precaución por el fresco de las primeras horas de aquel día otoñal. En honor a la verdad, diré que estaba muy inquieto y preocupado. No voy a pretender que preví entonces los acontecimientos de las semanas siguientes, pero mi instinto me avisaba de que se acercaban tiempos llenos de sobresaltos y sinsabores.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-asesinato-de-roger-ackroyd.jpg?alt=media&token=369b69f2-249c-4a78-a07d-b4659937d7e8",
+    "link": "https://amzn.to/3anpRfA",
+    "slug": "el-asesinato-de-roger-ackroyd"
+  },
+  {
+    "id": 7,
+    "title": "Los Cuatro Grandes",
+    "published": 1927,
+    "description": "Conozco gente que lo pasa bien en cualquier travesía del canal de la Mancha, personas que se sientan tranquilamente en una silla de cubierta en la que permanecen hasta que el barco está amarrado, entonces recogen sus bártulos sin apresurarse y luego desembarcan. Reconozco que yo nunca he sido capaz de hacerlo. Desde el momento en que subo a bordo, me parece que el tiempo es demasiado escaso como para dedicarme a algo en particular. Traslado mis maletas de un sitio a otro y, si voy al comedor a tomar algo, engullo lo que sea con una inquieta sensación de que el barco puede atracar inesperadamente mientras como. Puede que todo ello sea tan sólo un legado de lo que experimenté en los cortos permisos de los que disfruté durante la guerra, cuando asegurarse un sitio cerca de la pasarela parecía un asunto de vida o muerte, y encontrarse entre los primeros que desembarcaban representaba ganar unos minutos preciosos en los tres o cinco días que duraba la licencia.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/los-cuatro-grandes.jpg?alt=media&token=0e317834-7897-4abd-a5c2-face300bb465",
+    "link": "https://amzn.to/3cxgpcm",
+    "slug": "los-cuatro-grandes"
+  },
+  {
+    "id": 8,
+    "title": "El Misterio del Tren Azul",
+    "published": 1928,
+    "description": "Era alrededor de medianoche cuando un hombre atravesaba la plaza de la Concordia. A pesar del magnífico abrigo que cubría su raquítico cuerpo, había en él algo ruin y miserable. Era un hombrecillo con cara de rata, uno de esos tipos que parece imposible que puedan ocupar algún puesto importante en las altas esferas de la sociedad. Sin embargo, quien creyese tal cosa estaría totalmente equivocado, ya que aquel individuo de cuerpo raquítico y miserable aspecto representaba un importante papel en los destinos del mundo. En el imperio gobernado por las ratas, él era el rey. En aquellos momentos, en una embajada aguardaban su regreso. Pero antes tenía otras cosas que hacer, aunque no oficialmente. A la luz de la luna, su rostro aparecía blanco y afilado, y en él se destacaba su nariz ligeramente curvada. Su padre, un judío polaco, oficial de sastre, se habría mostrado muy satisfecho con el trabajo que aquella noche llevaba allí a su hijo.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-del-tren-azul.jpg?alt=media&token=653c24ff-0c01-4ec6-8cb9-8705c3fc1530",
+    "link": "https://amzn.to/3tdJBLc",
+    "slug": "el-misterio-del-tren-azul"
+  },
+  {
+    "id": 9,
+    "title": "Matrimonio de Sabuesos",
+    "published": 1929,
+    "description": "Mistress Beresford cambió de postura en el diván y miró melancólica a través de la ventana de su apartamento. El panorama no era en realidad extenso. Se limitaba a un bloque de pisitos como el suyo, situado al otro lado de la calzada. Mistress Beresford lanzó un suspiro. Después bostezó. —Me gustaría que sucediese algo imprevisto —dijo. Su marido la miró con aire de reproche. —Cuidado, Tuppence, este inmoderado afán que de pronto te ha entrado por el sensacionalismo vulgar acabará por alarmarme. Tuppence volvió a suspirar y cerró los ojos en actitud meditativa.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/matrimonio-de-sabuesos.jpg?alt=media&token=4b0c4f9b-7cf5-4239-9576-ea76895d5ede",
+    "link": "https://amzn.to/3th3wcc",
+    "slug": "matrimonio-de-sabuesos"
+  },
+  {
+    "id": 10,
+    "title": "El Misterio de las Siete Esferas",
+    "published": 1929,
+    "description": "Aquel agradable joven llamado Jimmy Thesiger bajó de dos en dos los peldaños de la gran escalera de Chimneys. Tan precipitado era su descenso que fue a chocar con Tredwell, el majestuoso mayordomo, cuando éste cruzaba el vestíbulo llevando café recién hecho. Sólo debido a su maravillosa presencia de ánimo y a su agilidad de acróbata, no ocurrió una catástrofe. —Perdone —se excusó Jimmy—. Oiga, Tredwell, ¿soy el último en bajar? —No, señor. Mr. Wade está aún en sus habitaciones. —¡Magnífico! —respondió Jimmy entrando en el comedor.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-de-las-siete-esferas.jpg?alt=media&token=b2cf9ebd-e2a6-4d2f-9173-8cc2300f4d78",
+    "link": "https://amzn.to/36xdPyY",
+    "slug": "el-misterio-de-las-siete-esferas"
+  },
+  {
+    "id": 11,
+    "title": "Muerte en la Vicaría",
+    "published": 1930,
+    "description": "Es difícil saber exactamente dónde empieza esta historia, pero he elegido cierto miércoles, a la hora de la comida, en la vicaría. La conversación, aunque no relacionada fundamentalmente con el asunto que nos ocupa, presentó uno o dos sugestivos incidentes que influyeron más tarde en los acontecimientos. Acababa de trinchar unos pedazos de carne de buey, bastante dura por cierto, cuando al volver a sentarme observé, con un espíritu que mal cuadraba a mi hábito, que quien asesinara al coronel Protheroe prestaría un buen servicio a la humanidad.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/muerte-en-la-vicaria.jpg?alt=media&token=71308273-b007-43d0-848c-7d35dd53c6e8",
+    "link": "https://amzn.to/3as1RHY",
+    "slug": "muerte-en-la-vicaría"
+  },
+  {
+    "id": 12,
+    "title": "El Enigmático Mister Quin",
+    "published": 1930,
+    "description": "Era la víspera de Año Nuevo. Los adultos que asistían a la fiesta de los Royston estaban reunidos en el gran salón. Mr. Satterthwaite se alegró de que la chiquillería se hubiera acostado. Le desagradaban las manadas de niños. Los consideraba insulsos y toscos. Les faltaba sutileza y, en el transcurso de los años, cada vez sentía mayor atracción por esa cualidad.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-enigmatico-mr-quin.jpg?alt=media&token=e87c6a4c-6ce8-4519-a0c3-01630b1a5848",
+    "link": "https://amzn.to/3pEU28t",
+    "slug": "el-enigmático-mister-quin"
+  },
+  {
+    "id": 13,
+    "title": "El Misterio de Sittaford",
+    "published": 1931,
+    "description": "El comandante Burnaby se calzó las botas de goma, se abrochó bien el cuello del abrigo, tomó de un estante cercano a la puerta una linterna protegida contra el viento y abrió con cautela la puerta principal de su pequeño chalé y atisbó el exterior. La escena que presenciaron sus ojos era típica de la campiña inglesa, tal como la representan las tarjetas de felicitación de Navidad y los melodramas pasados de moda. Por todas partes se veía nieve acumulada en espesos montones, no un mero blanco manto de una o dos pulgadas de espesor. Durante los cuatro últimos días, había nevado copiosamente en toda Inglaterra y, en aquella región de los alrededores de Dartmoor, se había alcanzado espesores de varios pies. Los vecinos de toda la comarca se quejaban de la infinidad de cañerías que se reventaban por causa de aquel frío y el que tenía un amigo fontanero (aunque sólo fuese un aprendiz) se consideraba el más afortunado del mundo.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-de-sittaford.jpg?alt=media&token=889dd31d-ae26-4b7b-a7ec-011de8a7674a",
+    "link": "https://amzn.to/3cwYKBd",
+    "slug": "el-misterio-de-sittaford"
+  },
+  {
+    "id": 14,
+    "title": "Peligro Inminente",
+    "published": 1932,
+    "description": "–En mi opinión no hay puerto de mar al sur de Inglaterra más atractivo que Saint Loo, y comprendo el entusiasmo de sus huéspedes estivales, que lo llaman la reina de las playas. Recuerda la Riviera por muchos conceptos. La costa de Cornualles rivaliza en belleza con la Costa Azul. Así que hube expuesto ese pensamiento al amigo Hércules Poirot, me respondió: —No es muy original su afirmación, mi querido amigo, pues la leímos anoche en el coche-restaurante, en la carta del menú. —¿Y por eso no le parece tal vez justificada? Hércules sonreía para sí mismo, absorto en sus propias reflexiones. Tuve que repetir la pregunta. —Dispénseme, Hastings; estaba pensando en otra cosa, y precisamente en ese lugar del que usted hablaba.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/peligro-inminente.jpg?alt=media&token=b3e11304-6438-4bfa-a0f9-59ade5fea719",
+    "link": "https://amzn.to/3tfpBYH",
+    "slug": "peligro-inminente"
+  },
+  {
+    "id": 15,
+    "title": "Miss Marple y los 13 Problemas",
+    "published": 1932,
+    "description": "Estas historias fueron la primera introducción de Miss Marple al mundo de los lectores de relatos policíacos. Miss Marple tiene una ligera semejanza con mi propia abuelita, es también una anciana blanca y sonrosada, quien, a pesar de haber llevado una vida muy retirada, siempre ha demostrado tener gran conocimiento de la depravación humana. Uno se sentía terriblemente ingenuo y crédulo ante sus observaciones: «Pero ¿tú crees eso que te dicen? No debieras hacerlo. ¡Yo nunca creo nada!». Yo disfruto escribiendo las historias de Miss Marple; siento un profundo afecto por mi dulce anciana. Esperaba que fuese un éxito... y lo fue. Después de las seis primeras historias publicadas, me fueron solicitadas otras seis. Miss Marple había venido para quedarse.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/miss-marple-y-los-13-problemas.jpg?alt=media&token=de22dcab-6c65-4eda-9c99-403f4a14809a",
+    "link": "https://amzn.to/2MnrL7X",
+    "slug": "miss-marple-y-los-13-problemas"
+  },
+  {
+    "id": 16,
+    "title": "La Muerte de Lord Edward",
+    "published": 1933,
+    "description": "El público es sumamente olvidadizo. El asesinato de George Alfred Saint Vincent Marsh, cuarto barón de Edgware, que tan intensamente apasionó a la opinión pública, ha pasado ya al olvido y otros hechos posteriores han acaparado su interés. Debo confesar que por expreso deseo de mi amigo Hércules Poirot no figuró su nombre en el suceso, ya que si intervino en él no fue por su propia voluntad. Los laureles, por tanto, se los llevaron los demás, como él quería, pues, desde su punto de vista, aquello constituyó uno de sus fracasos, ya que si consiguió ponerse, por fin, sobre la verdadera pista del criminal fue debido a sorprender en la calle cierta conversación que sostenían dos desconocidos.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-muerte-de-lord-edgward.jpg?alt=media&token=eb9c97bb-daaa-4cff-84f7-0ad112b61dae",
+    "link": "https://amzn.to/3r3UI7E",
+    "slug": "la-muerte-de-lord-edward"
+  },
+  {
+    "id": 17,
+    "title": "¿Por qué no Preguntan a Evans?",
+    "published": 1934,
+    "description": "Bobby Jones empuñó el palo de golf, tocó ligeramente la bola, inclinó despacio el palo hacia atrás y luego dio un golpe fuerte con la rapidez de un rayo. ¿Acaso la bola emprendió un camino recto, elevándose para caer luego al suelo en el lugar debido? De ningún modo. Avanzó tropezando contra los accidentes del terreno y al fin se encajó profundamente en un búnker. Allí no había espectadores que pudiesen proferir una exclamación de desaliento. El testigo solitario de aquel golpe no manifestó ninguna sorpresa y eso se explica fácilmente, porque no era el maestro estadounidense del juego que había inventado aquel golpe, sino simplemente el cuarto hijo del vicario de Marchbolt, un pequeño pueblo situado en la costa de Gales.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/por-que-no-le-preguntan-a-evans.jpg?alt=media&token=51a732a1-c6f9-4e01-8ca4-f98a27c38371",
+    "link": "https://amzn.to/36uRi5O",
+    "slug": "por-qué-no-preguntan-a-evans"
+  },
+  {
+    "id": 18,
+    "title": "Testigo de Cargo y Otras Historias",
+    "published": 1933,
+    "description": "El señor Mayherne se ajustó las gafas mientras se aclaraba la garganta con una tosecilla seca muy característica en él. Luego volvió a mirar al hombre que tenía delante, un hombre acusado de asesinato.  El señor Mayherne era un hombre menudo, de ademanes precisos, pulcro, por no decir afectado, en su modo de vestir, y con unos ojos grises de mirada astuta y penetrante. No tenía un pelo de tonto. Muy al contrario, como abogado, el señor Mayherne goza- ba de una gran reputación. Su voz, cuando se dirigió a su cliente, fue áspera pero no antipática. ",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/testigo-de-cargo.jpg?alt=media&token=fe3c028d-32ab-4018-bb92-03fecac76f7e",
+    "link": "https://amzn.to/36wklWU",
+    "slug": "testigo-de-cargo-y-otras-historias"
+  },
+  {
+    "id": 19,
+    "title": "El Misterio de Listerdale y Otras Historias",
+    "published": 1933,
+    "description": "El señor Mayherne se ajustó las gafas mientras se aclaraba la garganta con una tosecilla seca muy característica en él. Luego volvió a mirar al hombre que tenía delante, un hombre acusado de asesinato.  El señor Mayherne era un hombre menudo, de ademanes precisos, pulcro, por no decir afectado, en su modo de vestir, y con unos ojos grises de mirada astuta y penetrante. No tenía un pelo de tonto. Muy al contrario, como abogado, el señor Mayherne goza- ba de una gran reputación. Su voz, cuando se dirigió a su cliente, fue áspera pero no antipática. ",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-de-listerdale.jpg?alt=media&token=0191bebd-7f49-41c6-9059-072e9a9eb2b2",
+    "link": "https://amzn.to/36wklWU",
+    "slug": "el-misterio-de-listerdale-y-otras-historias"
+  },
+  {
+    "id": 20,
+    "title": "Asesinato en el Orient Express",
+    "published": 1934,
+    "description": "Asesinato en el Orient Express es sin duda una de las mayores novelas de misterio de Agatha Christie. Justo después de la medianoche, un ventisquero detiene al Orient Express en seco. El lujoso tren está sorprendentemente lleno para la época del año, pero por la mañana tiene un pasajero menos. Un magnate estadounidense yace muerto en su compartimiento, apuñalado una docena de veces, su puerta cerrada por dentro. Aislado y con un asesino entre ellos, el detective Hércules Poirot debe identificar al asesino, en caso de que decida atacar de nuevo.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/asesinato-en-el-orient-express.jpg?alt=media&token=e69b5ae4-091c-4e13-93a9-66b1e63351ed",
+    "link": "https://amzn.to/3th4DIP",
+    "slug": "asesinato-en-el-orient-express"
+  },
+  {
+    "id": 21,
+    "title": "Parker Pine Investiga",
+    "published": 1934,
+    "description": "Cuatro gruñidos, una voz que preguntaba con tono de indignación por qué nadie podía dejar en paz su sombrero, un portazo y mister Packington salió para coger el tren de las ocho y cuarenta y cinco con destino a la ciudad. Mrs. Packington se sentó a la mesa del desayuno. Su rostro estaba encendido y sus labios apretados, y la única razón de que no llorase era que, en el último momento, la ira había ocupado el lugar del dolor. —No lo soportaré —dijo Mrs. Packington—. ¡No lo soportaré! —Y permaneció por algunos momentos con gesto pensativo, para murmurar después—: ¡Mala pécora! ¡Gata hipócrita! ¡Cómo puede ser George tan loco!",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/parker-pyne-investiga.jpg?alt=media&token=816796d8-1455-40de-b843-c71ab8124727",
+    "link": "https://amzn.to/36uR4vu",
+    "slug": "parker-pine-investiga"
+  },
+  {
+    "id": 22,
+    "title": "Tragedía en Tres Actos",
+    "published": 1935,
+    "description": "Mr. Satterthwaite se sentó en la terraza de Nido de Cuervos y contempló cómo su anfitrión, sir Charles Cartwright, subía por el sendero que conducía al mar. Nido de Cuervos era una villa de estilo moderno, sin ninguno de esos adornos arquitectónicos que suelen encantar a la mayoría de la gente. Era una casa de sólida y sencilla construcción, pintada simplemente de blanco, que a primera vista daba la impresión de ser mucho más pequeña de lo que en realidad era. Debía su nombre al puerto de Loomouth. Uno de los lados de la terraza, protegido por una sólida balaustrada, al borde mismo del acantilado cortado a pico, daba sobre el mar. Por la carretera, Nido de Cuervos estaba a un kilómetro y medio de la población. Esa carretera corría serpenteante y, siguiendo el camino de los pescadores, podía llegarse a la ciudad en siete minutos. Por aquel sendero subía en aquellos momentos sir Charles Cartwright.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/tragedia-en-tres-actos.jpg?alt=media&token=b94c39fc-6894-4418-9555-a72b57b993fa",
+    "link": "https://amzn.to/3pFZR5o",
+    "slug": "tragedía-en-tres-actos"
+  },
+  {
+    "id": 23,
+    "title": "Muerte en las Nubes",
+    "published": 1935,
+    "description": "El sol de septiembre caía de lleno en el aeródromo de Le Bourget mientras los pasajeros cruzaban el campo y subían al correo aéreo Prometheus, que había de salir enseguida para la ciudad de Croydon. Jane Grey fue de las primeras en entrar y ocupó el asiento número 16. Algunos pasajeros entraron por la puerta central y, pasando por delante de la angosta repostería y de los dos lavabos, fueron a ocupar la parte delantera del aparato. Casi todos estaban ya sentados, y en el interior había un ruido de conversaciones que dominaba una voz chillona y penetrante de mujer. Jane torció ligeramente los labios. Aquella voz le era conocida.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/muerte-en-las-nubes.jpg?alt=media&token=018f3655-22a8-4f68-91e3-a610624a1a2d",
+    "link": "https://amzn.to/3pFZR5o",
+    "slug": "muerte-en-las-nubes"
+  },
+  {
+    "id": 24,
+    "title": "El Misterio de la Guía de Ferrocarriles",
+    "published": 1936,
+    "description": "En esta narración, me he apartado de mi costumbre habitual de narrar sólo aquellos acontecimientos y escenas en las que personalmente estuve presente. Por consiguiente, algunos capítulos están escritos en tercera persona. Quiero asegurar a mis lectores que puedo dar fe de los sucesos relatados en esos capítulos. Si me he tomado la licencia poética de describir los pensamientos y sentimientos de algunas personas, se debe a que creo que he conseguido reflejarlos con una razonable precisión. Me permito añadir que en esto tengo el respaldo de mi buen amigo Hércules Poirot.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-de-la-guia-de-ferrocarriles.jpg?alt=media&token=c2254c15-58c8-4a4e-88f6-f39ca67f7024",
+    "link": "https://amzn.to/3pFZR5o",
+    "slug": "el-misterio-de-la-guía-de-ferrocarriles"
+  },
+  {
+    "id": 25,
+    "title": "Asesinato en Mesopotamia",
+    "published": 1936,
+    "description": "Los hechos cuya crónica se incluye en esta narración ocurrieron hace unos cuatro años. Determinadas circunstancias han hecho necesario, en mi opinión, que se hiciera público un relato íntegro de los mismos. Han corrido por ahí rumores absurdos y ridículos diciendo que se habían suprimido pruebas importantes para el caso y otras sandeces de este orden. Tales falsas interpretaciones han aparecido, principalmente, en la prensa americana. Por razones obvias no era aconsejable que dicho relato saliera de la pluma de uno de los que componían aquella expedición arqueológica, ya que era natural suponer que tuviera ciertos prejuicios sobre la cuestión. En consecuencia, sugerí a la señorita Amy Leatheran que se encargara de aquel trabajo, pues era la persona, a mi juicio, más indicada para ello. Su categoría profesional era inmejorable; no se sentía ligada por ningún contacto previo con la expedición a Irak que organizó la Universidad de Pittstown y, además, era una testigo observadora e inteligente.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/asesinato-en-mesopotamia.jpg?alt=media&token=ae10d624-e0a5-46af-9728-f553a785e432",
+    "link": "https://amzn.to/3pFZR5o",
+    "slug": "asesinato-en-mesopotamia"
+  },
+  {
+    "id": 26,
+    "title": "Cartas Sobre la Mesa",
+    "published": 1936,
+    "description": "Existe la idea, bastante generalizada, de que una novela policíaca tiene cierto parecido a una carrera de caballos, pues como ésta, toman la salida un determinado número de participantes, igual que hacen los caballos y sus jinetes. Pueden ustedes apostar por el que prefieran. Pero, de común acuerdo, el favorito suele ser precisamente el opuesto al que lo sería en dichas carreras. En otras palabras: es un personaje completamente extraño a la cuestión. Localicen a quien parezca haber tenido oportunidades de cometer el crimen y, en el noventa por ciento de los casos, habrán acertado. Como no quiero que mis fieles lectores desechen este libro con disgusto, prefiero advertirles de antemano que la novela que van a leer no es de la clase a que antes me refiero. Solamente hay en ella cuatro «participantes», cada uno de los cuales, con arreglo a determinadas circunstancias, pudo haber cometido el asesinato. Esto elimina, por fuerza, el factor sorpresa. Sin embargo, puede existir, según creo, pues cada una de ellas ha delinquido ya y es capaz de realizar nuevos crímenes. Se trata de cuatro caracteres completamente diferentes. El motivo que los impulsa al asesinato es inherente a la forma de ser de cada uno de ellos y, en consecuencia, también lo es el método empleado. Por lo tanto, las deducciones que se hagan deben ser totalmente psicológicas; pero tal cosa no deja de ser interesante, pues una vez que todo está dicho y hecho, es la mente del criminal lo que reviste mayor importancia.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/cartas-sobre-la-mesa.jpg?alt=media&token=219b0f01-4add-4143-97a7-bd06df41ad2d",
+    "link": "https://amzn.to/3pFZR5o",
+    "slug": "cartas-sobre-la-mesa"
+  },
+  {
+    "id": 27,
+    "title": "El Testigo Mudo",
+    "published": 1937,
+    "description": "La señorita Arundell murió el día 1 de mayo. Aunque la enfermedad fue breve, su muerte no causó mucha sorpresa en la pequeña población de Market Basing, donde había vivido desde que tenía dieciséis años. Por una parte, Emily Arundell, la única superviviente de cinco hermanos, había rebasado ya los setenta y, por otra, durante muchos años había estado aquejada de mala salud. Además, unos dieciocho meses antes, había estado a punto de morir a causa de un ataque muy similar al que acabó con su vida.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-testigo-mudo.jpg?alt=media&token=f089d00b-ea6c-4d6b-8f42-c6245c33387b",
+    "link": "https://amzn.to/3pFZR5o",
+    "slug": "el-testigo-mudo"
+  },
+  {
+    "id": 28,
+    "title": "Muerte en el Nilo",
+    "published": 1937,
+    "description": "La tranquilidad de un crucero por el Nilo se ve destrozada por el descubrimiento de que Linnet Ridgeway recibió un disparo en la cabeza. Era joven, elegante y hermosa, una chica que lo tenía todo, hasta que perdió la vida. Hércules Poirot recuerda un estallido anterior de un compañero de viaje: 'Me gustaría poner mi querida pistola en su cabeza y simplemente presionar el gatillo'. Sin embargo, en este exótico escenario 'nada es lo que parece'...",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/muerte-en-el-nilo.jpg?alt=media&token=07ff9aee-b11c-418b-a5ec-cf74a73d4ba2",
+    "link": "https://amzn.to/36v6WhE",
+    "slug": "muerte-en-el-nilo"
+  },
+  {
+    "id": 30,
+    "title": "Asesinato en Bardsley Mews y Otras Historias",
+    "published": 1937,
+    "description": "–Una limosnita, señor... Un chiquillo con la cara tiznada sonreía al inspector jefe Japp. —¡Ni soñarlo! —exclamó el policía—. Y además, escucha bien, muchacho... Le endilgó un breve sermón. El asustado golfillo emprendió la retirada mientras le decía a sus jóvenes amigos: —¡Caray, el tío es un «poli» camuflado! La pandilla puso pies en polvorosa, cantando: Recuerda, recuerda, el cinco de noviembre. La pólvora de la traición. Y no hay ninguna razón para que esa vil traición deba ser nunca olvidada.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/asesinato-en-bardsley-mews.jpg?alt=media&token=1d8b8d37-9dea-4e28-a334-8b5686e429d4",
+    "link": "https://amzn.to/3tjfCld",
+    "slug": "asesinato-en-bardsley-mews-y-otras-historias"
+  },
+  {
+    "id": 29,
+    "title": "Cita con la Muerte",
+    "published": 1938,
+    "description": "–¿No comprendes que es necesario matarla? La pregunta flotó en la quietud de la noche, dio la impresión de que permanecía un momento inerte en el aire y finalmente se alejó hacia el mar Muerto. Hércules Poirot se quedó inmóvil, con las manos en el alféizar y el ceño fruncido. Al cabo, cerró la ventana, impidiendo el paso del molesto aire nocturno. Había sido educado en la convicción de que el aire exterior estaba muy bien fuera de las habitaciones y de que el aire nocturno era terriblemente nocivo para la salud. Mientras corría las cortinas y se dirigía a la cama, sonrió burlonamente. «¿No comprendes que es necesario matarla?» Era curioso que un detective como él hubiera oído esas palabras en su primera noche en Jerusalén.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/cita-con-la-muerte.jpg?alt=media&token=06bea266-67a2-47b6-b996-c0f36a6cc950",
+    "link": "https://amzn.to/2NVUOQt",
+    "slug": "cita-con-la-muerte"
+  },
+  {
+    "id": 31,
+    "title": "Navidades Tragicas",
+    "published": 1938,
+    "description": "Stephen se levantó el cuello del abrigo mientras avanzaba apresuradamente por el andén. Una tenue niebla llenaba la estación. Enormes locomotoras resoplaban lanzando al aire nubes de vapor. Todo estaba sucio y lleno de humo. Stephen pensó con repugnancia: «¡Qué país más asqueroso! ¡Qué ciudad más sucia! » Se había desvanecido su primera impresión de las tiendas de Londres, de sus restaurantes, sus bien vestidas y atractivas mujeres. Ahora lo veía como una reluciente aguamarina engarzada en un anillo de plomo. Si estuviese en Sudáfrica... Le invadió una súbita e intensa añoranza. Sol, cielos azules, jardines de flores azules, blancas y amarillas creciendo profusamente por todos lados. En cambio, aquí, barro, suciedad y masas inacabables de gente en continuo movimiento y lucha, atareadas hormigas moviéndose afanosas alrededor de su hormiguero.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/navidades-tragicas.jpg?alt=media&token=44c9f18a-b2e5-4353-b0fb-4f875ce9a6ce",
+    "link": "https://amzn.to/3cIGpSb",
+    "slug": "navidades-tragicas"
+  },
+  {
+    "id": 32,
+    "title": "Matar es Fácil",
+    "published": 1939,
+    "description": "¡Inglaterra! ¡Otra vez Inglaterra después de tantos años! ¿Cómo se la iba a encontrar? Luke Fitzwilliam se hizo esa pregunta al descender por la pasarela del barco. La pregunta continuó en su mente durante toda la espera en el recinto de la aduana pero pasó a un primer plano cuando por fin se sentó en el tren. Inglaterra de permiso era otra cosa. Mucho dinero para despilfarrar (¡al menos al principio!), viejos amigos a los que llamar, reuniones con otros camaradas que, como él, estaban en casa, un ambiente despreocupado del tipo: «¡Bueno, no durará mucho! ¡Más vale que me divierta! Pronto habrá que regresar ». Pero ahora ya no se trataba solo de volver. Se habían acabado las noches de calor sofocante, la deslumbrante luz del sol y la belleza de la exuberante vegetación tropical, las veladas solitarias dedicadas a leer y releer los ejemplares atrasados del Times.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/matar-es-facil.jpg?alt=media&token=8f6f0b78-53e0-48ea-ac1e-6e0a2cc4a63f",
+    "link": "https://amzn.to/36tlhv2",
+    "slug": "matar-es-fácil"
+  },
+  {
+    "id": 33,
+    "title": "Diez Negritos",
+    "published": 1939,
+    "description": "1939. Europa se tambalea al borde de la guerra. Se invita a diez extraños a la isla del Negro, una roca aislada cerca de la costa de Devon. Aislados del continente, con sus generosos anfitriones, el señor y la señora U.N. Owen misteriosamente ausentes, se les acusa de un crimen terrible. Cuando uno de los miembros del grupo muere de repente, se dan cuenta de que pueden estar albergando a un asesino entre ellos. La tensión aumenta cuando los supervivientes se dan cuenta de que el asesino no solo está entre ellos, sino que se prepara para atacar de nuevo... y de nuevo...",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/diez-negritos.jpg?alt=media&token=cb931726-3c2d-4f00-a6d4-0f6928314ba5",
+    "link": "https://amzn.to/3rchxGh",
+    "slug": "diez-negritos"
+  },
+  {
+    "id": 35,
+    "title": "Un Triste Ciprés",
+    "published": 1940,
+    "description": "Elinor Katherine Carlisle: está usted acusada de haber asesinado a Mary Gerrard el veintisiete de julio pasado. ¿Se confiesa usted culpable o inocente? Elinor Carlisle estaba de pie, con la cabeza erguida. Tenía una cabecita graciosa; el rostro algo anguloso, pero bien definido y agradable. Sus ojos eran de un azul profundo, y el cabello, negrísimo. Las cejas las llevaba depiladas y formaban una línea estrecha, casi imperceptible. Hubo un silencio expectante. Sir Edwin Bulmer, el abogado defensor, tuvo una sensación de desánimo. Pensó: «¡Dios mío! Va a declararse culpable… Ha perdido la serenidad…». Los labios de Elinor Carlisle se entreabrieron. Dijo: —¡Inocente! El abogado defensor se desplomó en su asiento. Sacó un pañuelo y se enjugó el sudor que le corría por la frente. Sir Samuel Attenbury se levantó y se dispuso a pronunciar su discurso. Representaba al ministerio fiscal.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/un-triste-cipres.jpg?alt=media&token=54886c53-a4ad-42d5-891e-8d9af6bfe3b2",
+    "link": "https://amzn.to/3tjPrKU",
+    "slug": "un-triste-ciprés"
+  },
+  {
+    "id": 34,
+    "title": "La Muerte Visita al Dentista",
+    "published": 1940,
+    "description": "Mr. Morley no estaba de muy buen humor aquella mañana. Se quejó de la calidad del jamón y del café, diciendo que tenía aspecto de barro líquido y que las frutas eran peores en cada desayuno. Mr. Morley era un hombrecillo menudo, de mandíbula enérgica y barbilla retadora. Su hermana, que administraba la casa, era una mujer alta, bastante parecida a un granadero. Mirando pensativa a su hermano, le preguntó si había vuelto a encontrar el baño frío. Mr. Morley, de mala gana, dijo que no. —El gobierno parece que pasa de un estado de incompetencia a otro de positiva imbecilidad —comentó leyendo el periódico. Miss Morley dijo con su voz profunda y grave: —¡Es vergonzoso!",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-muerte-visita-al-dentista.jpg?alt=media&token=391b7c29-7b76-4108-a5fd-a328e0b6f2d3",
+    "link": "https://amzn.to/36xyD9I",
+    "slug": "la-muerte-visita-al-dentista"
+  },
+  {
+    "id": 36,
+    "title": "Muerte Bajo el Sol",
+    "published": 1941,
+    "description": "Cuando el capitán Roger Angmering, en el año 1872, edificó una casa en aquella isla frente a la bahía de Leathercombe, esto se consideró el colmo de la excentricidad por su parte. A un hombre de buena familia, como lo era él, le correspondía a ser posible una mansión decorosa, levantada en medio de amplios prados, con algún riachuelo que susurrara. Pero el capitán Roger Angmering tuvo sólo un gran amor: el mar. Por eso edificó su casa (una vivienda de paredes macizas y grandes ventanas) sobre aquel pequeño promontorio barrido por los vientos y frecuentado por las gaviotas. El capitán no se casó; el mar fue su primera y última esposa, y a su muerte la casa y la isla pasaron a un primo lejano. El primo y sus descendientes se preocuparon muy poco del legado, y con el tiempo la propiedad y los terrenos mermaron, como también la fortuna de sus herederos.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/muerte-bajo-el-sol.jpg?alt=media&token=9b4918f4-49c7-4db2-9816-0cc71c1ef494",
+    "link": "https://amzn.to/3alNu8h",
+    "slug": "muerte-bajo-el-sol"
+  },
+  {
+    "id": 37,
+    "title": "El Misterio de Sans Souci",
+    "published": 1941,
+    "description": "Tommy Beresford se quitó el abrigo en el vestíbulo de su piso. Colgó la prenda cuida- dosamente, empleando en ello más tiempo del necesario y después, con gran esmero, colocó el sombrero en la siguiente percha. Irguió los hombros, trató de fijar en su rostro una sonrisa y entró en la salita de estar donde su mujer hacía calceta en aquel momento; un pasamontañas de lana color caqui.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-de-sans-souci.jpg?alt=media&token=2fe3fca5-4c3b-4c75-9c03-2c2dd18138ac",
+    "link": "https://amzn.to/3oxfwmk",
+    "slug": "el-misterio-de-sans-souci"
+  },
+  {
+    "id": 38,
+    "title": "Cinco Cerditos",
+    "published": 1942,
+    "description": "Hércules Poirot miró con interés y aprobación a la joven que entraba en ese momento en la estancia. No había habido nada en su carta que la distinguiera de las demás. Se había limitado a solicitar una entrevista, sin ofrecer la menor idea siquiera de lo que se ocultaba tras su petición. Era breve y estaba desprovista de toda palabrería inútil, y únicamente la firmeza de su escritura indicaba que Carla Lemarchant era una mujer joven. Y ahora estaba allí, en persona. Una mujer alta, esbelta, de veintitantos años. Una de esas jóvenes a las que uno se ve obligado a mirar más de una vez. Vestía ropa de calidad: chaqueta y falda de corte impecable y lujosas pieles. Cabeza bien equilibrada sobre los hombros, frente cuadrada, nariz delicada, barbilla que expresaba determinación. Una muchacha pletórica de vida. Era su vitalidad, más que su belleza, lo que destacaba en ella.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/cinco-cerditos.jpg?alt=media&token=7dc2faf9-51e2-4784-9deb-cb0364ef4f15",
+    "link": "https://amzn.to/3rcgXs5",
+    "slug": "cinco-cerditos"
+  },
+  {
+    "id": 39,
+    "title": "Un Cadaver en la Biblioteca",
+    "published": 1942,
+    "description": "Hay clichés que, indefectiblemente, asociamos a cierto tipo de novelas: el barón calvo y perverso con los dramas, el cadáver en la biblioteca con las novelas de detectives... Durante años, me he planteado escribir lo que podríamos llamar una variación sobre alguno de estos tópicos. Sin embargo, me impuse ciertas condiciones: la biblioteca debía ser corriente; el cadáver, en cambio, debía aparecer como un elemento muy inverosímil y sensacional. Ésos fueron los términos en que me propuse crear mi historia, pero durante años permaneció aletargada, únicamente representada por las líneas que garabateaba en mi cuaderno de notas. Entonces, mientras me alojaba en un hotel de moda a orillas del mar, un día me fijé en una de las familias que estaban sentadas a una de las mesas del comedor: un anciano impedido en una silla de ruedas, rodeado por su familia, todos ellos pertenecientes a una generación más joven. Afortunadamente para mí, partieron al día siguiente, de modo que mi imaginación pudo trabajar sin condicionante alguno. Cuando la gente me pregunta: «¿Escribe sobre gente real en sus libros?», siempre respondo que me resulta imposible escribir sobre las personas que conozco, ni siquiera sobre personas con quienes sólo haya hablado ocasional- mente o de quienes haya oído hablar. Para mí, eso las elimina por completo. En cambio, puedo basarme en la imagen de una persona real y dotarla de rasgos y cualidades inventados. De este modo, un anciano incapacitado se convirtió en el eje de mi historia. El coronel Bantry y su esposa, viejos amigos de miss Marple, tenían la biblioteca adecuada. Y, como si de una receta de cocina se tratara, añádanse los siguientes ingredientes: un entrenador de tenis, una joven bailarina, una Chica Guía, una animadora... y sírvase à la miss Marple.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/un-cadaver-en-la-biblioteca.jpg?alt=media&token=6565917a-e957-485e-9b61-65b4698ae115",
+    "link": "https://amzn.to/36x0GpI",
+    "slug": "un-cadaver-en-la-biblioteca"
+  },
+  {
+    "id": 40,
+    "title": "El Caso de los Anónimos",
+    "published": 1942,
+    "description": "Siempre resulta agradable plantear un tema clásico y ver lo que puede hacerse con él. En esta ocasión, el tema de la pluma que destila veneno sigue las líneas generales de otros casos bien conocidos y comprobados de escritores de anónimos. ¿Hasta qué punto se parecen? ¿El motivo esencial es el mismo? ¿Qué posibilidades ofrece semejante argumento a una persona aficionada al crimen? El caso de los anónimos es mi contribución a la materia. Mientras escribía el libro creé un personaje a quien he llegado a apreciar mucho y que se hizo singularmente real para mí. Si Megan entrase en mi cuarto mañana, la reconocería enseguida y estaría encantada de verla. Le estoy agradecida por haber cobrado vida en el texto. También quisiera encontrarme con la mujer del pastor, pero temo que jamás lo lograré. Escribiendo este libro disfruté con fruición.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-caso-de-los-anonimos.jpg?alt=media&token=eee89dd8-d224-4c3c-94d9-56ebdfffc4f6",
+    "link": "https://amzn.to/3r92UDy",
+    "slug": "el-caso-de-los-anónimos"
+  },
+  {
+    "id": 41,
+    "title": "Hacia Cero",
+    "published": 1944,
+    "description": "Casi todas las personas que se hallaban reunidas alrededor de la chimenea eran abogados o tenían interés por la Ley. Estaban: Martindale, Rufus Lord, K. C1., el joven Daniels, que se había hecho famoso con el caso Castairs, varios abogados más, el magistrado del Supremo Cleaver, Lewis, de la firma Lewis & Trench, y el anciano señor Treves. El señor Treves andaba cerca de los ochenta, unos ochenta llenos de madurez y de experiencia. Era el miembro más famoso de una famosa firma de abogados. Había resuelto fuera de los tribunales innumerables casos delicados, se decía que sabía más secretos de familia que ningún otro hombre de Inglaterra y estaba especializado en criminología.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/hacia-cero.jpg?alt=media&token=787069da-afd1-4853-9e90-86d669605210",
+    "link": "https://amzn.to/3alNa9z",
+    "slug": "hacia-cero"
+  },
+  {
+    "id": 42,
+    "title": "La Venganza de Nofret",
+    "published": 1944,
+    "description": "Renisenb contemplaba el Nilo. Oía en la distancia las voces de sus hermanos Yahmose y Sobek, que discutían sobre si determinados diques necesitaban ser reparados o no. Sobek, como siempre, se expresaba en voz alta. Tenía la costumbre de afirmar sus juicios en un tono de confiada seguridad. En cambio, Yahmose hablaba con una voz baja y quejosa, que delataba ansiedad y duda. Yahmose estaba siempre inquieto por una cosa u otra. Era el primogénito y, mientras duraba la ausencia de su padre en las tierras del norte, la administración de los cultivos quedaba más o menos en sus manos. Era lento, cauto y dado a encontrar dificultades donde no existían. Tenía el cuerpo recio, se movía con lentitud y le faltaban la confianza y la jovialidad de Sobek.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-venganza-de-nofret.jpg?alt=media&token=e25bdf82-e70f-4f91-9ed0-4bebf428725a",
+    "link": "https://amzn.to/3ti9zwX",
+    "slug": "la-venganza-de-nofret"
+  },
+  {
+    "id": 43,
+    "title": "Cianuro Espumoso",
+    "published": 1945,
+    "description": "Iris Marle estaba pensando en su hermana Rosemary. Durante cerca de un año había intentado deliberadamente desterrar de sus pensamientos el recuerdo de Rosemary. No había querido acordarse. Era demasiado doloroso, ¡demasiado horrible! El semblante azul cianuro, los dedos convulsos, crispados... El contraste entre ésta y la bella y alegre Rosemary del día anterior... Bueno, alegre tal vez no. Había tenido un trancazo... Estaba deprimida, postrada. Todo eso había salido a relucir durante la investigación. La propia Iris había insistido al respecto. Eso explicaría que Rosemary se hubiese suicidado, ¿verdad? Una vez terminada la investigación, Iris había intentado apartar el asunto de su mente con toda deliberación. ¿De qué servía acordarse? ¡A olvidarlo todo! A olvidar el horrible suceso. Pero ahora se daba cuenta de que tenía que acordarse. Tenía que pensar retrospectivamente, recordar con mucho cuidado hasta el incidente que más ligero y exento de importancia pareciera...",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/cianuro-espumoso.jpg?alt=media&token=607f19d0-dbfc-4139-a37c-0748b603e6dd",
+    "link": "https://amzn.to/3annauu",
+    "slug": "cianuro-espumoso"
+  },
+  {
+    "id": 44,
+    "title": "Sangre en la Piscina",
+    "published": 1946,
+    "description": "Cierto viernes, a las seis y trece de la mañana, Lucy Angkatell abrió los párpados, contempló el nuevo día con unos ojos azules de sorprendente tamaño, se despabiló al instante como de costumbre y se dispuso a enfrentarse con los problemas que su mente, increíblemente activa, había evocado ya. Sentía la urgente necesidad de conversar con alguien, y su elección recayó en Midge Hardcastle, una prima suya, muy joven, que había llegado a The Hollow la noche anterior. Saltó, pues, de la cama, se echó una bata sobre los hombros, que los años no habían hecho desmerecer, y avanzó por el pasillo en dirección a la habitación de Midge. Mujer de desconcertante rapidez de pensamiento, lady Angkatell, como era su invariable costumbre, dio principio a la conversación mentalmente, recurriendo a su fértil imaginación para suministrar las respuestas de Midge.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/sangre-en-la-piscina.jpg?alt=media&token=661d3e63-85d1-4a1f-a21a-bf143f284b55",
+    "link": "https://amzn.to/39CRYID",
+    "slug": "sangre-en-la-piscina"
+  },
+  {
+    "id": 45,
+    "title": "Los Trabajos de Hércules",
+    "published": 1947,
+    "description": "El nombre de pila de Poirot me indujo irresistiblemente a escribir esta serie de historias cortas. Inicié el trabajo con gran entusiasmo, mas al poco tiempo perdí el ánimo ante el gran cúmulo de dificultades que no había previsto. Escribí sin titubear algunos de los episodios, tales como El león de Nemea y La hidra de Lerna. El toro de Creta, asimismo, salió de mi pluma con toda naturalidad; pero algunos de los «trabajos» eran un desafío a mi ingenio. El jabalí de Erimanto me tuvo en suspenso durante mucho tiempo, y lo mismo pasó con El cinturón de Hipólita. y en cuanto a La captura de Cerbero he de reconocer que me hizo perder todas las esperanzas. No podía imaginar ninguna acción apropiada a dicho título. Así es que durante seis meses no volví a ocuparme del asunto. Pero de pronto, subiendo un día las escaleras del metro, se me ocurrió la idea. Pensé en ella con tanta excitación que subí y bajé las escaleras siete u ocho veces y por poco me atropella un autobús cuando, al fin, me dirigía a casa. El fregadero es el lugar más seguro y apropiado para planear mentalmente una historia. El trabajo meramente mecánico ayuda al fluir de las ideas y resulta delicioso encontrarse hechas las tareas domésticas sin acordarse de que una las hizo. Recomiendo de forma particular la rutina de los trabajos caseros a todas aquellas personas que pretendan crear una obra literaria. Ello no incluye el cocinar, pues en sí ya es una creación, mucho más divertida que escribir, mas, por desgracia, no tan bien pagada.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/los-trabajos-de-hercules.jpg?alt=media&token=7d806465-a37b-4064-bb35-69d6aeca3f24",
+    "link": "https://amzn.to/3cuqd6C",
+    "slug": "los-trabajos-de-hércules"
+  },
+  {
+    "id": 46,
+    "title": "Pleamares de la Vida",
+    "published": 1948,
+    "description": "No hay club sin su correspondiente pelmazo, y el Coronation no podía ser una excepción a la regla. El hecho de que un ataque aéreo se hallase en curso no hacía variar en lo más mínimo esta circunstancia. El comandante Porter, antiguo oficial del ejército de la India, hizo crujir entre sus dedos las hojas de un periódico y carraspeó para aclarar su garganta. Todos los allí presentes hicieron ademán de esquivar sus miradas, sin conseguirlo. —Veo que se anuncia en The Times —dijo— la muerte de Gordon Cloade. Discretamente, por supuesto. «El 5 de octubre, como resultado de una acción del enemigo.» No se menciona el lugar en que ocurrió. A decir verdad, fue a cuatro pasos de donde yo vivo. Uno de esos caserones que se alzan en la cúspide de Camden Hill. Les aseguro que me conmovió un tanto. Soy, como ustedes saben, uno de los encargados de la Defensa Pasiva. Cloade acababa de regresar de los Estados Unidos.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/pleamares-de-la-vida.jpg?alt=media&token=d8625be7-33aa-4a01-adb5-3c57a6c6014e",
+    "link": "https://amzn.to/3cuMxNy",
+    "slug": "pleamares-de-la-vida"
+  },
+  {
+    "id": 47,
+    "title": "La Casa Torcida",
+    "published": 1949,
+    "description": "Éste es uno de mis libros favoritos. Lo maduré durante años, dándole vueltas, planteándolo y diciéndome: «Un día, cuando tenga tiempo y quiera pasármelo realmente bien, ¡lo empezaré!». Debo decir que, de mi producción, por cada cinco libros que son sólo trabajo, uno constituye un verdadero placer. La casa torcida fue uno de ellos. A menudo me gustaría saber si la gente que lee un libro percibe si escribirlo ha sido un trabajo duro o un placer. Son muchos los que me dicen: «¡Cuánto debe de disfrutar usted escribiendo esto y aquello!». Y se están refiriendo a un libro que se resiste con obstinación a salir como yo quisiera, cuyos personajes son difíciles, el argumento innecesariamente complicado y los diálogos afectados, o al menos eso es lo que pienso. Pero quizá el autor no sea el mejor juez de su propio trabajo. De todos modos, casi a todo el mundo le ha gustado La casa torcida, así que eso justifica mi creencia de que es una de mis mejores novelas.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-casa-torcida.jpg?alt=media&token=297887d2-2779-40c9-be08-410a1bedd9af",
+    "link": "https://amzn.to/3tk5yse",
+    "slug": "la-casa-torcida"
+  },
+  {
+    "id": 48,
+    "title": "Se Anuncia un Asesinato",
+    "published": 1950,
+    "description": "Todas las mañanas, menos la del domingo, entre las siete y media y ocho y media, Johnnie Butt hacía la ronda del pueblo de Chipping Cleghorn en bicicleta, silbando ruidosamente por entre los dientes.’",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/se-anuncia-un-asesinato.jpg?alt=media&token=777694a0-5f37-4491-af54-cf753b23906a",
+    "link": "https://amzn.to/3ti97if",
+    "slug": "se-anuncia-un-asesinato"
+  },
+  {
+    "id": 49,
+    "title": "Intriga en Bagdad",
+    "published": 1951,
+    "description": "El capitán Crosbie salía del banco con el aire complacido de quien acaba de hacer efectivo un cheque, y descubre que tiene en su cuenta más de lo supuesto. El capitán Crosbie sentíase a menudo satisfecho de sí mismo. Era así, y físicamente de corta estatura, más bien grueso, de rostro enrojecido y bigote recortado y marcial. Al andar se contoneaba un tanto. Sus trajes eran tal vez un poco llamativos, pero gozaba de buena reputación. Era querido entre sus amigos. Un hombre alegre, sencillo, pero amable, y soltero. No tenía nada de extraordinario. Hay montones de Crosbie en Oriente.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/intriga-en-bagdad.jpg?alt=media&token=aacffa88-1bf9-4bb5-ba03-655bc2d3acf8",
+    "link": "https://amzn.to/3amqWnY",
+    "slug": "intriga-en-bagdad"
+  },
+  {
+    "id": 50,
+    "title": "El Truco de los Espejos",
+    "published": 1952,
+    "description": "‘Tras alejarse unos pasos del espejo, Mistress Van Rydock exhaló un suspiro. —Bueno, tendrá que ser este —murmuró—. ¿Te parece bien, Jane? Miss Marple admiraba complaciente la creación de Lanvanelli. —Es un vestido muy bonito —dijo. —Sí, está bien —repuso Mistress Van Rydock, volviendo a suspirar—. Quítamelo, Stephanie. La anciana doncella de cabellos grises y boca menuda deslizó cuidadosamente el vestido sobre los brazos y la cabeza de Mistress Van Rydock. Esta se miró al espejo. Iba exquisitamente encorsetada, y sus piernas, todavía bien conservadas, lucían finas medias de nailon. Su rostro, bajo la capa de cosméticos y debido a los constantes masajes, parecía casi infantil visto desde una prudente distancia. Sus cabellos grises con reflejos azules estaban cuidadosamente peinados.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-truco-de-los-espejos.jpg?alt=media&token=06bb16eb-2ded-491c-a0e6-bfe0138e37f2",
+    "link": "https://amzn.to/3oDGskm",
+    "slug": "el-truco-de-los-espejos"
+  },
+  {
+    "id": 51,
+    "title": "La Señora McGinty ha Muerto",
+    "published": 1952,
+    "description": "Hércules Poirot salió del restaurante La Vieille Grand’Mère, en el Soho. Se alzó el cuello del abrigo por prudencia más que por necesidad, puesto que la noche no era fría. «Pero, a mi edad —solía decir Poirot—, uno no corre riesgos.» Estaba abstraído, pensativo, soñoliento y satisfecho. Los escargots de La Vieille Grand’Mère le habían resultado deliciosos. ¡Un verdadero hallazgo aquel restaurante! Se pasó la lengua por los labios como un perro bien alimentado. Sacó un pañuelo del bolsillo y se lo frotó por los exuberantes bigotes.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-senora-mcginty-ha-muerto.jpg?alt=media&token=d4ba116e-8d6a-4db9-b900-1334141c7184",
+    "link": "https://amzn.to/3tr4cfg",
+    "slug": "la-señora-mcginty-ha-muerto"
+  },
+  {
+    "id": 52,
+    "title": "Después del Funeral",
+    "published": 1953,
+    "description": "El viejo Lanscombe, con su andar vacilante, fue de una habitación a otra subiendo las persianas. De vez en cuando sus ojillos de reumático miraban a través de los cristales. No tardarían en volver del funeral. Se apresuró en su quehacer; ¡había tantas ventanas! Enderby Hall era un vasto edificio victoriano construido según el estilo gótico. Algunas paredes todavía seguían tapizadas de seda descolorida. En todas las habitaciones, las cortinas eran de rico brocado o terciopelo. En la sala verde, el viejo mayordomo contempló el retrato, colocado sobre la chimenea, de Cornelius Abernethie, quien hizo construir Enderby Hall. Cornelius Abernethie tenía una barba castaña que denotaba agresividad, y su mano reposaba sobre un globo terráqueo, no sabemos si por capricho suyo o como un símbolo escogido por el artista.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/despues-del-funeral.jpg?alt=media&token=0fd4b20e-5188-4e3a-9d04-710cba107b54",
+    "link": "https://amzn.to/36zddcd",
+    "slug": "después-del-funeral"
+  },
+  {
+    "id": 53,
+    "title": "Un Puñado de Centeno",
+    "published": 1953,
+    "description": "A Miss Somers le tocaba hacer el té. Somers era la más nueva y la menos eficiente de las mecanógrafas. Ya no era joven y su rostro, que revelaba una ligera preocupación, recordaba al de una oveja. Aún no hervía el agua cuando Miss Somers la vertió en la tetera, pero la pobre nunca estaba completamente segura de si hervía o no. Esta era una de las muchas preocupaciones que la afligían. Sirvió el té y lo repartió en tazas, que acompañó con un par de dulces y blandas galletas en cada una. Miss Griffith, la eficiente jefa de las mecanógrafas, una auténtica sargento de cabellos grises que llevaba dieciséis años en Consolidated Investments Trust, exclamó con voz de trueno: —¡Otra vez no ha hervido el agua, Somers!",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/un-punado-de-centeno.jpg?alt=media&token=f81d530f-0c3b-4267-b119-ac6b0c38055c",
+    "link": "https://amzn.to/3tg3Mbf",
+    "slug": "un-puñado-de-centeno"
+  },
+  {
+    "id": 54,
+    "title": "Destino Desconocido",
+    "published": 1954,
+    "description": "El hombre sentado tras el escritorio desplazó el pesado pisapapeles de cristal diez centímetros a su derecha. Su rostro mostraba una expresión más impasible que pensativa. Tenía la tez pálida de los que pasan la mayor parte del día bajo la luz artificial. No había ninguna duda de que se trataba de un hombre de espacios cerrados, de escritorios y ficheros. En cierto sentido resultaba apropiado que, para acceder a su oficina, hubiera que recorrer un laberinto de pasillos subterráneos. Era difícil precisar su edad. No parecía viejo ni joven. La piel de su rostro se veía lisa y sin arrugas, y en sus ojos se reflejaba un profundo cansancio. El otro ocupante de la oficina era mayor, moreno y con un bigote marcial. Mostraba un temperamento nervioso y enérgico, siempre alerta. Incluso ahora, incapaz de permanecer sentado, se paseaba arriba y abajo, haciendo de cuando en cuando algún brusco comentario.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/destino-desconocido.jpg?alt=media&token=9c95d846-a3cb-4d57-830e-1c4058cae02d",
+    "link": "https://amzn.to/3rcVJKM",
+    "slug": "destino-desconocido"
+  },
+  {
+    "id": 55,
+    "title": "Asesinato en la Calle Hickory",
+    "published": 1955,
+    "description": "Hércules Poirot frunció el ceño. —Señorita Lemon —dijo. —¿Diga, señor Poirot? —En esta carta hay tres equivocaciones. En el tono de su voz había un acento de incredulidad, ya que la señorita Lemon, aquella mujer falta de atractivos, pero eficiente, jamás cometía errores. No estaba nunca enferma, cansada, contrariada ni incorrecta. Es decir, en el aspecto práctico no era una mujer... sino una máquina: la perfecta secretaria. Ella lo sabía todo y lo resolvía todo. Gobernaba la vida de Hércules Poirot de modo que también funcionara como una máquina. Orden y método fueron el santo y seña de Hércules Poirot durante muchos años. Con George, el perfecto mayordomo, y la señorita Lemon, la perfecta secretaria, el orden y el método rigieron siempre su vida. Y ahora que los bollos para el té tenían forma cuadrada en vez de redonda, no podía quejarse de nada.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/asesinato-en-la-calle-hickory.jpg?alt=media&token=6e8dbf93-4e3b-44f3-bb2f-281aff849282",
+    "link": "https://amzn.to/3tjKUYU",
+    "slug": "asesinato-en-la-calle-hickory"
+  },
+  {
+    "id": 56,
+    "title": "El Templete de Nasse-House",
+    "published": 1956,
+    "description": "La señorita Lemon, eficiente secretaria de Poirot, atendió la llamada telefónica. Dejando a un lado su cuaderno de taqui- grafía, levantó el auricular y dijo con voz desanimada: «Trafalgar, 8137». Hércules Poirot se recostó en su butaca vertical y cerró los ojos. Con expresión meditativa, se puso a golpear suavemente con los dedos el borde de la mesa. En su cabeza siguió dando forma a los pulidos párrafos de la carta que estaba dictando.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-templete-de-nasse-house.jpg?alt=media&token=a26d7cf1-f97b-47f7-9b87-bd1072014f55",
+    "link": "https://amzn.to/3aseUJy",
+    "slug": "el-templete-de-nasse-house"
+  },
+  {
+    "id": 57,
+    "title": "El Tren de las 4:50",
+    "published": 1957,
+    "description": "Mrs. McGillicuddy corría desalentada por el andén tras el mozo que le llevaba la maleta. Era baja y gruesa, y el mozo alto y de paso largo. McGillicuddy iba cargada con gran cantidad de paquetes, consecuencia de un día de compras en la proximidad de la Navidad. La carrera resultaba por lo tanto desigual, y el mozo dobló la esquina al final del andén cuando a Mrs. McGillicuddy le faltaba aún un trecho para alcanzarle en línea recta. El andén número 1 no estaba en aquel momento excesivamente concurrido, pues acababa de salir un tren, pero en las otras plataformas de la estación se agitaba una muchedumbre en todas direcciones, subiendo y bajando entre aquel piso y el inferior, entrando y saliendo del despacho de los equipajes, de las salas de té, de las oficinas de información y el indicador de horarios, y pasando por las puertas de entrada y de salida que comunicaban la estación de Paddington con el mundo exterior.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-tren-de-las-4-50.jpg?alt=media&token=22c678f8-8e60-484d-9b71-fcc7d6082baf",
+    "link": "https://amzn.to/36wXaf0",
+    "slug": "el-tren-de-las-450"
+  },
+  {
+    "id": 58,
+    "title": "Inocencia Trágica",
+    "published": 1958,
+    "description": "Anochecía cuando llegó al transbordador. Podría haber estado allí mucho antes. La verdad era que lo había retrasado todo lo posible. Primero, el almuerzo con unos amigos en Redquay, la charla frívola, el intercambio de chismorreos sobre amistades comunes. Todo aquello significaba que, en su fuero interno, estaba esquivando lo que tenía que hacer. Sus amigos lo invitaron a tomar el té y él aceptó. Pero llegó un momento en que comprendió que no podía postergarlo más. El coche de alquiler lo estaba esperando. Se despidió de sus amigos y el chófer condujo a lo largo de más de once kilómetros por la frecuentadísima carretera de la costa, y luego, tierra adentro, por el boscoso camino que acababa en el pequeño embarcadero de piedra sobre el río. Allí había una gran campana, y el chófer la hizo sonar con energía para llamar al transbordador, que estaba en la otra orilla.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/inocencia-tragica.jpg?alt=media&token=4303cdb1-2a9f-4a52-a074-c2c1dcb749a6",
+    "link": "https://amzn.to/3aiBPqM",
+    "slug": "inocencia-trágica"
+  },
+  {
+    "id": 59,
+    "title": "Un Gato en el Palomar",
+    "published": 1959,
+    "description": "Era el día de apertura del último trimestre de curso en el colegio de Meadowbank. Los rayos del sol poniente caían sobre la amplia explanada de grava situada delante del edificio. La puerta de la fachada principal estaba hospitalariamente abierta en toda su amplitud, y bajo su dintel, encajando admirablemente con el estilo georgiano del soportal de la casa, permanecía erguida la señorita Vansittart, cuidadosamente peinada, vistiendo un traje de chaqueta de corte impecable.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/un-gato-en-el-palomar.jpg?alt=media&token=69cb2d3a-6801-4419-b08e-223fc1e6d7e1",
+    "link": "https://amzn.to/3akPLAI",
+    "slug": "un-gato-en-el-palomar"
+  },
+  {
+    "id": 60,
+    "title": "El Pudding de Navidad y Otras Historias",
+    "published": 1960,
+    "description": "Lamento enormemente… —empezó Hércules Poirot. Le interrumpieron. No con brusquedad sino suave y hábilmente, con ánimo de persuadirle. —Por favor, monsieur Poirot, no se niegue usted sin considerarlo antes. El asunto tendría consecuencias graves para la nación. Su colaboración será muy apreciada en las altas esferas. —Es usted muy amable. —Hércules Poirot agitó una mano en el aire—. Pero, de verdad, me es imposible comprometerme a hacer lo que me pide. En esta época del año… El señor Jesmond volvió a interrumpirle con su suave tono de voz. —Navidad... —dijo—. Unas Navidades a la antigua usanza en el campo inglés. Poirot se estremeció. La idea del campo inglés en aquella época del año no le atraía.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-pudding-de-navidad.jpg?alt=media&token=9b30260f-61b8-4897-a54b-00d652178354",
+    "link": "https://amzn.to/3cz1ZIu",
+    "slug": "el-pudding-de-navidad-y-otras-historias"
+  },
+  {
+    "id": 61,
+    "title": "El Misterio de Pale Horse",
+    "published": 1961,
+    "description": "A mi juicio hay dos maneras de acercarse a este extraño asunto de Pale Horse. A pesar del dicho del Rey Blanco es difícil hacerlo con simplicidad. No cabe decir: «Comience usted por el principio, siga hacia el final y, después, deténgase ». Porque ¿dónde está el principio? Para un historiador, esa es siempre la dificultad. ¿En qué momento de la historia se inicia una determinada parte de ella? En este caso, podría comenzar en el instante en que el padre Gorman se prepara a abandonar su iglesia para atender a una mujer moribunda. O podría empezar antes de todo eso, cierta noche en Chelsea. Tal vez, puesto que la mayor parte de la narración corre a mi cargo, sea allí donde deba empezar.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-misterio-de-pale-horse.jpg?alt=media&token=66f37648-a68f-44b8-bcef-8a75fd2fbc4f",
+    "link": "https://amzn.to/2NXfp71",
+    "slug": "el-misterio-de-pale-horse"
+  },
+  {
+    "id": 62,
+    "title": "El Espejo se Rajo de Lado a Lado",
+    "published": 1962,
+    "description": "Miss Jane Marple estaba sentada junto a la ventana que se abría al jardín, en otros tiempos un motivo de orgullo para su dueña. Ya no era así. Ahora miraba por la ventana y torcía el gesto. Desde hacía algún tiempo le habían prohibido la jardinería activa. Nada de agacharse, cavar o plantar; a lo sumo, podar un poco y sin pasarse. El viejo Laycock venía tres veces por semana y, sin duda, ponía su mejor empeño. Pero eso, que a la vista de los resultados no era mucho, sólo era «lo mejor» según su opinión, y no en la de su patrona. Miss Marple sabía exactamente qué quería que se hiciera y cuándo debía hacerse y, por consiguiente, le daba las debidas instrucciones. Entonces el viejo Laycock desplegaba su particular ingenio, que consistía en un asentimiento entusiasta y en seguir a lo suyo.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-espejo-se-rajo-de-lado-a-lado.jpg?alt=media&token=258f7d8a-17ac-4f22-b5c8-4ae0b4f3f9c2",
+    "link": "https://amzn.to/2MgA3yA",
+    "slug": "el-espejo-se-rajo-de-lado-a-lado"
+  },
+  {
+    "id": 63,
+    "title": "Los Relojes",
+    "published": 1963,
+    "description": "La tarde del día 9 de septiembre fue como tantas otras. Ninguna de las personas afectadas por los acontecimientos de aquel día pudo alegar haber abrigado algún presentimiento anunciador de una inminente desgracia. (Con la excepción de la señora Packer, domiciliada en Wilbraham Crescent, número 47, quien, especializada en toda clase de presagios, describió con mucha posterioridad a los acontecimientos las inquietudes y preocupaciones que la habían asaltado. Ahora bien, la señora Packer, quedaba tan apartada del 19, y se hallaba tan escasamente ligada al suceso ocurrido en esta última casa, que no tenía por qué haberse sentido asaltada por presentimiento de ningún tipo.)",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/los-relojes.jpg?alt=media&token=949909cb-ff6b-4da6-bbcd-5227e5f449bc",
+    "link": "https://amzn.to/3crTsHr",
+    "slug": "los-relojes"
+  },
+  {
+    "id": 64,
+    "title": "Misterio en el Caribe",
+    "published": 1964,
+    "description": "Fíjese usted en todo cuanto se habla de Kenia —dijo el comandante Palgrave—. Gente que no conoce aquello en absoluto, haciendo toda clase de peregrinas afirmaciones. Mi caso es distinto. Pasé catorce años de mi vida allí. Los mejores de mi existencia, a decir verdad... Miss Marple inclinó la cabeza. Era éste un discreto gesto de cortesía. Mientras el comandante Palgrave seguía con la enumeración de sus recuerdos, nada interesantes, Miss Marple, tranquilamente, tornó a enfrascarse en sus pensamientos. Se trataba de algo rutinario, con lo cual estaba ya familiarizada. El paisaje de fondo variaba. En el pasado, el país favorito había sido la India. Los que hablaban eran, unas veces, comandantes y otras, coroneles o tenientes generales... Utilizaban una serie de palabras: Simia, porteadores, tigres, Chota Hazri, Tiffin, Khitmagars, etc.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/misterio-en-el-caribe.jpg?alt=media&token=bbf1e28d-37dc-4b23-967e-a214e501e5b2",
+    "link": "https://amzn.to/36v2FuC",
+    "slug": "misterio-en-el-caribe"
+  },
+  {
+    "id": 65,
+    "title": "En el Hotel Bertram",
+    "published": 1965,
+    "description": "En el corazón del West End, hay un gran número de rincones discretos, desconocidos para casi todos excepto para los taxistas, quienes los atraviesan como auténticos expertos y, por lo tanto, llegan triunfantes a Park Lane, Berkeley Square o South Audley Street. Si se coge una discreta calle que sale de Park, se dobla a la izquierda y después un par de veces más, se encontrará en una tranquila travesía con el hotel Bertram a mano derecha. El hotel Bertram lleva allí mucho tiempo. Durante la guerra, varias casas a su derecha resultaron demolidas, y lo mismo ocurrió con otras un poco más lejos a su izquierda, pero el Bertram permaneció incólume. Naturalmente, no pudo evitar, como dicen los agentes inmobiliarios, acabar pintado, remozado y maquillado, aunque una suma de dinero bastante razonable bastó para devolverle su condición original. En 1955 tenía el mismo aspecto que había tenido en 1939: digno, nada ostentoso y discretamente caro.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/en-el-hotel-bertram.jpg?alt=media&token=7e6085f3-4925-4511-916c-56b52ea4704b",
+    "link": "https://amzn.to/3ti6YTJ",
+    "slug": "en-el-hotel-bertram"
+  },
+  {
+    "id": 66,
+    "title": "Tercera Muchacha",
+    "published": 1966,
+    "description": "Hércules Poirot se había sentado a desayunar. Junto a su mano derecha había un taza de chocolate humeante. Siempre había sido aficionado a los dulces. Para acompañar el chocolate tenía un brioche, el complemento ideal. Asintió complacido. Lo había adquirido en la cuarta pastelería que probó. Se trataba de una pâtísseríe danesa, pero infinitamente superior a la supuestamente francesa que había en el barrio. Ésta, sencillamente, era un fraude.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/tercera-muchacha.jpg?alt=media&token=f5ca3b9f-eea0-40c8-afc1-5f4a9322d4c5",
+    "link": "https://amzn.to/2MgAjO4",
+    "slug": "tercera-muchacha"
+  },
+  {
+    "id": 67,
+    "title": "Noche Eterna",
+    "published": 1967,
+    "description": "En el fin está el principio… Ésa es una cita que he oído muchas veces. No suena mal, pero en realidad, ¿qué significa? ¿Hay siempre un instante determinado que se pueda señalar y decir: «Todo comenzó aquel día, a tal hora y en tal lugar, con aquel incidente?». ¿Comenzó mi historia cuando vi aquel cartel colgado en la pared del George & Dragon, el que anunciaba la subasta de la valiosa finca The Towers y daba detalles de los acres, las millas y las yardas, acompañados por un boceto de cómo había sido la mansión en su mejor época, hará de esto unos ochenta o cien años? No estaba haciendo nada especial: sencillamente paseaba por la calle principal de Kingston Bishop, un lugar sin la menor importancia, pasando el rato. Vi el cartel. ¿Por qué? ¿Fue una sucia jugarreta del destino o la mano extendida de la buena fortuna? Se puede entender de cualquiera de las dos maneras.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/noche-eterna.jpg?alt=media&token=acffd94b-d359-4159-b5df-479586ee854c",
+    "link": "https://amzn.to/36xVmST",
+    "slug": "noche-eterna"
+  },
+  {
+    "id": 68,
+    "title": "El Cuadro",
+    "published": 1968,
+    "description": "Mr. y Mrs. Beresford estaban desayunando. Eran una pareja normal y corriente. Centenares de parejas mayores como ellos desayunaban por todo lo ancho y largo de Inglaterra a esa misma hora. También era un día normal y corriente, de los que hay cinco iguales durante la semana. Los nubarrones anunciaban lluvia, pero tampoco era una cosa segura.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/el-cuadro.jpg?alt=media&token=5ee88433-9aed-4e67-bfbc-73fd73c47df5",
+    "link": "https://amzn.to/3rcIklL",
+    "slug": "el-cuadro"
+  },
+  {
+    "id": 69,
+    "title": "Las Manzanas",
+    "published": 1969,
+    "description": "Mrs. Ariadne Oliver había ido a colaborar con Judith Butler, la amiga en cuya casa estaba alojada, en los preparativos de la fiesta infantil que tendría lugar aquella misma tarde. En aquel momento se apreciaba una actividad frenética. Mujeres la mar de activas entraban y salían cargando sillas, mesas, jarrones y una considerable cantidad de calabazas amarillas que repartían estratégicamente en los lugares previamente seleccionados. Sería una fiesta de Halloween para un grupo de jóvenes de edades comprendidas entre los diez y los diecisiete años. Mrs. Oliver se apartó del grupo principal, se apoyó contra una pared afortunadamente desocupada y sostuvo en alto una gran calabaza amarilla para observarla con ojo crítico.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/las-manzanas.jpg?alt=media&token=35353eed-228e-492b-a698-23ae5ae7bf31",
+    "link": "https://amzn.to/3apk9JX",
+    "slug": "las-manzanas"
+  },
+  {
+    "id": 70,
+    "title": "Pasajero para Frankfurt",
+    "published": 1970,
+    "description": "Habla la autora: La primera pregunta que se le plantea a un autor, ya sea personalmente o por carta, es: «¿De dónde saca usted sus ideas?» La tentación es responder: «Siempre voy a Harrods», o bien: «Por lo general, las consigo en el economato del Ejército y la Marina», o de una manera más desabrida: «Pruebe en Marks & Spencer», es una tentación prácticamente irresistible. La opinión universal y más establecida es que existe un manantial mágico de ideas que los autores han descubierto cómo ordeñar.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/pasajero-para-frankfurt.jpg?alt=media&token=f9926e64-7f78-4d36-bec2-3724e121bb16",
+    "link": "https://amzn.to/2MhUGKK",
+    "slug": "pasajero-para-frankfurt"
+  },
+  {
+    "id": 71,
+    "title": "Némesis",
+    "published": 1971,
+    "description": "Miss Jane Marple tenía la costumbre de leer por las tardes su segundo periódico. Cada mañana recibía en su casa dos periódicos. El primero lo leía mientras tomaba el primer té de la mañana, siempre, claro está, que se lo entregaran a tiempo. El chico que repartía los periódicos era bastante errático en la administración de su tiempo. También bastante frecuentemente se daba el caso de que se tratara de un repartidor nuevo o de algún otro chico que reemplazara temporalmente al primero. Todos parecían tener opiniones diferentes respecto a las rutas geográficas a seguir en el reparto. Quizá lo hacían para aliviar la monotonía, pero para aquellos clientes acostumbrados a leer el periódico a primera hora, para poder enterarse de las noticias más interesantes del día, antes de salir de sus casas para ir en busca del autobús, el tren o cualquier otro sistema de transporte moderno que los llevara a su trabajo, era un fastidio no tener el periódico a tiempo, pues las señoras maduras y ancianas que residían beatíficamente en St. Mary Mead eran todas partidarias de leer el periódico mientras desayunaban en la cama.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/nemesis.jpg?alt=media&token=abb56c0d-0d95-4128-a4f6-f33b0b114ff7",
+    "link": "https://amzn.to/3renpyW",
+    "slug": "némesis"
+  },
+  {
+    "id": 72,
+    "title": "Los Elefantes Pueden Recordar",
+    "published": 1972,
+    "description": "Mrs. Oliver se miró en el espejo y, de reojo, miró el reloj que estaba sobre la repisa de la chimenea, consciente de que iba atrasado unos veinte minutos. Luego, volvió una vez más al estudio de su peinado. El problema era (y no tenía empacho en reconocerlo) que sus peinados estaban sometidos a un continuo proceso de cambio. Lo había probado casi todo: desde un sobrio pompadour hasta un estilo informal en el que se cepillaba los rizos hacia atrás para dejar al descubierto una frente de intelectual; al menos, confiaba en tener una frente de intelectual. Había probado con unos rizos muy apretados y también con un desorden artístico. No obstante, debía admitir que hoy el estilo del peinado no tendría mucha importancia porque haría algo que sólo hacía en contadas ocasiones: llevaría sombrero.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/los-elefantes-pueden-recordar.jpg?alt=media&token=f0a46394-0d65-4e43-9051-e707e665af41",
+    "link": "https://amzn.to/3pGrZ8x",
+    "slug": "los-elefantes-pueden-recordar"
+  },
+  {
+    "id": 73,
+    "title": "La Puerta del Destino",
+    "published": 1973,
+    "description": "Cuatro grandes puertas tiene la ciudad de Damasco: La Puerta del Destino, la Puerta del Desierto, la Caverna del Desastre y el Fuerte del Temor. No pases por ella, ¡oh, Caravana!, o pasa sin cantar. ¿Has oído ese silencio cuando los pájaros están muertos, aunque se oye algo que parece el piar de un pájaro? De Puertas de Damasco de James Elroy Flecker ",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-puerta-del-destino.jpg?alt=media&token=b4caeceb-8624-4a0b-a47f-b2b5edc90383",
+    "link": "https://amzn.to/39ABDUI",
+    "slug": "la-puerta-del-destino"
+  },
+  {
+    "id": 74,
+    "title": "Primeros Casos de Poirot",
+    "published": 1974,
+    "description": "El azar quiso que mi amigo Hércules Poirot, antiguo miembro de la policía belga, se viera vinculado con el caso Styles. El éxito en este caso le dio fama y le decidió a dedicarse a la investigación de casos criminales. Me instalé con él en Londres después de que me licenciaran del ejército como consecuencia de una herida en la batalla del Somme. Como conozco de primera mano la mayoría de sus casos, me han sugerido que escoja algunos de los más interesantes y los ponga por escrito. Acepté y creo que no hay ninguno mejor para comenzar que uno muy extraño que, en su momento, provocó un gran interés entre el público. Me refiero al caso del baile de la Victoria.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/primeros-casos-de-poirot.jpg?alt=media&token=a7ccd5c4-7b2e-44bf-96ac-bbe0a78f6cd5",
+    "link": "https://amzn.to/39ABDUI",
+    "slug": "primeros-casos-de-poirot"
+  },
+  {
+    "id": 75,
+    "title": "Telón",
+    "published": 1975,
+    "description": "¿Ouién no ha sufrido alguna vez un repentino sobresalto al revivir una vieja experiencia o al sentir una antigua emoción? «He hecho esto antes…» ¿Por qué esas palabras siempre nos conmueven tan profundamente? Esa era la pregunta que me formulé mientras viajaba en el tren con la mirada puesta en el llano paisaje de Essex. ¿Cuántos años habían pasado desde que hice este mismo trayecto? ¡Había sentido entonces (menuda estupidez) que lo mejor de mi vida había terminado! Herido en una guerra, que para mí siempre sería un trauma, una contienda barrida ahora por una segunda mucho más desesperada. En 1916, el joven Arthur Hastings creía que ya era viejo y caduco. No me había dado cuenta de que, para mí, la vida solo estaba empezando.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/telon.jpg?alt=media&token=24eb7437-4321-48e3-8c18-4bbbb7004428",
+    "link": "https://amzn.to/39ABDUI",
+    "slug": "telón"
+  },
+  {
+    "id": 76,
+    "title": "Un Crimen Dormido",
+    "published": 1976,
+    "description": "Gwenda Reed permanecía de pie, al borde del muelle, temblando de frío. Los muelles, los cobertizos de la aduana y todo lo que alcanzaba a ver de Inglaterra se balanceaban suavemente. Fue en este momento cuando tomó la decisión, una decisión que tendría consecuencias extraordinarias: no iría a Londres en tren como había pla-neado. Después de todo, ¿por qué tenía que hacerlo? Nadie la estaría esperando, Acababa de bajar de un barco al que las olas habían zarandeado a placer (había soportado tres días de mar gruesa mientras cruzaban la bahía hasta Plymouth) y lo último que deseaba ahora era subirse a un tren que seguramente se balancearía tanto como el barco. Iría a un hotel, a un edificio sólido y firme, con los cimientos bien hondos en la tierra, y se metería en una cómoda y sólida cama que no se balanceara ni crujiera. Dormiría a placer y, a la mañana siguiente…",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/un-crimen-dormido.jpg?alt=media&token=9be05f15-e6c9-4198-a57f-e06858ed746a",
+    "link": "https://amzn.to/39ABDUI",
+    "slug": "un-crimen-dormido"
+  },
+  {
+    "id": 77,
+    "title": "Los Últimos Casos de Miss Marple",
+    "published": 1979,
+    "description": "La mujer del párroco dobló la esquina de la casa parroquial con un montón de crisantemos entre los brazos. Pegada a los recios zapatos de piel, había mucha tierra fértil del jardín y también llevaba tierra en la nariz, aunque ella no se había dado cuenta. Le costó cierto esfuerzo abrir la reja desvencijada y cubierta de óxido. Un soplo de viento le movió el abollado sombrero de fieltro, que le quedó aún más ladeado que antes. —¡Caramba! —dijo Bunch. Bautizada Diana, por sus optimistas progenitores, Mrs. Harmon se había convertido en Bunch cuando era una niña con trenzas y desde entonces había conservado tanto el apodo como las trenzas. Abrazada a los crisantemos, cruzó la verja hacia el cementerio y la puerta de la iglesia.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/los-ultimos-casos-de-miss-marple.jpg?alt=media&token=207730fd-444a-46b3-9457-321a6018d777",
+    "link": "https://amzn.to/39ABDUI",
+    "slug": "los-últimos-casos-de-miss-marple"
+  },
+  {
+    "id": 78,
+    "title": "Problema en Pollensa y Otras Historias",
+    "published": 1991,
+    "description": "El barco de la línea de Barcelona a Palma de Mallorca dejó a Parker Pyne en esta última capital a primera hora de la mañana. Inmediatamente, Parker Pyne sufrió una desilusión. Los hoteles estaban llenos. Lo único que pudieron ofre- cerle fue un cuchitril sin ventilación y con vistas a un patio interior en un hotel del centro de la ciudad, y el señor Parker Pyne no estaba dispuesto a conformar- se con eso. El dueño del hotel se mostró indiferente ante su desilusión.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/problema-en-pollensa.jpg?alt=media&token=3d060506-cd09-4f3f-a41d-6950f7b9b861",
+    "link": "https://amzn.to/39ABDUI",
+    "slug": "problema-en-pollensa-y-otras-historias"
+  },
+  {
+    "id": 79,
+    "title": "Café Solo",
+    "published": 1997,
+    "description": "Es casi seguro que el desagrado que le produjo Alibi, una adaptación ajena hecha en 1928 de su novela El asesinato de Roger Ackroyd, fue lo que decidió a mi abuela Agatha Christie a escribir una obra de teatro ella misma, algo que no había hecho nunca. Café solo, en la que aparece su detective favorito, Hércules Poirot, se terminó el verano de 1929. Pero cuando Agatha se la enseñó a su agente, este le recomendó que no se molestara en enviársela a ningún teatro, pues no tenía calidad suficiente para representarla. Por suerte, un amigo que tenía contactos en los teatros la convenció de que ignorase ese consejo y la obra se estrenó en 1930 en el Embassy Theatre, en Swiss Cottage, en Londres.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/cafe-solo.jpg?alt=media&token=14b686b5-09cd-4935-a92d-6b534408b47a",
+    "link": "https://amzn.to/39ABDUI",
+    "slug": "café-solo"
+  },
+  {
+    "id": 80,
+    "title": "Un Dios Solitario y Otros Relatos",
+    "published": 1997,
+    "description": "Agatha Christie, la verdadera «reina del crimen», sigue siendo in- discutiblemente la mayor y más conocida escritora de novelas po- licíacas clásicas. Su novela más famosa, y con toda probabilidad uno de los relatos policíacos más conocidos, es El asesinato de Roger Ackroyd (1926), con la que indignó a los críticos y, gracias a ello, se estableció en la primera fila de los escritores del género. El caso lo resolvió Hércules Poirot, antiguo miembro de la policía belga, que apareció en 33 novelas, entre ellas Asesinato en el Orient Express (1930), El misterio de la guía de ferrocarriles (1936), Cinco cerditos (1942), Después del funeral (1953), Las manzanas (1969) y Telón: el último caso de Poirot (1975). El detective favorito de Christie era Miss Jane Marple, una anciana solterona que apareció en 12 novelas, entre ellas Asesinato en la vicaría (1930), Un cadáver en la biblioteca (1942), Un puñado de centeno (1953), Misterio en el Caribe (1964) y su secuela Némesis (1971) y, por fin, Un crimen dormido (1976) que, como Telón, se había escrito durante el bombardeo de Londres casi treinta años antes. Y entre las 21 novelas en las que no aparece ninguno de los detectives de Christie están Diez negritos (1939), en la que no hay ningún investigador, La casa torcida (1949), Inocencia trágica (1959) y Noche eterna (1967).",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/un-dios-solitario.jpg?alt=media&token=26bdd667-3df9-495d-81fe-d5a28b6edebb",
+    "link": "https://amzn.to/39ABDUI",
+    "slug": "un-dios-solitario-y-otros-relatos"
+  },
+  {
+    "id": 81,
+    "title": "Una Visita Inesperada",
+    "published": 1999,
+    "description": "Poco antes de medianoche de un gélido día de noviembre, los jirones de niebla oscurecían parte de una carretera oscura, estrecha y rodeada de árboles en Gales del Sur, no lejos del canal de Bristol, de donde llegaba automáticamente cada cierto tiempo el melancólico sonido de una bocina de niebla. De vez en cuando se oía el lejano ladrido de un perro y la triste llamada de un ave nocturna. Las pocas casas que había a lo largo de la carretera, que era poco más que un camino, estaban separadas por casi un kilómetro de distancia. En uno de sus tramos más oscuros, la carretera giraba y pasaba al lado de una bonita casa de tres pisos que había detrás de un espacioso jardín, y justo ahí había un coche atascado, con las ruedas delanteras metidas en una zanja al lado de la carretera. Después de dos o tres intentos de sacarlo de la zanja acelerando, el conductor debió de decidir que no valía la pena insistir y apagó el motor.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/una-visita-inesperada.jpg?alt=media&token=d4bf7734-011b-4015-a1ee-e8dad7014401",
+    "link": "https://amzn.to/39ABDUI",
+    "slug": "una-visita-inesperada"
+  },
+  {
+    "id": 82,
+    "title": "La Telaraña",
+    "published": 2000,
+    "description": "Copplestone Court, la elegante casa dieciochesca de Henry y Clarissa Hailsham-Brown, ubicada en la agradable y ondulada campiña de Kent, era bonita incluso al final de una tarde lluviosa de marzo. En el salón de la planta baja, amueblado con buen gusto y con unas puertas acristaladas que daban al jardín, dos hombres estaban de pie al lado de una consola en la que había tres copas de oporto, cada una marcada con una etiqueta: uno, dos y tres. En la mesa había también un lápiz y una hoja de papel.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/agatha-christie-a4077.appspot.com/o/la-telarana.jpg?alt=media&token=7b4e683a-b974-45f5-9cf5-deb89f0f3fc9",
+    "link": "https://amzn.to/39ABDUI",
+    "slug": "la-telaraña"
+  }
 ]
-
