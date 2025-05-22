@@ -1,23 +1,40 @@
 <template>
   <div v-if="novel">
+<<<<<<< HEAD
     <router-link :to="{ name: 'Home' }" class="btn--back">Back</router-link>
+=======
+    <router-link :to="{ name: 'Home' }" class="btn--back">Atrás</router-link>
+>>>>>>> 6065275e376a41138a64ad87076d0763af23ea78
     <div>
       <img :src="novel.image" :alt="novel.title" />
     </div>
     <div class="novel-details">
       <div class="flex-wrapper">
-        <div></div>
-        <a :href="novel.link" target="_blank" class="btn--buy">Buy Book</a>
+        <div>
+          <star-rating
+            v-model:rating="rating"
+            v-bind:increment="0.5"
+            v-bind:max-rating="5"
+            v-bind:show-rating="false"
+            v-bind:star-size="25"
+            active-color="#f8a427"
+            @click="rateBook"
+          ></star-rating>
+        </div>
+        <a :href="novel.link" target="_blank" class="btn--buy">Comprar libro</a>
       </div>
       <h3>{{ novel.title }}</h3>
+<<<<<<< HEAD
       <div>
         <input type="range" max="10" v-model.number="rate" />
         <button @click="rateBook">Rate book</button>
       </div>
+=======
+>>>>>>> 6065275e376a41138a64ad87076d0763af23ea78
       <p>{{ novel.description }}</p>
       <div class="novel-details__button-wrapper">
         <button @click="addBook" :class="{ active: activeBook }">
-          {{ activeBook ? "Unread" : "Mark as Read" }}
+          {{ activeBook ? "Leido" : "Marcar como leido" }}
         </button>
       </div>
     </div>
@@ -27,6 +44,7 @@
 <script>
 import BookService from "@/services/BookService.js";
 import firebase from "firebase";
+import StarRating from "vue-star-rating";
 
 export default {
   name: "BookDetail",
@@ -34,7 +52,11 @@ export default {
   data() {
     return {
       novel: null,
+<<<<<<< HEAD
       rate: null,
+=======
+      rating: null,
+>>>>>>> 6065275e376a41138a64ad87076d0763af23ea78
     };
   },
   created() {
@@ -45,6 +67,22 @@ export default {
       .catch((error) => {
         console.log(error);
       });
+
+/*       db.collection("rating").doc(this.id).collection("users").get().then(querySnapshot => {
+      querySnapshot.forEach(doc => {
+        this.rating = doc.data().bookrate
+      });
+    });   */
+
+    const db = firebase.firestore();
+    var docRef = db.collection("rating").doc(this.id).collection("users").doc(this.$store.state.user.user.userinfo);
+    docRef.get().then((doc) => {
+        if (doc.exists) {
+            var bookrate = doc.data()
+            this.rating = bookrate.bookrate;
+        }
+    });
+
   },
   methods: {
     addBook() {
@@ -56,12 +94,17 @@ export default {
         .doc(this.id)
         .collection("users")
         .doc(this.$store.state.user.user.userinfo)
+<<<<<<< HEAD
         .set({ rate: this.rate });
+=======
+        .set({ bookrate: this.rating });
+>>>>>>> 6065275e376a41138a64ad87076d0763af23ea78
     },
   },
   computed: {
     activeBook: function () {
       return this.$store.state.user.user.readBooks.includes(this.id);
+<<<<<<< HEAD
     },
     bookRating: function () {
       const db = firebase.firestore();
@@ -73,6 +116,12 @@ export default {
         .get(this.rate);
       return bookRating;
     },
+=======
+    }
+  },
+  components: {
+    StarRating,
+>>>>>>> 6065275e376a41138a64ad87076d0763af23ea78
   },
 };
 </script>
@@ -100,7 +149,7 @@ img {
     font-weight: 900;
   }
   a.btn--buy {
-    background: #f8a427;
+    background: #ff5e58;
     font-weight: bold;
     color: white;
     padding: 0.5rem 0;
@@ -138,7 +187,7 @@ img {
     width: 100%;
     &:before {
       content: "";
-      background: url(/img/icons/icn-read-book-grey.svg) center no-repeat;
+      background: url(../assets/icons/icn-read-book-grey.svg) center no-repeat;
       background-size: contain;
       height: 0.8rem;
       width: 0.8rem;
@@ -151,7 +200,7 @@ img {
       color: white;
       background: cadetblue;
       &:before {
-        background: url(/img/icons/icn-read-book-white.svg) center no-repeat;
+        background: url(../assets/icons/icn-read-book-white.svg) center no-repeat;
         background-size: contain;
       }
     }
@@ -162,5 +211,20 @@ img {
   a {
     flex: 1;
   }
+  div {
+    padding-top: 0.2rem;
+  }
+}
+.vue-star-rating-rating-text {
+  color: white;
+  background: cadetblue;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 3px;
 }
 </style>

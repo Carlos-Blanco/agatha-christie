@@ -27,7 +27,7 @@ export const actions = {
   fetchTrendingNovels({ commit }) {
     BookService.getNovels()
       .then(response => {
-        var selectedNovels = [5, 21, 26, 9, 49, 14, 28, 38];
+        var selectedNovels = [6, 11, 20, 24, 28, 33, 36, 38, 47, 48, 57];
         var trendingNovels = [];
         var novels = response.data;
         for (var i = 0; i < selectedNovels.length; i++) {

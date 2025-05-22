@@ -2,18 +2,18 @@
   <div class="books-list">
     <header>
       <div>
-        <h1>Agatha Christie Books</h1>
+        <h1>Agatha Christie</h1>
       </div>
       <router-link :to="{ name: 'Profile' }">
-        <img src="/img/icons/user-profile.svg" />
+        <img src="../assets/icons/user-profile.svg" />
       </router-link>
     </header>
     <div class="input-wrapper">
       <div></div>
-      <input type="text" placeholder="Search" v-model="searchTerm" />
+      <input type="text" placeholder="Buscar" v-model="searchTerm" />
     </div>
     <div v-if="!searchTerm">
-      <h2>Trending books</h2>
+      <h2>Los mejores libros</h2>
       <div class="trending-books">
         <TrendingBooks
           v-for="novel in books.trendingNovels"
@@ -22,7 +22,7 @@
         />
       </div>
     </div>
-    <h2>Agatha Christie books</h2>
+    <h2>Novelas de Agatha Christie</h2>
     <BookList v-for="novel in filterByTerm" :key="novel.id" :novel="novel" />
   </div>
 </template>
@@ -81,7 +81,7 @@ header {
         content: "";
         width: 1.5rem;
         height: 1.5rem;
-        background: url(/img/icons/icn-magnifying-glass.svg);
+        background: url(../assets/icons/icn-magnifying-glass.svg);
         display: inline-block;
         background-size: contain;
         position: relative;

@@ -1,27 +1,27 @@
 <template>
   <div class="profile">
     <router-link :to="{ name: 'Home'}" class="btn--back">Back</router-link>
-    <h2>Profile</h2>
+    <h2>Perfil</h2>
     <div class="progress-wrapper">
       <div>
-        <h3>Read Books</h3>
+        <h3>Libros leidos</h3>
         <p>{{ readBooks }} / {{ totalBooks }}</p>
       </div>
       <div>
-        <ve-progress 
+        <ve-progress
         :progress="progress"
         color="#2c3e50"
         :size="75"
         :thickness="8"
         empty-thickness="10%"
         legendClass="legend-custom-style">
-        
-        </ve-progress> 
+
+        </ve-progress>
       </div>
     </div>
     <span id="errorMessage" class="error" style="display:none;"></span>
     <div class="button-wrapper">
-      <button @click="logout">Log out</button>
+      <button @click="logout">Cerrar sesión</button>
     </div>
   </div>
 </template>

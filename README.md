@@ -1,24 +1,11 @@
-# agatha-christie
+# Agatha Christie Books App
 
-## Project setup
-```
-npm install
-```
+📚 Books List
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+🔎 Find & get info
 
-### Compiles and minifies for production
-```
-npm run build
-```
+✔ Check read books
 
-### Lints and fixes files
-```
-npm run lint
-```
+💳 Buy
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://agatha-christie-a4077.web.app/

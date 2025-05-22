@@ -7,7 +7,7 @@
       </span>
       <span>
         <h3>{{ novel.title }}</h3>
-        <p>Published: {{ novel.published }}</p>
+        <p>Publicado: {{ novel.published }}</p>
         <span v-if="novel.rate"> {{ novel.rate }}</span>
       </span>
     </span>
@@ -67,7 +67,7 @@ a {
     position: absolute;
     top: 0;
     right: 0.5rem;
-    background: url(/img/icons/icn-was-read.svg) center no-repeat;
+    background: url(../assets/icons/icn-was-read.svg) center no-repeat;
     background-size: contain;
     width: 2rem;
     height: 2rem;
