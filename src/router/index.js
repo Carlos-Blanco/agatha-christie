@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import store from "../store"
 import BookDetail from "../views/BookDetail.vue";
 import Home from "../views/Home.vue";
-import Signup from "../views/Signup.vue";
+import SignUp from "../views/SignUp.vue";
 import Login from "../views/Login.vue";
 import Profile from "../views/Profile.vue";
 import NotFound from "../views/NotFound.vue";
@@ -21,8 +21,8 @@ const routes = [
   },
   {
     path: "/signup",
-    name: "Signup",
-    component: Signup
+    name: "SignUp",
+    component: SignUp
   },
   {
     path: "/login",
@@ -57,7 +57,7 @@ router.beforeEach(async (to, from, next) => {
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
   // Requires auth & no user
   if (requiresAuth && !(await store.dispatch("getCurrentUser"))) {
-    next({ name: "Signup" });
+    next({ name: "SignUp" });
     // No requires auth and user (auth)
   } else if (!requiresAuth && (await store.dispatch("getCurrentUser"))) {
     next();

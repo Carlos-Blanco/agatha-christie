@@ -1,36 +1,18 @@
 <template>
   <div v-if="novel">
-<<<<<<< HEAD
-    <router-link :to="{ name: 'Home' }" class="btn--back">Back</router-link>
-=======
     <router-link :to="{ name: 'Home' }" class="btn--back">Atrás</router-link>
->>>>>>> 6065275e376a41138a64ad87076d0763af23ea78
     <div>
       <img :src="novel.image" :alt="novel.title" />
     </div>
     <div class="novel-details">
       <div class="flex-wrapper">
         <div>
-          <star-rating
-            v-model:rating="rating"
-            v-bind:increment="0.5"
-            v-bind:max-rating="5"
-            v-bind:show-rating="false"
-            v-bind:star-size="25"
-            active-color="#f8a427"
-            @click="rateBook"
-          ></star-rating>
+          <star-rating v-model:rating="rating" v-bind:increment="0.5" v-bind:max-rating="5" v-bind:show-rating="false"
+            v-bind:star-size="25" active-color="#f8a427" @click="rateBook"></star-rating>
         </div>
         <a :href="novel.link" target="_blank" class="btn--buy">Comprar libro</a>
       </div>
       <h3>{{ novel.title }}</h3>
-<<<<<<< HEAD
-      <div>
-        <input type="range" max="10" v-model.number="rate" />
-        <button @click="rateBook">Rate book</button>
-      </div>
-=======
->>>>>>> 6065275e376a41138a64ad87076d0763af23ea78
       <p>{{ novel.description }}</p>
       <div class="novel-details__button-wrapper">
         <button @click="addBook" :class="{ active: activeBook }">
@@ -52,11 +34,7 @@ export default {
   data() {
     return {
       novel: null,
-<<<<<<< HEAD
-      rate: null,
-=======
       rating: null,
->>>>>>> 6065275e376a41138a64ad87076d0763af23ea78
     };
   },
   created() {
@@ -68,19 +46,19 @@ export default {
         console.log(error);
       });
 
-/*       db.collection("rating").doc(this.id).collection("users").get().then(querySnapshot => {
-      querySnapshot.forEach(doc => {
-        this.rating = doc.data().bookrate
-      });
-    });   */
+    /*       db.collection("rating").doc(this.id).collection("users").get().then(querySnapshot => {
+          querySnapshot.forEach(doc => {
+            this.rating = doc.data().bookrate
+          });
+        });   */
 
     const db = firebase.firestore();
     var docRef = db.collection("rating").doc(this.id).collection("users").doc(this.$store.state.user.user.userinfo);
     docRef.get().then((doc) => {
-        if (doc.exists) {
-            var bookrate = doc.data()
-            this.rating = bookrate.bookrate;
-        }
+      if (doc.exists) {
+        var bookrate = doc.data()
+        this.rating = bookrate.bookrate;
+      }
     });
 
   },
@@ -94,34 +72,16 @@ export default {
         .doc(this.id)
         .collection("users")
         .doc(this.$store.state.user.user.userinfo)
-<<<<<<< HEAD
-        .set({ rate: this.rate });
-=======
         .set({ bookrate: this.rating });
->>>>>>> 6065275e376a41138a64ad87076d0763af23ea78
     },
   },
   computed: {
     activeBook: function () {
       return this.$store.state.user.user.readBooks.includes(this.id);
-<<<<<<< HEAD
-    },
-    bookRating: function () {
-      const db = firebase.firestore();
-      var bookRating = db
-        .collection("rating")
-        .doc(this.id)
-        .collection("user-rating")
-        .doc(this.$store.state.user.uid)
-        .get(this.rate);
-      return bookRating;
-    },
-=======
     }
   },
   components: {
     StarRating,
->>>>>>> 6065275e376a41138a64ad87076d0763af23ea78
   },
 };
 </script>
@@ -130,6 +90,7 @@ export default {
 .btn--back {
   margin: 1rem;
 }
+
 img {
   display: block;
   margin: 0 auto;
@@ -138,16 +99,19 @@ img {
   border-radius: var(--border-radius);
   box-shadow: 0 10px 15px -6px rgba(0, 0, 0, 0.7);
 }
+
 .novel-details {
   background: var(--color-background);
   border-radius: 30px 30px 0 0;
   padding: 1rem 1rem 3rem;
   margin-top: 2rem;
   min-height: calc(100vh - 330px);
+
   h3 {
     font-size: 2rem;
     font-weight: 900;
   }
+
   a.btn--buy {
     background: #ff5e58;
     font-weight: bold;
@@ -156,24 +120,25 @@ img {
     border-radius: var(--border-radius);
     font-size: 1rem;
     text-align: center;
+
     &:hover {
       background: #ec9616;
     }
   }
 }
+
 .novel-details__button-wrapper {
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 80%,
-    rgba(255, 255, 255, 0.018644957983193322) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 80%,
+      rgba(255, 255, 255, 0.018644957983193322) 100%);
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 1rem 1rem 0.5rem;
+
   button {
     background: #cecece;
     color: #5f5f5f;
@@ -185,6 +150,7 @@ img {
     outline: none;
     font-size: 1rem;
     width: 100%;
+
     &:before {
       content: "";
       background: url(../assets/icons/icn-read-book-grey.svg) center no-repeat;
@@ -196,9 +162,11 @@ img {
       top: 1px;
       display: inline-block;
     }
+
     &.active {
       color: white;
       background: cadetblue;
+
       &:before {
         background: url(../assets/icons/icn-read-book-white.svg) center no-repeat;
         background-size: contain;
@@ -206,15 +174,19 @@ img {
     }
   }
 }
+
 .flex-wrapper {
+
   div,
   a {
     flex: 1;
   }
+
   div {
     padding-top: 0.2rem;
   }
 }
+
 .vue-star-rating-rating-text {
   color: white;
   background: cadetblue;

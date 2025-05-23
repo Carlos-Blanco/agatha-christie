@@ -43,7 +43,7 @@ export const actions = {
         }
       } else {
         // No user is signed in.
-        router.push({ name: "Signup"})
+        router.push({ name: "SignUp"})
       }
     });
   },

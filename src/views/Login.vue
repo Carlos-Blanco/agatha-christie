@@ -14,7 +14,7 @@
     </form>
     <div class="signup-wrapper">
       <p><span></span>or<span></span></p>
-      <router-link :to="{ name: 'Signup' }" class="btn">Registrarse</router-link>
+      <router-link :to="{ name: 'SignUp' }" class="btn">Registrarse</router-link>
     </div>
   </div>
 </template>

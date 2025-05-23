@@ -23,7 +23,7 @@
 import { mapState } from "vuex";
 
 export default {
-  name: "Signup",
+  name: "SignUp",
   data() {
     return {
       userinfo: {
