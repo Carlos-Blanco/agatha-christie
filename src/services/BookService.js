@@ -13,6 +13,32 @@ export default {
   getNovels() {
     return apiClient.get("");
   },
+  async getNovelBySlug(slug) {
+    try {
+      const response = await apiClient.get("");
+      const books = response.data;
+      let foundNovel = null;
+
+      if (Array.isArray(books)) {
+        foundNovel = books.find(book => book.slug === slug);
+      } else if (typeof books === 'object' && books !== null) {
+        // Case 1: books is an object keyed by slug
+        if (books[slug] && books[slug].slug === slug) {
+          foundNovel = books[slug];
+        }
+        // Case 2: books is an object keyed by something else (e.g., ID),
+        // and values are book objects with a 'slug' property.
+        else {
+          foundNovel = Object.values(books).find(book => book.slug === slug);
+        }
+      }
+      return foundNovel || null; // Ensure null is returned if not found
+    } catch (error) {
+      console.error("Error fetching novel by slug:", error);
+      //throw error; // Re-throw or return null/error object as per desired error handling
+      return null; // For this task, returning null on error is consistent with "not found"
+    }
+  },
   postNovels(novel) {
     return apiClient.post('/novels', novel)
   }

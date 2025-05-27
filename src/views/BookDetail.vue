@@ -30,46 +30,59 @@ import StarRating from "vue-star-rating";
 
 export default {
   name: "BookDetail",
-  props: ["id"],
+  props: ["slug"],
   data() {
     return {
       novel: null,
       rating: null,
     };
   },
-  created() {
-    BookService.getNovels()
-      .then((response) => {
-        this.novel = response.data[this.id];
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+  async created() {
+    try {
+      const novel = await BookService.getNovelBySlug(this.slug);
 
-    /*       db.collection("rating").doc(this.id).collection("users").get().then(querySnapshot => {
-          querySnapshot.forEach(doc => {
-            this.rating = doc.data().bookrate
-          });
-        });   */
+      if (novel) {
+        this.novel = novel;
 
-    const db = firebase.firestore();
-    var docRef = db.collection("rating").doc(this.id).collection("users").doc(this.$store.state.user.user.userinfo);
-    docRef.get().then((doc) => {
-      if (doc.exists) {
-        var bookrate = doc.data()
-        this.rating = bookrate.bookrate;
+        // Now that novel is found, fetch its rating
+        const db = firebase.firestore();
+        // Use this.novel.slug for consistency and safety
+        var docRef = db.collection("rating").doc(this.novel.slug).collection("users").doc(this.$store.state.user.user.userinfo);
+        
+        docRef.get().then((doc) => {
+          if (doc.exists) {
+            var bookrate = doc.data();
+            this.rating = bookrate.bookrate;
+          } else {
+            // Handle case where rating doesn't exist for this user/book
+            this.rating = null; 
+          }
+        }).catch(ratingError => {
+          console.error("Error fetching rating:", ratingError);
+          this.rating = null; // Set rating to null or default on error
+        });
+
+      } else {
+        // Novel not found by slug, or an error occurred in getNovelBySlug
+        this.$router.push({ name: '404' });
       }
-    });
-
+    } catch (error) {
+      // This catch block handles errors from getNovelBySlug if it re-throws,
+      // or any other unexpected errors in the try block.
+      // Since getNovelBySlug is set to return null on error, this might not be strictly necessary
+      // unless getNovelBySlug is changed to re-throw.
+      console.error("Error in created hook:", error);
+      this.$router.push({ name: '404' });
+    }
   },
   methods: {
     addBook() {
-      this.$store.dispatch("updateBook", this.id);
+      this.$store.dispatch("updateBook", this.slug);
     },
     rateBook() {
       const db = firebase.firestore();
       db.collection("rating")
-        .doc(this.id)
+        .doc(this.slug)
         .collection("users")
         .doc(this.$store.state.user.user.userinfo)
         .set({ bookrate: this.rating });
@@ -77,7 +90,7 @@ export default {
   },
   computed: {
     activeBook: function () {
-      return this.$store.state.user.user.readBooks.includes(this.id);
+      return this.$store.state.user.user.readBooks.includes(this.slug);
     }
   },
   components: {
