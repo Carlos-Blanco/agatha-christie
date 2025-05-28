@@ -32,7 +32,17 @@ export default {
           foundNovel = Object.values(books).find(book => book.slug === slug);
         }
       }
-      return foundNovel || null; // Ensure null is returned if not found
+
+      // Validate the slug of the found novel
+      if (foundNovel) {
+        // Check if slug exists, is a string, and is not empty (after trimming)
+        if (!foundNovel.slug || typeof foundNovel.slug !== 'string' || foundNovel.slug.trim() === '') {
+          console.warn(`Found novel with invalid or empty slug. Input slug: "${slug}", Found slug: "${foundNovel.slug}". Treating as not found.`);
+          foundNovel = null; // Invalidate if slug is not a non-empty string
+        }
+      }
+
+      return foundNovel || null; // Ensure null is returned if not found or if invalidated
     } catch (error) {
       console.error("Error fetching novel by slug:", error);
       //throw error; // Re-throw or return null/error object as per desired error handling

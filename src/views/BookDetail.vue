@@ -44,10 +44,21 @@ export default {
       if (novel) {
         this.novel = novel;
 
-        // Now that novel is found, fetch its rating
+        // Validate novel slug and user UID before Firebase call
+        const novelSlug = this.novel.slug;
+        const userUID = this.$store.state.user.user.userinfo;
+
+        if (typeof novelSlug !== 'string' || novelSlug.trim() === '' ||
+            typeof userUID !== 'string' || userUID.trim() === '') {
+          console.error(`Invalid novel slug or user UID for Firebase path. Slug: "${novelSlug}", UserInfo: "${userUID}"`);
+          this.$router.push({ name: '404' });
+          return; // Stop further execution in this block
+        }
+
+        // Now that novel is found and IDs are validated, fetch its rating
         const db = firebase.firestore();
-        // Use this.novel.slug for consistency and safety
-        var docRef = db.collection("rating").doc(this.novel.slug).collection("users").doc(this.$store.state.user.user.userinfo);
+        // Use validated novelSlug and userUID
+        var docRef = db.collection("rating").doc(novelSlug).collection("users").doc(userUID);
         
         docRef.get().then((doc) => {
           if (doc.exists) {
