@@ -2,28 +2,20 @@
   <router-view />
 </template>
 
+<script>
+export default {
+  created() {
+    this.$store.dispatch("checkAuth");
+  }
+};
+</script>
+
 <style lang="scss">
-/* TODO add css reset */
-body {
-  padding: 0;
-  margin: 0;
-  line-height: 1.4;
-  font-size: 1.2rem;
-}
-* {
-  box-sizing: border-box;
-}
-
-:root {
-  --color-header: hsl(255, 27, 29);
-  --color-text: hsl(209, 9, 55);
-  --color-background: #f1f6f8;
-
-  --border-radius: 10px;
-}
+@import "@/styles/_variables.scss";
+@import "@/styles/_reset.scss";
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-main);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -37,14 +29,11 @@ body {
     font-size: 1.1rem;
     font-weight: 900;
     text-transform: uppercase;
-    color: #008661;
+    color: var(--color-accent);
   }
   h3,
   p {
     color: var(--color-text);
-  }
-  a {
-    text-decoration: none;
   }
   .btn--back {
     display: block;

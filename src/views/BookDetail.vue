@@ -43,50 +43,48 @@ export default {
 
       if (novel) {
         this.novel = novel;
-
-        // Validate novel slug and user UID before Firebase call
-        const novelSlug = this.novel.slug;
-        const userUID = this.$store.state.user.user.userinfo;
-
-        if (typeof novelSlug !== 'string' || novelSlug.trim() === '' ||
-            typeof userUID !== 'string' || userUID.trim() === '') {
-          console.error(`Invalid novel slug or user UID for Firebase path. Slug: "${novelSlug}", UserInfo: "${userUID}"`);
-          this.$router.push({ name: '404' });
-          return; // Stop further execution in this block
-        }
-
-        // Now that novel is found and IDs are validated, fetch its rating
-        const db = firebase.firestore();
-        // Use validated novelSlug and userUID
-        var docRef = db.collection("rating").doc(novelSlug).collection("users").doc(userUID);
         
-        docRef.get().then((doc) => {
+        // Setup a watcher or check for user to fetch rating
+        // Fetch immediately if user exists
+        if (this.$store.state.user.user.userinfo) {
+           this.fetchRating();
+        }
+      } else {
+        this.$router.push({ name: '404' });
+      }
+    } catch (error) {
+       this.$router.push({ name: '404' });
+    }
+  },
+  watch: {
+    '$store.state.user.user.userinfo': function(newVal) {
+        if (newVal && this.novel) {
+            this.fetchRating();
+        }
+    }
+  },
+  methods: {
+    fetchRating() {
+         const novelSlug = this.novel.slug;
+         const userUID = this.$store.state.user.user.userinfo;
+         
+         if (!userUID || !novelSlug) return;
+
+         const db = firebase.firestore();
+         var docRef = db.collection("rating").doc(novelSlug).collection("users").doc(userUID);
+        
+         docRef.get().then((doc) => {
           if (doc.exists) {
             var bookrate = doc.data();
             this.rating = bookrate.bookrate;
           } else {
-            // Handle case where rating doesn't exist for this user/book
             this.rating = null; 
           }
         }).catch(ratingError => {
           console.error("Error fetching rating:", ratingError);
-          this.rating = null; // Set rating to null or default on error
+          this.rating = null;
         });
-
-      } else {
-        // Novel not found by slug, or an error occurred in getNovelBySlug
-        this.$router.push({ name: '404' });
-      }
-    } catch (error) {
-      // This catch block handles errors from getNovelBySlug if it re-throws,
-      // or any other unexpected errors in the try block.
-      // Since getNovelBySlug is set to return null on error, this might not be strictly necessary
-      // unless getNovelBySlug is changed to re-throw.
-      console.error("Error in created hook:", error);
-      this.$router.push({ name: '404' });
-    }
-  },
-  methods: {
+    },
     addBook() {
       this.$store.dispatch("updateBook", this.slug);
     },

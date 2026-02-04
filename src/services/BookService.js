@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: "https://agatha-christie-a4077-default-rtdb.firebaseio.com/db2.json",
+  baseURL: process.env.VUE_APP_API_BASE_URL,
   withCredentials: false,
   headers: {
     Accept: "application/json",
@@ -9,14 +9,28 @@ const apiClient = axios.create({
   }
 });
 
+let novelsCache = null;
+
 export default {
-  getNovels() {
-    return apiClient.get("");
+  async getNovels() {
+    if (novelsCache) {
+      return Promise.resolve({ data: novelsCache });
+    }
+    const response = await apiClient.get("");
+    novelsCache = response.data;
+    return response;
   },
   async getNovelBySlug(slug) {
     try {
-      const response = await apiClient.get("");
-      const books = response.data;
+      let books;
+      if (novelsCache) {
+        books = novelsCache;
+      } else {
+        const response = await apiClient.get("");
+        books = response.data;
+        novelsCache = books;
+      }
+
       let foundNovel = null;
 
       if (Array.isArray(books)) {
@@ -42,14 +56,15 @@ export default {
         }
       }
 
-      return foundNovel || null; // Ensure null is returned if not found or if invalidated
+      return foundNovel || null;
     } catch (error) {
       console.error("Error fetching novel by slug:", error);
-      //throw error; // Re-throw or return null/error object as per desired error handling
-      return null; // For this task, returning null on error is consistent with "not found"
+      return null;
     }
   },
   postNovels(novel) {
+    // Invalidate cache on new post just in case (though context implies read-heavy)
+    novelsCache = null;
     return apiClient.post('/novels', novel)
   }
 };

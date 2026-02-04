@@ -9,7 +9,7 @@
       <div>
         <input type="password" v-model="userinfo.password" placeholder="Password" />
       </div>
-      <span id="errorMessage" class="error" style="display:none;"></span>
+      <div v-if="user.user.authError" class="error">{{ user.user.authError }}</div>
       <button>Iniciar sesión</button>
     </form>
     <div class="signup-wrapper">
@@ -39,6 +39,16 @@ export default {
   },
   computed: {
     ...mapState(["user"])
+  },
+  watch: {
+    userinfo: {
+      handler() {
+        if (this.user.user.authError) {
+          this.$store.commit("CLEAR_AUTH_ERROR");
+        }
+      },
+      deep: true
+    }
   }
 };
 </script>
