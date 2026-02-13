@@ -35,22 +35,6 @@ export default {
   p {
     color: var(--color-text);
   }
-  .btn--back {
-    display: block;
-    font-weight: bold;
-    color: var(--color-header);
-    &:before {
-      content: "";
-      width: 1.5rem;
-      height: 1.5rem;
-      background: url(assets/icons/icn-back.svg) center no-repeat;
-      position: relative;
-      top: 5px;
-      display: inline-block;
-      background-size: contain;
-      margin-right: 0.3rem;
-    }
-  }
   .flex-wrapper {
     display: flex;
   }

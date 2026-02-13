@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper-404">
     <h1>Oops!!</h1>
-    <h3>The page you're looking for is not here.</h3>
-    <router-link :to="{ name: 'Home' }" class="btn">Back</router-link>
+    <h3>La página que buscas no existe.</h3>
+    <router-link :to="{ name: 'Home' }" class="btn">Volver</router-link>
   </div>
 </template>
 

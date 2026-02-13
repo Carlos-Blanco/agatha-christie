@@ -5,6 +5,7 @@ import Home from "../views/Home.vue";
 import SignUp from "../views/SignUp.vue";
 import Login from "../views/Login.vue";
 import Profile from "../views/Profile.vue";
+import ReadingHistory from "../views/ReadingHistory.vue";
 import NotFound from "../views/NotFound.vue";
 
 const routes = [
@@ -12,12 +13,6 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home
-  },
-  {
-    path: "/:slug",
-    name: "BookDetail",
-    props: true,
-    component: BookDetail
   },
   {
     path: "/signup",
@@ -38,9 +33,23 @@ const routes = [
     }
   },
   {
+    path: "/reading-history",
+    name: "ReadingHistory",
+    component: ReadingHistory,
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
     path: "/404",
     name: "404",
     component: NotFound
+  },
+  {
+    path: "/:slug",
+    name: "BookDetail",
+    props: true,
+    component: BookDetail
   },
   {
     path: "/:pathMatch(.*)*",

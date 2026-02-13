@@ -19,10 +19,16 @@ export default {
 <style lang="scss" scoped>
 .novel {
   scroll-snap-align: center;
-  margin-right: 1rem;
+  margin-right: var(--spacing-md);
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+  
   img {
     border-radius: var(--border-radius);
-    box-shadow: 0 10px 15px -6px rgba(0, 0, 0, 0.7);
+    box-shadow: var(--shadow-book);
     width: 100px;
   }
 }

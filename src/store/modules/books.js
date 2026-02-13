@@ -16,7 +16,7 @@ export const mutations = {
 
 export const actions = {
   fetchNovels({ commit }) {
-    BookService.getNovels()
+    return BookService.getNovels()
       .then(response => {
         commit("SET_NOVELS", response.data);
       })
@@ -29,13 +29,12 @@ export const actions = {
       const selectedNovelsIds = [6, 11, 20, 24, 28, 33, 36, 38, 47, 48, 57];
       const trendingNovels = state.novels.filter((novel, index) => selectedNovelsIds.includes(index));
       commit("SET_TRENDING_NOVELS", trendingNovels);
-      return;
+      return Promise.resolve();
     }
 
-    BookService.getNovels()
+    return BookService.getNovels()
       .then(response => {
         const selectedNovelsIds = [6, 11, 20, 24, 28, 33, 36, 38, 47, 48, 57];
-        // Ensure strictly based on index as per original logic, though IDs would be safer
         const trendingNovels = response.data.filter((novel, index) => selectedNovelsIds.includes(index));
         commit("SET_TRENDING_NOVELS", trendingNovels);
       })
