@@ -66,20 +66,6 @@
         </div>
       </div>
       
-      <!-- Reading Progress -->
-      <div class="progress-section" v-if="activeBook">
-        <h3>Progreso de Lectura</h3>
-        <div class="progress-container">
-          <ve-progress
-            :progress="75"
-            color="#B8956A"
-            :size="80"
-            :thickness="8"
-            empty-thickness="10%"
-            legendClass="legend-custom-style">
-          </ve-progress>
-        </div>
-      </div>
       
       <!-- Synopsis -->
       <div class="synopsis">
@@ -369,25 +355,6 @@ img {
       }
     }
     
-    // Reading Progress Section
-    .progress-section {
-      margin-bottom: var(--spacing-xl);
-      padding: var(--spacing-lg);
-      background: rgba(255, 255, 255, 0.4);
-      border-radius: var(--border-radius);
-      
-      h3 {
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--color-text-dark);
-        margin: 0 0 var(--spacing-md) 0;
-      }
-      
-      .progress-container {
-        display: flex;
-        justify-content: center;
-      }
-    }
     
     // Synopsis
     .synopsis {
@@ -468,10 +435,4 @@ img {
   }
 }
 
-// Custom styling for progress circle
-::v-deep .legend-custom-style {
-  color: var(--color-sepia-primary) !important;
-  font-weight: 700 !important;
-  font-size: 1.2rem !important;
-}
 </style>
