@@ -37,7 +37,7 @@
       
       <!-- Buy Button with Price -->
       <a :href="novel.link" target="_blank" class="btn-buy">
-        Comprar Libro — €14.99
+        Comprar Libro
       </a>
       
       <!-- Metadata Cards -->

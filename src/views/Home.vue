@@ -21,7 +21,7 @@
       <input type="text" placeholder="Buscar" v-model="searchTerm" />
     </div>
     <div v-if="!searchTerm">
-      <h2>Los mejores libros</h2>
+      <h2>Los más leídos</h2>
       <div class="trending-books">
         <TrendingBooks
           v-for="novel in books.trendingNovels"
