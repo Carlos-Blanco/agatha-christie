@@ -86,24 +86,24 @@ export default {
 .btn--back {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-xs);
-  color: var(--color-sepia-primary);
+  gap: 4px;
+  color: var(--color-sepia-dark);
   text-decoration: none;
   font-weight: 600;
+  font-size: 1rem;
   margin-bottom: var(--spacing-lg);
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: var(--border-radius);
-  transition: all 0.2s ease;
+  transition: color 0.2s ease;
+  font-family: var(--font-main);
   
   svg {
     transition: transform 0.2s ease;
   }
   
   &:hover {
-    background: var(--color-bg-warm-beige);
+    color: var(--color-sepia-primary);
     
     svg {
-      transform: translateX(-3px);
+      transform: translateX(-2px);
     }
   }
 }
