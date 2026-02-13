@@ -47,27 +47,30 @@ export default {
     BookList
   },
   computed: {
-    ...mapState(['user', 'books']),
     readBooksCount() {
-      // Using explicit store path for reliability
+      // Direct store access to avoid any mapping issues
       return this.$store.state.user?.user?.readBooks?.length || 0;
     },
     readBooksList() {
-      // Get the list of slugs the user has read
       const readBooksSlugs = this.$store.state.user?.user?.readBooks || [];
+      const allNovels = this.$store.state.books?.novels || [];
       
-      // Filter the novels by those slugs
-      // We check both novel.slug and novel.id just in case of inconsistency
-      return this.$store.state.books?.novels?.filter(novel => 
-        readBooksSlugs.includes(novel.slug) || readBooksSlugs.includes(novel.id)
-      ) || [];
+      if (!allNovels || allNovels.length === 0) return [];
+      
+      // Filter novels using a flexible comparison
+      return allNovels.filter(novel => {
+        return readBooksSlugs.some(slugOrId => 
+          String(slugOrId) === String(novel.slug) || String(slugOrId) === String(novel.id)
+        );
+      });
     }
   },
+  created() {
+    // Always ensure books are fetching/loaded as in Home.vue
+    this.$store.dispatch('fetchNovels');
+  },
   async mounted() {
-    // Load books if not already loaded
-    if (this.$store.state.books.novels.length === 0) {
-      await this.$store.dispatch('fetchNovels');
-    }
+    // Optional: reload if specifically needed, but created should trigger it
   }
 };
 </script>
