@@ -117,7 +117,6 @@ export default {
   border-radius: var(--border-radius);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  padding: var(--spacing-sm);
   gap: var(--spacing-md);
   
   &:hover {
@@ -143,7 +142,7 @@ export default {
   .badge {
     position: absolute;
     top: 8px;
-    right: -4px;
+    right: 0;
     padding: 4px 8px;
     border-radius: 4px;
     font-size: 0.65rem;
@@ -157,11 +156,11 @@ export default {
     z-index: 2;
     
     &.read {
-      background: #4caf50;
+      background: #8e735b;
     }
     
     &.to-read {
-      background: #8e735b;
+      background: #757575;
     }
     
     .badge-icon {
@@ -203,7 +202,6 @@ export default {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 4px 0;
   
   .rating-value {
     font-size: 0.9rem;

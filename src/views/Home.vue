@@ -69,8 +69,8 @@ export default {
 <style lang="scss" scoped>
 .books-list {
   padding-bottom: 3rem;
-  padding-left: var(--spacing-lg);
-  padding-right: var(--spacing-lg);
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
   background: var(--color-bg-white);
   min-height: 100vh;
   
