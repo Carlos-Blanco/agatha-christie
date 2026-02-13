@@ -167,7 +167,14 @@ export default {
         });
     },
     addBook() {
-      this.$store.dispatch("updateBook", this.slug);
+      const readBooks = this.$store.state.user?.user?.readBooks || [];
+      const identifierInList = readBooks.find(item => 
+        String(item) === String(this.novel.slug) || 
+        String(item) === String(this.novel.id)
+      );
+      
+      // Use the identifier found in the list if it exists, otherwise use slug
+      this.$store.dispatch("updateBook", identifierInList || this.slug);
     },
     rateBook() {
       const db = firebase.firestore();
@@ -179,8 +186,15 @@ export default {
     },
   },
   computed: {
-    activeBook: function () {
-      return this.$store.state.user.user.readBooks.includes(this.slug);
+    activeBook() {
+      const readBooks = this.$store.state.user?.user?.readBooks || [];
+      if (!this.novel) return false;
+      
+      // Check if either the slug or the ID is in the readBooks list
+      return readBooks.some(item => 
+        String(item) === String(this.novel.slug) || 
+        String(item) === String(this.novel.id)
+      );
     }
   },
   components: {
