@@ -71,7 +71,7 @@
     <!-- Action Buttons -->
     <div class="action-buttons">
       <router-link :to="{ name: 'ReadingHistory' }" class="btn-action">Ver Historial de Lectura</router-link>
-      <button class="btn-action">Gestionar Colecciones</button>
+      <button class="btn-action" @click="$router.push({ name: 'Collections' })">Gestionar colección</button>
     </div>
     
     <!-- Sign Out -->

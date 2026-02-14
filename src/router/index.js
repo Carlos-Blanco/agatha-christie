@@ -6,6 +6,7 @@ import SignUp from "../views/SignUp.vue";
 import Login from "../views/Login.vue";
 import Profile from "../views/Profile.vue";
 import ReadingHistory from "../views/ReadingHistory.vue";
+import Collections from "../views/Collections.vue";
 import NotFound from "../views/NotFound.vue";
 
 const routes = [
@@ -36,6 +37,14 @@ const routes = [
     path: "/reading-history",
     name: "ReadingHistory",
     component: ReadingHistory,
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
+    path: "/collections",
+    name: "Collections",
+    component: Collections,
     meta: {
       requiresAuth: true
     }

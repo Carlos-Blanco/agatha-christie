@@ -6,7 +6,9 @@ import router from "@/router/index";
 export const state = {
   user: {
     userinfo: "",
+    userinfo: "",
     readBooks: [],
+    ownedBooks: [],
     authError: null
   },
   unsubscribeAuthInfo: null // Store unsubscribe function
@@ -18,6 +20,15 @@ export const mutations = {
   },
   UPDATE_BOOKS(state, value) {
     state.user.readBooks = value;
+  },
+  UPDATE_OWNED_BOOKS(state, value) {
+    state.user.ownedBooks = value;
+  },
+  ADD_OWNED_BOOK(state, value) {
+    state.user.ownedBooks.push(value);
+  },
+  REMOVE_OWNED_BOOK(state, index) {
+    state.user.ownedBooks.splice(index, 1);
   },
   ADD_BOOK(state, value) {
     state.user.readBooks.push(value);
@@ -68,6 +79,42 @@ export const actions = {
     } else {
       // No user is signed in.
       router.push({ name: "SignUp" })
+    }
+  },
+  addToCollection({ state, commit }, value) {
+    const user = firebase.auth().currentUser;
+    if (user) {
+      const db = firebase.firestore();
+      // Check if already in ownedBooks
+      if (!state.user.ownedBooks.includes(value)) {
+        commit("ADD_OWNED_BOOK", value); // Optimistic update
+        db.collection("users").doc(user.uid).update({
+          ownedBooks: firebase.firestore.FieldValue.arrayUnion(value)
+        }, { merge: true }).catch(err => {
+          // Create doc if it doesn't exist (though it should from signup)
+          if (err.code === 'not-found') {
+            db.collection("users").doc(user.uid).set({
+              ownedBooks: [value],
+              books: state.user.readBooks
+            }, { merge: true });
+          }
+        });
+      }
+    } else {
+      router.push({ name: "SignUp" });
+    }
+  },
+  removeFromCollection({ state, commit }, value) {
+    const user = firebase.auth().currentUser;
+    if (user) {
+      const db = firebase.firestore();
+      const index = state.user.ownedBooks.indexOf(value);
+      if (index > -1) {
+        commit("REMOVE_OWNED_BOOK", index); // Optimistic update
+        db.collection("users").doc(user.uid).update({
+          ownedBooks: firebase.firestore.FieldValue.arrayRemove(value)
+        });
+      }
     }
   },
   saveRating({ state }, { slug, rating }) {
@@ -136,7 +183,7 @@ export const actions = {
       .createUserWithEmailAndPassword(value.email, value.password)
       .then(user => {
         const db = firebase.firestore()
-        db.collection("users").doc(user.user.uid).set({ books: ([]) });
+        db.collection("users").doc(user.user.uid).set({ books: [], ownedBooks: [] });
         commit("ADD_USER", user.user.uid);
         router.push({ name: "Home" });
       })
@@ -194,9 +241,9 @@ export const actions = {
         if (!state.unsubscribeAuthInfo) {
           const unsubscribe = userRef.onSnapshot((doc) => {
             if (doc.exists) {
-              var books = doc.data();
-              var readBooks = books.books;
-              commit("UPDATE_BOOKS", readBooks);
+              var data = doc.data();
+              commit("UPDATE_BOOKS", data.books || []);
+              commit("UPDATE_OWNED_BOOKS", data.ownedBooks || []);
             }
           }, (error) => {
             console.log("Error getting document:", error);
