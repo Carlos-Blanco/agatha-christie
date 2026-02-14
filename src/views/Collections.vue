@@ -22,17 +22,6 @@
           <h3 class="book-title">{{ novel.title }}</h3>
           
           <div class="actions">
-            <!-- Buy Button: Vintage Tag Style -->
-            <a :href="novel.link" target="_blank" class="btn-action btn-buy" title="Comprar libro">
-              <span class="icon-tag">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
-                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
-                </svg>
-              </span>
-              <span class="label">Comprar</span>
-            </a>
-            
             <!-- Collection Toggle: Feather Pen / Stamp Style -->
             <button 
               class="btn-action btn-collection" 
@@ -55,6 +44,17 @@
               </span>
               <span class="label">{{ isOwned(novel) ? 'En colección' : 'Añadir' }}</span>
             </button>
+
+            <!-- Buy Button: Vintage Tag Style -->
+            <a :href="novel.link" target="_blank" class="btn-action btn-buy" title="Comprar libro">
+              <span class="icon-tag">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+              </span>
+              <span class="label">Comprar</span>
+            </a>
           </div>
         </div>
       </div>
