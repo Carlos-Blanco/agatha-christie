@@ -1,15 +1,35 @@
 <template>
   <div class="profile">
-    <router-link :to="{ name: 'Home'}" class="btn--back">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polyline points="15 18 9 12 15 6"></polyline>
-      </svg>
-      Atrás
-    </router-link>
-    
     <!-- Header -->
-    <div class="profile-header">
-      <h2>Mi Perfil</h2>
+    <div class="header">
+      <router-link :to="{ name: 'Home'}" class="btn--back">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        <span>{{ $t('nav.back') }}</span>
+      </router-link>
+
+      <div class="profile-title">
+        <h2>{{ $t('profile.title') }}</h2>
+      </div>
+      
+      <div class="language-selector">
+        <button 
+          @click="changeLanguage('es')" 
+          :class="{ active: currentLang === 'es' }"
+          aria-label="Español"
+        >
+          ES
+        </button>
+        <span class="divider">|</span>
+        <button 
+          @click="changeLanguage('en')" 
+          :class="{ active: currentLang === 'en' }"
+          aria-label="English"
+        >
+          EN
+        </button>
+      </div>
     </div>
     
     <!-- User Info Card -->
@@ -36,7 +56,10 @@
     
     <!-- Reading Progress Circle -->
     <div class="progress-section">
-      <h3>Progreso de Lectura</h3>
+      <div class="progress-info">
+        <h3>{{ $t('profile.reading_progress') }}</h3>
+        <p class="stats">{{ readCount }} / {{ totalBooks }} {{ $t('profile.books_read') }}</p>
+      </div>
       <div class="progress-container">
         <ve-progress
           :progress="progress"
@@ -46,16 +69,16 @@
           empty-thickness="10%"
           legendClass="legend-custom-style">
         </ve-progress>
-        <p class="progress-text">{{ readBooks }} of {{ totalBooks }} books</p>
+        <p class="progress-text">{{ $t('profile.books_count', { read: readCount, total: totalBooks }) }}</p>
       </div>
     </div>
     
     <!-- Recently Read -->
     <div class="recently-read" v-if="recentBooks.length > 0">
       <div class="section-header">
-        <h3>Leídos Recientemente</h3>
+        <h3>{{ $t('profile.recently_read') }}</h3>
         <router-link :to="{ name: 'ReadingHistory' }" class="view-all">
-          Ver todo
+          {{ $t('profile.view_all') }}
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
@@ -70,13 +93,13 @@
     
     <!-- Action Buttons -->
     <div class="action-buttons">
-      <router-link :to="{ name: 'ReadingHistory' }" class="btn-action">Ver Historial de Lectura</router-link>
-      <button class="btn-action" @click="$router.push({ name: 'Collections' })">Gestionar colección</button>
+      <router-link :to="{ name: 'ReadingHistory' }" class="btn-action">{{ $t('profile.view_history') }}</router-link>
+      <button class="btn-action" @click="$router.push({ name: 'Collections' })">{{ $t('profile.manage_collection') }}</button>
     </div>
     
     <!-- Sign Out -->
     <div class="signout-section">
-      <button @click="logout" class="btn-signout">Cerrar sesión</button>
+      <button @click="signout" class="btn-signout">{{ $t('profile.sign_out') }}</button>
     </div>
     
     <span id="errorMessage" class="error" style="display:none;"></span>
@@ -120,6 +143,13 @@ export default {
     await this.loadUserProfile();
   },
   computed: {
+    ...mapState(["user"]),
+    userinfo() {
+      return this.$store.state.user.user.userinfo;
+    },
+    currentLang() {
+      return this.$store.state.user.user.language;
+    },
     userData() {
       return {
         displayName: this.userDisplayName,
@@ -127,24 +157,27 @@ export default {
         email: this.userEmail
       };
     },
-    readBooks() {
+    readCount() {
       return this.$store.state.user?.user?.readBooks?.length || 0;
     },
     totalBooks() {
       return this.$store.state.books?.novels?.length || 0;
     },
     progress() {
-      return this.totalBooks > 0 ? Math.floor((this.readBooks * 100) / this.totalBooks) : 0;
+      return this.totalBooks > 0 ? Math.floor((this.readCount * 100) / this.totalBooks) : 0;
     },
     ...mapState(["user", "books"])
   },
   methods: {
-    logout() {
+    signout() {
       this.$store.dispatch("logout");
+    },
+    changeLanguage(lang) {
+      this.$store.dispatch("setLanguage", lang);
     },
     async loadUserProfile() {
       try {
-        const uid = this.$store.state.user.user.userinfo;
+        const uid = this.userinfo;
         const userDoc = await firebase.firestore().collection('users').doc(uid).get();
         
         if (userDoc.exists) {
@@ -165,7 +198,7 @@ export default {
     
     async saveProfile({ displayName, photoFile }) {
       try {
-        const uid = this.$store.state.user.user.userinfo;
+        const uid = this.userinfo;
         let photoURL = this.userPhotoURL;
         
         // Upload photo if provided
@@ -203,44 +236,84 @@ export default {
   padding: var(--spacing-xl) var(--spacing-md) var(--spacing-2xl);
   background: var(--color-bg-white);
   
-  .btn--back {
-    position: absolute;
-    top: var(--spacing-xl);
-    left: var(--spacing-lg);
-    color: var(--color-sepia-dark);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    z-index: 10;
-    transition: color 0.2s ease;
-    font-family: var(--font-main);
-    display: flex;
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    gap: 4px;
+    margin-bottom: var(--spacing-xl);
     
-    svg {
-      transition: transform 0.2s ease;
-    }
-    
-    &:hover {
-      color: var(--color-sepia-primary);
+    .btn--back {
+      justify-self: start;
+      color: var(--color-sepia-dark);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.2s ease;
+      font-family: var(--font-main);
+      display: flex;
+      align-items: center;
+      gap: 4px;
       
       svg {
-        transform: translateX(-2px);
+        transition: transform 0.2s ease;
+      }
+      
+      &:hover {
+        color: var(--color-sepia-primary);
+        
+        svg {
+          transform: translateX(-2px);
+        }
+      }
+
+      // Hide text on very small screens if needed
+      @media (max-width: 350px) {
+        span {
+          display: none;
+        }
       }
     }
-  }
-  
-  .profile-header {
-    text-align: center;
-    margin-bottom: var(--spacing-xl);
-    padding-top: var(--spacing-md);
+
+    .profile-title {
+      justify-self: center;
+      text-align: center;
+      
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-text-dark);
+        margin: 0;
+        font-family: 'Playfair Display', serif;
+        white-space: nowrap;
+      }
+    }
     
-    h2 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--color-text-dark);
-      margin: 0;
+    .language-selector {
+      justify-self: end;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      
+      button {
+        background: none;
+        border: none;
+        color: var(--color-text-light);
+        cursor: pointer;
+        padding: 4px;
+        transition: color 0.2s;
+        
+        &.active, &:hover {
+          color: var(--color-sepia-primary);
+          font-weight: 700;
+        }
+      }
+      
+      .divider {
+        color: var(--color-text-light);
+        opacity: 0.5;
+      }
     }
   }
   
@@ -315,11 +388,22 @@ export default {
     text-align: center;
     margin-bottom: var(--spacing-2xl);
     
-    h3 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--color-text-dark);
+    .progress-info {
       margin-bottom: var(--spacing-lg);
+      
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--color-text-dark);
+        margin: 0 0 var(--spacing-xs) 0;
+      }
+      
+      .stats {
+        color: var(--color-text-light);
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0;
+      }
     }
     
     .progress-container {

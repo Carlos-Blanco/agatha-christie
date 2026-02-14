@@ -3,7 +3,7 @@
     :to="{ name: 'BookDetail', params: { slug: novel.slug, id: novel.id } }"
     class="novel"
   >
-    <img :src="novel.image" :alt="novel.title" loading="lazy" />
+    <img :src="novel.image" :alt="displayTitle" loading="lazy" />
   </router-link>
 </template>
 
@@ -12,6 +12,12 @@ export default {
   name: "TrendingBooks",
   props: {
     novel: Object
+  },
+  computed: {
+    displayTitle() {
+      if (!this.novel) return '';
+      return this.$i18n.locale === 'en' && this.novel.title_en ? this.novel.title_en : this.novel.title;
+    }
   }
 };
 </script>

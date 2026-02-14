@@ -18,10 +18,10 @@
           <path d="m21 21-4.35-4.35"></path>
         </svg>
       </div>
-      <input type="text" placeholder="Buscar" v-model="searchTerm" />
+      <input type="text" :placeholder="$t('home.search_placeholder')" v-model="searchTerm" />
     </div>
     <div v-if="!searchTerm">
-      <h2>Los más leídos</h2>
+      <h2>{{ $t('home.most_read') }}</h2>
       <div class="trending-books">
         <TrendingBooks
           v-for="novel in books.trendingNovels"
@@ -30,7 +30,7 @@
         />
       </div>
     </div>
-    <h2>Novelas de Agatha Christie</h2>
+    <h2>{{ $t('home.all_novels') }}</h2>
     <BookList v-for="novel in filterByTerm" :key="novel.id" :novel="novel" />
   </div>
 </template>

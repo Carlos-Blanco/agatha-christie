@@ -6,17 +6,17 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
-        Atrás
+        {{ $t('nav.back') }}
       </router-link>
       <div class="header-actions">
-        <a :href="novel.link" target="_blank" class="btn-action-icon" title="Comprar">
+        <a :href="novel.link" target="_blank" class="btn-action-icon" :title="$t('collections.buy')">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
             <path d="M3 6h18"></path>
             <path d="M16 10a4 4 0 0 1-8 0"></path>
           </svg>
         </a>
-        <button class="btn-action-icon" :class="{ 'is-active': activeBook }" :key="'btn-' + activeBook" @click="addBook" title="Marcar como leído">
+        <button class="btn-action-icon" :class="{ 'is-active': activeBook }" :key="'btn-' + activeBook" @click="addBook" :title="$t('book_detail.mark_as_read')">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
@@ -34,7 +34,7 @@
     
     <!-- Book Cover Hero -->
     <div class="cover-hero">
-      <img :src="novel.image" :alt="novel.title" />
+      <img :src="novel.image" :alt="displayTitle" />
     </div>
     
     <!-- Book Info Card -->
@@ -61,7 +61,7 @@
       </div>
       
       <!-- Title & Author -->
-      <h1 class="book-title">{{ novel.title }}</h1>
+      <h1 class="book-title">{{ displayTitle }}</h1>
       <p class="book-author">Agatha Christie</p>
       
 
@@ -77,7 +77,7 @@
               <line x1="3" y1="10" x2="21" y2="10"></line>
             </svg>
           </div>
-          <div class="meta-label">Publicado</div>
+          <div class="meta-label">{{ $t('book_detail.published') }}</div>
           <div class="meta-value">{{ novel.published }}</div>
         </div>
       </div>
@@ -85,8 +85,8 @@
       
       <!-- Synopsis -->
       <div class="synopsis">
-        <h3>Sinopsis</h3>
-        <p>{{ novel.description }}</p>
+        <h3>{{ $t('book_detail.synopsis') }}</h3>
+        <p>{{ displayDescription }}</p>
       </div>
       
       <!-- Tags -->
@@ -247,6 +247,14 @@ export default {
       } else {
         return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`;
       }
+    },
+    displayTitle() {
+      if (!this.novel) return '';
+      return this.$i18n.locale === 'en' && this.novel.title_en ? this.novel.title_en : this.novel.title;
+    },
+    displayDescription() {
+      if (!this.novel) return '';
+      return this.$i18n.locale === 'en' && this.novel.description_en ? this.novel.description_en : this.novel.description;
     }
   },
 };

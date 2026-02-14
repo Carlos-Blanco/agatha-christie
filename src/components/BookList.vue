@@ -2,7 +2,7 @@
   <router-link :to="{ name: 'BookDetail', params: { slug: novel.slug, id: novel.id } }" class="book-card-link">
     <div class="novel-card">
       <div class="cover-wrapper">
-        <img :src="novel.image" :alt="novel.title" loading="lazy" />
+        <img :src="novel.image" :alt="displayTitle" loading="lazy" />
         <div class="badge" :class="wasRead ? 'read' : 'to-read'">
           <span class="badge-icon">
             <svg v-if="wasRead" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
@@ -18,7 +18,7 @@
       </div>
       
       <div class="content-wrapper">
-        <h3 class="novel-title">{{ novel.title }}</h3>
+        <h3 class="novel-title">{{ displayTitle }}</h3>
         <p class="novel-subtitle">{{ novel.published }}</p>
         
         <div class="rating-row">
@@ -34,7 +34,7 @@
           <span class="rating-value">{{ displayRating > 0 ? displayRating.toFixed(1) : '0.0' }}</span>
         </div>
         
-        <p class="novel-summary">{{ novel.description }}</p>
+        <p class="novel-summary">{{ displayDescription }}</p>
       </div>
     </div>
   </router-link>
@@ -98,9 +98,20 @@ export default {
     },
     displayRating() {
       // Priority: 1. Locally fetched user rating, 2. Global rate from data, 3. Default 0
-      return Number(this.userRating) || Number(this.novel.rate) || 0;
+      if (this.userRating !== null) {
+        return this.userRating;
+      }
+      return this.novel.rating || 0;
+    },
+    displayTitle() {
+      if (!this.novel) return '';
+      return this.$i18n.locale === 'en' && this.novel.title_en ? this.novel.title_en : this.novel.title;
+    },
+    displayDescription() {
+      if (!this.novel) return '';
+      return this.$i18n.locale === 'en' && this.novel.description_en ? this.novel.description_en : this.novel.description;
     }
-  }
+  },
 };
 </script>
 

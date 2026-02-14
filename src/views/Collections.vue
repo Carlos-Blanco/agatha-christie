@@ -4,22 +4,22 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
-      Atrás
+      {{ $t('collections.back') }}
     </router-link>
     
     <div class="header">
-      <h2>Gestionar colección</h2>
-      <p class="subtitle">Ordenado por fecha de publicación</p>
+      <h2>{{ $t('collections.title') }}</h2>
+      <p class="subtitle">{{ $t('collections.subtitle') }}</p>
     </div>
     
     <div class="books-list">
       <div v-for="novel in sortedNovels" :key="novel.slug" class="book-item">
         <div class="book-cover">
-          <img :src="novel.image" :alt="novel.title" loading="lazy" />
+          <img :src="novel.image" :alt="getDisplayTitle(novel)" loading="lazy" />
         </div>
         
         <div class="book-details">
-          <h3 class="book-title">{{ novel.title }}</h3>
+          <h3 class="book-title">{{ getDisplayTitle(novel) }}</h3>
           
           <div class="actions">
             <!-- Collection Toggle: Feather Pen / Stamp Style -->
@@ -27,7 +27,7 @@
               class="btn-action btn-collection" 
               :class="{ 'is-owned': isOwned(novel) }" 
               @click="toggleCollection(novel)"
-              :title="isOwned(novel) ? 'En tu colección' : 'Añadir a colección'"
+              :title="isOwned(novel) ? $t('collections.in_collection') : $t('collections.add')"
             >
               <span class="icon-feather">
                 <!-- Feather Pen Icon -->
@@ -42,18 +42,18 @@
                   <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </span>
-              <span class="label">{{ isOwned(novel) ? 'En colección' : 'Añadir' }}</span>
+              <span class="label">{{ isOwned(novel) ? $t('collections.in_collection') : $t('collections.add') }}</span>
             </button>
 
             <!-- Buy Button: Vintage Tag Style -->
-            <a :href="novel.link" target="_blank" class="btn-action btn-buy" title="Comprar libro">
+            <a :href="novel.link" target="_blank" class="btn-action btn-buy" :title="$t('collections.buy')">
               <span class="icon-tag">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
                   <line x1="7" y1="7" x2="7.01" y2="7"></line>
                 </svg>
               </span>
-              <span class="label">Comprar</span>
+              <span class="label">{{ $t('collections.buy') }}</span>
             </a>
           </div>
         </div>
@@ -109,6 +109,10 @@ export default {
       } else {
         this.$store.dispatch("addToCollection", novel.slug);
       }
+    },
+    getDisplayTitle(novel) {
+      if (!novel) return '';
+      return this.$i18n.locale === 'en' && novel.title_en ? novel.title_en : novel.title;
     }
   }
 };

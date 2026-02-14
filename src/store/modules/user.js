@@ -9,10 +9,21 @@ export const state = {
     userinfo: "",
     readBooks: [],
     ownedBooks: [],
+    language: 'es',
     authError: null
   },
   unsubscribeAuthInfo: null // Store unsubscribe function
 };
+
+// Initialize language from localStorage
+const storedLang = localStorage.getItem('language');
+if (storedLang) {
+  state.user.language = storedLang;
+  const i18n = require('@/i18n').default;
+  if (i18n && i18n.global) {
+    i18n.global.locale = storedLang;
+  }
+}
 
 export const mutations = {
   ADD_USER(state, value) {
@@ -29,6 +40,9 @@ export const mutations = {
   },
   REMOVE_OWNED_BOOK(state, index) {
     state.user.ownedBooks.splice(index, 1);
+  },
+  SET_LANGUAGE(state, lang) {
+    state.user.language = lang;
   },
   ADD_BOOK(state, value) {
     state.user.readBooks.push(value);
@@ -115,6 +129,21 @@ export const actions = {
           ownedBooks: firebase.firestore.FieldValue.arrayRemove(value)
         });
       }
+    }
+  },
+  setLanguage({ commit }, lang) {
+    commit("SET_LANGUAGE", lang);
+    localStorage.setItem('language', lang);
+    // We also need to update the i18n instance, but we can't easily import it here 
+    // due to circular dependency if i18n imports store. 
+    // Usually we watch the state in App.vue or just modify i18n directly from the component dispatching this.
+    // OR we can import i18n here if it doesn't depend on store.
+
+    // Better: Update i18n locale in the action if possible, OR let the component handle the i18n.locale change.
+    // Let's import i18n here dynamically or just statically if possible.
+    const i18n = require('@/i18n').default;
+    if (i18n && i18n.global) {
+      i18n.global.locale = lang;
     }
   },
   saveRating({ state }, { slug, rating }) {

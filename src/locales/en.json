@@ -1,0 +1,61 @@
+{
+    "nav": {
+        "home": "Home",
+        "profile": "Profile",
+        "back": "Back"
+    },
+    "common": {
+        "author": "Agatha Christie"
+    },
+    "home": {
+        "search_placeholder": "Search novel...",
+        "most_read": "Most Read",
+        "all_novels": "All Agatha Christie Novels"
+    },
+    "profile": {
+        "title": "User Profile",
+        "reading_progress": "Reading Progress",
+        "books_read": "books read",
+        "view_history": "View Reading History",
+        "manage_collection": "Manage Collection",
+        "sign_out": "Sign Out",
+        "language": "Language",
+        "recently_read": "Recently Read",
+        "view_all": "View All",
+        "books_count": "{read} of {total} books"
+    },
+    "collections": {
+        "title": "Manage Collection",
+        "subtitle": "Sorted by publication date",
+        "back": "Back",
+        "add": "Add",
+        "in_collection": "In Collection",
+        "buy": "Buy"
+    },
+    "book_detail": {
+        "published": "Published in",
+        "rating": "Rating",
+        "mark_as_read": "Mark as Read",
+        "read": "Read",
+        "synopsis": "Synopsis"
+    },
+    "history": {
+        "title": "My Reading History",
+        "subtitle": "Books you have marked as read",
+        "empty": "You haven't read any books yet",
+        "start_exploring": "Start exploring our collection",
+        "explore_books": "Explore Books",
+        "books_read_count": "{count} book read | {count} books read",
+        "back": "Back to Profile"
+    },
+    "auth": {
+        "login_title": "Login",
+        "email": "Email",
+        "password": "Password",
+        "login_button": "Login",
+        "signup_link": "Don't have an account? Sign up",
+        "signup_title": "Sign Up",
+        "signup_button": "Sign Up",
+        "login_link": "Already have an account? Login"
+    }
+}

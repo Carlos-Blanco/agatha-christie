@@ -4,13 +4,13 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
-      Atrás
+      {{ $t('nav.back') }}
     </router-link>
     
     <!-- Header -->
     <div class="history-header">
-      <h1>Mi Historial de Lectura</h1>
-      <p class="book-count">{{ readBooksCount }} {{ readBooksCount === 1 ? 'libro leído' : 'libros leídos' }}</p>
+      <h1>{{ $t('history.title') }}</h1>
+      <p class="book-count">{{ $tc('history.books_read_count', readBooksCount, { count: readBooksCount }) }}</p>
     </div>
     
     <!-- Books List -->
@@ -28,10 +28,10 @@
         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
         <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
       </svg>
-      <h3>Aún no has leído ningún libro</h3>
-      <p>Comienza a explorar nuestra colección</p>
+      <h3>{{ $t('history.empty') }}</h3>
+      <p>{{ $t('history.start_exploring') }}</p>
       <router-link :to="{ name: 'Home' }" class="btn-explore">
-        Explorar Libros
+        {{ $t('history.explore_books') }}
       </router-link>
     </div>
   </div>

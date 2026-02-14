@@ -1,0 +1,61 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "profile": "Perfil",
+        "back": "Atrás"
+    },
+    "common": {
+        "author": "Agatha Christie"
+    },
+    "home": {
+        "search_placeholder": "Buscar novela...",
+        "most_read": "Más leídos",
+        "all_novels": "Todas las novelas de Agatha Christie"
+    },
+    "profile": {
+        "title": "Perfil de Usuario",
+        "reading_progress": "Progreso de Lectura",
+        "books_read": "libros leídos",
+        "view_history": "Ver Historial de Lectura",
+        "manage_collection": "Gestionar colección",
+        "sign_out": "Cerrar sesión",
+        "language": "Idioma",
+        "recently_read": "Leídos Recientemente",
+        "view_all": "Ver todo",
+        "books_count": "{read} de {total} libros"
+    },
+    "collections": {
+        "title": "Gestionar colección",
+        "subtitle": "Ordenado por fecha de publicación",
+        "back": "Atrás",
+        "add": "Añadir",
+        "in_collection": "En colección",
+        "buy": "Comprar"
+    },
+    "book_detail": {
+        "published": "Publicado en",
+        "rating": "Valoración",
+        "mark_as_read": "Marcar como leído",
+        "read": "Leído",
+        "synopsis": "Sinopsis"
+    },
+    "history": {
+        "title": "Mi Historial de Lectura",
+        "subtitle": "Libros que has marcado como leídos",
+        "empty": "Aún no has leído ningún libro",
+        "start_exploring": "Comienza a explorar nuestra colección",
+        "explore_books": "Explorar Libros",
+        "books_read_count": "{count} libro leído | {count} libros leídos",
+        "back": "Volver al Perfil"
+    },
+    "auth": {
+        "login_title": "Iniciar Sesión",
+        "email": "Correo electrónico",
+        "password": "Contraseña",
+        "login_button": "Entrar",
+        "signup_link": "¿No tienes cuenta? Regístrate",
+        "signup_title": "Registrarse",
+        "signup_button": "Registrarse",
+        "login_link": "¿Ya tienes cuenta? Inicia sesión"
+    }
+}
