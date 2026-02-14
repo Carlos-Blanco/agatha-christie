@@ -1,4 +1,19 @@
 {
-  "indexes": [],
+  "indexes": [
+    {
+      "collectionGroup": "rating",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ratingCount",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "lastRatedAt",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
   "fieldOverrides": []
 }

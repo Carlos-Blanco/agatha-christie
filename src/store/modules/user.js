@@ -74,22 +74,59 @@ export const actions = {
     const user = firebase.auth().currentUser;
     if (user) {
       const db = firebase.firestore();
-      return db.collection("rating")
-        .doc(slug)
-        .collection("users")
-        .doc(user.uid)
-        .set({ bookrate: rating });
+
+      const ratingRef = db.collection("rating").doc(slug);
+      const userRatingRef = ratingRef.collection("users").doc(user.uid);
+
+      // We should check if the user already rated to avoid double counting if we were just incrementing blind
+      // But for now, let's assume we are just setting it. 
+      // Ideally we would run a transaction:
+      // 1. Check if userRatingRef exists.
+      // 2. If not, increment ratingCount.
+      // 3. Set userRatingRef.
+      // 4. Update parent lastRatedAt.
+
+      return db.runTransaction(async (transaction) => {
+        const userDoc = await transaction.get(userRatingRef);
+
+        if (!userDoc.exists) {
+          // New rating, increment count
+          transaction.update(ratingRef, {
+            ratingCount: firebase.firestore.FieldValue.increment(1),
+            lastRatedAt: firebase.firestore.FieldValue.serverTimestamp()
+          });
+        } else {
+          // Just updating timestamp if re-rating
+          transaction.update(ratingRef, {
+            lastRatedAt: firebase.firestore.FieldValue.serverTimestamp()
+          });
+        }
+
+        transaction.set(userRatingRef, {
+          bookrate: rating,
+          ratedAt: firebase.firestore.FieldValue.serverTimestamp()
+        });
+      });
     }
   },
   removeRating({ state }, slug) {
     const user = firebase.auth().currentUser;
     if (user) {
       const db = firebase.firestore();
-      return db.collection("rating")
-        .doc(slug)
-        .collection("users")
-        .doc(user.uid)
-        .delete();
+
+      const ratingRef = db.collection("rating").doc(slug);
+      const userRatingRef = ratingRef.collection("users").doc(user.uid);
+
+      return db.runTransaction(async (transaction) => {
+        const userDoc = await transaction.get(userRatingRef);
+
+        if (userDoc.exists) {
+          transaction.delete(userRatingRef);
+          transaction.update(ratingRef, {
+            ratingCount: firebase.firestore.FieldValue.increment(-1)
+          });
+        }
+      });
     }
   },
   signup({ commit }, value) {
