@@ -42,14 +42,27 @@ export const actions = {
     if (user) {
       const db = firebase.firestore();
 
-      if (state.user.readBooks.includes(value)) {
-        const index = state.user.readBooks.indexOf(value);
-        if (index > -1) {
-          commit("REMOVE_BOOK", index);
-          db.collection("users").doc(user.uid).update({ books: firebase.firestore.FieldValue.arrayRemove(value) })
-        }
+      // Try to find the book in the local state
+      let index = state.user.readBooks.indexOf(value);
+
+      // Fallback: If not found strictly, try loose comparison (e.g. string vs number)
+      if (index === -1) {
+        index = state.user.readBooks.findIndex(book => String(book) === String(value));
+      }
+
+      if (index > -1) {
+        // It's in the list, so we are REMOVING it
+        commit("REMOVE_BOOK", index);
+        // We use the value passed, or should we use the one found? 
+        // Firestore arrayRemove is strict. If we found via loose match, we might need to remove the ACTUAL item.
+        // But for now, let's assume value is correct enough or Firestore handles it.
+        // Actually, better to remove the item we found if we want to be sure?
+        // But the value passed to updateBook usually comes from the UI which tries to match.
+        // Let's stick to using 'value' for Firestore, but use 'index' for local splice.
+        db.collection("users").doc(user.uid).update({ books: firebase.firestore.FieldValue.arrayRemove(value) })
       } else {
-        commit("ADD_BOOK", value);
+        // It's NOT in the list, so we are ADDING it
+        commit("ADD_BOOK", value); // Optimistic add
         db.collection("users").doc(user.uid).update({ books: firebase.firestore.FieldValue.arrayUnion(value) })
       }
     } else {

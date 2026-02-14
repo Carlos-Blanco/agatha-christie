@@ -12,7 +12,7 @@
             <p class="rating-label">¿Cómo valorarías este libro?</p>
             <StarRating 
               v-model:rating="userRating" 
-              :increment="1" 
+              :increment="0.5" 
               :max-rating="5" 
               :show-rating="false"
               :star-size="30"

@@ -16,7 +16,7 @@
             <path d="M16 10a4 4 0 0 1-8 0"></path>
           </svg>
         </a>
-        <button class="btn-action-icon" :class="{ 'is-active': activeBook }" @click="addBook" title="Marcar como leído">
+        <button class="btn-action-icon" :class="{ 'is-active': activeBook }" :key="'btn-' + activeBook" @click="addBook" title="Marcar como leído">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
@@ -176,8 +176,16 @@ export default {
         this.showRatingModal = true;
       } else {
         // If already read, we just toggle it off (standard behavior)
-        const identifierInList = isAlreadyRead;
-        this.$store.dispatch("updateBook", identifierInList || this.slug);
+        // Ensure we pass the EXACT value that is in the array to ensure strict equality works in the store
+        // If isAlreadyRead is undefined (shouldn't be here), fallback to slug/id logic but carefully
+        let identifierToRemove = isAlreadyRead; 
+        
+        if (identifierToRemove === undefined) {
+           // Fallback if logic failed to find it despite entering else block
+           identifierToRemove = this.slug;
+        }
+
+        this.$store.dispatch("updateBook", identifierToRemove);
         
         // Also remove the rating
         this.$store.dispatch("removeRating", this.novel.slug)
@@ -216,10 +224,11 @@ export default {
       if (!this.novel) return false;
       
       // Check if either the slug or the ID is in the readBooks list
-      return readBooks.some(item => 
+      const isActive = readBooks.some(item => 
         String(item) === String(this.novel.slug) || 
         String(item) === String(this.novel.id)
       );
+      return isActive;
     },
     protagonistClass() {
       if (!this.novel?.protagonist) return '';
