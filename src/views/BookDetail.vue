@@ -18,18 +18,19 @@
         </a>
         <button class="btn-action-icon" :class="{ 'is-active': activeBook }" @click="addBook" title="Marcar como leído">
           <svg width="20" height="20" viewBox="0 0 24 24" :fill="activeBook ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="2">
-            <polyline points="20 6 9 17 4 12"></polyline>
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
           </svg>
         </button>
       </div>
     </div>
 
-    <!-- Rating Modal -->
-    <rating-modal 
+    <!-- Finishing Modal -->
+    <FinishingModal 
       :show="showRatingModal" 
       @close="showRatingModal = false" 
       @save="handleRatingSave">
-    </rating-modal>
+    </FinishingModal>
     
     <!-- Book Cover Hero -->
     <div class="cover-hero">
@@ -103,14 +104,14 @@
 import BookService from "@/services/BookService.js";
 import firebase from "firebase";
 import StarRating from "vue-star-rating";
-import RatingModal from "@/components/RatingModal.vue";
+import RatingModal from "../components/RatingModal.vue";
 
 export default {
   name: "BookDetail",
   props: ["slug"],
   components: {
     StarRating,
-    RatingModal
+    FinishingModal: RatingModal
   },
   data() {
     return {
@@ -229,9 +230,6 @@ export default {
       }
     }
   },
-  components: {
-    StarRating,
-  },
 };
 </script>
 
@@ -301,9 +299,9 @@ img {
       width: 2.5rem;
       height: 2.5rem;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.8);
-      color: var(--color-sepia-dark);
-      border: 1px solid var(--color-bg-deep-beige);
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--color-sepia-primary);
+      border: 1px solid var(--color-sepia-primary);
       cursor: pointer;
       transition: all 0.2s ease;
       box-shadow: var(--shadow-sm);
@@ -316,7 +314,7 @@ img {
         box-shadow: var(--shadow-md);
       }
 
-      &.active {
+      &.is-active {
         background: var(--color-sepia-primary);
         color: white;
         border-color: var(--color-sepia-primary);
