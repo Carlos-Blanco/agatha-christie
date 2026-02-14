@@ -10,23 +10,26 @@
       </router-link>
       <div class="header-actions">
         <a :href="novel.link" target="_blank" class="btn-action-icon" title="Comprar">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+            <path d="M3 6h18"></path>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
           </svg>
         </a>
-        <button @click="addBook" class="btn-action-icon" :class="{ active: activeBook }" title="Marcar como leído">
-          <svg v-if="activeBook" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <button class="btn-action-icon" :class="{ 'is-active': activeBook }" @click="addBook" title="Marcar como leído">
+          <svg width="20" height="20" viewBox="0 0 24 24" :fill="activeBook ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="2">
             <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
-          <svg v-else width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-            <polyline points="22 4 12 14.01 9 11.01"></polyline>
           </svg>
         </button>
       </div>
     </div>
+
+    <!-- Rating Modal -->
+    <rating-modal 
+      :show="showRatingModal" 
+      @close="showRatingModal = false" 
+      @save="handleRatingSave">
+    </rating-modal>
     
     <!-- Book Cover Hero -->
     <div class="cover-hero">
@@ -40,14 +43,14 @@
         <div class="rating-wrapper">
           <star-rating 
             v-model:rating="rating" 
-            v-bind:increment="0.5" 
+            v-bind:increment="0.1" 
             v-bind:max-rating="5" 
             v-bind:show-rating="false"
             v-bind:star-size="18" 
-            active-color="#f8a427" 
-            @click="rateBook">
+            v-bind:read-only="true"
+            active-color="#f8a427">
           </star-rating>
-          <span class="rating-count">{{ rating || 0 }}</span>
+          <span class="rating-count">{{ rating || 0.0 }} <span v-if="totalRatings > 0" class="total-ratings">({{ totalRatings }})</span></span>
         </div>
         
         <div v-if="novel.protagonist" class="protagonist-badge" :class="protagonistClass">
@@ -100,14 +103,21 @@
 import BookService from "@/services/BookService.js";
 import firebase from "firebase";
 import StarRating from "vue-star-rating";
+import RatingModal from "@/components/RatingModal.vue";
 
 export default {
   name: "BookDetail",
   props: ["slug"],
+  components: {
+    StarRating,
+    RatingModal
+  },
   data() {
     return {
       novel: null,
-      rating: null,
+      rating: 0,
+      totalRatings: 0,
+      showRatingModal: false
     };
   },
   async created() {
@@ -116,12 +126,7 @@ export default {
 
       if (novel) {
         this.novel = novel;
-        
-        // Setup a watcher or check for user to fetch rating
-        // Fetch immediately if user exists
-        if (this.$store.state.user.user.userinfo) {
-           this.fetchRating();
-        }
+        this.fetchRating();
       } else {
         this.$router.push({ name: '404' });
       }
@@ -129,52 +134,69 @@ export default {
        this.$router.push({ name: '404' });
     }
   },
-  watch: {
-    '$store.state.user.user.userinfo': function(newVal) {
-        if (newVal && this.novel) {
-            this.fetchRating();
-        }
-    }
-  },
+  // No longer needed: we fetch average rating for everyone, not per user
   methods: {
-    fetchRating() {
-         const novelSlug = this.novel.slug;
-         const userUID = this.$store.state.user.user.userinfo;
-         
-         if (!userUID || !novelSlug) return;
+    async fetchRating() {
+         const novelSlug = this.novel?.slug;
+         if (!novelSlug) return;
 
          const db = firebase.firestore();
-         var docRef = db.collection("rating").doc(novelSlug).collection("users").doc(userUID);
-        
-         docRef.get().then((doc) => {
-          if (doc.exists) {
-            var bookrate = doc.data();
-            this.rating = bookrate.bookrate;
-          } else {
-            this.rating = null; 
-          }
-        }).catch(ratingError => {
-          console.error("Error fetching rating:", ratingError);
-          this.rating = null;
-        });
+         try {
+           const querySnapshot = await db.collection("rating").doc(novelSlug).collection("users").get();
+           if (!querySnapshot.empty) {
+             let sum = 0;
+             let count = 0;
+             querySnapshot.forEach((doc) => {
+               const data = doc.data();
+               if (data.bookrate !== undefined) {
+                 sum += data.bookrate;
+                 count++;
+               }
+             });
+             this.rating = count > 0 ? parseFloat((sum / count).toFixed(1)) : 0;
+             this.totalRatings = count;
+           } else {
+             this.rating = 0;
+             this.totalRatings = 0;
+           }
+         } catch (error) {
+           console.error("Error fetching ratings:", error);
+         }
     },
     addBook() {
       const readBooks = this.$store.state.user?.user?.readBooks || [];
-      const identifierInList = readBooks.find(item => 
+      const isAlreadyRead = readBooks.find(item => 
         String(item) === String(this.novel.slug) || 
         String(item) === String(this.novel.id)
       );
       
-      // Use the identifier found in the list if it exists, otherwise use slug
-      this.$store.dispatch("updateBook", identifierInList || this.slug);
+      if (!isAlreadyRead) {
+        // Opening the modal to get a rating before marking as read
+        this.showRatingModal = true;
+      } else {
+        // If already read, we just toggle it off (standard behavior)
+        const identifierInList = isAlreadyRead;
+        this.$store.dispatch("updateBook", identifierInList || this.slug);
+      }
     },
+    async handleRatingSave(rating) {
+      this.showRatingModal = false;
+      
+      // Save the rating to Firestore
+      await this.$store.dispatch("saveRating", { 
+        slug: this.novel.slug, 
+        rating 
+      });
+      
+      // Mark as read
+      this.$store.dispatch("updateBook", this.slug);
+      
+      // Refresh the average ratings display
+      this.fetchRating();
+    },
+    // No longer editable from this view
     rateBook() {
-      const db = firebase.firestore();
-      db.collection("rating")
-        .doc(this.slug)
-        .collection("users")
-        .doc(this.$store.state.user.user.userinfo)
-        .set({ bookrate: this.rating });
+      // Disabled
     },
   },
   computed: {
@@ -341,6 +363,13 @@ img {
           font-weight: 700;
           font-size: 0.95rem;
           margin-left: 2px;
+          
+          .total-ratings {
+            font-size: 0.8rem;
+            font-weight: 500;
+            opacity: 0.7;
+            margin-left: 4px;
+          }
         }
       }
 
@@ -387,8 +416,9 @@ img {
     }
     
     .book-author {
-      color: var(--color-text-light);
+      color: #8b6f47;
       font-size: 1rem;
+      font-style: italic;
       margin: 0 0 var(--spacing-lg) 0;
     }
     

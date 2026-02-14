@@ -57,6 +57,17 @@ export const actions = {
       router.push({ name: "SignUp" })
     }
   },
+  saveRating({ state }, { slug, rating }) {
+    const user = firebase.auth().currentUser;
+    if (user) {
+      const db = firebase.firestore();
+      return db.collection("rating")
+        .doc(slug)
+        .collection("users")
+        .doc(user.uid)
+        .set({ bookrate: rating });
+    }
+  },
   signup({ commit }, value) {
     commit("CLEAR_AUTH_ERROR");
     firebase
