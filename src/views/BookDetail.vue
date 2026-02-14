@@ -35,18 +35,25 @@
     
     <!-- Book Info Card -->
     <div class="info-card">
-      <!-- Rating -->
-      <div class="rating-wrapper">
-        <star-rating 
-          v-model:rating="rating" 
-          v-bind:increment="0.5" 
-          v-bind:max-rating="5" 
-          v-bind:show-rating="false"
-          v-bind:star-size="20" 
-          active-color="#f8a427" 
-          @click="rateBook">
-        </star-rating>
-        <span class="rating-count">{{ rating || 0 }}</span>
+      <!-- Rating & Protagonist Row -->
+      <div class="rating-row">
+        <div class="rating-wrapper">
+          <star-rating 
+            v-model:rating="rating" 
+            v-bind:increment="0.5" 
+            v-bind:max-rating="5" 
+            v-bind:show-rating="false"
+            v-bind:star-size="18" 
+            active-color="#f8a427" 
+            @click="rateBook">
+          </star-rating>
+          <span class="rating-count">{{ rating || 0 }}</span>
+        </div>
+        
+        <div v-if="novel.protagonist" class="protagonist-badge" :class="protagonistClass">
+          <span class="badge-icon" v-html="protagonistIcon"></span>
+          <span class="badge-name">{{ novel.protagonist }}</span>
+        </div>
       </div>
       
       <!-- Title & Author -->
@@ -180,6 +187,24 @@ export default {
         String(item) === String(this.novel.slug) || 
         String(item) === String(this.novel.id)
       );
+    },
+    protagonistClass() {
+      if (!this.novel?.protagonist) return '';
+      return this.novel.protagonist.toLowerCase().replace(/\s+/g, '-').replace('&', 'and');
+    },
+    protagonistIcon() {
+      const p = this.novel?.protagonist;
+      if (!p) return '';
+      
+      if (p.includes('Poirot')) {
+        return `<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M2.5 12c.5-2.5 3-4.5 7.5-4 0 0 .5-3 6.5-1 4.5 2 4.5 5.5 4.5 5.5s-4-.5-8.5-2c0 0-1 4.5-10 1.5z"/></svg>`;
+      } else if (p.includes('Marple')) {
+        return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="3"/><circle cx="17" cy="12" r="3"/><path d="M10 12h4"/></svg>`;
+      } else if (p === 'Standalone') {
+        return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`;
+      } else {
+        return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`;
+      }
     }
   },
   components: {
@@ -295,19 +320,60 @@ img {
   .info-card {
     background: var(--color-bg-deep-beige); // #EDE6D6 - V2 darker beige
     border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
-    padding: var(--spacing-xl);
+    padding: var(--spacing-md);
     
-    // Rating
-    .rating-wrapper {
+    // Rating & Protagonist Row
+    .rating-row {
       display: flex;
       align-items: center;
-      gap: var(--spacing-sm);
-      margin-bottom: var(--spacing-md);
+      justify-content: space-between;
+      margin-bottom: var(--spacing-lg);
+      flex-wrap: wrap;
+      gap: var(--spacing-md);
       
-      .rating-count {
-        color: var(--color-text-light);
-        font-weight: 600;
-        font-size: 0.9rem;
+      .rating-wrapper {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        
+        .rating-count {
+          color: var(--color-text-light);
+          font-weight: 700;
+          font-size: 0.95rem;
+          margin-left: 2px;
+        }
+      }
+
+      .protagonist-badge {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: #F5F1E8; // Very soft sepia
+        padding: 4px 12px;
+        border-radius: var(--border-radius-full);
+        border: 1px solid rgba(184, 149, 106, 0.2);
+        
+        .badge-icon {
+          display: flex;
+          color: var(--color-sepia-primary);
+          
+          svg {
+            display: block;
+          }
+        }
+        
+        .badge-name {
+          font-family: var(--font-main);
+          font-size: 0.8rem;
+          font-weight: 700;
+          color: var(--color-sepia-dark);
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        &.hercule-poirot {
+          border-color: rgba(184, 149, 106, 0.4);
+        }
       }
     }
     
