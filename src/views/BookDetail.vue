@@ -8,6 +8,24 @@
         </svg>
         Atrás
       </router-link>
+      <div class="header-actions">
+        <a :href="novel.link" target="_blank" class="btn-action-icon" title="Comprar">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </a>
+        <button @click="addBook" class="btn-action-icon" :class="{ active: activeBook }" title="Marcar como leído">
+          <svg v-if="activeBook" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          <svg v-else width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+        </button>
+      </div>
     </div>
     
     <!-- Book Cover Hero -->
@@ -35,10 +53,7 @@
       <h1 class="book-title">{{ novel.title }}</h1>
       <p class="book-author">Agatha Christie</p>
       
-      <!-- Buy Button with Price -->
-      <a :href="novel.link" target="_blank" class="btn-buy">
-        Comprar Libro
-      </a>
+
       
       <!-- Metadata Cards -->
       <div class="metadata-grid">
@@ -52,17 +67,7 @@
             </svg>
           </div>
           <div class="meta-label">Publicado</div>
-          <div class="meta-value">1934</div>
-        </div>
-        <div class="meta-card">
-          <div class="meta-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-            </svg>
-          </div>
-          <div class="meta-label">Páginas</div>
-          <div class="meta-value">256 Páginas</div>
+          <div class="meta-value">{{ novel.published }}</div>
         </div>
       </div>
       
@@ -79,13 +84,7 @@
         <span class="tag">Crime Fiction</span>
       </div>
       
-      <!-- Mark as Read Button -->
-      <div class="action-button">
-        <button @click="addBook" :class="{ active: activeBook }">
-          <span v-if="!activeBook">✓</span>
-          {{ activeBook ? "Leído" : "Marcar como leído" }}
-        </button>
-      </div>
+
     </div>
   </div>
 </template>
@@ -216,39 +215,76 @@ img {
     z-index: 10;
   }
   
-  .btn--back {
-    color: var(--color-sepia-dark);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: color 0.2s ease;
-    font-family: var(--font-main);
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    
-    svg {
-      transition: transform 0.2s ease;
-    }
-    
-    &:hover {
-      color: var(--color-sepia-primary);
+    .btn--back {
+      color: var(--color-sepia-dark);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+      font-family: var(--font-main);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: var(--spacing-xs) var(--spacing-sm);
+      border-radius: var(--border-radius-sm);
       
       svg {
-        transform: translateX(-2px);
+        transition: transform 0.2s ease;
+      }
+      
+      &:hover {
+        color: var(--color-sepia-primary);
+        background: rgba(184, 149, 106, 0.1);
+        
+        svg {
+          transform: translateX(-2px);
+        }
       }
     }
-  }
+
+    .header-actions {
+      display: flex;
+      gap: var(--spacing-sm);
+    }
+
+    .btn-action-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.8);
+      color: var(--color-sepia-dark);
+      border: 1px solid var(--color-bg-deep-beige);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+      padding: 0;
+      
+      &:hover {
+        background: var(--color-sepia-primary);
+        color: white;
+        transform: translateY(-1px);
+        box-shadow: var(--shadow-md);
+      }
+
+      &.active {
+        background: var(--color-sepia-primary);
+        color: white;
+        border-color: var(--color-sepia-primary);
+      }
+    }
   
   // Cover Hero Section
   .cover-hero {
-    padding: var(--spacing-2xl) var(--spacing-xl) var(--spacing-xl);
+    padding: 6rem var(--spacing-xl) var(--spacing-xl);
     display: flex;
     justify-content: center;
     
     img {
-      width: 200px;
-      height: 300px;
+      width: 170px;
+      height: 255px;
       object-fit: cover;
       border-radius: var(--border-radius);
       box-shadow: var(--shadow-book);
@@ -290,39 +326,17 @@ img {
       margin: 0 0 var(--spacing-lg) 0;
     }
     
-    // Buy Button with Price
-    .btn-buy {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: var(--spacing-sm);
-      width: 100%;
-      height: 3.5rem;
-      background: var(--color-sepia-primary);
-      color: white;
-      text-decoration: none;
-      border-radius: var(--border-radius);
-      font-weight: 600;
-      font-size: 1rem;
-      transition: all 0.2s ease;
-      margin-bottom: var(--spacing-lg);
-      font-family: var(--font-main);
-      
-      &:hover {
-        background: var(--color-sepia-dark);
-        transform: translateY(-1px);
-        box-shadow: var(--shadow-md);
-      }
-    }
+
     
     // Metadata Grid
     .metadata-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--spacing-md);
+      display: flex;
+      justify-content: center;
       margin-bottom: var(--spacing-xl);
       
       .meta-card {
+        width: 100%;
+        max-width: 200px;
         background: rgba(255, 255, 255, 0.6);
         border-radius: var(--border-radius-sm);
         padding: var(--spacing-md);
@@ -391,47 +405,7 @@ img {
       }
     }
     
-    // Action Button
-    .action-button {
-      button {
-        width: 100%;
-        height: 3.5rem;
-        background: var(--color-sepia-primary);
-        border: none;
-        color: white;
-        border-radius: var(--border-radius);
-        font-size: 1rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        font-family: var(--font-main);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: var(--spacing-sm);
-        
-        span {
-          font-size: 1.2rem;
-        }
-        
-        &:hover {
-          background: var(--color-sepia-dark);
-          transform: translateY(-1px);
-          box-shadow: var(--shadow-md);
-        }
-        
-        &.active {
-          background: var(--color-bg-warm-beige);
-          color: var(--color-sepia-primary);
-          border: 2px solid var(--color-sepia-primary);
-          
-          &:hover {
-            background: var(--color-bg-warm-beige);
-            transform: translateY(0);
-          }
-        }
-      }
-    }
+
   }
 }
 
