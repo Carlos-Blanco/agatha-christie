@@ -17,7 +17,7 @@
           </svg>
         </a>
         <button class="btn-action-icon" :class="{ 'is-active': activeBook }" @click="addBook" title="Marcar como leído">
-          <svg width="20" height="20" viewBox="0 0 24 24" :fill="activeBook ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
           </svg>
@@ -178,6 +178,16 @@ export default {
         // If already read, we just toggle it off (standard behavior)
         const identifierInList = isAlreadyRead;
         this.$store.dispatch("updateBook", identifierInList || this.slug);
+        
+        // Also remove the rating
+        this.$store.dispatch("removeRating", this.novel.slug)
+          .then(() => {
+            this.rating = 0; // Reset local rating if needed
+            this.fetchRating(); // Refresh average
+          })
+          .catch(error => {
+            console.error("Error removing rating:", error);
+          });
       }
     },
     async handleRatingSave(rating) {

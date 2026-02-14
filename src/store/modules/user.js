@@ -68,6 +68,17 @@ export const actions = {
         .set({ bookrate: rating });
     }
   },
+  removeRating({ state }, slug) {
+    const user = firebase.auth().currentUser;
+    if (user) {
+      const db = firebase.firestore();
+      return db.collection("rating")
+        .doc(slug)
+        .collection("users")
+        .doc(user.uid)
+        .delete();
+    }
+  },
   signup({ commit }, value) {
     commit("CLEAR_AUTH_ERROR");
     firebase
