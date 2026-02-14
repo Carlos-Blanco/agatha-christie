@@ -39,6 +39,14 @@
         "read": "Read",
         "synopsis": "Synopsis"
     },
+    "book_list": {
+        "read": "READ",
+        "to_read": "TO READ"
+    },
+    "tags": {
+        "mystery": "Mystery",
+        "crime_fiction": "Crime Fiction"
+    },
     "history": {
         "title": "My Reading History",
         "subtitle": "Books you have marked as read",

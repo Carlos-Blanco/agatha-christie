@@ -39,6 +39,14 @@
         "read": "Leído",
         "synopsis": "Sinopsis"
     },
+    "book_list": {
+        "read": "LEÍDO",
+        "to_read": "POR LEER"
+    },
+    "tags": {
+        "mystery": "Misterio",
+        "crime_fiction": "Novela Negra"
+    },
     "history": {
         "title": "Mi Historial de Lectura",
         "subtitle": "Libros que has marcado como leídos",

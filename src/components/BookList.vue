@@ -13,7 +13,7 @@
               <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
             </svg>
           </span>
-          {{ wasRead ? "LEÍDO" : "POR LEER" }}
+          {{ wasRead ? $t('book_list.read') : $t('book_list.to_read') }}
         </div>
       </div>
       

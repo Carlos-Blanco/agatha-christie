@@ -62,9 +62,7 @@
       
       <!-- Title & Author -->
       <h1 class="book-title">{{ displayTitle }}</h1>
-      <p class="book-author">Agatha Christie</p>
-      
-
+      <p class="book-author">{{ $t('common.author') }}</p>
       
       <!-- Metadata Cards -->
       <div class="metadata-grid">
@@ -82,7 +80,6 @@
         </div>
       </div>
       
-      
       <!-- Synopsis -->
       <div class="synopsis">
         <h3>{{ $t('book_detail.synopsis') }}</h3>
@@ -91,8 +88,8 @@
       
       <!-- Tags -->
       <div class="tags">
-        <span class="tag">Mystery</span>
-        <span class="tag">Crime Fiction</span>
+        <span class="tag">{{ $t('tags.mystery') }}</span>
+        <span class="tag">{{ $t('tags.crime_fiction') }}</span>
       </div>
       
 
