@@ -2,7 +2,7 @@
   <router-link :to="{ name: 'BookDetail', params: { slug: novel.slug, id: novel.id } }" class="book-card-link">
     <div class="novel-card">
       <div class="cover-wrapper">
-        <img :src="novel.image" :alt="displayTitle" loading="lazy" />
+        <img :src="displayImage" :alt="displayTitle" loading="lazy" />
         <div class="badge" :class="wasRead ? 'read' : 'to-read'">
           <span class="badge-icon">
             <svg v-if="wasRead" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
@@ -102,6 +102,10 @@ export default {
         return this.userRating;
       }
       return this.novel.rating || 0;
+    },
+    displayImage() {
+      if (!this.novel) return '';
+      return (this.$i18n.locale === 'en' && this.novel.image_en) ? this.novel.image_en : this.novel.image;
     },
     displayTitle() {
       if (!this.novel) return '';

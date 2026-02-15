@@ -9,8 +9,8 @@
     
     <!-- Header -->
     <div class="history-header">
-      <h1>{{ $t('history.title') }}</h1>
-      <p class="book-count">{{ $tc('history.books_read_count', readBooksCount, { count: readBooksCount }) }}</p>
+      <h2>{{ $t('history.title') }}</h2>
+      <p class="subtitle">{{ $tc('history.books_read_count', readBooksCount, { count: readBooksCount }) }}</p>
     </div>
     
     <!-- Books List -->
@@ -111,16 +111,17 @@ export default {
 .history-header {
   margin-bottom: var(--spacing-xl);
   
-  h1 {
+  h2 {
     color: var(--color-text-dark);
     font-weight: 700;
     font-size: 1.8rem;
-    margin-bottom: var(--spacing-sm);
+    margin: 0 0 4px 0;
+    font-family: 'Playfair Display', serif;
   }
   
-  .book-count {
+  .subtitle {
     color: var(--color-text-light);
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin: 0;
   }
 }

@@ -34,7 +34,7 @@
     
     <!-- Book Cover Hero -->
     <div class="cover-hero">
-      <img :src="novel.image" :alt="displayTitle" />
+      <img :src="displayImage" :alt="displayTitle" />
     </div>
     
     <!-- Book Info Card -->
@@ -236,7 +236,7 @@ export default {
       if (!p) return '';
       
       if (p.includes('Poirot')) {
-        return `<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M2.5 12c.5-2.5 3-4.5 7.5-4 0 0 .5-3 6.5-1 4.5 2 4.5 5.5 4.5 5.5s-4-.5-8.5-2c0 0-1 4.5-10 1.5z"/></svg>`;
+        return `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 14c-2.5 0-3.5-1.5-5.5-1.5S3 15 3 15s1 2.5 3.5 2.5c2 0 3.5-1.5 5.5-1.5s3.5 1.5 5.5 1.5c2.5 0 3.5-2.5 3.5-2.5s-1.5-2.5-3.5-2.5-3 1.5-5.5 1.5z"/></svg>`;
       } else if (p.includes('Marple')) {
         return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="3"/><circle cx="17" cy="12" r="3"/><path d="M10 12h4"/></svg>`;
       } else if (p === 'Standalone') {
@@ -244,6 +244,10 @@ export default {
       } else {
         return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`;
       }
+    },
+    displayImage() {
+      if (!this.novel) return '';
+      return (this.$i18n.locale === 'en' && this.novel.image_en) ? this.novel.image_en : this.novel.image;
     },
     displayTitle() {
       if (!this.novel) return '';

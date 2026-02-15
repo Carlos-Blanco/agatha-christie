@@ -15,7 +15,7 @@
     <div class="books-list">
       <div v-for="novel in sortedNovels" :key="novel.slug" class="book-item">
         <div class="book-cover">
-          <img :src="novel.image" :alt="getDisplayTitle(novel)" loading="lazy" />
+          <img :src="getDisplayImage(novel)" :alt="getDisplayTitle(novel)" loading="lazy" />
         </div>
         
         <div class="book-details">
@@ -113,6 +113,10 @@ export default {
     getDisplayTitle(novel) {
       if (!novel) return '';
       return this.$i18n.locale === 'en' && novel.title_en ? novel.title_en : novel.title;
+    },
+    getDisplayImage(novel) {
+      if (!novel) return '';
+      return (this.$i18n.locale === 'en' && novel.image_en) ? novel.image_en : novel.image;
     }
   }
 };

@@ -3,7 +3,7 @@
     :to="{ name: 'BookDetail', params: { slug: novel.slug, id: novel.id } }"
     class="novel"
   >
-    <img :src="novel.image" :alt="displayTitle" loading="lazy" />
+    <img :src="displayImage" :alt="displayTitle" loading="lazy" />
   </router-link>
 </template>
 
@@ -17,6 +17,10 @@ export default {
     displayTitle() {
       if (!this.novel) return '';
       return this.$i18n.locale === 'en' && this.novel.title_en ? this.novel.title_en : this.novel.title;
+    },
+    displayImage() {
+      if (!this.novel) return '';
+      return (this.$i18n.locale === 'en' && this.novel.image_en) ? this.novel.image_en : this.novel.image;
     }
   }
 };

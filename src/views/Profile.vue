@@ -86,7 +86,7 @@
       </div>
       <div class="books-scroll">
         <div v-for="book in recentBooks" :key="book.slug" class="book-item">
-          <img :src="book.image" :alt="book.title" />
+          <img :src="getDisplayImage(book)" :alt="book.title" />
         </div>
       </div>
     </div>
@@ -225,6 +225,10 @@ export default {
         console.error('Error saving profile:', error);
         alert('Error al guardar el perfil. Por favor intenta de nuevo.');
       }
+    },
+    getDisplayImage(book) {
+      if (!book) return '';
+      return (this.currentLang === 'en' && book.image_en) ? book.image_en : book.image;
     }
   }
 };
