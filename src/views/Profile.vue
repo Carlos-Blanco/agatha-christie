@@ -42,8 +42,8 @@
         </svg>
       </div>
       <h3>{{ userDisplayName }}</h3>
-      <p class="member-since">Miembro desde {{ memberSince }}</p>
-      <button @click="showEditModal = true" class="btn-edit">Editar Perfil</button>
+      <p class="member-since">{{ $t('profile.member_since') }} {{ memberSince }}</p>
+      <button @click="showEditModal = true" class="btn-edit">{{ $t('profile.edit_profile') }}</button>
     </div>
     
     <!-- Edit Profile Modal -->

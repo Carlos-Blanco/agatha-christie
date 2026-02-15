@@ -22,7 +22,9 @@
         "language": "Idioma",
         "recently_read": "Leídos Recientemente",
         "view_all": "Ver todo",
-        "books_count": "{read} de {total} libros"
+        "books_count": "{read} de {total} libros",
+        "member_since": "Miembro desde",
+        "edit_profile": "Editar Perfil"
     },
     "collections": {
         "title": "Gestionar colección",
