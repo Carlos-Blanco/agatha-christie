@@ -42,8 +42,7 @@
         "synopsis": "Sinopsis"
     },
     "book_list": {
-        "read": "LEÍDO",
-        "to_read": "POR LEER"
+        "read": "LEÍDO"
     },
     "tags": {
         "mystery": "Misterio",

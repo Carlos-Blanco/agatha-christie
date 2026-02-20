@@ -42,8 +42,7 @@
         "synopsis": "Synopsis"
     },
     "book_list": {
-        "read": "READ",
-        "to_read": "TO READ"
+        "read": "READ"
     },
     "tags": {
         "mystery": "Mystery",

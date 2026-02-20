@@ -3,17 +3,13 @@
     <div class="novel-card">
       <div class="cover-wrapper">
         <img :src="displayImage" :alt="displayTitle" loading="lazy" />
-        <div class="badge" :class="wasRead ? 'read' : 'to-read'">
+        <div v-if="wasRead" class="badge read">
           <span class="badge-icon">
-            <svg v-if="wasRead" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
-            <svg v-else width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-            </svg>
           </span>
-          {{ wasRead ? $t('book_list.read') : $t('book_list.to_read') }}
+          {{ $t('book_list.read') }}
         </div>
       </div>
       
@@ -171,11 +167,7 @@ export default {
     z-index: 2;
     
     &.read {
-      background: #8e735b;
-    }
-    
-    &.to-read {
-      background: #757575;
+      background: #f8a427;
     }
     
     .badge-icon {
