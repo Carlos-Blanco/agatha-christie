@@ -9,14 +9,14 @@
         {{ $t('nav.back') }}
       </router-link>
       <div class="header-actions">
-        <a :href="novel.link" target="_blank" class="btn-action-icon" :title="$t('collections.buy')">
+        <a :href="novel.link" target="_blank" class="btn-action-icon" :data-tooltip="$t('collections.buy')">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
             <path d="M3 6h18"></path>
             <path d="M16 10a4 4 0 0 1-8 0"></path>
           </svg>
         </a>
-        <button class="btn-action-icon" :class="{ 'is-active': activeBook }" :key="'btn-' + activeBook" @click="addBook" :title="$t('book_detail.mark_as_read')">
+        <button class="btn-action-icon" :class="{ 'is-active': activeBook }" :key="'btn-' + activeBook" @click="addBook" :data-tooltip="activeBook ? $t('book_detail.unmark_as_read') : $t('book_detail.mark_as_read')">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
@@ -182,7 +182,7 @@ export default {
            identifierToRemove = this.slug;
         }
 
-        this.$store.dispatch("updateBook", identifierToRemove);
+        this.$store.dispatch("updateBook", { value: identifierToRemove, slug: this.novel.slug });
         
         // Also remove the rating
         this.$store.dispatch("removeRating", this.novel.slug)
@@ -205,7 +205,7 @@ export default {
       });
       
       // Mark as read
-      this.$store.dispatch("updateBook", this.slug);
+      this.$store.dispatch("updateBook", { value: this.slug, slug: this.novel.slug });
       
       // Refresh the average ratings display
       this.fetchRating();
@@ -334,7 +334,52 @@ img {
       transition: all 0.2s ease;
       box-shadow: var(--shadow-sm);
       padding: 0;
-      
+      position: relative;
+
+      // Tooltip
+      &::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: calc(100% + 8px);
+        left: 50%;
+        transform: translateX(-50%) translateY(4px);
+        background: rgba(40, 28, 18, 0.92);
+        color: #fff;
+        font-size: 0.72rem;
+        font-weight: 600;
+        white-space: nowrap;
+        padding: 5px 10px;
+        border-radius: 6px;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.18s ease, transform 0.18s ease;
+        font-family: var(--font-main);
+        letter-spacing: 0.3px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        z-index: 100;
+      }
+
+      // Tooltip arrow
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: calc(100% + 2px);
+        left: 50%;
+        transform: translateX(-50%) translateY(4px);
+        border: 5px solid transparent;
+        border-top-color: rgba(40, 28, 18, 0.92);
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.18s ease, transform 0.18s ease;
+        z-index: 100;
+      }
+
+      &:hover::after,
+      &:hover::before {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+
       &:hover {
         background: var(--color-sepia-primary);
         color: white;

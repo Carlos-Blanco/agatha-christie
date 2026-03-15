@@ -1,15 +1,15 @@
 {
   "indexes": [
     {
-      "collectionGroup": "rating",
+      "collectionGroup": "reads",
       "queryScope": "COLLECTION",
       "fields": [
         {
-          "fieldPath": "ratingCount",
+          "fieldPath": "readCount",
           "order": "DESCENDING"
         },
         {
-          "fieldPath": "lastRatedAt",
+          "fieldPath": "lastReadAt",
           "order": "DESCENDING"
         }
       ]

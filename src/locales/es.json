@@ -9,7 +9,7 @@
     },
     "home": {
         "search_placeholder": "Buscar novela...",
-        "most_read": "Más leídos",
+        "most_read": "Los libros mejor valorados",
         "all_novels": "Todas las novelas de Agatha Christie"
     },
     "profile": {
@@ -38,6 +38,7 @@
         "published": "Publicado en",
         "rating": "Valoración",
         "mark_as_read": "Marcar como leído",
+        "unmark_as_read": "Desmarcar como leído",
         "read": "Leído",
         "synopsis": "Sinopsis"
     },

@@ -9,7 +9,7 @@
     },
     "home": {
         "search_placeholder": "Search novel...",
-        "most_read": "Most Read",
+        "most_read": "Top Rated Books",
         "all_novels": "All Agatha Christie Novels"
     },
     "profile": {
@@ -38,6 +38,7 @@
         "published": "Published in",
         "rating": "Rating",
         "mark_as_read": "Mark as Read",
+        "unmark_as_read": "Unmark as Read",
         "read": "Read",
         "synopsis": "Synopsis"
     },

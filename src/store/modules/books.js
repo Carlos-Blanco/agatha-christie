@@ -29,27 +29,20 @@ export const actions = {
   fetchTrendingNovels({ commit, state }) {
     const db = firebase.firestore();
 
-    // We want to fetch the top 10 most rated books
-    // If we have aggregated fields, we can query them directly.
-    return db.collection("rating")
-      .orderBy("ratingCount", "desc")
-      .orderBy("lastRatedAt", "desc")
+    // Top 10 most marked-as-read, ties broken by most recently read
+    return db.collection("reads")
+      .orderBy("readCount", "desc")
+      .orderBy("lastReadAt", "desc")
       .limit(10)
       .get()
       .then(snapshot => {
         if (!snapshot.empty) {
           const trendingSlugs = snapshot.docs.map(doc => doc.id);
 
-          // Now we need to match these slugs to the actual novel objects in state
-          // Assuming fetchNovels has already run or will run. 
-          // If state.novels is empty, we might need to wait or fetch them.
-          // But for now, let's assume we filter from current state.
-
           if (state.novels.length > 0) {
-            const trendingNovels = state.novels.filter(novel => trendingSlugs.includes(novel.slug));
-            // Sort them to match the order returned by Firestore (most rated first)
+            const trendingNovels = state.novels.filter(novel => trendingSlugs.includes(String(novel.slug)));
             trendingNovels.sort((a, b) => {
-              return trendingSlugs.indexOf(a.slug) - trendingSlugs.indexOf(b.slug);
+              return trendingSlugs.indexOf(String(a.slug)) - trendingSlugs.indexOf(String(b.slug));
             });
             commit("SET_TRENDING_NOVELS", trendingNovels);
           } else {

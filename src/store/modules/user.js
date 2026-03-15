@@ -62,37 +62,39 @@ export const mutations = {
 };
 
 export const actions = {
-  updateBook({ state, commit }, value) {
+  updateBook({ state, commit }, payload) {
+    // payload can be a plain value (legacy) or { value, slug }
+    const value = (payload && typeof payload === 'object' && 'value' in payload) ? payload.value : payload;
+    const slug  = (payload && typeof payload === 'object' && 'slug'  in payload) ? payload.slug  : value;
+
     const user = firebase.auth().currentUser;
     if (user) {
       const db = firebase.firestore();
 
       // Try to find the book in the local state
       let index = state.user.readBooks.indexOf(value);
-
-      // Fallback: If not found strictly, try loose comparison (e.g. string vs number)
       if (index === -1) {
         index = state.user.readBooks.findIndex(book => String(book) === String(value));
       }
 
+      const readsRef = db.collection("reads").doc(String(slug));
+
       if (index > -1) {
-        // It's in the list, so we are REMOVING it
+        // Removing from read list
         commit("REMOVE_BOOK", index);
-        // We use the value passed, or should we use the one found? 
-        // Firestore arrayRemove is strict. If we found via loose match, we might need to remove the ACTUAL item.
-        // But for now, let's assume value is correct enough or Firestore handles it.
-        // Actually, better to remove the item we found if we want to be sure?
-        // But the value passed to updateBook usually comes from the UI which tries to match.
-        // Let's stick to using 'value' for Firestore, but use 'index' for local splice.
-        db.collection("users").doc(user.uid).update({ books: firebase.firestore.FieldValue.arrayRemove(value) })
+        db.collection("users").doc(user.uid).update({ books: firebase.firestore.FieldValue.arrayRemove(value) });
+        readsRef.set({ readCount: firebase.firestore.FieldValue.increment(-1) }, { merge: true });
       } else {
-        // It's NOT in the list, so we are ADDING it
-        commit("ADD_BOOK", value); // Optimistic add
-        db.collection("users").doc(user.uid).update({ books: firebase.firestore.FieldValue.arrayUnion(value) })
+        // Adding to read list
+        commit("ADD_BOOK", value);
+        db.collection("users").doc(user.uid).update({ books: firebase.firestore.FieldValue.arrayUnion(value) });
+        readsRef.set({
+          readCount: firebase.firestore.FieldValue.increment(1),
+          lastReadAt: firebase.firestore.FieldValue.serverTimestamp()
+        }, { merge: true });
       }
     } else {
-      // No user is signed in.
-      router.push({ name: "SignUp" })
+      router.push({ name: "SignUp" });
     }
   },
   addToCollection({ state, commit }, value) {
@@ -164,24 +166,35 @@ export const actions = {
 
       return db.runTransaction(async (transaction) => {
         const userDoc = await transaction.get(userRatingRef);
+        const ratingDoc = await transaction.get(ratingRef);
 
-        if (!userDoc.exists) {
-          // New rating, increment count
-          transaction.update(ratingRef, {
-            ratingCount: firebase.firestore.FieldValue.increment(1),
-            lastRatedAt: firebase.firestore.FieldValue.serverTimestamp()
-          });
-        } else {
-          // Just updating timestamp if re-rating
-          transaction.update(ratingRef, {
-            lastRatedAt: firebase.firestore.FieldValue.serverTimestamp()
-          });
-        }
+        // Read all current user ratings to recompute average
+        const usersSnap = await ratingRef.collection("users").get();
+        let sum = 0;
+        let count = 0;
+        usersSnap.forEach((doc) => {
+          if (doc.id !== user.uid && doc.data().bookrate !== undefined) {
+            sum += doc.data().bookrate;
+            count++;
+          }
+        });
+        // Add the new/updated rating
+        sum += rating;
+        count++;
+
+        const newAverage = parseFloat((sum / count).toFixed(2));
+        const isNew = !userDoc.exists;
 
         transaction.set(userRatingRef, {
           bookrate: rating,
           ratedAt: firebase.firestore.FieldValue.serverTimestamp()
         });
+
+        transaction.set(ratingRef, {
+          ratingCount: count,
+          averageRating: newAverage,
+          lastRatedAt: firebase.firestore.FieldValue.serverTimestamp()
+        }, { merge: true });
       });
     }
   },
@@ -198,9 +211,23 @@ export const actions = {
 
         if (userDoc.exists) {
           transaction.delete(userRatingRef);
-          transaction.update(ratingRef, {
-            ratingCount: firebase.firestore.FieldValue.increment(-1)
+
+          // Recompute average from remaining users
+          const usersSnap = await ratingRef.collection("users").get();
+          let sum = 0;
+          let count = 0;
+          usersSnap.forEach((doc) => {
+            if (doc.id !== user.uid && doc.data().bookrate !== undefined) {
+              sum += doc.data().bookrate;
+              count++;
+            }
           });
+
+          const newAverage = count > 0 ? parseFloat((sum / count).toFixed(2)) : 0;
+          transaction.set(ratingRef, {
+            ratingCount: count,
+            averageRating: newAverage
+          }, { merge: true });
         }
       });
     }
