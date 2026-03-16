@@ -465,17 +465,21 @@ img {
         display: flex;
         align-items: center;
         gap: var(--spacing-xs);
+        background: rgba(184, 149, 106, 0.15);
+        border: 1px solid rgba(184, 149, 106, 0.35);
+        border-radius: var(--border-radius-full);
+        padding: 4px 12px;
 
         .user-rating-label {
-          font-size: 0.85rem;
+          font-size: 0.8rem;
           font-weight: 600;
           color: var(--color-sepia-dark);
         }
 
         .user-rating-count {
-          font-size: 0.95rem;
+          font-size: 0.85rem;
           font-weight: 700;
-          color: var(--color-text-light);
+          color: var(--color-sepia-dark);
         }
       }
 
