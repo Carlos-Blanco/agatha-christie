@@ -52,13 +52,7 @@ export const actions = {
             });
             commit("SET_TRENDING_NOVELS", trendingNovels);
           } else {
-            // If novels aren't loaded yet, we can't map them. 
-            // Maybe we should store the slugs and map them later?
-            // Or better, just wait for fetchNovels. 
-            // In Home.vue both are dispatched. user.js usually finishes first? No, both async.
-            // We can chain them in Home.vue or just rely on reactivity if we were storing slugs.
-            // But SET_TRENDING_NOVELS expects objects.
-            // Let's try to fetch novels if empty, although Home.vue dispatches fetchNovels too.
+            // novels aún no cargadas: las pedimos para poder mapear los slugs
             BookService.getNovels().then(res => {
               const novels = res.data;
               const trendingNovels = novels.filter(novel => trendingSlugs.includes(novel.slug));
@@ -82,52 +76,6 @@ export const actions = {
       .catch(error => {
         console.error("Error fetching trending novels:", error);
       });
-  },
-  async backfillFromJson({ state }) {
-    const user = firebase.auth().currentUser;
-    if (!user) { console.error("backfillFromJson: no user logged in"); return; }
-    const db = firebase.firestore();
-    let done = 0;
-
-    for (const novel of state.novels) {
-      const slug = novel.slug;
-      const rating = novel.rating;
-      if (!slug || !rating) continue;
-
-      try {
-        const ratingRef = db.collection("rating").doc(slug);
-        const userRatingRef = ratingRef.collection("users").doc(user.uid);
-
-        await db.runTransaction(async (transaction) => {
-          const usersSnap = await ratingRef.collection("users").get();
-          let sum = 0, count = 0;
-          usersSnap.forEach(doc => {
-            if (doc.id !== user.uid && doc.data().bookrate !== undefined) {
-              sum += doc.data().bookrate;
-              count++;
-            }
-          });
-          sum += rating;
-          count++;
-
-          transaction.set(userRatingRef, {
-            bookrate: rating,
-            ratedAt: firebase.firestore.FieldValue.serverTimestamp()
-          });
-          transaction.set(ratingRef, {
-            ratingCount: count,
-            averageRating: parseFloat((sum / count).toFixed(2)),
-            lastRatedAt: firebase.firestore.FieldValue.serverTimestamp()
-          }, { merge: true });
-        });
-
-        console.log(`✓ ${slug}: ${rating}`);
-        done++;
-      } catch (err) {
-        console.error(`✗ ${slug}:`, err);
-      }
-    }
-    console.log(`backfillFromJson completado: ${done} libros actualizados`);
   },
   backfillRatings({ state }) {
     const db = firebase.firestore();

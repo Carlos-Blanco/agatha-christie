@@ -37,7 +37,7 @@
       <img :src="displayImage" :alt="displayTitle" />
       <div class="community-rating">
         <star-rating
-          v-model:rating="rating"
+          v-bind:rating="rating"
           v-bind:increment="0.1"
           v-bind:max-rating="5"
           v-bind:show-rating="false"
@@ -112,7 +112,9 @@
 
 <script>
 import BookService from "@/services/BookService.js";
-import firebase from "firebase";
+import firebase from "firebase/app";
+import "firebase/auth";
+import "firebase/firestore";
 import StarRating from "vue-star-rating";
 import RatingModal from "../components/RatingModal.vue";
 
@@ -146,7 +148,6 @@ export default {
        this.$router.push({ name: '404' });
     }
   },
-  // No longer needed: we fetch average rating for everyone, not per user
   methods: {
     async fetchRating() {
       const novelSlug = this.novel?.slug;
@@ -188,17 +189,7 @@ export default {
         // Opening the modal to get a rating before marking as read
         this.showRatingModal = true;
       } else {
-        // If already read, we just toggle it off (standard behavior)
-        // Ensure we pass the EXACT value that is in the array to ensure strict equality works in the store
-        // If isAlreadyRead is undefined (shouldn't be here), fallback to slug/id logic but carefully
-        let identifierToRemove = isAlreadyRead; 
-        
-        if (identifierToRemove === undefined) {
-           // Fallback if logic failed to find it despite entering else block
-           identifierToRemove = this.slug;
-        }
-
-        this.$store.dispatch("updateBook", { value: identifierToRemove, slug: this.novel.slug });
+        this.$store.dispatch("updateBook", { value: isAlreadyRead, slug: this.novel.slug });
         
         // Also remove the rating
         this.$store.dispatch("removeRating", this.novel.slug)
@@ -225,10 +216,6 @@ export default {
       
       // Refresh the average ratings display
       this.fetchRating();
-    },
-    // No longer editable from this view
-    rateBook() {
-      // Disabled
     },
   },
   computed: {
@@ -278,13 +265,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  display: block;
-}
 .book-detail {
   min-height: 100vh;
   background: var(--color-bg-white);
