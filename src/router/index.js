@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 import store from "../store"
-import BookDetail from "../views/BookDetail.vue";
-import Home from "../views/Home.vue";
-import SignUp from "../views/SignUp.vue";
-import Login from "../views/Login.vue";
-import Profile from "../views/Profile.vue";
-import ReadingHistory from "../views/ReadingHistory.vue";
-import Collections from "../views/Collections.vue";
-import NotFound from "../views/NotFound.vue";
+const BookDetail = () => import("../views/BookDetail.vue");
+const Home = () => import("../views/Home.vue");
+const SignUp = () => import("../views/SignUp.vue");
+const Login = () => import("../views/Login.vue");
+const Profile = () => import("../views/Profile.vue");
+const ReadingHistory = () => import("../views/ReadingHistory.vue");
+const Collections = () => import("../views/Collections.vue");
+const NotFound = () => import("../views/NotFound.vue");
 
 const routes = [
   {
