@@ -83,6 +83,52 @@ export const actions = {
         console.error("Error fetching trending novels:", error);
       });
   },
+  async backfillFromJson({ state }) {
+    const user = firebase.auth().currentUser;
+    if (!user) { console.error("backfillFromJson: no user logged in"); return; }
+    const db = firebase.firestore();
+    let done = 0;
+
+    for (const novel of state.novels) {
+      const slug = novel.slug;
+      const rating = novel.rating;
+      if (!slug || !rating) continue;
+
+      try {
+        const ratingRef = db.collection("rating").doc(slug);
+        const userRatingRef = ratingRef.collection("users").doc(user.uid);
+
+        await db.runTransaction(async (transaction) => {
+          const usersSnap = await ratingRef.collection("users").get();
+          let sum = 0, count = 0;
+          usersSnap.forEach(doc => {
+            if (doc.id !== user.uid && doc.data().bookrate !== undefined) {
+              sum += doc.data().bookrate;
+              count++;
+            }
+          });
+          sum += rating;
+          count++;
+
+          transaction.set(userRatingRef, {
+            bookrate: rating,
+            ratedAt: firebase.firestore.FieldValue.serverTimestamp()
+          });
+          transaction.set(ratingRef, {
+            ratingCount: count,
+            averageRating: parseFloat((sum / count).toFixed(2)),
+            lastRatedAt: firebase.firestore.FieldValue.serverTimestamp()
+          }, { merge: true });
+        });
+
+        console.log(`✓ ${slug}: ${rating}`);
+        done++;
+      } catch (err) {
+        console.error(`✗ ${slug}:`, err);
+      }
+    }
+    console.log(`backfillFromJson completado: ${done} libros actualizados`);
+  },
   backfillRatings({ state }) {
     const db = firebase.firestore();
     // Iterate all novels from state (must be loaded)

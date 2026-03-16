@@ -35,25 +35,38 @@
     <!-- Book Cover Hero -->
     <div class="cover-hero">
       <img :src="displayImage" :alt="displayTitle" />
+      <div class="community-rating">
+        <star-rating
+          v-model:rating="rating"
+          v-bind:increment="0.1"
+          v-bind:max-rating="5"
+          v-bind:show-rating="false"
+          v-bind:star-size="18"
+          v-bind:read-only="true"
+          active-color="#f8a427">
+        </star-rating>
+        <span class="rating-count">{{ rating || 0.0 }} <span v-if="totalRatings > 0" class="total-ratings">({{ totalRatings }})</span></span>
+      </div>
     </div>
-    
+
     <!-- Book Info Card -->
     <div class="info-card">
-      <!-- Rating & Protagonist Row -->
+      <!-- Protagonist & User Rating Row -->
       <div class="rating-row">
-        <div class="rating-wrapper">
-          <star-rating 
-            v-model:rating="rating" 
-            v-bind:increment="0.1" 
-            v-bind:max-rating="5" 
+        <div v-if="userRating !== null" class="user-rating-wrapper">
+          <span class="user-rating-label">{{ $t('book_detail.your_rating') }}</span>
+          <star-rating
+            v-bind:rating="userRating"
+            v-bind:increment="0.1"
+            v-bind:max-rating="5"
             v-bind:show-rating="false"
-            v-bind:star-size="18" 
+            v-bind:star-size="18"
             v-bind:read-only="true"
             active-color="#f8a427">
           </star-rating>
-          <span class="rating-count">{{ rating || 0.0 }} <span v-if="totalRatings > 0" class="total-ratings">({{ totalRatings }})</span></span>
+          <span class="user-rating-count">{{ userRating }}</span>
         </div>
-        
+
         <div v-if="novel.protagonist" class="protagonist-badge" :class="protagonistClass">
           <span class="badge-icon" v-html="protagonistIcon"></span>
           <span class="badge-name">{{ novel.protagonist }}</span>
@@ -115,6 +128,7 @@ export default {
       novel: null,
       rating: 0,
       totalRatings: 0,
+      userRating: null,
       showRatingModal: false
     };
   },
@@ -135,31 +149,33 @@ export default {
   // No longer needed: we fetch average rating for everyone, not per user
   methods: {
     async fetchRating() {
-         const novelSlug = this.novel?.slug;
-         if (!novelSlug) return;
+      const novelSlug = this.novel?.slug;
+      if (!novelSlug) return;
 
-         const db = firebase.firestore();
-         try {
-           const querySnapshot = await db.collection("rating").doc(novelSlug).collection("users").get();
-           if (!querySnapshot.empty) {
-             let sum = 0;
-             let count = 0;
-             querySnapshot.forEach((doc) => {
-               const data = doc.data();
-               if (data.bookrate !== undefined) {
-                 sum += data.bookrate;
-                 count++;
-               }
-             });
-             this.rating = count > 0 ? parseFloat((sum / count).toFixed(1)) : 0;
-             this.totalRatings = count;
-           } else {
-             this.rating = 0;
-             this.totalRatings = 0;
-           }
-         } catch (error) {
-           console.error("Error fetching ratings:", error);
-         }
+      const db = firebase.firestore();
+      try {
+        // Community average from parent doc
+        const parentDoc = await db.collection("rating").doc(novelSlug).get();
+        if (parentDoc.exists) {
+          const data = parentDoc.data();
+          this.rating = data.averageRating ? parseFloat(data.averageRating.toFixed(1)) : 0;
+          this.totalRatings = data.ratingCount || 0;
+        } else {
+          this.rating = 0;
+          this.totalRatings = 0;
+        }
+
+        // User's own rating
+        const user = firebase.auth().currentUser;
+        if (user) {
+          const userDoc = await db.collection("rating").doc(novelSlug).collection("users").doc(user.uid).get();
+          this.userRating = userDoc.exists && userDoc.data().bookrate !== undefined
+            ? userDoc.data().bookrate
+            : null;
+        }
+      } catch (error) {
+        console.error("Error fetching ratings:", error);
+      }
     },
     addBook() {
       const readBooks = this.$store.state.user?.user?.readBooks || [];
@@ -187,8 +203,8 @@ export default {
         // Also remove the rating
         this.$store.dispatch("removeRating", this.novel.slug)
           .then(() => {
-            this.rating = 0; // Reset local rating if needed
-            this.fetchRating(); // Refresh average
+            this.userRating = null;
+            this.fetchRating();
           })
           .catch(error => {
             console.error("Error removing rating:", error);
@@ -398,8 +414,10 @@ img {
   .cover-hero {
     padding: 6rem var(--spacing-xl) var(--spacing-xl);
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+
     img {
       width: 170px;
       height: 255px;
@@ -407,15 +425,34 @@ img {
       border-radius: var(--border-radius);
       box-shadow: var(--shadow-book);
     }
+
+    .community-rating {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-xs);
+
+      .rating-count {
+        color: var(--color-text-light);
+        font-weight: 700;
+        font-size: 0.95rem;
+
+        .total-ratings {
+          font-size: 0.8rem;
+          font-weight: 500;
+          opacity: 0.7;
+          margin-left: 4px;
+        }
+      }
+    }
   }
-  
+
   // Info Card with deeper beige background
   .info-card {
     background: var(--color-bg-deep-beige); // #EDE6D6 - V2 darker beige
     border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
     padding: var(--spacing-md);
-    
-    // Rating & Protagonist Row
+
+    // Protagonist & User Rating Row
     .rating-row {
       display: flex;
       align-items: center;
@@ -423,24 +460,22 @@ img {
       margin-bottom: var(--spacing-lg);
       flex-wrap: wrap;
       gap: var(--spacing-md);
-      
-      .rating-wrapper {
+
+      .user-rating-wrapper {
         display: flex;
         align-items: center;
         gap: var(--spacing-xs);
-        
-        .rating-count {
-          color: var(--color-text-light);
-          font-weight: 700;
+
+        .user-rating-label {
+          font-size: 0.85rem;
+          font-weight: 600;
+          color: var(--color-sepia-dark);
+        }
+
+        .user-rating-count {
           font-size: 0.95rem;
-          margin-left: 2px;
-          
-          .total-ratings {
-            font-size: 0.8rem;
-            font-weight: 500;
-            opacity: 0.7;
-            margin-left: 4px;
-          }
+          font-weight: 700;
+          color: var(--color-text-light);
         }
       }
 

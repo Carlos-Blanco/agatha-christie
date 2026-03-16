@@ -19,7 +19,7 @@
         
         <div class="rating-row">
           <star-rating 
-            v-bind:rating="displayRating" 
+            v-bind:rating="averageRating"
             v-bind:read-only="true" 
             v-bind:star-size="14" 
             v-bind:show-rating="false"
@@ -27,7 +27,7 @@
             inactive-color="#d1d5db"
             v-bind:increment="0.1"
           ></star-rating>
-          <span class="rating-value">{{ displayRating > 0 ? displayRating.toFixed(1) : '0.0' }}</span>
+          <span class="rating-value">{{ averageRating > 0 ? averageRating.toFixed(1) : '0.0' }}<span v-if="totalRatings > 0" class="rating-count"> ({{ totalRatings }})</span></span>
         </div>
         
         <p class="novel-summary">{{ displayDescription }}</p>
@@ -39,6 +39,7 @@
 <script>
 import StarRating from "vue-star-rating";
 import firebase from "firebase/app";
+import "firebase/firestore";
 
 export default {
   name: "BookList",
@@ -50,54 +51,39 @@ export default {
   },
   data() {
     return {
-      userRating: null
+      firestoreRating: null,
+      totalRatings: 0
     };
   },
   created() {
-    if (this.wasRead) {
-      this.fetchUserRating();
-    }
-  },
-  watch: {
-    wasRead(newVal) {
-      if (newVal) {
-        this.fetchUserRating();
-      }
-    }
+    this.fetchRating();
   },
   methods: {
-    fetchUserRating() {
-      const userUID = this.$store.state.user?.user?.userinfo;
-      if (!userUID || !this.novel.slug) return;
-
-      const db = firebase.firestore();
-      db.collection("rating")
-        .doc(this.novel.slug)
-        .collection("users")
-        .doc(userUID)
-        .get()
-        .then(doc => {
-          if (doc.exists) {
-            this.userRating = doc.data().bookrate;
-          }
-        })
-        .catch(err => console.error("Error fetching list rating:", err));
+    async fetchRating() {
+      if (!this.novel?.slug) return;
+      try {
+        const doc = await firebase.firestore().collection("rating").doc(this.novel.slug).get();
+        if (doc.exists) {
+          const data = doc.data();
+          this.firestoreRating = data.averageRating || null;
+          this.totalRatings = data.ratingCount || 0;
+        }
+      } catch (err) {
+        console.error("Error fetching rating:", err);
+      }
     }
   },
   computed: {
+    averageRating() {
+      if (this.firestoreRating !== null) return this.firestoreRating;
+      return this.novel.rating || 0;
+    },
     wasRead() {
       const readBooks = this.$store.state.user?.user?.readBooks || [];
-      return readBooks.some(item => 
-        String(item) === String(this.novel.id) || 
+      return readBooks.some(item =>
+        String(item) === String(this.novel.id) ||
         String(item) === String(this.novel.slug)
       );
-    },
-    displayRating() {
-      // Priority: 1. Locally fetched user rating, 2. Global rate from data, 3. Default 0
-      if (this.userRating !== null) {
-        return this.userRating;
-      }
-      return this.novel.rating || 0;
     },
     displayImage() {
       if (!this.novel) return '';
@@ -214,6 +200,11 @@ export default {
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--color-text-light);
+
+    .rating-count {
+      font-weight: 400;
+      opacity: 0.7;
+    }
   }
 }
 

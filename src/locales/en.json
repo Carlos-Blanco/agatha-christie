@@ -40,7 +40,8 @@
         "mark_as_read": "Mark as Read",
         "unmark_as_read": "Unmark as Read",
         "read": "Read",
-        "synopsis": "Synopsis"
+        "synopsis": "Synopsis",
+        "your_rating": "Your rating"
     },
     "book_list": {
         "read": "READ"

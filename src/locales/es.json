@@ -40,7 +40,8 @@
         "mark_as_read": "Marcar como leído",
         "unmark_as_read": "Desmarcar como leído",
         "read": "Leído",
-        "synopsis": "Sinopsis"
+        "synopsis": "Sinopsis",
+        "your_rating": "Tu valoración"
     },
     "book_list": {
         "read": "LEÍDO"
