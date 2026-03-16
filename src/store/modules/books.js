@@ -29,15 +29,21 @@ export const actions = {
   fetchTrendingNovels({ commit, state }) {
     const db = firebase.firestore();
 
-    // Top 10 most marked-as-read, ties broken by most recently read
-    return db.collection("reads")
-      .orderBy("readCount", "desc")
-      .orderBy("lastReadAt", "desc")
-      .limit(10)
+    // Top 10 highest rated, ties broken by most recently rated (sort in JS to avoid composite index)
+    return db.collection("rating")
+      .orderBy("averageRating", "desc")
+      .limit(20)
       .get()
       .then(snapshot => {
         if (!snapshot.empty) {
-          const trendingSlugs = snapshot.docs.map(doc => doc.id);
+          const sorted = snapshot.docs.sort((a, b) => {
+            const ratingDiff = (b.data().averageRating || 0) - (a.data().averageRating || 0);
+            if (ratingDiff !== 0) return ratingDiff;
+            const aTime = a.data().lastRatedAt?.toMillis() || 0;
+            const bTime = b.data().lastRatedAt?.toMillis() || 0;
+            return bTime - aTime;
+          });
+          const trendingSlugs = sorted.slice(0, 10).map(doc => doc.id);
 
           if (state.novels.length > 0) {
             const trendingNovels = state.novels.filter(novel => trendingSlugs.includes(String(novel.slug)));
@@ -68,7 +74,7 @@ export const actions = {
           // Fallback to old hardcoded list if no data
           if (state.novels.length > 0) {
             const selectedNovelsIds = [6, 11, 20, 24, 28, 33, 36, 38, 47, 48, 57];
-            const trendingNovels = state.novels.filter((novel, index) => selectedNovelsIds.includes(index));
+            const trendingNovels = state.novels.filter((_, index) => selectedNovelsIds.includes(index));
             commit("SET_TRENDING_NOVELS", trendingNovels);
           }
         }
@@ -88,12 +94,16 @@ export const actions = {
         const count = snap.size;
         console.log(`Backfilling ${slug}: ${count} ratings`);
 
-        // Update parent doc
         if (count > 0) {
-          // We don't have accurate lastRatedAt, so we use serverTimestamp or null
+          let sum = 0;
+          snap.forEach(doc => {
+            if (doc.data().bookrate !== undefined) sum += doc.data().bookrate;
+          });
+          const averageRating = parseFloat((sum / count).toFixed(2));
           db.collection("rating").doc(slug).set({
             ratingCount: count,
-            lastRatedAt: firebase.firestore.FieldValue.serverTimestamp() // Approximation
+            averageRating,
+            lastRatedAt: firebase.firestore.FieldValue.serverTimestamp()
           }, { merge: true });
         }
       });
