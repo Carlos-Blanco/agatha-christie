@@ -1,4 +1,5 @@
 import firebase from "firebase/app";
+import i18n from "@/i18n";
 import "firebase/auth";
 import "firebase/firestore";
 import router from "@/router/index";
@@ -19,10 +20,7 @@ export const state = {
 const storedLang = localStorage.getItem('language');
 if (storedLang) {
   state.user.language = storedLang;
-  const i18n = require('@/i18n').default;
-  if (i18n && i18n.global) {
-    i18n.global.locale = storedLang;
-  }
+  i18n.global.locale = storedLang;
 }
 
 export const mutations = {
@@ -142,11 +140,7 @@ export const actions = {
     // OR we can import i18n here if it doesn't depend on store.
 
     // Better: Update i18n locale in the action if possible, OR let the component handle the i18n.locale change.
-    // Let's import i18n here dynamically or just statically if possible.
-    const i18n = require('@/i18n').default;
-    if (i18n && i18n.global) {
-      i18n.global.locale = lang;
-    }
+    i18n.global.locale = lang;
   },
   saveRating({ state }, { slug, rating }) {
     const user = firebase.auth().currentUser;
