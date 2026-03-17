@@ -10,7 +10,7 @@ export const state = {
     userinfo: "",
     readBooks: [],
     ownedBooks: [],
-    language: 'es',
+    language: 'en',
     authError: null
   },
   unsubscribeAuthInfo: null // Store unsubscribe function
