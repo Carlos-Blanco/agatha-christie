@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(firebase firestore:query \"rating\" --limit 5)",
+      "Bash(node /tmp/check-ratings.cjs)"
+    ],
+    "additionalDirectories": [
+      "/private/tmp"
+    ]
+  }
+}
