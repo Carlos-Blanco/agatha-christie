@@ -34,7 +34,7 @@
     
     <!-- Book Cover Hero -->
     <div class="cover-hero">
-      <img :src="displayImage" :alt="displayTitle" />
+      <img :src="displayImage" :alt="displayTitle" @error="onImageError" />
       <div class="community-rating">
         <star-rating
           v-bind:rating="rating"
@@ -149,6 +149,9 @@ export default {
     }
   },
   methods: {
+    onImageError(e) {
+      if (this.novel?.image) e.target.src = this.novel.image;
+    },
     async fetchRating() {
       const novelSlug = this.novel?.slug;
       if (!novelSlug) return;

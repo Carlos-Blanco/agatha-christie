@@ -12,7 +12,7 @@
     "link_es": "https://www.amazon.es/dp/8467067500?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0007265131?tag=carlosblan026-20",
     "title_en": "The Mysterious Affair at Styles",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0007265131-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0007265131-L.jpg?default=false"
   },
   {
     "id": 1,
@@ -27,7 +27,7 @@
     "link_es": "https://www.amazon.es/dp/846706661X?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/006298635X?tag=carlosblan026-20",
     "title_en": "The Secret Adversary",
-    "image_en": "https://covers.openlibrary.org/b/isbn/006298635X-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/006298635X-L.jpg?default=false"
   },
   {
     "id": 2,
@@ -42,7 +42,7 @@
     "link_es": "https://www.amazon.es/dp/8467070617?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073869?tag=carlosblan026-20",
     "title_en": "Murder on the Links",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073869-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073869-L.jpg?default=false"
   },
   {
     "id": 3,
@@ -57,7 +57,7 @@
     "link_es": "https://www.amazon.es/dp/8467072148?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074377?tag=carlosblan026-20",
     "title_en": "The Man in the Brown Suit",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074377-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062074377-L.jpg?default=false"
   },
   {
     "id": 4,
@@ -72,7 +72,7 @@
     "link_es": "https://www.amazon.es/dp/8467076127?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074008?tag=carlosblan026-20",
     "title_en": "Poirot Investigates",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074008-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0062074008.01.LZZZZZZZ.jpg"
   },
   {
     "id": 5,
@@ -87,7 +87,7 @@
     "link_es": "https://www.amazon.es/dp/8467074078?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074156?tag=carlosblan026-20",
     "title_en": "The Secret of Chimneys",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074156-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062074156-L.jpg?default=false"
   },
   {
     "id": 6,
@@ -102,7 +102,7 @@
     "link_es": "https://www.amazon.es/dp/846705297X?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073567?tag=carlosblan026-20",
     "title_en": "The Murder of Roger Ackroyd",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073567-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073567-L.jpg?default=false"
   },
   {
     "id": 7,
@@ -117,7 +117,7 @@
     "link_es": "https://www.amazon.es/dp/8467055995?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/006257339X?tag=carlosblan026-20",
     "title_en": "The Big Four",
-    "image_en": "https://covers.openlibrary.org/b/isbn/006257339X-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/006257339X-L.jpg?default=false"
   },
   {
     "id": 8,
@@ -132,7 +132,7 @@
     "link_es": "https://www.amazon.es/dp/8467063459?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073974?tag=carlosblan026-20",
     "title_en": "The Mystery of the Blue Train",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073974-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073974-L.jpg?default=false"
   },
   {
     "id": 9,
@@ -147,7 +147,7 @@
     "link_es": "https://www.amazon.es/dp/8427200757?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074369?tag=carlosblan026-20",
     "title_en": "Partners in Crime",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074369-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062074369-L.jpg?default=false"
   },
   {
     "id": 10,
@@ -162,7 +162,7 @@
     "link_es": "https://www.amazon.es/dp/8408298577?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074164?tag=carlosblan026-20",
     "title_en": "The Seven Dials Mystery",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074164-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0062074164.01.LZZZZZZZ.jpg"
   },
   {
     "id": 11,
@@ -177,7 +177,7 @@
     "link_es": "https://www.amazon.es/dp/8490564779?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073605?tag=carlosblan026-20",
     "title_en": "The Murder at the Vicarage",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073605-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073605-L.jpg?default=false"
   },
   {
     "id": 12,
@@ -192,7 +192,7 @@
     "link_es": "https://www.amazon.es/dp/8427285132?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074431?tag=carlosblan026-20",
     "title_en": "The Mysterious Mr. Quin",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074431-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0062074431.01.LZZZZZZZ.jpg"
   },
   {
     "id": 13,
@@ -207,7 +207,7 @@
     "link_es": "https://www.amazon.es/dp/8427201079?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074148?tag=carlosblan026-20",
     "title_en": "The Sittaford Mystery",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074148-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0062074148.01.LZZZZZZZ.jpg"
   },
   {
     "id": 14,
@@ -222,7 +222,7 @@
     "link_es": "https://www.amazon.es/dp/8467070633?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074024?tag=carlosblan026-20",
     "title_en": "Peril at End House",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074024-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062074024-L.jpg?default=false"
   },
   {
     "id": 15,
@@ -237,7 +237,7 @@
     "link_es": "https://www.amazon.es/dp/8408204572?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0008612021?tag=carlosblan026-20",
     "title_en": "The Thirteen Problems",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0008612021-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0008612021.01.LZZZZZZZ.jpg"
   },
   {
     "id": 16,
@@ -252,7 +252,7 @@
     "link_es": "https://www.amazon.es/dp/8467072156?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073893?tag=carlosblan026-20",
     "title_en": "Lord Edgware Dies",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073893-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073893-L.jpg?default=false"
   },
   {
     "id": 17,
@@ -267,7 +267,7 @@
     "link_es": "https://www.amazon.es/dp/8467076917?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074121?tag=carlosblan026-20",
     "title_en": "Why Didn't They Ask Evans?",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074121-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0062074121.01.LZZZZZZZ.jpg"
   },
   {
     "id": 18,
@@ -282,7 +282,7 @@
     "link_es": "https://www.amazon.es/dp/8490562725?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062094440?tag=carlosblan026-20",
     "title_en": "Witness for the Prosecution and Other Stories",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062094440-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062094440-L.jpg?default=false"
   },
   {
     "id": 19,
@@ -297,7 +297,7 @@
     "link_es": "https://www.amazon.es/dp/8427202733?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0008255512?tag=carlosblan026-20",
     "title_en": "The Listerdale Mystery",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0008255512-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0008255512.01.LZZZZZZZ.jpg"
   },
   {
     "id": 20,
@@ -312,7 +312,7 @@
     "link_es": "https://www.amazon.es/dp/8467045418?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073508?tag=carlosblan026-20",
     "title_en": "Murder on the Orient Express",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073508-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073508-L.jpg?default=false"
   },
   {
     "id": 21,
@@ -327,7 +327,7 @@
     "link_es": "https://www.amazon.es/dp/8427201664?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074407?tag=carlosblan026-20",
     "title_en": "Parker Pyne Investigates",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074407-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0062074407.01.LZZZZZZZ.jpg"
   },
   {
     "id": 22,
@@ -342,7 +342,7 @@
     "link_es": "https://www.amazon.es/dp/8408204580?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073834?tag=carlosblan026-20",
     "title_en": "Three Act Tragedy",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073834-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073834-L.jpg?default=false"
   },
   {
     "id": 23,
@@ -357,7 +357,7 @@
     "link_es": "https://www.amazon.es/dp/8408238159?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073745?tag=carlosblan026-20",
     "title_en": "Death in the Clouds",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073745-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073745-L.jpg?default=false"
   },
   {
     "id": 24,
@@ -372,7 +372,7 @@
     "link_es": "https://www.amazon.es/dp/846705364X?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0063375877?tag=carlosblan026-20",
     "title_en": "The ABC Murders",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0063375877-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0063375877.01.LZZZZZZZ.jpg"
   },
   {
     "id": 25,
@@ -387,7 +387,7 @@
     "link_es": "https://www.amazon.es/dp/8408268368?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073907?tag=carlosblan026-20",
     "title_en": "Murder in Mesopotamia",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073907-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073907-L.jpg?default=false"
   },
   {
     "id": 26,
@@ -402,7 +402,7 @@
     "link_es": "https://www.amazon.es/dp/8408283715?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062573373?tag=carlosblan026-20",
     "title_en": "Cards on the Table",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062573373-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062573373-L.jpg?default=false"
   },
   {
     "id": 27,
@@ -417,7 +417,7 @@
     "link_es": "https://www.amazon.es/dp/846705980X?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073753?tag=carlosblan026-20",
     "title_en": "Dumb Witness",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073753-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073753-L.jpg?default=false"
   },
   {
     "id": 28,
@@ -432,7 +432,7 @@
     "link_es": "https://www.amazon.es/dp/8467045426?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073559?tag=carlosblan026-20",
     "title_en": "Death on the Nile",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073559-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073559-L.jpg?default=false"
   },
   {
     "id": 30,
@@ -447,7 +447,7 @@
     "link_es": "https://www.amazon.es/dp/8427298218?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073990?tag=carlosblan026-20",
     "title_en": "Murder in the Mews",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073990-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073990-L.jpg?default=false"
   },
   {
     "id": 29,
@@ -462,7 +462,7 @@
     "link_es": "https://www.amazon.es/dp/8467058692?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073923?tag=carlosblan026-20",
     "title_en": "Appointment with Death",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073923-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073923-L.jpg?default=false"
   },
   {
     "id": 31,
@@ -477,7 +477,7 @@
     "link_es": "https://www.amazon.es/dp/8408195247?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074016?tag=carlosblan026-20",
     "title_en": "Hercule Poirot's Christmas",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074016-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062074016-L.jpg?default=false"
   },
   {
     "id": 32,
@@ -492,7 +492,7 @@
     "link_es": "https://www.amazon.es/dp/8467059796?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/006207380X?tag=carlosblan026-20",
     "title_en": "Murder Is Easy",
-    "image_en": "https://covers.openlibrary.org/b/isbn/006207380X-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/006207380X-L.jpg?default=false"
   },
   {
     "id": 33,
@@ -507,7 +507,7 @@
     "link_es": "https://www.amazon.es/dp/8467066628?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073486?tag=carlosblan026-20",
     "title_en": "And Then There Were None",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073486-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073486-L.jpg?default=false"
   },
   {
     "id": 35,
@@ -522,7 +522,7 @@
     "link_es": "https://www.amazon.es/dp/8467076119?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/006207394X?tag=carlosblan026-20",
     "title_en": "Sad Cypress",
-    "image_en": "https://covers.openlibrary.org/b/isbn/006207394X-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/006207394X-L.jpg?default=false"
   },
   {
     "id": 34,
@@ -537,7 +537,7 @@
     "link_es": "https://www.amazon.es/dp/8467053003?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/006207377X?tag=carlosblan026-20",
     "title_en": "One, Two, Buckle My Shoe",
-    "image_en": "https://covers.openlibrary.org/b/isbn/006207377X-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/006207377X-L.jpg?default=false"
   },
   {
     "id": 36,
@@ -552,7 +552,7 @@
     "link_es": "https://www.amazon.es/dp/8467063114?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062573470?tag=carlosblan026-20",
     "title_en": "Evil Under the Sun",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062573470-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062573470-L.jpg?default=false"
   },
   {
     "id": 37,
@@ -567,7 +567,7 @@
     "link_es": "https://www.amazon.es/dp/8427285388?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062449931?tag=carlosblan026-20",
     "title_en": "N or M?",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062449931-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062449931-L.jpg?default=false"
   },
   {
     "id": 38,
@@ -582,7 +582,7 @@
     "link_es": "https://www.amazon.es/dp/8467051531?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/006257325X?tag=carlosblan026-20",
     "title_en": "Five Little Pigs",
-    "image_en": "https://covers.openlibrary.org/b/isbn/006257325X-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/006257325X-L.jpg?default=false"
   },
   {
     "id": 39,
@@ -597,7 +597,7 @@
     "link_es": "https://www.amazon.es/dp/8467058706?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073613?tag=carlosblan026-20",
     "title_en": "The Body in the Library",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073613-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0062073613.01.LZZZZZZZ.jpg"
   },
   {
     "id": 40,
@@ -612,7 +612,7 @@
     "link_es": "https://www.amazon.es/dp/846705851X?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073621?tag=carlosblan026-20",
     "title_en": "The Moving Finger",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073621-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073621-L.jpg?default=false"
   },
   {
     "id": 41,
@@ -627,7 +627,7 @@
     "link_es": "https://www.amazon.es/dp/8408290274?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073540?tag=carlosblan026-20",
     "title_en": "Towards Zero",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073540-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073540-L.jpg?default=false"
   },
   {
     "id": 42,
@@ -642,7 +642,7 @@
     "link_es": "https://www.amazon.es/dp/8408231685?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/006207413X?tag=carlosblan026-20",
     "title_en": "Death Comes as the End",
-    "image_en": "https://covers.openlibrary.org/b/isbn/006207413X-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/006207413X.01.LZZZZZZZ.jpg"
   },
   {
     "id": 43,
@@ -657,7 +657,7 @@
     "link_es": "https://www.amazon.es/dp/8408195239?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074385?tag=carlosblan026-20",
     "title_en": "Sparkling Cyanide",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074385-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0062074385.01.LZZZZZZZ.jpg"
   },
   {
     "id": 44,
@@ -672,7 +672,7 @@
     "link_es": "https://www.amazon.es/dp/8408213881?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073850?tag=carlosblan026-20",
     "title_en": "The Hollow",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073850-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073850-L.jpg?default=false"
   },
   {
     "id": 45,
@@ -687,7 +687,7 @@
     "link_es": "https://www.amazon.es/dp/8427285477?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062573462?tag=carlosblan026-20",
     "title_en": "The Labours of Hercules",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062573462-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062573462-L.jpg?default=false"
   },
   {
     "id": 46,
@@ -702,7 +702,7 @@
     "link_es": "https://www.amazon.es/dp/8427201362?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/006257342X?tag=carlosblan026-20",
     "title_en": "Taken at the Flood",
-    "image_en": "https://covers.openlibrary.org/b/isbn/006257342X-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/006257342X-L.jpg?default=false"
   },
   {
     "id": 47,
@@ -717,7 +717,7 @@
     "link_es": "https://www.amazon.es/dp/8467050551?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073532?tag=carlosblan026-20",
     "title_en": "Crooked House",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073532-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0062073532.01.LZZZZZZZ.jpg"
   },
   {
     "id": 48,
@@ -732,7 +732,7 @@
     "link_es": "https://www.amazon.es/dp/8467053631?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/006207363X?tag=carlosblan026-20",
     "title_en": "A Murder Is Announced",
-    "image_en": "https://covers.openlibrary.org/b/isbn/006207363X-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/006207363X-L.jpg?default=false"
   },
   {
     "id": 49,
@@ -747,7 +747,7 @@
     "link_es": "https://www.amazon.es/dp/8467077220?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073788?tag=carlosblan026-20",
     "title_en": "They Came to Baghdad",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073788-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073788-L.jpg?default=false"
   },
   {
     "id": 50,
@@ -762,7 +762,7 @@
     "link_es": "https://www.amazon.es/dp/8467063467?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0063214059?tag=carlosblan026-20",
     "title_en": "They Do It with Mirrors",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0063214059-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0063214059.01.LZZZZZZZ.jpg"
   },
   {
     "id": 51,
@@ -777,7 +777,7 @@
     "link_es": "https://www.amazon.es/dp/8427298633?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0061003751?tag=carlosblan026-20",
     "title_en": "Mrs. McGinty's Dead",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0061003751-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0061003751-L.jpg?default=false"
   },
   {
     "id": 52,
@@ -792,7 +792,7 @@
     "link_es": "https://www.amazon.es/dp/8467070625?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073826?tag=carlosblan026-20",
     "title_en": "After the Funeral",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073826-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073826-L.jpg?default=false"
   },
   {
     "id": 53,
@@ -807,7 +807,7 @@
     "link_es": "https://www.amazon.es/dp/8467066601?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073656?tag=carlosblan026-20",
     "title_en": "A Pocket Full of Rye",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073656-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073656-L.jpg?default=false"
   },
   {
     "id": 54,
@@ -822,7 +822,7 @@
     "link_es": "https://www.amazon.es/dp/8467074051?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074105?tag=carlosblan026-20",
     "title_en": "Destination Unknown",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074105-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062074105-L.jpg?default=false"
   },
   {
     "id": 55,
@@ -837,7 +837,7 @@
     "link_es": "https://www.amazon.es/dp/8427285604?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073966?tag=carlosblan026-20",
     "title_en": "Hickory Dickory Dock",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073966-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073966-L.jpg?default=false"
   },
   {
     "id": 56,
@@ -852,7 +852,7 @@
     "link_es": "https://www.amazon.es/dp/8467078081?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073885?tag=carlosblan026-20",
     "title_en": "Dead Man's Folly",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073885-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073885-L.jpg?default=false"
   },
   {
     "id": 57,
@@ -867,7 +867,7 @@
     "link_es": "https://www.amazon.es/dp/8490562709?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0007120826?tag=carlosblan026-20",
     "title_en": "4.50 from Paddington",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0007120826-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0007120826-L.jpg?default=false"
   },
   {
     "id": 58,
@@ -882,7 +882,7 @@
     "link_es": "https://www.amazon.es/dp/8467058528?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073524?tag=carlosblan026-20",
     "title_en": "Ordeal by Innocence",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073524-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073524-L.jpg?default=false"
   },
   {
     "id": 59,
@@ -897,7 +897,7 @@
     "link_es": "https://www.amazon.es/dp/846707406X?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073796?tag=carlosblan026-20",
     "title_en": "Cat Among the Pigeons",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073796-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073796-L.jpg?default=false"
   },
   {
     "id": 60,
@@ -912,7 +912,7 @@
     "link_es": "https://www.amazon.es/dp/842720261X?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0008255474?tag=carlosblan026-20",
     "title_en": "The Adventure of the Christmas Pudding",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0008255474-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0008255474.01.LZZZZZZZ.jpg"
   },
   {
     "id": 61,
@@ -927,7 +927,7 @@
     "link_es": "https://www.amazon.es/dp/8467063076?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074113?tag=carlosblan026-20",
     "title_en": "The Pale Horse",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074113-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062074113-L.jpg?default=false"
   },
   {
     "id": 62,
@@ -942,7 +942,7 @@
     "link_es": "https://www.amazon.es/dp/8408260766?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073672?tag=carlosblan026-20",
     "title_en": "The Mirror Crack'd from Side to Side",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073672-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073672-L.jpg?default=false"
   },
   {
     "id": 63,
@@ -957,7 +957,7 @@
     "link_es": "https://www.amazon.es/dp/8408314106?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073818?tag=carlosblan026-20",
     "title_en": "The Clocks",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073818-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073818-L.jpg?default=false"
   },
   {
     "id": 64,
@@ -972,7 +972,7 @@
     "link_es": "https://www.amazon.es/dp/8467069171?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073680?tag=carlosblan026-20",
     "title_en": "A Caribbean Mystery",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073680-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0062073680.01.LZZZZZZZ.jpg"
   },
   {
     "id": 65,
@@ -987,7 +987,7 @@
     "link_es": "https://www.amazon.es/dp/8408253220?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073699?tag=carlosblan026-20",
     "title_en": "At Bertram's Hotel",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073699-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073699-L.jpg?default=false"
   },
   {
     "id": 66,
@@ -1002,7 +1002,7 @@
     "link_es": "https://www.amazon.es/dp/842728571X?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073761?tag=carlosblan026-20",
     "title_en": "Third Girl",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073761-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073761-L.jpg?default=false"
   },
   {
     "id": 67,
@@ -1017,7 +1017,7 @@
     "link_es": "https://www.amazon.es/dp/8427285728?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073516?tag=carlosblan026-20",
     "title_en": "Endless Night",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073516-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073516-L.jpg?default=false"
   },
   {
     "id": 68,
@@ -1032,7 +1032,7 @@
     "link_es": "https://www.amazon.es/dp/8427285736?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074334?tag=carlosblan026-20",
     "title_en": "By the Pricking of My Thumbs",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074334-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062074334-L.jpg?default=false"
   },
   {
     "id": 69,
@@ -1047,7 +1047,7 @@
     "link_es": "https://www.amazon.es/dp/8408277057?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073958?tag=carlosblan026-20",
     "title_en": "Hallowe'en Party",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073958-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073958-L.jpg?default=false"
   },
   {
     "id": 70,
@@ -1062,7 +1062,7 @@
     "link_es": "https://www.amazon.es/dp/8408216546?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062094459?tag=carlosblan026-20",
     "title_en": "Passenger to Frankfurt",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062094459-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062094459-L.jpg?default=false"
   },
   {
     "id": 71,
@@ -1077,7 +1077,7 @@
     "link_es": "https://www.amazon.es/dp/8408275631?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073702?tag=carlosblan026-20",
     "title_en": "Nemesis",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073702-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073702-L.jpg?default=false"
   },
   {
     "id": 72,
@@ -1092,7 +1092,7 @@
     "link_es": "https://www.amazon.es/dp/8408213873?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074032?tag=carlosblan026-20",
     "title_en": "Elephants Can Remember",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074032-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0062074032.01.LZZZZZZZ.jpg"
   },
   {
     "id": 73,
@@ -1107,7 +1107,7 @@
     "link_es": "https://www.amazon.es/dp/8427203004?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074342?tag=carlosblan026-20",
     "title_en": "Postern of Fate",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074342-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062074342-L.jpg?default=false"
   },
   {
     "id": 74,
@@ -1122,7 +1122,7 @@
     "link_es": "https://www.amazon.es/dp/8467080159?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0006167128?tag=carlosblan026-20",
     "title_en": "Poirot's Early Cases",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0006167128-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0006167128-L.jpg?default=false"
   },
   {
     "id": 75,
@@ -1137,7 +1137,7 @@
     "link_es": "https://www.amazon.es/dp/8467065648?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062074091?tag=carlosblan026-20",
     "title_en": "Curtain: Poirot's Last Case",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062074091-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062074091-L.jpg?default=false"
   },
   {
     "id": 76,
@@ -1152,7 +1152,7 @@
     "link_es": "https://www.amazon.es/dp/8467065656?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062073729?tag=carlosblan026-20",
     "title_en": "Sleeping Murder",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062073729-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0062073729-L.jpg?default=false"
   },
   {
     "id": 77,
@@ -1166,7 +1166,7 @@
     "protagonist": "Miss Marple",
     "link_en": "https://www.amazon.com/dp/0007121040?tag=carlosblan026-20",
     "title_en": "Miss Marple's Final Cases",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0007121040-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0007121040-L.jpg?default=false"
   },
   {
     "id": 78,
@@ -1181,7 +1181,7 @@
     "link_es": "https://www.amazon.es/dp/8467070528?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0008256128?tag=carlosblan026-20",
     "title_en": "Problem at Pollensa Bay",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0008256128-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0008256128-L.jpg?default=false"
   },
   {
     "id": 79,
@@ -1196,7 +1196,7 @@
     "link_es": "https://www.amazon.es/dp/8401461812?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0008255768?tag=carlosblan026-20",
     "title_en": "Black Coffee",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0008255768-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0008255768.01.LZZZZZZZ.jpg"
   },
   {
     "id": 80,
@@ -1211,7 +1211,7 @@
     "link_es": "https://www.amazon.es/dp/8401327261?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0062094394?tag=carlosblan026-20",
     "title_en": "The Harlequin Tea Set",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0062094394-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0062094394.01.LZZZZZZZ.jpg"
   },
   {
     "id": 81,
@@ -1226,7 +1226,7 @@
     "link_es": "https://www.amazon.es/dp/8401327962?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0008255598?tag=carlosblan026-20",
     "title_en": "The Unexpected Guest",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0008255598-L.jpg"
+    "image_en": "https://images-na.ssl-images-amazon.com/images/P/0008255598.01.LZZZZZZZ.jpg"
   },
   {
     "id": 82,
@@ -1241,6 +1241,6 @@
     "link_es": "https://www.amazon.es/dp/848450879X?tag=lasavedetin-21",
     "link_en": "https://www.amazon.com/dp/0573702330?tag=carlosblan026-20",
     "title_en": "Spider's Web",
-    "image_en": "https://covers.openlibrary.org/b/isbn/0573702330-L.jpg"
+    "image_en": "https://covers.openlibrary.org/b/isbn/0573702330-L.jpg?default=false"
   }
 ]
