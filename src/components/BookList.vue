@@ -2,7 +2,7 @@
   <router-link :to="{ name: 'BookDetail', params: { slug: novel.slug, id: novel.id } }" class="book-card-link">
     <div class="novel-card">
       <div class="cover-wrapper">
-        <img :src="displayImage" :alt="displayTitle" loading="lazy" />
+        <img :src="displayImage" :alt="displayTitle" loading="lazy" @error="onImageError" />
         <div v-if="wasRead" class="badge read">
           <span class="badge-icon">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
@@ -59,6 +59,9 @@ export default {
     this.fetchRating();
   },
   methods: {
+    onImageError(e) {
+      if (this.novel?.image) e.target.src = this.novel.image;
+    },
     async fetchRating() {
       if (!this.novel?.slug) return;
       try {
@@ -85,17 +88,20 @@ export default {
         String(item) === String(this.novel.slug)
       );
     },
+    currentLang() {
+      return this.$store.state.user.user.language;
+    },
     displayImage() {
       if (!this.novel) return '';
-      return (this.$i18n.locale === 'en' && this.novel.image_en) ? this.novel.image_en : this.novel.image;
+      return (this.currentLang === 'en' && this.novel.image_en) ? this.novel.image_en : this.novel.image;
     },
     displayTitle() {
       if (!this.novel) return '';
-      return this.$i18n.locale === 'en' && this.novel.title_en ? this.novel.title_en : this.novel.title;
+      return (this.currentLang === 'en' && this.novel.title_en) ? this.novel.title_en : this.novel.title;
     },
     displayDescription() {
       if (!this.novel) return '';
-      return this.$i18n.locale === 'en' && this.novel.description_en ? this.novel.description_en : this.novel.description;
+      return (this.currentLang === 'en' && this.novel.description_en) ? this.novel.description_en : this.novel.description;
     }
   },
 };

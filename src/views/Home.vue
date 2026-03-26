@@ -2,7 +2,7 @@
   <div class="books-list">
     <header>
       <div>
-        <h1>Agatha Christie</h1>
+        <img src="@/assets/agatha-christie-logo.png" alt="Agatha Christie" class="header-logo" />
       </div>
       <router-link :to="{ name: 'Profile' }" class="profile-icon">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -81,10 +81,10 @@ export default {
     margin-bottom: var(--spacing-xl);
     padding-top: var(--spacing-md);
     
-    h1 {
-      color: var(--color-text-dark);
-      font-weight: 700;
-      font-size: 1.8rem;
+    .header-logo {
+      height: 44px;
+      width: auto;
+      display: block;
     }
     
     .profile-icon {

@@ -69,6 +69,9 @@ export default {
   name: "Collections",
   computed: {
     ...mapState(["books", "user"]),
+    currentLang() {
+      return this.$store.state.user.user.language;
+    },
     sortedNovels() {
       // Clone array to avoid mutating state directly during sort
       const novels = [...(this.$store.state.books.novels || [])];
@@ -112,15 +115,16 @@ export default {
     },
     getDisplayTitle(novel) {
       if (!novel) return '';
-      return this.$i18n.locale === 'en' && novel.title_en ? novel.title_en : novel.title;
+      return (this.currentLang === 'en' && novel.title_en) ? novel.title_en : novel.title;
     },
     getDisplayImage(novel) {
       if (!novel) return '';
-      return (this.$i18n.locale === 'en' && novel.image_en) ? novel.image_en : novel.image;
+      return (this.currentLang === 'en' && novel.image_en) ? novel.image_en : novel.image;
     },
     getLink(novel) {
       if (!novel) return '#';
-      if (this.$i18n.locale === 'es' && novel.link_es) return novel.link_es;
+      if (this.currentLang === 'es' && novel.link_es) return novel.link_es;
+      if (this.currentLang === 'en' && novel.link_en) return novel.link_en;
       return novel.link || '#';
     }
   }

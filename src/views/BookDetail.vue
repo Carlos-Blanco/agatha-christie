@@ -248,21 +248,25 @@ export default {
         return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`;
       }
     },
+    currentLang() {
+      return this.$store.state.user.user.language;
+    },
     displayImage() {
       if (!this.novel) return '';
-      return (this.$i18n.locale === 'en' && this.novel.image_en) ? this.novel.image_en : this.novel.image;
+      return (this.currentLang === 'en' && this.novel.image_en) ? this.novel.image_en : this.novel.image;
     },
     displayTitle() {
       if (!this.novel) return '';
-      return this.$i18n.locale === 'en' && this.novel.title_en ? this.novel.title_en : this.novel.title;
+      return (this.currentLang === 'en' && this.novel.title_en) ? this.novel.title_en : this.novel.title;
     },
     displayDescription() {
       if (!this.novel) return '';
-      return this.$i18n.locale === 'en' && this.novel.description_en ? this.novel.description_en : this.novel.description;
+      return (this.currentLang === 'en' && this.novel.description_en) ? this.novel.description_en : this.novel.description;
     },
     buyLink() {
       if (!this.novel) return '#';
-      if (this.$i18n.locale === 'es' && this.novel.link_es) return this.novel.link_es;
+      if (this.currentLang === 'es' && this.novel.link_es) return this.novel.link_es;
+      if (this.currentLang === 'en' && this.novel.link_en) return this.novel.link_en;
       return this.novel.link || '#';
     }
   },
