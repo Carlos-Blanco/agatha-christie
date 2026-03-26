@@ -46,7 +46,7 @@
             </button>
 
             <!-- Buy Button: Vintage Tag Style -->
-            <a :href="novel.link" target="_blank" class="btn-action btn-buy" :title="$t('collections.buy')">
+            <a :href="getLink(novel)" target="_blank" class="btn-action btn-buy" :title="$t('collections.buy')">
               <span class="icon-tag">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
@@ -117,6 +117,11 @@ export default {
     getDisplayImage(novel) {
       if (!novel) return '';
       return (this.$i18n.locale === 'en' && novel.image_en) ? novel.image_en : novel.image;
+    },
+    getLink(novel) {
+      if (!novel) return '#';
+      if (this.$i18n.locale === 'es' && novel.link_es) return novel.link_es;
+      return novel.link || '#';
     }
   }
 };

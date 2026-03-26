@@ -9,7 +9,7 @@
         {{ $t('nav.back') }}
       </router-link>
       <div class="header-actions">
-        <a :href="novel.link" target="_blank" class="btn-action-icon" :data-tooltip="$t('collections.buy')">
+        <a :href="buyLink" target="_blank" class="btn-action-icon" :data-tooltip="$t('collections.buy')">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
             <path d="M3 6h18"></path>
@@ -259,6 +259,11 @@ export default {
     displayDescription() {
       if (!this.novel) return '';
       return this.$i18n.locale === 'en' && this.novel.description_en ? this.novel.description_en : this.novel.description;
+    },
+    buyLink() {
+      if (!this.novel) return '#';
+      if (this.$i18n.locale === 'es' && this.novel.link_es) return this.novel.link_es;
+      return this.novel.link || '#';
     }
   },
 };
