@@ -14,20 +14,19 @@
       </div>
       
       <div class="language-selector">
-        <button 
-          @click="changeLanguage('es')" 
+        <button
+          @click="changeLanguage('es')"
           :class="{ active: currentLang === 'es' }"
           aria-label="Español"
         >
-          ES
+          🇪🇸
         </button>
-        <span class="divider">|</span>
-        <button 
-          @click="changeLanguage('en')" 
+        <button
+          @click="changeLanguage('en')"
           :class="{ active: currentLang === 'en' }"
           aria-label="English"
         >
-          EN
+          🇬🇧
         </button>
       </div>
     </div>
@@ -296,27 +295,27 @@ export default {
       justify-self: end;
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      
+      gap: 4px;
+
       button {
         background: none;
-        border: none;
-        color: var(--color-text-light);
+        border: 2px solid transparent;
+        border-radius: 6px;
         cursor: pointer;
-        padding: 4px;
-        transition: color 0.2s;
-        
-        &.active, &:hover {
-          color: var(--color-sepia-primary);
-          font-weight: 700;
+        padding: 2px 4px;
+        font-size: 1.5rem;
+        line-height: 1;
+        opacity: 0.45;
+        transition: opacity 0.2s, border-color 0.2s;
+
+        &.active {
+          opacity: 1;
+          border-color: var(--color-sepia-primary);
         }
-      }
-      
-      .divider {
-        color: var(--color-text-light);
-        opacity: 0.5;
+
+        &:hover {
+          opacity: 0.85;
+        }
       }
     }
   }
