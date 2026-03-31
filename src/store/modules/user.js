@@ -11,7 +11,8 @@ export const state = {
     readBooks: [],
     ownedBooks: [],
     language: 'en',
-    authError: null
+    authError: null,
+    photoURL: null
   },
   unsubscribeAuthInfo: null // Store unsubscribe function
 };
@@ -53,6 +54,9 @@ export const mutations = {
   },
   CLEAR_AUTH_ERROR(state) {
     state.user.authError = null;
+  },
+  SET_PHOTO_URL(state, url) {
+    state.user.photoURL = url;
   },
   SET_UNSUBSCRIBE(state, unsubscribe) {
     state.unsubscribeAuthInfo = unsubscribe;
@@ -294,6 +298,7 @@ export const actions = {
               var data = doc.data();
               commit("UPDATE_BOOKS", data.books || []);
               commit("UPDATE_OWNED_BOOKS", data.ownedBooks || []);
+              commit("SET_PHOTO_URL", data.photoURL || null);
             }
           }, (error) => {
             console.log("Error getting document:", error);

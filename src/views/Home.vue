@@ -5,7 +5,8 @@
         <img src="@/assets/agatha-christie-logo.png" alt="Agatha Christie" class="header-logo" />
       </div>
       <router-link :to="{ name: 'Profile' }" class="profile-icon">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <img v-if="userPhotoURL" :src="userPhotoURL" alt="Profile" class="profile-photo" />
+        <svg v-else width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
           <circle cx="12" cy="7" r="4"></circle>
         </svg>
@@ -61,6 +62,9 @@ export default {
         return novel.title.toLowerCase().match(this.searchTerm.toLowerCase());
       });
     },
+    userPhotoURL() {
+      return this.$store.state.user.user.photoURL || null;
+    },
     ...mapState(["books"])
   }
 };
@@ -100,11 +104,18 @@ export default {
       svg {
         color: var(--color-sepia-dark);
       }
-      
+
+      .profile-photo {
+        width: 100%;
+        height: 100%;
+        border-radius: var(--border-radius-full);
+        object-fit: cover;
+      }
+
       &:hover {
         background: var(--color-sepia-primary);
         transform: scale(1.05);
-        
+
         svg {
           color: white;
         }
