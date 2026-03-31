@@ -39,6 +39,8 @@ export const actions = {
           const sorted = snapshot.docs.sort((a, b) => {
             const ratingDiff = (b.data().averageRating || 0) - (a.data().averageRating || 0);
             if (ratingDiff !== 0) return ratingDiff;
+            const countDiff = (b.data().ratingCount || 0) - (a.data().ratingCount || 0);
+            if (countDiff !== 0) return countDiff;
             const aTime = a.data().lastRatedAt?.toMillis() || 0;
             const bTime = b.data().lastRatedAt?.toMillis() || 0;
             return bTime - aTime;

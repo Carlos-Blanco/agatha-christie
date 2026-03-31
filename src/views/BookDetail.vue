@@ -182,12 +182,17 @@ export default {
       }
     },
     addBook() {
+      if (!this.$store.state.user?.user?.userinfo) {
+        this.$router.push({ name: 'Login' });
+        return;
+      }
+
       const readBooks = this.$store.state.user?.user?.readBooks || [];
-      const isAlreadyRead = readBooks.find(item => 
-        String(item) === String(this.novel.slug) || 
+      const isAlreadyRead = readBooks.find(item =>
+        String(item) === String(this.novel.slug) ||
         String(item) === String(this.novel.id)
       );
-      
+
       if (!isAlreadyRead) {
         // Opening the modal to get a rating before marking as read
         this.showRatingModal = true;

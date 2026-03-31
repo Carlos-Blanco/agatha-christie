@@ -96,7 +96,7 @@ export const actions = {
         }, { merge: true });
       }
     } else {
-      router.push({ name: "SignUp" });
+      router.push({ name: "Login" });
     }
   },
   addToCollection({ state, commit }, value) {
@@ -119,7 +119,7 @@ export const actions = {
         });
       }
     } else {
-      router.push({ name: "SignUp" });
+      router.push({ name: "Login" });
     }
   },
   removeFromCollection({ state, commit }, value) {
